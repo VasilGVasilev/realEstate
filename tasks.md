@@ -1,7 +1,7 @@
 # Website is mainly nice UI with a few requests to DB on two pages
 
 ## Building approach:
-- Chose Next.js due to Tailwind compatibility
+- Chose **Next.js** due to Tailwind compatibility, but turn off SSR and do static export when deploying
 - Decide on a CSS superset **Tailwind** or SASS based mainly on the instruments' capability to deliver seamless mobile resposniveness, but also useMap for mapping pictures to relevant routes.
 - Hosting will most likely be Hostinger
 - DB will also most likely be Hostinger depending on how well it connects with the website for GET requests, thus, no separate admin page for CRUD of DB.
@@ -12,6 +12,7 @@
  - Mobile responsiveness
  - Mapping pictures
 2. Make website translatable
+3. Does Hostinger host the DB all the time so that it is accessible by my JS GET requests /available apartments should be visible all the time/
 
 ## Website specific implementations:
 
