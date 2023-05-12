@@ -54,5 +54,10 @@ Special files:
 Colocating files - your own ones -> components, tests, module.css
 
 ### Routing
+Inside the app directory, **folders** are used to define routes. Each folder represents a route segment that maps to a URL segment. 
+A special **page.js** file is used to make route segments publicly accessible.
+Thus, **folder** without **page.js** could be used for storing of colocated files.
+
+### Rendering
 
 ### Data Fetching
