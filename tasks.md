@@ -1,5 +1,8 @@
 # Website is mainly nice UI with a few requests to DB on two pages
 
+## Architecture
+Use Next.js but with client components for initial version. 
+
 ## Building approach:
 - Chose **Next.js** due to Tailwind compatibility, but turn off SSR and do static export when deploying
 - Decide on a CSS superset **Tailwind** or SASS based mainly on the instruments' capability to deliver seamless mobile resposniveness, but also useMap for mapping pictures to relevant routes.
@@ -26,3 +29,4 @@
 
 ## Tasks:
 1. Do the easiest pages: Контакти, Галерия, Инвеститор, За комплекса, Начало
+

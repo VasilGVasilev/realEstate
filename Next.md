@@ -1,3 +1,5 @@
+### React Essentials
+
 **Client and Server Components**
 Pages Router adheres to the client components parasigm, while the new App Router does to the server components paradigm, but you can enable client component by adding the 'use client' directive at the top of the component.
 
@@ -39,7 +41,7 @@ We generate a static site - an output of HTML, JavaScript and CSS, by changing t
 This phase that is prior to hydration is also known as pre-rendering.
 
 
-**Building your app**
+### Building your app
 
 Special files:
 - layout.js
@@ -50,3 +52,7 @@ Special files:
 - page.js or nested layout.js
 
 Colocating files - your own ones -> components, tests, module.css
+
+### Routing
+
+### Data Fetching
