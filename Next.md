@@ -1,7 +1,7 @@
 ### React Essentials
 
 **Client and Server Components**
-Pages Router adheres to the client components parasigm, while the new App Router does to the server components paradigm, but you can enable client component by adding the 'use client' directive at the top of the component.
+Pages Router adheres to the client components parasigm, while the new App Router does to the server components convention, but you can enable client component by adding the 'use client' directive at the top of the component.
 
 1. Server-side default for App Router
 
