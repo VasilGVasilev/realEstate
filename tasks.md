@@ -17,7 +17,7 @@
  - Mapping pictures
 2. Make website translatable
 3. Does Hostinger host the DB all the time so that it is accessible by my JS GET requests /available apartments should be visible all the time/
-4. Implement React memo hook to memoize state after initial render [Memo](https://www.w3schools.com/react/react_memo.asp)
+4. Implement React memo hook to memoize state after initial render [Memo](https://www.w3schools.com/react/react_memo.asp) (automatic cashing for static side generation by Next.js see NB jsMastery)
 
 ## Website specific implementations:
 
