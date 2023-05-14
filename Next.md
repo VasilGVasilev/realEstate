@@ -97,3 +97,5 @@ async await in development for Server Components
 **Recommended fetching for now is via third-party library Tanstack-query**
 
 The main difference between the two is that tanstack-query is focused on managing data and provides a more declarative way of fetching and caching it, while useEffect is more general and allows you to perform any side effect in your components.
+
+[Extremely good explanation of Next.js in 1 hour](https://www.youtube.com/watch?v=Sbl04kOL1dM)
