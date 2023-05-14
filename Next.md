@@ -21,7 +21,9 @@ Before next.js v13, next was client component centered and data fetching was don
 
 **By default, components inside app are React Server Components. So, you may be thinking, why Server Components?** 
 
-With Server Components, the initial page load is faster, and the client-side JavaScript bundle size is reduced. The base client-side runtime is cacheable and predictable in size, and does not increase as your application grows. Also, the majority of components are non-interactive and can be rendered on the server as Server Components
+With Server Components, the initial page load is faster, and the client-side JavaScript bundle size is reduced. The base client-side runtime is cacheable and predictable in size, and does not increase as your application grows. Also, the majority of components are non-interactive and can be rendered on the server as Server Components.
+
+But note that server components create the vDOM on the server, thus, a server component cannot console.log on the browser, we need the 'use client' directive. [Here](https://nextjs.org/docs/getting-started/react-essentials#when-to-use-server-and-client-components) , you can see the instances where you can abstract into browser friendly client components the vDOM rendered by default on the server with Next.js
 
 How it all runs?
 
