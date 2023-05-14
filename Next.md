@@ -64,6 +64,8 @@ Thus, **folder** without **page.js** could be used for storing of colocated file
 **A layout is UI that is shared between multiple pages.**
     On navigation, layouts preserve state, remain interactive, and do not re-render.
 
+using () parentheses in routing as a grouping mechanism for routes will only show in code, not in actual route, thus, (auth) directory with login and registration direcotries inside is no accessible via /auth/login, but just /login
+
 **Layouts and contexts**
 
 Layouts in Next.js are used to wrap pages with a common layout structure. They allow you to reuse code across multiple pages, which can be especially useful if you have a website with a consistent design.
