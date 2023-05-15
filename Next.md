@@ -99,6 +99,13 @@ Static rendering is default, but you can opt out to dynamic rendering by using a
 
 ![dynamic static rendering](https://github.com/VasilGVasilev/realEstate/blob/main/effectOfDynamicStaticRendering.png)
 
+Note that, for a route to be statically rendered, the data requests are cached and there are no dynamic functions. BUT  if a dynamic function or a dynamic fetch() request (no caching) is discovered, Next.js will switch to dynamically rendering the whole route at request time.
+
+**What ar those dynamic functions?**
+Dynamic functions rely on data that can only be known at request time -> a user's cookies ( cookies() ), current requests headers ( headers() ), or the URL's search params ( useSearchParams() ). 
+
+*It is recommended to wrap the Client Component that uses useSearchParams() in a <Suspence/> boudnry to allow any Client Components above it to be statically rendered.*
+
 ### Data Fetching
 
 use in development for Client Components
