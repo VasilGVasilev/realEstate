@@ -115,11 +115,30 @@ when using build between a SSG by default
 ```sh(Static) automatically rendered as a static HTML``` 
 and SSG by turning **dynamic route into static** 
 
-```sh(SSG) automatically generated as a static HTML + JSON
+```sh(SSG) automatically generated as a static HTML + JSON```
 
 The *generateStaticParams()* function can be used in combination with dynamic route segments to statically generate routes at build time instead of on-demand at request time.
 
+```sh
+export async function generateStaticParams() {
+        const posts = ['post-one', 'post-two']
+
+        return posts.map((post) => {
+            return {
+                postId: post
+            }
+        })
+    }
+```
+
+
 ![buildTypes](https://github.com/VasilGVasilev/realEstate/blob/main/buildTypes.png)
+
+**Result**
+Page is faster, API is not called at runtime whenever the user is entering URL address, instead it is already as static JSON in the code on the server ready to be used.
+Good for predicatable amount of routes, not like 1 mln of them -> .map() will be heavy
+
+
 
 ### Data Fetching
 
