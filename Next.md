@@ -108,6 +108,19 @@ Dynamic functions rely on data that can only be known at request time -> a user'
 
 ### How do we turn the dynamic path /[etc] into a static one
 
+Remember we have SSR, SSG and ISC. By using generateStaticParams we make a dynamic route into a static route, thus, SSR into SSG. Note, that there is a difference:
+
+when using build between a SSG by default 
+
+```sh(Static) automatically rendered as a static HTML``` 
+and SSG by turning **dynamic route into static** 
+
+```sh(SSG) automatically generated as a static HTML + JSON
+
+The *generateStaticParams()* function can be used in combination with dynamic route segments to statically generate routes at build time instead of on-demand at request time.
+
+![buildTypes](https://github.com/VasilGVasilev/realEstate/blob/main/buildTypes.png)
+
 ### Data Fetching
 
 use in development for Client Components
