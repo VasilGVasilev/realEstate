@@ -89,6 +89,14 @@ There may be cases where you need those specific behaviors, and templates would 
 
 Link is imported from 'next/link'
 
+### Rendering
+
+**Static and Dynamic Rendering**
+- In a static route, components are rendered on the server at **build time**. The result of the work is cached and reused on subsequent requests. 
+- In a dynamic route, components are rendered on the server at **request time**.
+
+Static rendering is default, but you can opt out to dynamic rendering by using a dynamic function or dynamic data fetching. This will cause Next.js to render the whole route dynamically, at **request time**, instead of **build time**
+
 ### Data Fetching
 
 use in development for Client Components
