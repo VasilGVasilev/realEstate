@@ -97,6 +97,8 @@ Link is imported from 'next/link'
 
 Static rendering is default, but you can opt out to dynamic rendering by using a dynamic function or dynamic data fetching. This will cause Next.js to render the whole route dynamically, at **request time**, instead of **build time**
 
+![dynamic static rendering](https://github.com/VasilGVasilev/realEstate/blob/main/effectOfDynamicStaticRendering.png)
+
 ### Data Fetching
 
 use in development for Client Components
