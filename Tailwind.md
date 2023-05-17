@@ -35,3 +35,6 @@ Here's an updated example that includes mobile responsiveness:
 In this example, we've added the xl:grid-cols-5 class to set the number of columns to 5 on extra-large screens. We've also added the p-4 class to each grid item to add some padding. Finally, we've added the sm:grid-cols-2 class to the grid container to change the number of columns to 2 on small screens.
 
 By using Tailwind's responsive classes in this way, we can create a mobile-responsive grid system with minimal code.
+
+### Responsive design in a nutshell
+Responsive design is just the first set of features are the mobile ones and for any subsequent screen size x or greater, we add other functionality, mobile first and then accroding to set resolution or bigger we make CSS for tablets or desktops

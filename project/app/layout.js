@@ -11,23 +11,23 @@ export default function RootLayout({ children }) {
   return (
     <html lang="bg">
       <body>
-        <a className='absolute top-0 left-6 h-28 w-24 flex justify-center bg-orange-400 border-x-2 border-white lg:h-32' href={`tel:00359886849995`}>
+        <a className='absolute top-0 left-6 h-16 w-16 flex justify-center bg-orange-400 border-x-2 border-white md:h-28 md:w-24 lg:h-36' href={`tel:00359886849995`}>
           <Image
             src="/green-phone.svg"
             alt="Phone Ring"
             className="bg-transparent hover:animate-bounce"
-            width={60}
+            width={45}
             height={24}
             priority
           />
         </a>
         <nav className='px-12 bg-gray-800 flex justify-end py-5 text-base'>
               <div className='flex items-center text-white'>
-                <Link className='p-3 lg:p-6 lg:text-2xl md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/'} >Начало</Link>
-                <Link className='p-3 lg:p-5 lg:text-2xl md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/description'}>Информация</Link>
-                <Link className='p-3 lg:p-5 lg:text-2xl md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/apartments'}>Апартаменти</Link>
-                <Link className='p-3 lg:p-5 lg:text-2xl md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/investor'}>Инвеститор</Link>
-                <Link className='p-3 lg:p-5 lg:text-2xl md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/contacts'}>Контакти</Link>
+                <Link className='hidden p-3 lg:flex lg:p-6 lg:text-2xl md:flex md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/'} >Начало</Link>
+                <Link className='hidden p-3 lg:flex lg:p-5 lg:text-2xl md:flex md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/description'}>Информация</Link>
+                <Link className='hidden p-3 lg:flex lg:p-5 lg:text-2xl md:flex md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/apartments'}>Апартаменти</Link>
+                <Link className='hidden p-3 lg:flex lg:p-5 lg:text-2xl md:flex md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/investor'}>Инвеститор</Link>
+                <Link className='hidden p-3 lg:flex lg:p-5 lg:text-2xl md:flex md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/contacts'}>Контакти</Link>
             </div>
         </nav>
 
