@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
             priority
           />
         </a>
-        <nav className='px-12 bg-gray-800 flex justify-end py-5 px-2 text-base'>
+        <nav className='px-12 bg-gray-800 flex justify-end py-5 text-base'>
               <div className='flex items-center text-white'>
                 <Link className='p-3 lg:p-6 lg:text-2xl md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/'} >Начало</Link>
                 <Link className='p-3 lg:p-5 lg:text-2xl md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/description'}>Информация</Link>
