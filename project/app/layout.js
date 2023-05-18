@@ -14,12 +14,12 @@ export default function RootLayout({ children }) {
   const [toggleClicked, setToggleClick] = useState(false); 
 
   const toggleNavbar = () => {
-    setToggleClick(state => !state)
+    setToggleClick(state => !state);
   }
 
   return (
     <html lang="bg">
-      <body>
+      <body className='bg-orange-50'>
         {/* persisting easy call button */}
         <a className='absolute top-0 left-6 h-16 w-16 flex justify-center bg-orange-400 border-x-2 border-green-500 md:h-28 md:w-24 lg:h-36' href={`tel:00359886849995`}>
           <Image
@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
           <nav className='px-12 flex justify-end py-5 text-base bg-gray-800 border-b-2 border-gray-500'>
             
             {/* desktop menu */}
-              <div className='flex items-center text-white'>
+              <div className='flex items-center text-white' >
                 <Link className='hidden p-3 lg:flex lg:p-5 lg:text-2xl md:flex md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/'} >Начало</Link>
                 <Link className='hidden p-3 lg:flex lg:p-5 lg:text-2xl md:flex md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/description'}>Информация</Link>
                 <Link className='hidden p-3 lg:flex lg:p-5 lg:text-2xl md:flex md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/apartments'}>Апартаменти</Link>
@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
           </nav>
 
           {/* mobile menu */}
-          <div className={ toggleClicked === true ? 'md:hidden flex flex-col bg-gray-800 text-white' : 'hidden'}>
+          <div onClick={toggleNavbar} className={ toggleClicked === true ? 'md:hidden flex flex-col bg-gray-800 text-white' : 'hidden'}>
             <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate-700' href={'/'} >Начало</Link>
             <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate-700' href={'/description'}>Информация</Link>
             <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate-700' href={'/apartments'}>Апартаменти</Link>
@@ -66,8 +66,8 @@ export default function RootLayout({ children }) {
 
         </div>
         <main className='app'>
-          <div className='py-32 text-center'>
-            <h1 className='font-extrabold text-4xl'>End of RootLayout</h1>
+          <div className='py-24 text-center'>
+            <h1 className='italic font-bold text-3xl'>Ixora Luxury Residence</h1>
           </div>
           {children}
         </main>
