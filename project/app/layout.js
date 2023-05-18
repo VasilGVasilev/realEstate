@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="bg">
       <body className='bg-orange-50'>
         {/* persisting easy call button */}
-        <a className='absolute top-0 left-6 h-16 w-16 flex justify-center bg-orange-400 border-x-2 border-green-500 md:h-28 md:w-24 lg:h-36' href={`tel:00359886849995`}>
+        <a className='absolute top-0 left-6 h-16 w-16 flex justify-center bg-gradient-to-b from-orange-500 to-orange-300 border-x-2 border-green-500 md:h-28 md:w-24 lg:h-36' href={`tel:00359886849995`}>
           <Image
             src="/green-phone.svg"
             alt="Phone Ring"
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         </a>
         <div>
 
-          <nav className='px-12 flex justify-end py-5 text-base bg-gray-800 border-b-2 border-gray-500'>
+          <nav className='px-12 flex justify-end py-5 text-base bg-gradient-to-b from-gray-900 to-gray-700 border-b-2 border-gray-500'>
             
             {/* desktop menu */}
               <div className='flex items-center text-white' >
