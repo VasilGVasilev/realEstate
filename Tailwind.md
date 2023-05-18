@@ -38,3 +38,8 @@ By using Tailwind's responsive classes in this way, we can create a mobile-respo
 
 ### Responsive design in a nutshell
 Responsive design is just the first set of features are the mobile ones and for any subsequent screen size x or greater, we add other functionality, mobile first and then accroding to set resolution or bigger we make CSS for tablets or desktops
+
+### Flex justify center
+<div className="flex justify-center">This is text is justified center relative to encapsulating div</div>
+same goes for 
+<div><div>This inner div is justified center realtive to outer div</div></div>

@@ -19,19 +19,19 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="bg">
-      <body className='bg-orange-50'>
+      <body className='bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'>
         {/* persisting easy call button */}
         <a className='absolute top-0 left-6 h-16 w-16 flex justify-center bg-gradient-to-b from-orange-500 to-orange-300 border-x-2 border-green-500 md:h-28 md:w-24 lg:h-36' href={`tel:00359886849995`}>
           <Image
             src="/green-phone.svg"
             alt="Phone Ring"
-            className="bg-transparent hover:animate-bounce"
+            className="bg-transparent hover:animate-pulse"
             width={45}
             height={24}
             priority
           />
         </a>
-        <div>
+        <div className='md:px-10'>
 
           <nav className='px-12 flex justify-end py-5 text-base bg-gradient-to-b from-gray-900 to-gray-700 border-b-2 border-gray-500'>
             
@@ -57,11 +57,11 @@ export default function RootLayout({ children }) {
 
           {/* mobile menu */}
           <div onClick={toggleNavbar} className={ toggleClicked === true ? 'md:hidden flex flex-col bg-gray-800 text-white' : 'hidden'}>
-            <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate-700' href={'/'} >Начало</Link>
-            <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate-700' href={'/description'}>Информация</Link>
-            <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate-700' href={'/apartments'}>Апартаменти</Link>
-            <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate-700' href={'/investor'}>Инвеститор</Link>
-            <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate-700' href={'/contacts'}>Контакти</Link>
+            <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate- hover:text-red-600 hover:bg-slate-700' href={'/'} >Начало</Link>
+            <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate- hover:text-red-600 hover:bg-slate-700' href={'/description'}>Информация</Link>
+            <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate- hover:text-red-600 hover:bg-slate-700' href={'/apartments'}>Апартаменти</Link>
+            <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate- hover:text-red-600 hover:bg-slate-700' href={'/investor'}>Инвеститор</Link>
+            <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate- hover:text-red-600 hover:bg-slate-700' href={'/contacts'}>Контакти</Link>
           </div>
 
         </div>
