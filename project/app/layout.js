@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
             {/* desktop menu */}
               <div className='flex items-center text-white' >
                 <Link className='hidden p-3 lg:flex lg:p-5 lg:text-2xl md:flex md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/'} >Начало</Link>
-                <Link className='hidden p-3 lg:flex lg:p-5 lg:text-2xl md:flex md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/description'}>Информация</Link>
+                <Link className='hidden p-3 lg:flex lg:p-5 lg:text-2xl md:flex md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/description'}>За сградата</Link>
                 <Link className='hidden p-3 lg:flex lg:p-5 lg:text-2xl md:flex md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/apartments'}>Апартаменти</Link>
                 <Link className='hidden p-3 lg:flex lg:p-5 lg:text-2xl md:flex md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/investor'}>Инвеститор</Link>
                 <Link className='hidden p-3 lg:flex lg:p-5 lg:text-2xl md:flex md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/contacts'}>Контакти</Link>
@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
           {/* mobile menu */}
           <div onClick={toggleNavbar} className={ toggleClicked === true ? 'md:hidden flex flex-col bg-gray-800 text-white' : 'hidden'}>
             <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate- hover:text-red-600 hover:bg-slate-700' href={'/'} >Начало</Link>
-            <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate- hover:text-red-600 hover:bg-slate-700' href={'/description'}>Информация</Link>
+            <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate- hover:text-red-600 hover:bg-slate-700' href={'/description'}>За сградата</Link>
             <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate- hover:text-red-600 hover:bg-slate-700' href={'/apartments'}>Апартаменти</Link>
             <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate- hover:text-red-600 hover:bg-slate-700' href={'/investor'}>Инвеститор</Link>
             <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate- hover:text-red-600 hover:bg-slate-700' href={'/contacts'}>Контакти</Link>
@@ -67,15 +67,8 @@ export default function RootLayout({ children }) {
         </header>
         <main className='app'>
           <div className='grid place-items-center'>
-            <div className='p-12'>
-              <Image
-                src="/ixora.png"
-                alt="Ixora"
-                className=""
-                width={300}
-                height={100}
-                priority
-              />
+            <div style={{position:"relative"}}>
+              <img src="/ixora-welcome.jpg" alt="" className='object-cover' />
             </div>
           </div>
           {children}
@@ -91,7 +84,7 @@ export default function RootLayout({ children }) {
                   <Image
                     src="/green-phone.svg"
                     alt="Phone Ring"
-                    className="bg-transparent hover:animate-bounce"
+                    className="bg-transparent active:animate-bounce hover:animate-bounce"
                     width={20}
                     height={8}
                     priority
@@ -102,7 +95,7 @@ export default function RootLayout({ children }) {
                   <Image
                     src="/email.png"
                     alt="Email"
-                    className="bg-transparent hover:animate-bounce"
+                    className="bg-transparent active:animate-bounce hover:animate-bounce"
                     width={20}
                     height={8}
                     priority
