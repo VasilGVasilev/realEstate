@@ -33,7 +33,7 @@ export default function Contacts() {
                         height={10}
                         priority
                       />
-                      <div className="text-xl font-bold text-gray-500">гр. София, ул, кв, офис</div>
+                      <div className="text-base font-bold text-gray-500">гр. София, ул, кв, офис</div>
                     </div>
 
                     <div className="flex space-x-3">
@@ -46,7 +46,7 @@ export default function Contacts() {
                         height={14}
                         priority
                       />
-                      <div className="text-xl font-bold text-gray-500"><a href={`tel:00359886849995`}>00359886849995</a></div>
+                      <div className="text-base font-bold text-gray-500"><a href={`tel:00359886849995`}>00359886849995</a></div>
                     </div>
 
                     <div className="flex space-x-3">
@@ -59,7 +59,7 @@ export default function Contacts() {
                         height={12}
                         priority
                       />
-                      <div className="text-xl font-bold text-gray-500"><a href="mailto:office@creativestudiobg.com">office@creativestudiobg.com</a></div>
+                      <div className="text-base font-bold text-gray-500"><a href="mailto:office@creativestudiobg.com">office@creativestudiobg.com</a></div>
                     </div>
                   </div>
                 </div>
@@ -67,7 +67,7 @@ export default function Contacts() {
             </div>
           </div>
         {/* div for Form */}
-          <div className="flex justify-center p-10 lg:w-1/2 lg:p-0">
+          <div className="flex justify-center p-10 bg-white lg:bg-inherit lg:w-1/2 lg:p-0">
             <form className="bg-gradient-to-b from-gray-900 to-gray-700 lg:bg-gradient-to-b lg:from-gray-900 lg:to-gray-900 shadow-md p-8 mb-4 lg:w-full lg:h-full">
               <h2 className="text-gray-200 mb-4 text-2xl font-semibold">
                 Свържете се с нас
