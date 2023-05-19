@@ -18,13 +18,13 @@ export default function Contacts() {
       {/* Desktop res makes Contact Card and Form flex */}
       <div className="lg:flex">
         {/* div for Contact Card */}
-          <div className="lg:p-10">
-            <div className="flex-col w-full h-fit bg-white">
+          <div className="lg:w-1/2">
+            <div className="flex-col w-full h-fit lg:w-full">
               <div className="flex justify-center p-8 text-4xl text-gray-500">Контакти</div>
-              <div className="flex justify-center p-10">              
-                <div className="flex justify-center h-56 w-96 shadow-3xl bg-gray-50">
+              <div className="flex justify-center p-10 lg:p-0">              
+                <div className="flex justify-center h-56 w-96 shadow-3xl bg-gradient-to-b from-gray-50 to-white lg:w-full lg:h-96">
                   <div className="space-y-10 flex flex-col justify-center">
-                    <div className="flex">
+                    <div className="flex space-x-3">
                       <Image
                         src="/location.png"
                         alt="Location"
@@ -36,7 +36,7 @@ export default function Contacts() {
                       <div className="text-xl font-bold text-gray-500">гр. София, ул, кв, офис</div>
                     </div>
 
-                    <div className="flex">
+                    <div className="flex space-x-3">
 
                       <Image
                         src="/green-phone.svg"
@@ -49,7 +49,7 @@ export default function Contacts() {
                       <div className="text-xl font-bold text-gray-500"><a href={`tel:00359886849995`}>00359886849995</a></div>
                     </div>
 
-                    <div className="flex">
+                    <div className="flex space-x-3">
 
                       <Image
                         src="/email.png"
@@ -67,46 +67,48 @@ export default function Contacts() {
             </div>
           </div>
         {/* div for Form */}
-          <div class="flex justify-center p-10">
-            <form class="bg-gray-800 shadow-md rounded px-8 pt-6 pb-8 mb-4">
-              <h2 class="text-gray-200 mb-4 text-2xl font-semibold">
-                Запитване
+          <div className="flex justify-center p-10 lg:w-1/2 lg:p-0">
+            <form className="bg-gradient-to-b from-gray-900 to-gray-700 lg:bg-gradient-to-b lg:from-gray-900 lg:to-gray-900 shadow-md p-8 mb-4 lg:w-full lg:h-full">
+              <h2 className="text-gray-200 mb-4 text-2xl font-semibold">
+                Свържете се с нас
               </h2>
 
-              <div class="mb-4">
-                <input
-                  class="shadow-sm appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="fullname"
-                  type="text"
-                  placeholder="Вашето име"
-                />
+              <div className="lg:flex lg:space-x-5">
+                <div className="mb-4 lg:w-full">
+                  <input
+                    className="shadow-sm appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="fullname"
+                    type="text"
+                    placeholder="Вашето име"
+                  />
+                </div>
+                <div className="mb-4 lg:w-full">
+                  <input
+                    className="shadow-sm appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="email"
+                    type="text"
+                    placeholder="Вашият имейл"
+                  />
+                </div>
               </div>
-              <div class="mb-4">
+              <div className="mb-4">
                 <input
-                  class="shadow-sm appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="email"
-                  type="text"
-                  placeholder="Вашият имейл"
-                />
-              </div>
-              <div class="mb-4">
-                <input
-                  class="shadow-sm appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow-sm appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="about"
                   type="text"
                   placeholder="Относно"
                 />
               </div>
-              <div class="mb-4">
+              <div className="mb-4">
                 <textarea
-                  class="shadow-sm appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow-sm appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline lg:h-44"
                   id="textarea"
                   placeholder="Съобщение"
                 />
               </div>
       
               <button
-                class="bg-blue-500 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="bg-blue-500 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline lg:w-2/12"
                 type="button"
               >
                 Изпрати
