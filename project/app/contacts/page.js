@@ -108,7 +108,7 @@ export default function Contacts() {
               </div>
       
               <button
-                className="bg-blue-500 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline lg:w-2/12"
+                className="bg-blue-500 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline lg:w-3/12"
                 type="button"
               >
                 Изпрати
