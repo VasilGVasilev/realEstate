@@ -67,8 +67,8 @@ export default function RootLayout({ children }) {
         </header>
         <main className='app'>
           <div className='grid place-items-center'>
-            <div style={{position:"relative"}}>
-              <img src="/ixora-welcome.jpg" alt="" className='object-cover' />
+            <div>
+              <img src="/ixora-welcome.jpg" alt="" />
             </div>
           </div>
           {children}
