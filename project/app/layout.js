@@ -66,8 +66,17 @@ export default function RootLayout({ children }) {
 
         </header>
         <main className='app'>
-          <div className='py-24 text-center'>
-            <div className='italic font-bold text-3xl'>Ixora Luxury Residence</div>
+          <div className='grid place-items-center'>
+            <div className='p-12'>
+              <Image
+                src="/ixora.png"
+                alt="Ixora"
+                className=""
+                width={300}
+                height={100}
+                priority
+              />
+            </div>
           </div>
           {children}
         </main>
