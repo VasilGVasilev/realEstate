@@ -1,8 +1,27 @@
+'use client'
+import ImageSlider from "./ImageSlider";
 export const metadata = {
   title: 'Инвеститор - Ixora Residence',
 };
 
+const daliaSlides = [
+  'dalia/dalia-one.jpg',
+  'dalia/dalia-two.jpg',
+  'dalia/dalia-three.jpg',
+  'dalia/dalia-four.jpg',
+]
+const westEndSlides = [
+  'west-end/west-end-one.jpg',
+  'west-end/west-end-two.jpg',
+  'west-end/west-end-three.jpg',
+]
+const tiliaSlides = [
+  'tilia/tilia-one.jpg',
+  'tilia/tilia-two.jpg',
+  'tilia/tilia-three.jpg',
+]
 export default function Investor() {
+
     return (
       <div>
         {/* Container for Investor Intro */}
@@ -25,7 +44,9 @@ export default function Investor() {
         </div>
         {/* Container for Recent Projects */}
         <div className="bg-white">
-          <div className="pt-5 pl-5 bg-white text-orange-500 text-left text-2xl font-bold font-mono lg:text-center">Други Проекти</div>
+          <div className="py-5 pl-10 bg-white text-orange-500 text-left text-2xl md:text-3xl font-bold font-mono lg:text-center">
+            Текущи Проекти
+          </div>
           {/* Container for other projects */}
           <div>
 
@@ -33,14 +54,14 @@ export default function Investor() {
             <div>
               {/* Conatiner for name and description */}
               <div className="px-10">
-                <div className="pt-5 bg-white text-orange-500 text-center text-xl italic font-mono">
+                <div className="py-5 bg-white underline text-orange-500 text-center text-xl italic font-mono">
                   Еднофамилна къща Далия
                 </div>
                 <div className="pb-5 bg-white text-gray-500 text-center text-sm font-medium font-mono lg:px-80">Едно бижу в полите на Витоша с уникални гледки към София. Луксозен имот с над 700 кв.м. РЗП и двор от 750 кв.м. в престижния кв. Драгалевци. </div>
               </div>
 
-              <div>
-
+              <div className="bg-black max-w-full max-h-full flex justify-center">
+                  <ImageSlider slides={daliaSlides} />
               </div>
 
             </div>
@@ -49,12 +70,15 @@ export default function Investor() {
             <div>
               {/* Conatiner for name and description */}
               <div className="px-10">
-                <div className="pt-5 bg-white text-orange-500 text-center text-xl italic font-mono">
+                <div className="py-5 bg-white underline text-orange-500 text-center text-xl italic font-mono">
                   Комплекс от къщи West End Luxury Houses
                 </div>
                 <div className="pb-5 bg-white text-gray-500 text-center text-sm font-medium font-mono lg:px-80">В процес на изграждане е луксозен комплекс от 18 самостоятелни еднофамилни къщи със собствени басейни в непосредствена близост до София -  само на 20 минути от центъра. Напълно автономно вилно селище със собствен водоизточник и допълнително соларно захранване.</div>
               </div>
 
+              <div className="bg-black max-w-full max-h-full flex justify-center">
+                  <ImageSlider slides={westEndSlides} />
+              </div>
 
             </div>
             
@@ -62,10 +86,14 @@ export default function Investor() {
             <div>
               {/* Conatiner for name and description */}
               <div className="px-10">                
-                <div className="pt-5 bg-white text-orange-500 text-center text-xl italic font-mono">
+                <div className="py-5 bg-white underline text-orange-500 text-center text-xl italic font-mono">
                   Жилищна сграда Tilia Residence
                 </div>
                 <div className="pb-5 bg-white text-gray-500 text-center text-sm font-medium font-mono lg:px-80">Модерна жилищна сграда в квартал Връбница с южно изложение в непосредствена близост до метростанция.</div>
+              </div>
+
+              <div className="bg-black max-w-full max-h-full flex justify-center">
+                  <ImageSlider slides={tiliaSlides} />
               </div>
 
             </div>

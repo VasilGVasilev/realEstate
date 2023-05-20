@@ -12,6 +12,12 @@ module.exports = {
       },
       boxShadow: {
         '3xl': '0 20px 120px -15px rgba(0, 0, 0, 0.3)',
+      },
+      width: {
+        '128': '32rem',
+      },
+      height: {
+        '128': '32rem',
       }
     },
   },
