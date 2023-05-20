@@ -5,20 +5,20 @@ export const metadata = {
 };
 
 const daliaSlides = [
-  'dalia/dalia-one.jpg',
-  'dalia/dalia-two.jpg',
-  'dalia/dalia-three.jpg',
-  'dalia/dalia-four.jpg',
+  'dalia/dalia-one.webp',
+  'dalia/dalia-two.webp',
+  'dalia/dalia-three.webp',
+  'dalia/dalia-four.webp',
 ]
 const westEndSlides = [
-  'west-end/west-end-one.jpg',
-  'west-end/west-end-two.jpg',
-  'west-end/west-end-three.jpg',
+  'west-end/west-end-one.webp',
+  'west-end/west-end-two.webp',
+  'west-end/west-end-three.webp',
 ]
 const tiliaSlides = [
-  'tilia/tilia-one.jpg',
-  'tilia/tilia-two.jpg',
-  'tilia/tilia-three.jpg',
+  'tilia/tilia-one.webp',
+  'tilia/tilia-two.webp',
+  'tilia/tilia-three.webp',
 ]
 export default function Investor() {
 

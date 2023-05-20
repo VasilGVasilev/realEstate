@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 export const ImageSlider = ({slides}) => {
-    const [currentIndex, setCurrentIndex] = useState(1);
+    const [currentIndex, setCurrentIndex] = useState(0);
     const changeSlide = (key) => {
         setCurrentIndex(key)
     }
