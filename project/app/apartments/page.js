@@ -4,7 +4,9 @@ export const metadata = {
 
 export default function Apartments() {
     return (
-      <div></div>
+      <div>
+        
+      </div>
     )
 }
   

@@ -11,7 +11,7 @@ export default function Description() {
           <div className="p-10 md:px-56 lg:px-96">
             <div className=" bg-white w-full h-fit ">
             
-              <ul className="p-10 border-2 border-gray-900">
+              <ul className="p-10 border-2 border-orange-500">
                 <div className="pb-7 bg-white text-orange-500 text-left text-2xl font-bold font-mono">За сградата</div>
                 <p className="text-orange-500 font-semibold">Фасадата</p>
                 <li className="text-gray-500"> Окачена, вентилируема, с каменна облицовка. </li>
@@ -42,7 +42,7 @@ export default function Description() {
         </div>
         {/* Container for Futuristic Picture */}
         <div>
-          <img src="ixora-description.jpg" alt="" />
+          <img src="ixora-description.webp" alt="" />
         </div>
         {/* Container for Location*/}
         <div>

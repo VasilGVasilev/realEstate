@@ -33,7 +33,7 @@ export default function Contacts() {
                         height={10}
                         priority
                       />
-                      <div className="text-base font-bold text-gray-500">гр. София, ул, кв, офис</div>
+                      <div className="text-sm sm:text-base font-bold text-gray-500 ">гр. София, ул, кв, офис</div>
                     </div>
 
                     <div className="flex space-x-3">
@@ -46,7 +46,7 @@ export default function Contacts() {
                         height={14}
                         priority
                       />
-                      <div className="text-base font-bold text-gray-500"><a href={`tel:00359886849995`}>00359886849995</a></div>
+                      <div className="text-sm sm:text-base font-bold text-gray-500"><a href={`tel:00359886849995`}>00359886849995</a></div>
                     </div>
 
                     <div className="flex space-x-3">
@@ -59,7 +59,7 @@ export default function Contacts() {
                         height={12}
                         priority
                       />
-                      <div className="text-base font-bold text-gray-500"><a href="mailto:office@creativestudiobg.com">office@creativestudiobg.com</a></div>
+                      <div className="text-sm sm:text-base font-bold text-gray-500"><a href="mailto:office@creativestudiobg.com">office@creativestudiobg.com</a></div>
                     </div>
                   </div>
                 </div>

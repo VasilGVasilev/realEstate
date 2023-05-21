@@ -28,7 +28,7 @@ export default function Investor() {
         <div className="p-10 md:px-56 lg:px-96 space-y-10">
           {/* Container for Investor Logo and Name */}
           <div className="flex">
-            <img src="investor-logo.png" alt="" className="h-20 w-50" />
+            <img src="investor-logo.webp" alt="" className="h-20 w-50" />
             <div className="text-2xl">Creative Studio</div>
           </div>
           {/* Container for Description of Investor */}
@@ -60,7 +60,7 @@ export default function Investor() {
                 <div className="pb-5 bg-white text-gray-500 text-center text-sm font-medium font-mono lg:px-80">Едно бижу в полите на Витоша с уникални гледки към София. Луксозен имот с над 700 кв.м. РЗП и двор от 750 кв.м. в престижния кв. Драгалевци. </div>
               </div>
 
-              <div className="bg-black max-w-full max-h-full flex justify-center">
+              <div className="bg-white max-w-full max-h-full flex justify-center">
                   <ImageSlider slides={daliaSlides} />
               </div>
 
@@ -76,7 +76,7 @@ export default function Investor() {
                 <div className="pb-5 bg-white text-gray-500 text-center text-sm font-medium font-mono lg:px-80">В процес на изграждане е луксозен комплекс от 18 самостоятелни еднофамилни къщи със собствени басейни в непосредствена близост до София -  само на 20 минути от центъра. Напълно автономно вилно селище със собствен водоизточник и допълнително соларно захранване.</div>
               </div>
 
-              <div className="bg-black max-w-full max-h-full flex justify-center">
+              <div className="bg-white max-w-full max-h-full flex justify-center">
                   <ImageSlider slides={westEndSlides} />
               </div>
 
@@ -92,7 +92,7 @@ export default function Investor() {
                 <div className="pb-5 bg-white text-gray-500 text-center text-sm font-medium font-mono lg:px-80">Модерна жилищна сграда в квартал Връбница с южно изложение в непосредствена близост до метростанция.</div>
               </div>
 
-              <div className="bg-black max-w-full max-h-full flex justify-center">
+              <div className="bg-white max-w-full max-h-full flex justify-center">
                   <ImageSlider slides={tiliaSlides} />
               </div>
 

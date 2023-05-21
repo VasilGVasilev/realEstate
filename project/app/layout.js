@@ -68,7 +68,7 @@ export default function RootLayout({ children }) {
         <main className='app'>
           <div className='grid place-items-center'>
             <div>
-              <img src="/ixora-welcome.jpg" alt="" />
+              <img src="/ixora-welcome.webp" alt="" />
             </div>
           </div>
           {children}
