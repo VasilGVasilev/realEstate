@@ -5,6 +5,6 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="ba">Начало</div>
+    <div className=""></div>
   )
 }
