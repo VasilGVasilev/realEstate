@@ -36,13 +36,13 @@ export default function RootLayout({ children }) {
           <nav className='px-12 py-5 flex justify-end  text-base bg-gradient-to-b from-gray-900 to-gray-700 border-b-2 border-gray-500'>
             
             {/* desktop menu */}
-              <div className='flex items-center text-white' >
-                <Link className='hidden p-3 lg:flex lg:p-5 lg:text-2xl md:flex md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/'} >Начало</Link>
-                <Link className='hidden p-3 lg:flex lg:p-5 lg:text-2xl md:flex md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/description'}>За сградата</Link>
-                <Link className='hidden p-3 lg:flex lg:p-5 lg:text-2xl md:flex md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/apartments'}>Апартаменти</Link>
-                <Link className='hidden p-3 lg:flex lg:p-5 lg:text-2xl md:flex md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/investor'}>Инвеститор</Link>
-                <Link className='hidden p-3 lg:flex lg:p-5 lg:text-2xl md:flex md:p-3 md:text-xl hover:text-red-600 hover:bg-slate-700' href={'/contacts'}>Контакти</Link>
-              </div>
+            <div className='flex items-center text-white' >
+              <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-base hover:text-red-600 hover:bg-slate-700' href={'/'} >Начало</Link>
+              <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-base hover:text-red-600 hover:bg-slate-700' href={'/description'}>За сградата</Link>
+              <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-base hover:text-red-600 hover:bg-slate-700' href={'/apartments'}>Апартаменти</Link>
+              <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-base hover:text-red-600 hover:bg-slate-700' href={'/investor'}>Инвеститор</Link>
+              <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-base hover:text-red-600 hover:bg-slate-700' href={'/contacts'}>Контакти</Link>
+            </div>
 
             {/* mobile button */}
             <div className='md:hidden flex items-center' onClick={toggleNavbar}>

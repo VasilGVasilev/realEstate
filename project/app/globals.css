@@ -4,45 +4,22 @@
 
 @layer utilities {
 
-  .firstFloor {
-    clip-path: polygon(60.6% 97.5%, 97.9% 89%, 97.8% 76%, 90.2% 74.8%, 77.6% 73.8%, 61.3% 71.8%, 27.8% 74.3%, 28.1% 91%, 41.1% 91.8%);
-  }
-  .secondFloor {
-    clip-path: polygon(70.2% 58.5%, 97.7% 61.5%, 97.8% 76%, 90.2% 74.8%, 77.6% 73.8%, 61.3% 71.8%, 27.8% 74.3%, 28.2% 65.3%, 51.3% 54%);
+  .penthouse {
+    clip-path: polygon(54.3% 6.8%, 98.5% 23.5%, 97.7% 48.8%, 77.1% 44%, 58.6% 29.3%, 43.4% 38%, 28.4% 50%, 28.3% 38%, 38% 20.3%);
   }
   .thirdFloor {
     clip-path: polygon(70.2% 58.5%, 97.7% 61.5%, 97.7% 48.8%, 77.1% 44%, 58.6% 29.3%, 43.4% 38%, 28.4% 50%, 28.2% 65.3%, 51.3% 54%);
   }
-  .penthouse {
-    clip-path: polygon(54.3% 6.8%, 98.5% 23.5%, 97.7% 48.8%, 77.1% 44%, 58.6% 29.3%, 43.4% 38%, 28.4% 50%, 28.3% 38%, 38% 20.3%);
+  .secondFloor {
+    clip-path: polygon(70.2% 58.5%, 97.7% 61.5%, 97.8% 76%, 90.2% 74.8%, 77.6% 73.8%, 61.3% 71.8%, 27.8% 74.3%, 28.2% 65.3%, 51.3% 54%);
+  }
+  .firstFloor {
+    clip-path: polygon(59.7% 82%, 97.9% 83.5%, 97.8% 76%, 90.2% 74.8%, 77.6% 73.8%, 61.3% 71.8%, 27.8% 74.3%, 28.4% 81.3%, 41% 82.5%);
   }
 
-
-}
-
-/* #464646 gray */
-/* #ec3438 red */ 
-
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  .parking {
+    clip-path: polygon(59.7% 82%, 97.9% 83.5%, 98% 100.3%, 91.9% 100.3%, 78.6% 100.3%, 61.8% 100.3%, 28.3% 100.3%, 28.4% 81.3%, 41% 82.5%);
   }
+
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
