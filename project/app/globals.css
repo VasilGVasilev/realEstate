@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+
+  .firstFloor {
+
+    clip-path: polygon(45.1% 52.3%, 55.6% 52.8%, 86.2% 53%, 86.7% 64%, 72.1% 64.3%, 54% 71%, 25% 64.8%, 24.9% 53.3%, 31.8% 53%);
+  }
+
+}
 
 /* #464646 gray */
 /* #ec3438 red */ 
