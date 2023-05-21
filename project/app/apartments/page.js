@@ -1,23 +1,24 @@
+'use client'
+
+import Link from 'next/link';
+
 export const metadata = {
   title: 'Свободни Апартаменти - Ixora Residence',
 };
 
 export default function Apartments() {
+
     return (
-      <div>
-        <div className="relative inline-block">
-          <div className="absolute firstFloor left-6 top-11 h-full w-full z-10 hover:bg-black hover:opacity-40">asdsa</div>
-          <div className="absolute firstFloor left-6 top-28 h-full w-full z-10 hover:bg-black hover:opacity-40">asdsa</div>
+      <div className="p-4 ">
+        <div className=" pb-4 text-orange-500 text-center text-2xl font-bold font-mono underline">План</div>
+        <div className="relative inline-block border-4 border-orange-500">
+
+          <Link href={'apartments/penthouse'}><div className="absolute firstFloor cursor-pointer h-full w-full z-10 hover:bg-black hover:opacity-40 active:bg-black active:opacity-40" ></div></Link>
+          <Link href={'apartments/third-floor'}><div className="absolute thirdFloor cursor-pointer h-full w-full z-10 hover:bg-black hover:opacity-40 active:bg-black active:opacity-40" ></div></Link>
+          <Link href={'apartments/second-floor'}><div className="absolute secondFloor cursor-pointer h-full w-full z-10 hover:bg-black hover:opacity-40 active:bg-black active:opacity-40"></div></Link>
+          <Link href={'apartments/first-floor'}><div className="absolute penthouse cursor-pointer h-full w-full z-10 hover:bg-black hover:opacity-40 active:bg-black active:opacity-40" ></div></Link>
 
           <img src="ixora-apartments.webp" alt="Ixora Plan" className="relative" />
-          {/* <div className="absolute top-0 z-10 cursor-pointer penthouse hover:bg-black hover:bg-opacity-50 text-white" ></div> */}
-          {/* <map name="building" className="">
-              <area className="" shape="rect" coords="10,10,100,100" alt="Computer" href="computer.htm" />
-            
-          </map> */}
-
-
-
 
         </div>
 
