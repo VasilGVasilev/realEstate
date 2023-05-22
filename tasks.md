@@ -42,3 +42,6 @@ However, the default configuration provided by CRA does not include a preprocess
 Tailwind CSS, in particular, uses PostCSS plugins to generate the CSS that contains the classes for styling HTML elements. The tailwindcss plugin is responsible for generating the CSS classes based on the configuration file provided by the developer, while the autoprefixer plugin is used to add vendor prefixes to the CSS rules to ensure cross-browser compatibility.
 
 Therefore, to use Tailwind CSS with Create React App, you need to add PostCSS and the necessary plugins to the project's configuration, so that Webpack can process the CSS files and generate the final output that includes the Tailwind classes and any other transformations performed by PostCSS plugins.
+
+
+

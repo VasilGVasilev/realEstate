@@ -20,40 +20,44 @@ export default function firstFloor() {
 
 
     return (
-      <div className="p-4 ">
-        <div className=" pb-4 text-orange-500 text-center text-2xl font-bold font-mono underline">Първи етаж</div>
-        <div className="relative inline-block border-4 border-orange-500">
+      <div className="p-10 bg-white">
+        <div className='bg-orange-500'>
+          <div className="py-4 text-white text-center text-2xl font-extrabold">Първи етаж</div>
+        </div>
 
-          <div className={`absolute apartmentFour h-full w-full z-10 ${available}`}></div>
-          <div className={`absolute apartmentThree h-full w-full z-10 ${available}`} ></div>
+        <div className="relative inline-block">
+
+          <div className={`absolute apartmentFour h-full w-full z-10 ${sold}`}>
+            
+          </div>
+          <div className={`absolute apartmentThree h-full w-full z-10 ${reserved}`} >
+
+          </div>
           <div className={`absolute apartmentTwo h-full w-full z-10 ${available} `} ></div>
           <div className={`absolute apartmentOne h-full w-full z-10 ${available} `} ></div>
           
 
           <img src="/plans/first-floor.webp" alt="Ixora Plan" className="relative" />
 
-          <div className="flex justify-center absolute top-10 left-3 items-center py-7 ">
-            <div className="flex-col">
-              
-              <div>
-                <div className="w-3 h-3 bg-red-700 opacity-40  text-sm"></div>
-                <div>Продаден</div>
-              </div>
 
-              <div>
-                <div className="w-3 h-3 bg-green-400 opacity-40"></div>
-                <div>Свободен</div>
-              </div>
-
-              <div>
-                <div className="w-3 h-3 bg-blue-400 opacity-40"></div>
-                <div>Резервиран</div>
-              </div>
-
-            </div>
-          </div>
 
         </div>
+
+        <div className="flex justify-center">
+
+
+            <div className="w-3 h-3 text-red-700 opacity-40 font-extrabold">Продаден</div>
+
+
+            <div className="w-3 h-3 text-green-400 opacity-40 font-extrabold">Свободен</div>
+
+
+
+            <div className="w-3 h-3 text-blue-400 opacity-40 font-extrabold">Резервиран</div>
+
+
+        </div>
+
 
       </div>
     )

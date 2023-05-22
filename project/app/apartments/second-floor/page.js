@@ -21,9 +21,12 @@ export default function firstFloor() {
 
 
     return (
-      <div className="p-4 ">
-        <div className=" pb-4 text-orange-500 text-center text-2xl font-bold font-mono underline">Втори етаж</div>
-        <div className="relative inline-block border-4 border-orange-500">
+      <div className="p-10 bg-white">
+        <div className='bg-orange-500'>
+          <div className="py-4 text-white text-center text-2xl font-extrabold">Втори етаж</div>
+        </div>
+
+        <div className="relative inline-block">
 
           <div className={`absolute apartmentEight h-full w-full z-10 ${available}`}></div>
           <div className={`absolute apartmentSeven h-full w-full z-10 ${sold}`} ></div>
@@ -33,7 +36,10 @@ export default function firstFloor() {
 
           <img src="/plans/second-floor.webp" alt="Ixora Plan" className="relative" />
 
-          <div className="flex justify-center absolute top-10 left-3 items-center py-7 ">
+
+
+        </div>
+        <div className="flex justify-center items-center py-7 ">
             <div className="flex-col">
               
               <div>
@@ -53,8 +59,6 @@ export default function firstFloor() {
 
             </div>
           </div>
-
-        </div>
 
       </div>
     )

@@ -1,10 +1,18 @@
+'use client'
+
 import Image from "next/image";
+import { useEffect } from "react";
 
 export const metadata = {
   title: 'Контакти - Ixora Residence',
 };
 
 export default function Contacts() {
+      // autoscroll to top
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
       <>
       {/* div for maps */}
@@ -20,9 +28,11 @@ export default function Contacts() {
         {/* div for Contact Card */}
           <div className="lg:w-1/2">
             <div className="flex-col w-full h-fit lg:w-full">
-              <div className="flex justify-center p-8 text-4xl text-gray-500">Контакти</div>
+              <div className="bg-orange-500">
+                <div className="flex justify-center p-8 text-4xl text-white">Контакти</div>
+              </div>
               <div className="flex justify-center p-10 lg:p-0">              
-                <div className="flex justify-center h-56 w-96 shadow-3xl bg-gradient-to-b from-gray-50 to-white lg:w-full lg:h-96">
+                <div className="flex justify-center h-56 w-96 shadow-xl bg-gradient-to-b from-gray-50 to-white lg:w-full lg:h-96">
                   <div className="space-y-10 flex flex-col justify-center">
                     <div className="flex space-x-3">
                       <Image
@@ -68,7 +78,7 @@ export default function Contacts() {
           </div>
         {/* div for Form */}
           <div className="flex justify-center p-10 bg-white lg:bg-inherit lg:w-1/2 lg:p-0">
-            <form className="bg-gradient-to-b from-gray-900 to-gray-700 lg:bg-gradient-to-b lg:from-gray-900 lg:to-gray-900 shadow-md p-8 mb-4 lg:w-full lg:h-full">
+            <form className="bg-gradient-to-b from-gray-700 to-gray-900 shadow-md lg:bg-gradient-to-b lg:from-gray-700 lg:to-gray-700 lg:shadow-none p-8 mb-4 lg:w-full lg:h-full">
               <h2 className="text-gray-200 mb-4 text-2xl font-semibold">
                 Свържете се с нас
               </h2>
@@ -108,7 +118,7 @@ export default function Contacts() {
               </div>
       
               <button
-                className="bg-blue-500 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline lg:w-3/12"
+                className="bg-orange-500 w-full hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline lg:w-3/12"
                 type="button"
               >
                 Изпрати

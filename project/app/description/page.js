@@ -1,18 +1,28 @@
+'use client'
+import { useEffect } from "react";
+
 export const metadata = {
   title: 'За сградата - Ixora Residence',
 };
 
 export default function Description() {
+      // autoscroll to top
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
       <div>
         {/* Container for List */}
         <div>
           
+              <div className="bg-orange-500 p-5">
+
+                <div className="text-white text-center text-2xl font-extrabold">За сградата</div>
+              </div>
           <div className="p-10 md:px-32 lg:px-40">
             <div className=" bg-white w-full h-fit ">
             
-              <ul className="p-5 border-2 border-orange-500">
-                <div className="pb-7 bg-white text-orange-500 text-left text-2xl font-bold font-mono">За сградата</div>
+              <ul className="p-5 border-r-2 border-l-2 border-orange-500">
                 <p className="sm:text-lg text-orange-500 font-semibold">Фасадата</p>
                 <li className="text-xs sm:text-sm text-gray-500 text-justify"> Окачена, вентилируема, с каменна облицовка. </li>
                 <br />

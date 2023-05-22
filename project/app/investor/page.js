@@ -1,4 +1,5 @@
 'use client'
+import { useEffect } from "react";
 import ImageSlider from "./ImageSlider";
 export const metadata = {
   title: 'Инвеститор - Ixora Residence',
@@ -21,18 +22,22 @@ const tiliaSlides = [
   'tilia/tilia-three.webp',
 ]
 export default function Investor() {
+      // autoscroll to top
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
       <div>
         {/* Container for Investor Intro */}
-        <div className="p-10 md:px-56 lg:px-96 space-y-10">
+        <div className="p-10 lg:px-64 space-y-10">
           {/* Container for Investor Logo and Name */}
           <div className="flex">
             <img src="investor-logo.webp" alt="" className="h-20 w-50" />
             <div className="text-2xl">Creative Studio</div>
           </div>
           {/* Container for Description of Investor */}
-          <div>
+          <div className="">
             <div className="text-gray-500">
               Creative Studio е строително-инвестиционно холдингово дружество, което финансира, проектира и изгражда луксозни многофамилни и еднофамилни жилищни сгради и ги реализира на пазара. 
             </div>

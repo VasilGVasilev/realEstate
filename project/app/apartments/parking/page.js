@@ -21,10 +21,12 @@ export default function firstFloor() {
 
 
     return (
-      <div className="p-4 ">
-        <div className=" pb-4 text-orange-500 text-center text-2xl font-bold font-mono underline">Паркинг</div>
+      <div className="p-10 bg-white">
+        <div className='bg-orange-500'>
+          <div className=" py-4 text-white text-center text-2xl font-extrabold">Паркинг</div>
+        </div>
 
-        <div className="relative inline-block border-4 border-orange-500">
+        <div className="relative inline-block">
 
           <div className={`absolute parkingOne h-full w-full z-10 ${available}`}></div>
           <div className={`absolute parkingTwo h-full w-full z-10 ${available}`}></div>
