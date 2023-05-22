@@ -1,15 +1,11 @@
 'use client'
-import { useEffect } from "react";
 
 export const metadata = {
   title: 'За сградата - Ixora Residence',
 };
 
 export default function Description() {
-      // autoscroll to top
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+
     return (
       <div>
         {/* Container for List */}
@@ -19,8 +15,8 @@ export default function Description() {
 
                 <div className="text-white text-center text-2xl font-extrabold">За сградата</div>
               </div>
-          <div className="p-10 md:px-32 lg:px-40">
-            <div className=" bg-white w-full h-fit ">
+          <div className="p-10 bg-white md:px-32 lg:px-40">
+            <div className="bg-white w-full h-fit ">
             
               <ul className="p-5 border-r-2 border-l-2 border-orange-500">
                 <p className="sm:text-lg text-orange-500 font-semibold">Фасадата</p>

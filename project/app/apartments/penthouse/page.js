@@ -1,6 +1,5 @@
 'use client'
 
-import { useEffect } from "react";
 
 export const metadata = {
   title: 'Пентхаус - Ixora Residence',
@@ -14,10 +13,6 @@ const reserved = "hover:bg-blue-400 hover:opacity-40 active:bg-blue-400 active:o
 
 export default function firstFloor() {
 
-    // autoscroll to top
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
 
 
     return (

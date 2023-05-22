@@ -1,6 +1,5 @@
 'use client'
 
-import { useEffect } from "react";
 
 export const metadata = {
   title: 'Трети етаж - Ixora Residence',

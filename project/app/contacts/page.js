@@ -1,38 +1,37 @@
 'use client'
 
 import Image from "next/image";
-import { useEffect } from "react";
 
 export const metadata = {
   title: 'Контакти - Ixora Residence',
 };
 
 export default function Contacts() {
-      // autoscroll to top
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+
 
     return (
       <>
       {/* div for maps */}
-        <div>
-          <iframe 
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Sofia,%20Bulgaria,%20Europe+(Ixora%20Luxury%20Residence)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
-            width="100%" 
-            height="400" 
-          ></iframe>
-        </div>
+      <div className="bg-orange-500">
+              <div className="flex justify-center p-6 text-4xl text-white">Местоположение</div>
+            </div>
+      <div>
+        <iframe 
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Sofia,%20Bulgaria,%20Europe+(Ixora%20Luxury%20Residence)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
+          width="100%" 
+          height="400" 
+        ></iframe>
+      </div>
       {/* Desktop res makes Contact Card and Form flex */}
       <div className="lg:flex">
         {/* div for Contact Card */}
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 bg-white">
             <div className="flex-col w-full h-fit lg:w-full">
-              <div className="bg-orange-500">
-                <div className="flex justify-center p-8 text-4xl text-white">Контакти</div>
+              <div className="bg-white">
+                <div className="flex justify-center py-5 text-4xl text-orange-500">Контакти</div>
               </div>
-              <div className="flex justify-center p-10 lg:p-0">              
-                <div className="flex justify-center h-56 w-96 shadow-xl bg-gradient-to-b from-gray-50 to-white lg:w-full lg:h-96">
+              <div className="flex justify-center p-8">              
+                <div className="flex justify-center h-56 w-96 shadow-xl bg-gradient-to-b from-gray-50 to-white lg:w-full lg:h-80">
                   <div className="space-y-10 flex flex-col justify-center">
                     <div className="flex space-x-3">
                       <Image
@@ -79,7 +78,7 @@ export default function Contacts() {
         {/* div for Form */}
           <div className="flex justify-center p-10 bg-white lg:bg-inherit lg:w-1/2 lg:p-0">
             <form className="bg-gradient-to-b from-gray-700 to-gray-900 shadow-md lg:bg-gradient-to-b lg:from-gray-700 lg:to-gray-700 lg:shadow-none p-8 mb-4 lg:w-full lg:h-full">
-              <h2 className="text-gray-200 mb-4 text-2xl font-semibold">
+              <h2 className="text-gray-200 mb-8 text-2xl lg:text-4xl">
                 Свържете се с нас
               </h2>
 
