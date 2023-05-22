@@ -12,7 +12,7 @@ export default function Apartments() {
     return (
       <div className="p-4 bg-white">
         <div className='bg-orange-500'>
-          <div className="py-4 text-white text-center text-3xl font-extrabold">План</div>
+          <div className="py-4 text-white text-center text-3xl font-bold">План</div>
         </div>
         <div className="relative inline-block ">
 

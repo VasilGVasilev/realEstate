@@ -13,7 +13,7 @@ export default function Contacts() {
       <>
       {/* div for maps */}
       <div className="bg-orange-500">
-              <div className="flex justify-center p-6 text-4xl text-white">Местоположение</div>
+              <div className="flex justify-center py-4 text-3xl text-white font-bold">Местоположение</div>
             </div>
       <div>
         <iframe 
@@ -28,7 +28,7 @@ export default function Contacts() {
           <div className="lg:w-1/2 bg-white">
             <div className="flex-col w-full h-fit lg:w-full">
               <div className="bg-white">
-                <div className="flex justify-center py-5 text-4xl text-orange-500">Контакти</div>
+                <div className="flex justify-center text-orange-500 py-4 text-center text-3xl font-bold">Контакти</div>
               </div>
               <div className="flex justify-center p-8">              
                 <div className="flex justify-center h-56 w-96 shadow-xl bg-gradient-to-b from-gray-50 to-white lg:w-full lg:h-80">

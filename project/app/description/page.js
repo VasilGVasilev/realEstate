@@ -13,7 +13,7 @@ export default function Description() {
           
               <div className="bg-orange-500 p-5">
 
-                <div className="text-white text-center text-2xl font-extrabold">За сградата</div>
+                <div className="text-white text-center text-3xl font-bold">За сградата</div>
               </div>
           <div className="p-10 bg-white md:px-32 lg:px-40">
             <div className="bg-white w-full h-fit ">
