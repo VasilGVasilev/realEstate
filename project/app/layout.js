@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   }
 
   return (
-    <html lang="bg" >
+    <html lang="bg" className='scroll-smooth'>
       <body className='bg-gray-900'>
         {/* persisting easy call button */}
         <a className='absolute top-0 left-6 h-16 w-16 flex justify-center bg-gradient-to-b from-orange-500 to-orange-300 border-x-2 border-green-500 md:h-28 md:w-24 lg:h-36' href={`tel:00359886849995`}>

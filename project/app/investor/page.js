@@ -1,5 +1,4 @@
 'use client'
-import { useEffect } from "react";
 import ImageSlider from "./ImageSlider";
 export const metadata = {
   title: 'Инвеститор - Ixora Residence',
@@ -22,10 +21,7 @@ const tiliaSlides = [
   'tilia/tilia-three.webp',
 ]
 export default function Investor() {
-      // autoscroll to top
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+
 
     return (
       <div>

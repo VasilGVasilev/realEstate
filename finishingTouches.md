@@ -6,3 +6,4 @@ Apartments page is now better looking as well as all floors
 invert footer gradient and apply max grayness to html
 contacts page optmised
 description optimised
+sold/available/reserved optimised
