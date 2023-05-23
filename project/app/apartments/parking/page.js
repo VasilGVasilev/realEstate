@@ -19,7 +19,7 @@ export default function firstFloor() {
     return (
       <div className="p-10 bg-white">
         <div className='bg-orange-500'>
-          <div className=" py-4 text-white text-center text-2xl font-extrabold">Паркинг</div>
+          <div className=" py-4 text-white text-center text-2xl font-extrabold">Гаражи</div>
         </div>
 
         <div className="relative inline-block">

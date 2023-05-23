@@ -16,6 +16,9 @@ export default function RootLayout({ children }) {
   const toggleNavbar = () => {
     setToggleClick(state => !state);
   }
+  const toTopHandle = () => {
+    window.scrollTo(0, 0);
+  }
 
   return (
     <html lang="bg" className='scroll-smooth'>
@@ -25,10 +28,9 @@ export default function RootLayout({ children }) {
           <Image
             src="/green-phone.svg"
             alt="Phone Ring"
-            className="bg-transparent hover:animate-bounce"
+            className="bg-transparent animate-pulse"
             width={45}
             height={24}
-            priority
           />
         </a>
         <header>
@@ -66,22 +68,22 @@ export default function RootLayout({ children }) {
 
         </header>
         <main className='app'>
-          {/* parallax effect for future */}
-        {/* <div className="min-h-screen grid place-items-center bg-[url('../public/ixora-welcome.webp')] bg-fixed bg-no-repeat bg-cover bg-center">
-        </div> */}
+
           <div className='grid place-items-center'>
-            <div>
+            <div className=''>
               <img src="/ixora-welcome.webp" alt="" />
             </div>
           </div>
           {children}
         </main>
         <footer>
+          <div className="bg-gray-800 w-10 h-10 absolute b-0 right-1/2 text-center text-white text-2xl cursor-pointer animate-bounce rounded-full" onClick={toTopHandle}>🠅</div>
           <div className="h-fit w-full flex justify-center items-center p-10 bg-gradient-to-t from-gray-900 to-gray-700 lg:px-40">
+            
             <div className='md:flex md:justify-center'>
               <div className='md:text-center'>
                 <div className='text-orange-500 font-mono text-xl'>Ixora Luxury Residence</div>
-                <div className='p-3 text-white font-mono text-sm'>Ixora Luxury Residence е бутикова сграда със спа център и финтес, ситуирана в подножието на Витоша. Ixora Luxury Residence е бутикова сграда със спа център и финтес, ситуирана в подножието на Витоша. Ixora Luxury Residence е бутикова сграда със спа център и финтес, ситуирана в подножието на Витоша</div>
+                <div className='p-3 text-white font-mono text-sm'> Ixora Luxury Residence е бутикова сграда със спа център и финтес, ситуирана в подножието на Витоша</div>
               </div>
               <div className='md:text-center'>
                 <div className='text-orange-500 font-mono text-xl'>Контакти</div>
@@ -99,7 +101,7 @@ export default function RootLayout({ children }) {
                   </div>
                   <div className="py-2 flex space-x-2 items-center">
                     <Image
-                      src="/email.png"
+                      src="/email.svg"
                       alt="Email"
                       className="bg-transparent animate-bounce"
                       width={20}

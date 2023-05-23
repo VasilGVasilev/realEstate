@@ -35,7 +35,7 @@ export default function Contacts() {
                   <div className="space-y-10 flex flex-col justify-center">
                     <div className="flex space-x-3">
                       <Image
-                        src="/location.png"
+                        src="/location.svg"
                         alt="Location"
                         className="bg-transparent hover:animate-bounce"
                         width={24}
@@ -61,7 +61,7 @@ export default function Contacts() {
                     <div className="flex space-x-3">
 
                       <Image
-                        src="/email.png"
+                        src="/email.svg"
                         alt="Email"
                         className="bg-transparent hover:animate-bounce"
                         width={28}
