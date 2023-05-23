@@ -77,7 +77,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <footer>
-          <div className="bg-gray-800 w-10 h-10 absolute b-0 right-1/2 text-center text-white text-2xl cursor-pointer animate-bounce rounded-full" onClick={toTopHandle}>🠅</div>
+          <div className="bg-gray-800 w-10 h-10 shadow-xl absolute b-0 right-1/2 text-center text-white text-2xl cursor-pointer animate-bounce rounded-full" onClick={toTopHandle}>🠅</div>
           <div className="h-fit w-full flex justify-center items-center p-10 bg-gradient-to-t from-gray-900 to-gray-700 lg:px-40">
             
             <div className='md:flex md:justify-center'>
