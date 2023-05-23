@@ -22,12 +22,8 @@ export default function firstFloor() {
 
         <div className="relative inline-block">
 
-          <div className={`absolute apartmentFour h-full w-full z-10 ${sold}`}>
-            
-          </div>
-          <div className={`absolute apartmentThree h-full w-full z-10 ${reserved}`} >
-
-          </div>
+          <div className={`absolute apartmentFour h-full w-full z-10 ${sold}`}></div>
+          <div className={`absolute apartmentThree h-full w-full z-10 ${reserved}`} ></div>
           <div className={`absolute apartmentTwo h-full w-full z-10 ${available} `} ></div>
           <div className={`absolute apartmentOne h-full w-full z-10 ${available} `} ></div>
           
@@ -37,6 +33,9 @@ export default function firstFloor() {
 
 
         </div>
+
+
+
 
         <div className="py-7">
             <div className="flex justify-around">
