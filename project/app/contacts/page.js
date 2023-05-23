@@ -13,7 +13,7 @@ export default function Contacts() {
       <>
       {/* div for maps */}
       <div className="bg-orange-500">
-              <div className="flex justify-center py-4 text-3xl text-white font-bold">Местоположение</div>
+              <div className="text-center py-4 text-3xl text-white font-bold">Местоположение</div>
             </div>
       <div>
         <iframe 

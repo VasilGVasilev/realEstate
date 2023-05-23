@@ -66,6 +66,9 @@ export default function RootLayout({ children }) {
 
         </header>
         <main className='app'>
+          {/* parallax effect for future */}
+        {/* <div className="min-h-screen grid place-items-center bg-[url('../public/ixora-welcome.webp')] bg-fixed bg-no-repeat bg-cover bg-center">
+        </div> */}
           <div className='grid place-items-center'>
             <div>
               <img src="/ixora-welcome.webp" alt="" />

@@ -10,10 +10,12 @@ export default function Apartments() {
 
 
     return (
-      <div className="p-4 bg-white">
+      <>
+      
         <div className='bg-orange-500'>
           <div className="py-4 text-white text-center text-3xl font-bold">План</div>
         </div>
+      <div className="p-4 bg-white">
         <div className="relative inline-block ">
 
           <Link href={'apartments/penthouse'}><div className="absolute penthouse cursor-pointer h-full w-full z-10 hover:bg-black hover:opacity-40 active:bg-black active:opacity-40" ></div></Link>
@@ -27,6 +29,7 @@ export default function Apartments() {
         </div>
 
       </div>
+      </>
     )
 }
   
