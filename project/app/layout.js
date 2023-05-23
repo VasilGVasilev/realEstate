@@ -95,7 +95,6 @@ export default function RootLayout({ children }) {
                       className="bg-transparent animate-bounce"
                       width={20}
                       height={8}
-                      priority
                     />
                     <div className="text-sm text-white"><a href={`tel:00359886849995`}>00359886849995</a></div>
                   </div>
@@ -106,7 +105,6 @@ export default function RootLayout({ children }) {
                       className="bg-transparent animate-bounce"
                       width={20}
                       height={8}
-                      priority
                     />
                     <div className="text-sm text-white"><a href="mailto:office@creativestudiobg.com">office@creativestudiobg.com</a></div>
                   </div>

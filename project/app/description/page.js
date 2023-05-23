@@ -11,10 +11,12 @@ export default function Description() {
         {/* Container for List */}
         <div>
           
-              <div className="bg-orange-500 p-5">
+          <div className="bg-orange-500 p-5">
 
-                <div className="text-white text-center text-3xl font-bold">За сградата</div>
-              </div>
+            <div className="text-white text-center text-3xl font-bold">За сградата</div>
+            
+          </div>
+
           <div className="p-10 bg-white md:px-32 lg:px-40">
             <div className="bg-white w-full h-fit ">
             
@@ -48,7 +50,7 @@ export default function Description() {
         </div>
         {/* Container for Parallax Image */}
 
-        <div className="bg-[url('../public/ixora-description.webp')] h-96 wi-96 bg-center bg-contain bg-no-repeat bg-white md:min-h-screen md:grid md:place-items-center md:bg-fixed md:bg-no-repeat md:bg-cover md:bg-center">
+        <div className="bg-[url('../public/ixora-description.webp')] h-96 bg-center bg-contain bg-no-repeat bg-white md:min-h-screen md:grid md:place-items-center md:bg-fixed md:bg-no-repeat md:bg-cover md:bg-center">
         </div>
         {/* <div>
           <img src="ixora-description.webp" alt="" />
@@ -57,7 +59,7 @@ export default function Description() {
         <div>
           <div className="py-10 bg-white text-orange-500 text-center text-2xl font-bold font-mono">Местоположение</div>
           <iframe 
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Sofia,%20Bulgaria,%20Europe+(Ixora%20Luxury%20Residence)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%D1%83%D0%BB.%20%E2%80%9E%D0%9F%D0%B8%D1%80%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%20%D0%B5%D0%B4%D0%B5%D0%BB%D0%B2%D0%B0%D0%B9%D1%81%E2%80%9C,%201415%20%D0%B2.%D0%B7.%20%D0%A1%D0%B8%D0%BC%D0%B5%D0%BE%D0%BD%D0%BE%D0%B2%D0%BE%20-%20%D0%94%D1%80%D0%B0%D0%B3%D0%B0%D0%BB%D0%B5%D0%B2%D1%86%D0%B8,%20%D0%A1%D0%BE%D1%84%D0%B8%D1%8F+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
             width="100%" 
             height="400"
           ></iframe>

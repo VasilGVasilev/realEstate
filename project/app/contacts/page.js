@@ -13,11 +13,11 @@ export default function Contacts() {
       <>
       {/* div for maps */}
       <div className="bg-orange-500">
-              <div className="text-center py-4 text-3xl text-white font-bold">Местоположение</div>
-            </div>
+        <div className="text-center py-4 text-3xl text-white font-bold">Местоположение</div>
+      </div>
       <div>
         <iframe 
-          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Sofia,%20Bulgaria,%20Europe+(Ixora%20Luxury%20Residence)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%D1%83%D0%BB.%20%E2%80%9E%D0%9F%D0%B8%D1%80%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%20%D0%B5%D0%B4%D0%B5%D0%BB%D0%B2%D0%B0%D0%B9%D1%81%E2%80%9C,%201415%20%D0%B2.%D0%B7.%20%D0%A1%D0%B8%D0%BC%D0%B5%D0%BE%D0%BD%D0%BE%D0%B2%D0%BE%20-%20%D0%94%D1%80%D0%B0%D0%B3%D0%B0%D0%BB%D0%B5%D0%B2%D1%86%D0%B8,%20%D0%A1%D0%BE%D1%84%D0%B8%D1%8F+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
           width="100%" 
           height="400" 
         ></iframe>
