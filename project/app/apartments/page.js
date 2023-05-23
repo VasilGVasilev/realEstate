@@ -13,7 +13,7 @@ export default function Apartments() {
       <>
       
         <div className='bg-orange-500'>
-          <div className="py-4 text-white text-center text-3xl font-bold">План</div>
+          <div className="py-4 text-white text-center text-3xl font-bold">Разпределение</div>
         </div>
         <div className="p-4 bg-white">
           
