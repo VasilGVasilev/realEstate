@@ -122,8 +122,8 @@ export default function firstFloor() {
 
         <div className="relative inline-block">
 
-          <div className={`absolute apartmentFour h-full w-full z-10 ${sold}`} onClick={()=>updateInfo(4)}></div>
-          <div className={`absolute apartmentThree h-full w-full z-10 ${reserved}`} onClick={()=>updateInfo(3)}></div>
+          <div className={`absolute apartmentFour h-full w-full z-10 ${available}`} onClick={()=>updateInfo(4)}></div>
+          <div className={`absolute apartmentThree h-full w-full z-10 ${available}`} onClick={()=>updateInfo(3)}></div>
           <div className={`absolute apartmentTwo h-full w-full z-10 ${available} `} onClick={()=>updateInfo(2)}></div>
           <div className={`absolute apartmentOne h-full w-full z-10 ${available} `} onClick={()=>updateInfo(1)}></div>
           
