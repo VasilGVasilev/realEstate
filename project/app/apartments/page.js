@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link';
+import { useEffect } from 'react';
 
 export const metadata = {
   title: 'Свободни Апартаменти - Ixora Residence',
@@ -8,6 +9,11 @@ export const metadata = {
 
 export default function Apartments() {
 
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
+  
 
     return (
       <>

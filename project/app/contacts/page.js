@@ -1,13 +1,19 @@
 'use client'
 
 import Image from "next/image";
+import { useEffect } from "react";
 
 export const metadata = {
   title: 'Контакти - Ixora Residence',
 };
 
 export default function Contacts() {
-
+  
+    useEffect(() => {
+      // 👇️ scroll to top on page load
+      window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }, []);
+    
 
     return (
       <>
