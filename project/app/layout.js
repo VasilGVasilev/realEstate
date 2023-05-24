@@ -29,15 +29,8 @@ export default function RootLayout({ children }) {
             <div className='px-10 py-3 flex justify-between'>
               <div>
 
-                <a className='relative h-8 w-20 flex justify-center bg-gradient-to-b from-orange-500 to-orange-300 md:h-12 md:w-24 lg:h-20 lg:w-48 border-2 border-white md:border-0 md:hover:border-2 md:hover:border-white' href={`/`}>
-                  <Image
-                    src="/ixora.png"
-                    alt="Phone Ring"
-                    className=""
-                    height={1}
-                    width={300}
-
-                  />
+                <a className='relative h-8 w-20 flex justify-center md:h-12 md:w-24 lg:h-16 lg:w-44 border-2 border-white md:border-0 md:hover:border-2 md:hover:border-white' href={`/`}>
+                  <img src="/ixora.webp" alt="Ixora Logo" />
                 </a>
               </div>
 
@@ -84,8 +77,8 @@ export default function RootLayout({ children }) {
 
         </header>
         <main className='app'>
-
-          <div className='grid place-items-center'>
+{/* fixed navbar requires realtive pt-12 here */}
+          <div className='grid place-items-center pt-12'>
             <div className=''>
               <img src="/ixora-welcome.webp" alt="" />
             </div>
