@@ -52,9 +52,6 @@ export default function Description() {
 
         <div className="bg-[url('../public/ixora-description.webp')] h-96 bg-center bg-contain bg-no-repeat bg-white md:min-h-screen md:grid md:place-items-center md:bg-fixed md:bg-no-repeat md:bg-cover md:bg-center">
         </div>
-        {/* <div>
-          <img src="ixora-description.webp" alt="" />
-        </div> */}
         {/* Container for Location*/}
         <div>
           <div className="py-10 bg-white text-orange-500 text-center text-2xl font-bold font-mono">Местоположение</div>

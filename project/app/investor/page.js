@@ -1,24 +1,9 @@
 'use client'
-import ImageSlider from "./ImageSlider";
 export const metadata = {
   title: 'Инвеститор - Ixora Residence',
 };
 
-const daliaSlides = [
-  'dalia/dalia-two.webp',
-  'dalia/dalia-three.webp',
-  'dalia/dalia-four.webp',
-]
-const westEndSlides = [
-  'west-end/west-end-one.webp',
-  'west-end/west-end-two.webp',
-  'west-end/west-end-three.webp',
-]
-const tiliaSlides = [
-  'tilia/tilia-one.webp',
-  'tilia/tilia-two.webp',
-  'tilia/tilia-three.webp',
-]
+
 export default function Investor() {
 
 
@@ -28,7 +13,7 @@ export default function Investor() {
         <div className="p-10 lg:px-64 space-y-10">
           {/* Container for Investor Logo and Name */}
           <div className="flex">
-            <img src="investor-logo.webp" alt="" className="h-20 w-50" />
+            <img src="/investor-logo.webp" alt="" className="h-20 w-50" />
           </div>
           {/* Container for Description of Investor */}
           <div className="">
@@ -60,11 +45,10 @@ export default function Investor() {
               </div>
 
               <div className="bg-white px-10 w-full h-full flex-col justify-center space-y-5">
-                  <img src={`dalia/dalia-two.webp`} className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none" alt="image" />
-                  <img src={`dalia/dalia-three.webp`} className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none" alt="image" />
-                  <img src={`dalia/dalia-four.webp`} className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none" alt="image" />
+                  <img src={`/dalia/dalia-two.webp`} className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none" alt="image" />
+                  <img src={`/dalia/dalia-three.webp`} className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none" alt="image" />
+                  <img src={`/dalia/dalia-four.webp`} className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none" alt="image" />
 
-                  {/* <ImageSlider slides={daliaSlides} /> */}
               </div>
 
             </div>
@@ -80,11 +64,10 @@ export default function Investor() {
               </div>
 
               <div className="bg-white px-10 w-full h-full flex-col justify-center space-y-5">
-                  <img src={`west-end/west-end-one.webp`} className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" alt="image" />
-                  <img src={`west-end/west-end-two.webp`} className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" alt="image" />
-                  <img src={`west-end/west-end-three.webp`} className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" alt="image" />
+                  <img src={`/west-end/west-end-one.webp`} className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" alt="image" />
+                  <img src={`/west-end/west-end-two.webp`} className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" alt="image" />
+                  <img src={`/west-end/west-end-three.webp`} className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" alt="image" />
 
-                  {/* <ImageSlider slides={westEndSlides} /> */}
               </div>
 
             </div>
@@ -100,11 +83,10 @@ export default function Investor() {
               </div>
 
               <div className="bg-white px-10 w-full h-full flex-col justify-center space-y-5">
-                  <img src={`tilia/tilia-one.webp`} className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" alt="image" />
-                  <img src={`tilia/tilia-two.webp`} className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" alt="image" />
-                  <img src={`tilia/tilia-three.webp`} className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" alt="image" />
+                  <img src={`/tilia/tilia-one.webp`} className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" alt="image" />
+                  <img src={`/tilia/tilia-two.webp`} className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" alt="image" />
+                  <img src={`/tilia/tilia-three.webp`} className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" alt="image" />
 
-                  {/* <ImageSlider slides={tiliaSlides} /> */}
               </div>
 
             </div>

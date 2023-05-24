@@ -16,11 +16,11 @@ export default function Home() {
       {/* prompt to view plan container */}
       <div className="p-4 bg-white">
           <div className='bg-orange-500'>
-            <Link href={'apartments'} className=""><div className="py-4 text-white text-center text-3xl font-bold">План</div></Link>
+            <Link href={'/apartments'} className=""><div className="py-4 text-white text-center text-3xl font-bold">План</div></Link>
           </div>
           <div className="inline-block ">
 
-            <Link href={'apartments'} className=""><img src="ixora-apartments.webp" alt="Ixora Plan" className="opacity-50" /></Link>
+            <Link href={'/apartments'} className=""><img src="/ixora-apartments.webp" alt="Ixora Plan" className="opacity-50" /></Link>
 
           </div>
 
