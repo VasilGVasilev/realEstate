@@ -29,7 +29,7 @@ export default function Description() {
                 <p className="sm:text-lg text-orange-500 font-semibold">Дограмата</p>
                 <li className="text-xs sm:text-sm text-gray-500 text-justify"> Най-висок клас Schüco.</li>
                 <br />
-                <p className="sm:text-lg text-orange-500 font-semibold">Асансъор</p>
+                <p className="sm:text-lg text-orange-500 font-semibold">Асансьор</p>
                 <li className="text-xs sm:text-sm text-gray-500 text-justify">Безшумни електрически КОНЕ </li>
                 <br />
                 <p className="sm:text-lg text-orange-500 font-semibold">Врати</p>
