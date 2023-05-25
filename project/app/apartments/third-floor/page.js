@@ -135,7 +135,7 @@ export default function thirdFloor() {
             <div className="relative inline-block">
 
               <div className={`absolute apartmentTwelve h-full w-full z-10 ${available}`} onClick={()=>updateInfo(12)}></div>
-              <div className={`absolute apartmentEleven h-full w-full z-10 ${sold}`} onClick={()=>updateInfo(11)}></div>
+              <div className={`absolute apartmentEleven h-full w-full z-10 ${sold}`} onClick={()=>updateInfo(null)}></div>
               <div className={`absolute apartmentTen h-full w-full z-10 ${available} `} onClick={()=>updateInfo(10)}></div>
               <div className={`absolute apartmentNine h-full w-full z-10 ${available} `} onClick={()=>updateInfo(9)}></div>
               

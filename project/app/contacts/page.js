@@ -9,11 +9,6 @@ export const metadata = {
 
 export default function Contacts() {
   
-    useEffect(() => {
-      // 👇️ scroll to top on page load
-      window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-    }, []);
-    
 
     return (
       <>
@@ -32,14 +27,20 @@ export default function Contacts() {
       <div className="lg:flex">
         {/* div for Contact Card */}
           <div className="lg:w-1/2 bg-white">
+
+
+            {/* Container to flex on Desktop */}
             <div className="flex-col w-full h-fit lg:w-full">
+
               <div className="bg-white">
-                <div className="flex justify-center text-orange-500 py-4 text-center text-3xl font-bold">Sales офис</div>
+                <div className="flex justify-center text-orange-500 py-4 pt-10 text-center text-3xl font-bold">Sales офис</div>
               </div>
-              <div className="flex justify-center p-8">              
-                <div className="flex justify-center h-56 w-96 shadow-xl bg-gradient-to-b from-gray-50 to-white lg:w-full lg:h-80">
+
+              <div className="flex justify-center p-8 lg:p-20">              
+                <div className="flex justify-center h-56 w-96 p-5 shadow-xl bg-gradient-to-b from-gray-50 to-white lg:w-full lg:h-96">
                   <div className="space-y-10 flex flex-col justify-center">
-                    <div className="flex space-x-3">
+
+                    <div className="flex space-x-3 lg:p-5">
                       <Image
                         src="/location.svg"
                         alt="Location"
@@ -49,9 +50,10 @@ export default function Contacts() {
                         priority
                       />
                       <div className="text-sm sm:text-base font-bold text-gray-500 ">ул. „Пирински еделвайс“ 3, 1415 в.з. Симеоново - Драгалевци, Симеоново-Драгалевци</div>
+
                     </div>
 
-                    <div className="flex space-x-3">
+                    <div className="flex space-x-3 lg:p-5">
 
                       <Image
                         src="/green-phone.svg"
@@ -62,9 +64,10 @@ export default function Contacts() {
                         priority
                       />
                       <div className="text-sm sm:text-base font-bold text-gray-500"><a href={`tel:00359886849995`}>00359886849995</a></div>
+
                     </div>
 
-                    <div className="flex space-x-3">
+                    <div className="flex space-x-3 lg:p-5">
 
                       <Image
                         src="/email.svg"
@@ -74,61 +77,26 @@ export default function Contacts() {
                         height={12}
                         priority
                       />
+
                       <div className="text-sm sm:text-base font-bold text-gray-500"><a href="mailto:office@creativestudiobg.com">office@creativestudiobg.com</a></div>
+
                     </div>
+
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
-        {/* div for Form */}
-          <div className="flex justify-center p-10 bg-white lg:bg-inherit lg:w-1/2 lg:p-0">
-            <form className="bg-gradient-to-b from-gray-700 to-gray-900 shadow-md lg:bg-gradient-to-b lg:from-gray-700 lg:to-gray-700 lg:shadow-none p-8 mb-4 lg:w-full lg:h-full">
-              <h2 className="text-gray-200 mb-8 text-2xl lg:text-4xl">
-                Свържете се с нас
-              </h2>
-
-              <div className="lg:flex lg:space-x-5">
-                <div className="mb-4 lg:w-full">
-                  <input
-                    className="shadow-sm appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="fullname"
-                    type="text"
-                    placeholder="Вашето име"
-                  />
-                </div>
-                <div className="mb-4 lg:w-full">
-                  <input
-                    className="shadow-sm appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="email"
-                    type="text"
-                    placeholder="Вашият имейл"
-                  />
-                </div>
-              </div>
-              <div className="mb-4">
-                <input
-                  className="shadow-sm appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="about"
-                  type="text"
-                  placeholder="Относно"
-                />
-              </div>
-              <div className="mb-4">
-                <textarea
-                  className="shadow-sm appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline lg:h-44"
-                  id="textarea"
-                  placeholder="Съобщение"
-                />
-              </div>
-      
-              <button
-                className="bg-orange-500 w-full hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline lg:w-3/12"
-                type="button"
-              >
-                Изпрати
-              </button>
-            </form>
+        {/* div for Picture */}
+          <div className="flex-col justify-center py-10 lg:p-10 bg-white lg:bg-inherit lg:w-1/2">
+            <div className="text-center font-bold text-xl text-orange-400 lg:text-white lg:py-4 pb-10 lg:text-3xl lg:font-bold">Вашият бъдещ дом</div>
+              <img
+                src="/ixora-description.webp"
+                alt="description"
+                fill
+                priority
+              />
           </div>
       </div>
       </>

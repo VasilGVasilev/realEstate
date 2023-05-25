@@ -11,7 +11,8 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  const [toggleClicked, setToggleClick] = useState(false); 
+  const [toggleClicked, setToggleClick] = useState(false);
+  const [navbarTrans, setNavbarTrans] = useState(false);
 
   const toggleNavbar = () => {
     setToggleClick(state => !state);
@@ -20,16 +21,17 @@ export default function RootLayout({ children }) {
     window.scrollTo(0, 0);
   }
 
+
   return (
-    <html lang="bg" className='scroll-smooth'>
-      <body className='bg-gray-900'>
+    <html lang="bg-[#464646]" className='scroll-smooth'>
+      <body className='bg-[#464646]'>
         <header>
 
-          <nav className='fixed z-20 flex-col w-full text-base bg-gradient-to-b from-gray-900 to-gray-700 border-b-2 border-gray-500'>
+          <nav className={`fixed z-20 flex-col w-full text-base bg-[#464646]`}>
             <div className='px-10 py-3 flex justify-between'>
               <div>
 
-                <a className='relative h-8 w-20 flex justify-center md:h-12 md:w-24 lg:h-16 lg:w-44 border-2 border-white md:border-0 md:hover:border-2 md:hover:border-white' href={`/`}>
+                <a className='relative h-8 w-20 flex justify-center md:h-12 md:w-24 lg:h-16 lg:w-44 border-2 border-white md:border-none md:hover:border-2 md:hover:border-white ' href={`/`}>
                   <img src="/ixora.webp" alt="Ixora Logo" />
                 </a>
               </div>
@@ -38,11 +40,11 @@ export default function RootLayout({ children }) {
 
                 {/* desktop menu */}
                 <div className='flex items-center text-white' >
-                  <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-600 hover:bg-slate-700' href={'/'} >Начало</Link>
-                  <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-600 hover:bg-slate-700' href={'/description'}>За сградата</Link>
-                  <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-600 hover:bg-slate-700' href={'/apartments'}>Апартаменти</Link>
-                  <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-600 hover:bg-slate-700' href={'/investor'}>Инвеститор</Link>
-                  <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-600 hover:bg-slate-700' href={'/contacts'}>Контакти</Link>
+                  <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500 hover:bg-stone-800 rounded-sm' href={'/'} >Начало</Link>
+                  <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500 hover:bg-stone-800 rounded-sm text-center' href={'/description'}>За сградата</Link>
+                  <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500 hover:bg-stone-800 rounded-sm' href={'/apartments'}>Апартаменти</Link>
+                  <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500 hover:bg-stone-800 rounded-sm' href={'/investor'}>Инвеститор</Link>
+                  <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500 hover:bg-stone-800 rounded-sm' href={'/contacts'}>Контакти</Link>
                 </div>
 
                 {/* mobile button */}
@@ -60,12 +62,12 @@ export default function RootLayout({ children }) {
             <div className=''>
 
               {/* mobile menu */}
-              <div onClick={toggleNavbar} className={ toggleClicked === true ? 'md:hidden flex flex-col bg-gray-800 w-full text-white' : 'hidden'}>
-                <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate- hover:text-red-600 hover:bg-slate-700' href={'/'} >Начало</Link>
-                <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate- hover:text-red-600 hover:bg-slate-700' href={'/description'}>За сградата</Link>
-                <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate- hover:text-red-600 hover:bg-slate-700' href={'/apartments'}>Апартаменти</Link>
-                <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate- hover:text-red-600 hover:bg-slate-700' href={'/investor'}>Инвеститор</Link>
-                <Link className='flex justify-center p-3 text-base active:text-red-600 active:bg-slate- hover:text-red-600 hover:bg-slate-700' href={'/contacts'}>Контакти</Link>
+              <div onClick={toggleNavbar} className={ toggleClicked === true ? 'md:hidden flex flex-col bg-[#3b3b3b] w-full text-white' : 'hidden'}>
+                <Link className='flex justify-center p-3 text-base active:text-red-500 active:bg-stone-800 hover:text-red-500 hover:bg-stone-800' href={'/'} >Начало</Link>
+                <Link className='flex justify-center p-3 text-base active:text-red-500 active:bg-stone-800 hover:text-red-500 hover:bg-stone-800' href={'/description'}>За сградата</Link>
+                <Link className='flex justify-center p-3 text-base active:text-red-500 active:bg-stone-800 hover:text-red-500 hover:bg-stone-800' href={'/apartments'}>Апартаменти</Link>
+                <Link className='flex justify-center p-3 text-base active:text-red-500 active:bg-stone-800 hover:text-red-500 hover:bg-stone-800' href={'/investor'}>Инвеститор</Link>
+                <Link className='flex justify-center p-3 text-base active:text-red-500 active:bg-stone-800 hover:text-red-500 hover:bg-stone-800' href={'/contacts'}>Контакти</Link>
               </div>
 
             </div>
@@ -77,16 +79,16 @@ export default function RootLayout({ children }) {
 
         </header>
         <main className='app'>
-{/* fixed navbar requires realtive pt-12 here */}
-          <div className='grid place-items-center pt-12'>
-            <div className=''>
+{/* fixed navbar requires relative pt-12 here */}
+          <div className='grid place-items-center pt-12 md:pt-24'>
+            {/* <div>
               <img src="/ixora-welcome.webp" alt="" />
-            </div>
+            </div> */}
           </div>
           {children}
         </main>
         <footer>
-          <div className="h-fit w-full flex-col p-10 bg-gradient-to-t from-gray-900 to-gray-700 lg:px-40">
+          <div className="h-fit w-full flex-col p-10 bg-[#464646] lg:px-40">
             <div className='flex justify-center relative -top-9'>
               <img src="/up-to-top.svg" className="w-10 h-10 cursor-pointer animate-bounce" onClick={toTopHandle} alt="" />
             </div>

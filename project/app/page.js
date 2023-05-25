@@ -9,18 +9,14 @@ export const metadata = {
 
 export default function Home() {
 
-  useEffect(() => {
-    // 👇️ scroll to top on page load
-    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-  }, []);
-  
+
 
   return (
-    <div className="">
-      {/* Welcome */}
-      <div className="bg-orange-500 py-4">
-            <div className="text-white text-left pl-4 text-3xl font-bold"></div>
-          </div>
+    <div>
+      {/* Welcome image */}
+      <div>
+        <img src="/ixora-welcome.webp" alt="" />
+      </div>
       {/* description container */}
       <div className="p-10 bg-white md:px-32 lg:px-40">
         <div className="py-5 bg-white text-orange-500 text-left text-2xl italic font-mono">Ixora Luxury Residence: </div>

@@ -9,11 +9,7 @@ export const metadata = {
 
 export default function Apartments() {
 
-  useEffect(() => {
-    // 👇️ scroll to top on page load
-    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-  }, []);
-  
+
 
     return (
       <>
@@ -21,7 +17,7 @@ export default function Apartments() {
         <div className='bg-orange-500'>
           <div className="py-4 text-white text-center text-3xl font-bold">Разпределение</div>
         </div>
-        <div className="p-4 bg-white">
+        <div className="p-4 bg-white lg:px-36">
           
           <div className="relative inline-block ">
 
