@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 
 export const metadata = {
@@ -16,18 +16,16 @@ const reserved = "hover:bg-blue-400 hover:opacity-40 active:bg-blue-400 active:o
 export default function penthouseFloor() {
 
     const [apartment, setApartment] = useState(null);
+    const myRef = useRef(null);
 
     const updateInfo = (currentAp) => {
       setApartment(s=>currentAp);
-      if(window.innerWidth > 413){
-        window.scrollTo(0, 600);
-      }
-
+      myRef.current.scrollIntoView()
     }
 
     return (
       <>
-        <div className='bg-orange-500'>
+        <div ref={myRef} className='bg-orange-500'>
           <div className="py-4 text-white text-center text-2xl font-extrabold">Пентхаус</div>
         </div>
         <div className="p-5 bg-white">
