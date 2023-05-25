@@ -17,19 +17,22 @@ export default function Investor() {
 
     return (
       <div>
+        <div className="bg-orange-500 py-4">
+          <div className="text-white text-center pl-4 text-3xl font-bold">За инвеститора</div>
+        </div>
         {/* Container for Investor Intro */}
         <div className="p-10 lg:px-64 space-y-10">
           {/* Container for Investor Logo and Name */}
           <div className="flex">
-            <img src="/investor-logo.webp" alt="" className="h-20 w-50" />
+            <img src="/investor-logo.webp" alt="" className="h-20 w-50 rounded-lg" />
           </div>
           {/* Container for Description of Investor */}
           <div className="">
-            <div className="text-gray-300">
+            <div className="text-gray-100">
               Creative Studio е строително-инвестиционно холдингово дружество, което финансира, проектира и изгражда луксозни многофамилни и еднофамилни жилищни сгради и ги реализира на пазара. 
             </div>
             <br />
-            <div className="text-gray-300">
+            <div className="text-gray-100">
               Мотото на компанията при изпълнение на инвестиционните проекти гласи - "Creating Excellence" или "Създаване на съвършенство".
             </div>
           </div>

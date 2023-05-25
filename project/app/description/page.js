@@ -18,11 +18,9 @@ export default function Description() {
       <div>
         {/* Container for List */}
         <div>
-          
-          <div className="bg-orange-500 p-5">
 
+          <div className="bg-orange-500 py-4">
             <div className="text-white text-center text-3xl font-bold">За сградата</div>
-            
           </div>
 
           <div className="p-10 bg-white md:px-32 lg:px-40">
