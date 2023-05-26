@@ -25,6 +25,10 @@ export default function firstFloor() {
 
           <div className="relative inline-block">
 
+            <div className={`absolute parkOutOne h-full w-full z-10 ${sold}`}></div>
+            <div className={`absolute parkOutTwo h-full w-full z-10 ${available}`}></div>
+            <div className={`absolute parkOutThree h-full w-full z-10 ${available}`}></div>
+
             <div className={`absolute parkingOne h-full w-full z-10 ${available}`}></div>
             <div className={`absolute parkingTwo h-full w-full z-10 ${available}`}></div>
             <div className={`absolute parkingThree h-full w-full z-10 ${available}`}></div>
