@@ -79,8 +79,8 @@ export default function RootLayout({ children }) {
 
         </header>
         <main className='app'>
-{/* fixed navbar requires relative pt-12 here */}
-          <div className='grid place-items-center pt-12 md:pt-24'>
+{/* fixed navbar requires relative pt-16 here */}
+          <div className='grid place-items-center pt-16 md:pt-24'>
             {/* <div>
               <img src="/ixora-welcome.webp" alt="" />
             </div> */}

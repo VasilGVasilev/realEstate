@@ -1,7 +1,6 @@
 'use client'
 
 import Image from "next/image";
-import { useEffect } from "react";
 
 export const metadata = {
   title: 'Контакти - Ixora Residence',
@@ -92,7 +91,7 @@ export default function Contacts() {
           <div className="flex-col justify-center py-10 lg:p-10 bg-white lg:bg-inherit lg:w-1/2">
             <div className="text-center font-bold text-xl text-orange-400 lg:text-white lg:py-4 pb-10 lg:text-3xl lg:font-bold">Вашият бъдещ дом</div>
               <img
-                src="/ixora-description.webp"
+                src="/ixora-welcome.webp"
                 alt="description"
                 fill
                 priority

@@ -1,6 +1,5 @@
 'use client'
 
-import { useEffect } from "react";
 
 export const metadata = {
   title: 'За сградата - Ixora Residence',
@@ -52,7 +51,7 @@ export default function Description() {
         </div>
         {/* Container for Parallax Image */}
 
-        <div className="bg-[url('../public/ixora-description.webp')] h-96 bg-center bg-contain bg-no-repeat bg-white md:min-h-96 md:grid md:place-items-center md:bg-fixed md:bg-no-repeat md:bg-cover md:bg-center md:opacity-75">
+        <div className="bg-[url('../public/ixora-welcome.webp')] h-96 bg-center bg-contain bg-no-repeat bg-white md:min-h-96 md:grid md:place-items-center md:bg-fixed md:bg-no-repeat md:bg-cover md:bg-center md:opacity-75">
         </div>
         {/* Container for Location*/}
         <div>

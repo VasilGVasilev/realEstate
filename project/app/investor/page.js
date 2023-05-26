@@ -1,6 +1,5 @@
 'use client'
 
-import { useEffect } from "react";
 
 export const metadata = {
   title: 'Инвеститор - Ixora Residence',
@@ -17,7 +16,7 @@ export default function Investor() {
           <div className="text-white text-center pl-4 text-3xl font-bold">За инвеститора</div>
         </div>
         {/* Container for Investor Intro */}
-        <div className="p-10 lg:px-64 space-y-10">
+        <div className="p-10 lg:px-64 space-y-10 bg-gray-900">
           {/* Container for Investor Logo and Name */}
           <div className="flex">
             <img src="/investor-logo.webp" alt="" className="h-20 w-50 rounded-lg" />
@@ -35,16 +34,16 @@ export default function Investor() {
         </div>
         {/* Container for Recent Projects */}
         <div className="bg-white">
-          <div className='bg-orange-500'>
-            <div className="py-4 text-white text-center text-3xl font-bold">Текущи проекти</div>
+          <div className='bg-orange-300'>
+            <div className="py-4 text-white text-center pl-4 text-2xl font-bold">Текущи проекти</div>
           </div>
           {/* Container for projects */}
-          <div>
+          <div className="">
 
             {/* Container for Dalia*/}
             <div className="py-10">
               {/* Conatiner for name and description */}
-              <div className="px-10">
+              <div className="px-10 lg:pb-10">
                 <div className="py-5 bg-white underline text-orange-500 text-center text-xl italic font-mono">
                   Еднофамилна къща Далия
                 </div>
@@ -63,7 +62,7 @@ export default function Investor() {
             {/* Container for West End Luxury Houses*/}
             <div className="py-10">
               {/* Conatiner for name and description */}
-              <div className="px-10">
+              <div className="px-10  lg:pb-10">
                 <div className="py-5 bg-white underline text-orange-500 text-center text-xl italic font-mono">
                   Комплекс от къщи West End Luxury Houses
                 </div>
@@ -82,7 +81,7 @@ export default function Investor() {
             {/* Container for Tilia Residence */}
             <div className="py-10">
               {/* Conatiner for name and description */}
-              <div className="px-10">                
+              <div className="px-10 lg:pb-10">                
                 <div className="py-5 bg-white underline text-orange-500 text-center text-xl italic font-mono">
                   Жилищна сграда Tilia Residence
                 </div>
