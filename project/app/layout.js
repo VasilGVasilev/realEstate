@@ -20,17 +20,19 @@ export default function RootLayout({ children }) {
     window.scrollTo(0, 0);
   }
 
-
+// #837667
+// #716657
+// #464646
   return (
     <html lang="bg-[#464646]" className='scroll-smooth'>
       <body className='bg-[#464646]'>
         <header>
 
-          <nav className={`fixed z-20 flex-col w-full text-base bg-[#464646]`}>
+          <nav className={`fixed z-20 flex-col w-full text-base bg-gradient-to-b from-[#464646] from-10% via-[#7c7061] via-70% to-[#716657] to-90%`}>
             <div className='px-10 py-3 flex justify-between'>
               <div>
 
-                <a className='relative h-8 w-20 flex justify-center md:h-12 md:w-24 lg:h-16 lg:w-44 border-2 border-white md:border-none md:hover:border-2 md:hover:border-white ' href={`/`}>
+                <a className='hover:scale-110 duration-200 relative h-8 w-20 flex justify-center md:h-12 md:w-24 lg:h-16 lg:w-44 border-2 border-white md:border-none md:hover:border-2 md:hover:border-white ' href={`/`}>
                   <img src="/ixora.webp" alt="Ixora Logo" />
                 </a>
               </div>
@@ -39,11 +41,11 @@ export default function RootLayout({ children }) {
 
                 {/* desktop menu */}
                 <div className='flex items-center text-white' >
-                  <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500 hover:bg-stone-800 rounded-sm' href={'/'} >Начало</Link>
-                  <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500 hover:bg-stone-800 rounded-sm text-center' href={'/description'}>За сградата</Link>
-                  <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500 hover:bg-stone-800 rounded-sm' href={'/apartments'}>Апартаменти</Link>
-                  <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500 hover:bg-stone-800 rounded-sm' href={'/investor'}>Инвеститор</Link>
-                  <Link className='hidden p-3 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500 hover:bg-stone-800 rounded-sm' href={'/contacts'}>Контакти</Link>
+                  <Link className='hidden p-3 hover:scale-125 hover:font-bold duration-200 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500  rounded-sm' href={'/'} >Начало</Link>
+                  <Link className='hidden p-3 hover:scale-125 hover:font-bold duration-200 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500  rounded-sm text-center' href={'/description'}>За сградата</Link>
+                  <Link className='hidden p-3 hover:scale-125 hover:font-bold duration-200 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500  rounded-sm' href={'/apartments'}>Апартаменти</Link>
+                  <Link className='hidden p-3 hover:scale-125 hover:font-bold duration-200 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500  rounded-sm' href={'/investor'}>Инвеститор</Link>
+                  <Link className='hidden p-3 hover:scale-125 hover:font-bold duration-200 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500  rounded-sm' href={'/contacts'}>Контакти</Link>
                 </div>
 
                 {/* mobile button */}
@@ -61,7 +63,7 @@ export default function RootLayout({ children }) {
             <div className=''>
 
               {/* mobile menu */}
-              <div onClick={toggleNavbar} className={ toggleClicked === true ? 'md:hidden flex flex-col bg-[#3b3b3b] w-full text-white' : 'hidden'}>
+              <div onClick={toggleNavbar} className={ toggleClicked === true ? 'md:hidden flex flex-col bg-gradient-to-b from-[#464646] from-10% via-[#7c7061] via-70% to-[#716657] to-90% w-full text-white' : 'hidden'}>
                 <Link className='flex justify-center p-3 text-base active:text-red-500 active:bg-stone-800 hover:text-red-500 hover:bg-stone-800' href={'/'} >Начало</Link>
                 <Link className='flex justify-center p-3 text-base active:text-red-500 active:bg-stone-800 hover:text-red-500 hover:bg-stone-800' href={'/description'}>За сградата</Link>
                 <Link className='flex justify-center p-3 text-base active:text-red-500 active:bg-stone-800 hover:text-red-500 hover:bg-stone-800' href={'/apartments'}>Апартаменти</Link>
@@ -87,7 +89,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <footer>
-          <div className="h-fit w-full flex-col p-10 bg-[#464646] lg:px-40">
+          <div className="h-fit w-full flex-col p-10 bg-gradient-to-t from-[#464646] from-10% via-[#7c7061] via-70% to-[#716657] to-90% lg:px-40">
             <div className='flex justify-center relative -top-9'>
               <img src="/up-to-top.svg" className="w-10 h-10 cursor-pointer animate-bounce" onClick={toTopHandle} alt="" />
             </div>
@@ -105,7 +107,7 @@ export default function RootLayout({ children }) {
                       <Image
                         src="/green-phone.svg"
                         alt="Phone Ring"
-                        className="bg-transparent animate-bounce"
+                        className="bg-transparent animate-pulse"
                         width={20}
                         height={8}
                       />
@@ -115,7 +117,7 @@ export default function RootLayout({ children }) {
                       <Image
                         src="/email.svg"
                         alt="Email"
-                        className="bg-transparent animate-bounce"
+                        className="bg-transparent animate-pulse"
                         width={20}
                         height={8}
                       />
