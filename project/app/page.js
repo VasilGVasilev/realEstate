@@ -10,12 +10,13 @@ export const metadata = {
 export default function Home() {
 
 
-
   return (
     <div>
-      {/* Welcome image */}
       <div>
-        <img src="/ixora-welcome.webp" alt="ixora-welcome"  />
+        <video className="w-full h-full" autoPlay={true} muted={true} loop={true} playsInline={true} >
+          <source src="/video.MP4" type="video/MP4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       {/* Description container */}
@@ -24,10 +25,16 @@ export default function Home() {
         <div>Изпълнението и всички довършителни работи са заложени в изключително висок, бутиков класИзпълнението и всички довършителни работи са заложени в изключително висок, бутиков класИзпълнението и всички довършителни работи са заложени в изключително висок, бутиков класИзпълнението и всички довършителни работи са заложени в изключително висок, бутиков клас</div>
       </div>
 
+      {/* Welcome image */}
+      <div className="relative">
+        <div className="absolute bottom-5 left-8 text-white font-black text-2xl  md:bottom-10 md:text-4xl md:left-44 lg:text-6xl lg:left-72">Вашият луксозен нов дом</div>
+        <img src="/ixora-welcome.webp" alt="ixora-welcome"  />
+      </div>
+
       {/* Prompt to view plan container */}
       <div className="p-4 bg-white">
           <div className='bg-orange-500'>
-            <Link href={'/apartments'} className=""><div className="py-4 text-white text-center text-3xl font-bold">План</div></Link>
+            <Link href={'/apartments'} className=""><div className="hover:scale-110 duration-200 py-4 text-white text-center text-3xl font-bold">План</div></Link>
           </div>
           <div className="inline-block ">
             <Link href={'/apartments'} className=""><img src="/ixora-apartments.webp" alt="Ixora Plan" className="opacity-50 hover:opacity-100 active:opacity-100" /></Link>
