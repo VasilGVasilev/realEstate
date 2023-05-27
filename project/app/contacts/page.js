@@ -85,7 +85,7 @@ export default function Contacts() {
             </div>
           </div>
         {/* div for Picture */}
-          <div className="flex-col justify-center py-10 lg:p-10 bg-white lg:bg-inherit lg:w-1/2">
+          <div className="flex-col justify-center py-10 lg:p-10 bg-white lg:bg-[#716657] lg:w-1/2">
             <div className="text-center font-bold text-xl text-orange-400 lg:text-white lg:py-4 mb-10 lg:text-3xl lg:font-bold">Вашият бъдещ дом</div>
             <img
               src="/ixora-apartments.webp"
