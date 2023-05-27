@@ -20,13 +20,19 @@ export default function Apartments() {
           
           <div className="relative inline-block ">
 
+            <Link href={'/apartments/penthouse'}><div className="absolute bFour cursor-pointer h-full w-full z-10" ></div></Link>
+            <Link href={'/apartments/third-floor'}><div className="absolute bThree cursor-pointer h-full w-full z-10" ></div></Link>
+            <Link href={'/apartments/second-floor'}><div className="absolute bTwo cursor-pointer h-full w-full z-10" ></div></Link>
+            <Link href={'/apartments/first-floor'}><div className="absolute bOne cursor-pointer h-full w-full z-10" ></div></Link>
+            <Link href={'/apartments/parking'}><div className="absolute bParking cursor-pointer h-full w-full z-10" ></div></Link>
+            
             <Link href={'/apartments/penthouse'}><div className="absolute penthouse cursor-pointer h-full w-full z-10 hover:bg-black hover:opacity-40 active:bg-black active:opacity-40" ></div></Link>
             <Link href={'/apartments/third-floor'}><div className="absolute thirdFloor cursor-pointer h-full w-full z-10 hover:bg-black hover:opacity-40 active:bg-black active:opacity-40" ></div></Link>
             <Link href={'/apartments/second-floor'}><div className="absolute secondFloor cursor-pointer h-full w-full z-10 hover:bg-black hover:opacity-40 active:bg-black active:opacity-40"></div></Link>
             <Link href={'/apartments/first-floor'}><div className="absolute firstFloor cursor-pointer h-full w-full z-10 hover:bg-black hover:opacity-40 active:bg-black active:opacity-40" ></div></Link>
             <Link href={'/apartments/parking'}><div className="absolute parking cursor-pointer h-full w-full z-10 hover:bg-black hover:opacity-40 active:bg-black active:opacity-40" ></div></Link>
 
-            <img src="/ixora-apartments.webp" alt="Ixora Plan" className="relative" />
+            <img src="/ixora-apartments-plan.webp" alt="Ixora Plan" className="relative" />
 
           </div>
 
