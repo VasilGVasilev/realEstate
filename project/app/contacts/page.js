@@ -46,7 +46,6 @@ export default function Contacts() {
                         className="bg-transparent hover:animate-bounce"
                         width={24}
                         height={10}
-                        priority
                       />
                       <div className="text-sm sm:text-base font-bold text-gray-500 ">ул. „Пирински еделвайс“ 3, 1415 в.з. Симеоново - Драгалевци, Симеоново-Драгалевци</div>
 
@@ -60,7 +59,6 @@ export default function Contacts() {
                         className="bg-transparent hover:animate-bounce"
                         width={27}
                         height={14}
-                        priority
                       />
                       <div className="text-sm sm:text-base font-bold text-gray-500"><a href={`tel:00359886849995`}>00359886849995</a></div>
 
@@ -74,7 +72,6 @@ export default function Contacts() {
                         className="bg-transparent hover:animate-bounce"
                         width={28}
                         height={12}
-                        priority
                       />
 
                       <div className="text-sm sm:text-base font-bold text-gray-500"><a href="mailto:office@creativestudiobg.com">office@creativestudiobg.com</a></div>
@@ -89,13 +86,13 @@ export default function Contacts() {
           </div>
         {/* div for Picture */}
           <div className="flex-col justify-center py-10 lg:p-10 bg-white lg:bg-inherit lg:w-1/2">
-            <div className="text-center font-bold text-xl text-orange-400 lg:text-white lg:py-4 pb-10 lg:text-3xl lg:font-bold">Вашият бъдещ дом</div>
-              <img
-                src="/ixora-welcome.webp"
-                alt="description"
-                fill
-                priority
-              />
+            <div className="text-center font-bold text-xl text-orange-400 lg:text-white lg:py-4 mb-10 lg:text-3xl lg:font-bold">Вашият бъдещ дом</div>
+            <img
+              src="/ixora-apartments.webp"
+              alt="description"
+              className="shadow-3xl"
+              fill="true"
+            />
           </div>
       </div>
       </>
