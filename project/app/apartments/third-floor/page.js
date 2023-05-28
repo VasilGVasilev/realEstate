@@ -7,7 +7,7 @@ export const metadata = {
   title: 'Трети етаж - Ixora Residence',
 };
 
-export const revalidate = 30; // revalidate this page every 60 seconds
+export const revalidate = 0; // revalidate this page every 60 seconds
 
 
 const sold = "hover:bg-red-700 hover:opacity-40 active:bg-red-700 active:opacity-40";
