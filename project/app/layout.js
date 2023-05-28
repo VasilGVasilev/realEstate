@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
       <body className='bg-[#464646]'>
         <header>
 
-          <nav className={`fixed z-20 flex-col w-full text-base bg-gradient-to-b from-[#464646] from-10% via-[#7c7061] via-70% to-[#716657] to-90%`}>
+          <nav className={`fixed z-20 flex-col w-full text-base bg-gradient-to-b from-[#464646] from-10% via-[#716657] via-70% to-[#716657] to-90%`}>
             <div className='px-10 py-3 flex justify-between'>
               <div>
 
@@ -89,7 +89,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <footer>
-          <div className="h-fit w-full flex-col p-10 bg-gradient-to-t from-[#464646] from-10% via-[#7c7061] via-70% to-[#716657] to-90% lg:px-40">
+          <div className="h-fit w-full flex-col p-10 bg-gradient-to-t from-[#464646] from-10% via-[#716657] via-70% to-[#716657] to-90% lg:px-40">
             <div className='flex justify-center relative -top-9'>
               <img src="/up-to-top.svg" className="w-10 h-10 cursor-pointer animate-bounce" onClick={toTopHandle} alt="" />
             </div>

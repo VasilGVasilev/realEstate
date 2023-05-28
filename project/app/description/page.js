@@ -49,6 +49,10 @@ export default function Description() {
             </div>
           </div>
         </div>
+        {/* Container for timeline */}
+        <div>
+          
+        </div>
         {/* Container for actual building footage */}
         <div>
           <div className="bg-orange-300 py-4">

@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link";
 
 export const metadata = {
   title: 'Инвеститор - Ixora Residence',
@@ -44,9 +45,9 @@ export default function Investor() {
             <div className="py-10">
               {/* Conatiner for name and description */}
               <div className="px-10 lg:pb-10">
-                <div className="py-5 bg-white underline text-orange-500 text-center text-xl italic font-mono">
+                <Link href={'http://creativestudiobg.com/dahlia-house'}><div className="py-5 bg-white underline text-orange-500 text-center text-xl italic font-mono hover:scale-105 duration-200">
                   Еднофамилна къща Далия
-                </div>
+                </div></Link>
                 <div className="pb-5 bg-white text-gray-500 text-center text-sm font-medium font-mono lg:px-80">Едно бижу в полите на Витоша с уникални гледки към София. Луксозен имот с над 700 кв.м. РЗП и двор от 750 кв.м. в престижния кв. Драгалевци. </div>
               </div>
 

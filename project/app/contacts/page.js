@@ -32,11 +32,11 @@ export default function Contacts() {
             <div className="flex-col w-full h-fit lg:w-full">
 
               <div className="bg-white">
-                <div className="flex justify-center text-orange-500 py-4 pt-10 text-center text-3xl font-bold">Sales офис</div>
+                <div className="flex justify-center text-orange-500 py-4 pt-10 text-center text-3xl font-bold hover:scale-105 duration-200">Sales офис</div>
               </div>
 
               <div className="flex justify-center p-8 lg:p-20">              
-                <div className="flex justify-center h-56 w-96 p-5 shadow-xl bg-gradient-to-b from-gray-50 to-white lg:w-full lg:h-96">
+                <div className="flex justify-center h-56 w-96 p-5 shadow-xl bg-gradient-to-b from-gray-50 to-white lg:hover:scale-105 duration-200 lg:hover:shadow-none lg:w-full lg:h-96">
                   <div className="space-y-10 flex flex-col justify-center">
 
                     <div className="flex space-x-3 lg:p-5">
@@ -86,11 +86,11 @@ export default function Contacts() {
           </div>
         {/* div for Picture */}
           <div className="flex-col justify-center py-10 lg:p-10 bg-white lg:bg-[#716657] lg:w-1/2">
-            <div className="text-center font-bold text-xl text-orange-400 lg:text-white lg:py-4 mb-10 lg:text-3xl lg:font-bold">Вашият бъдещ дом</div>
+            <div className="text-center font-bold text-xl text-orange-400  lg:text-white lg:py-4 mb-10 lg:text-3xl lg:font-bold hover:scale-105 duration-200">Вашият бъдещ дом</div>
             <img
               src="/ixora-apartments.webp"
               alt="description"
-              className="shadow-3xl"
+              className="shadow-3xl lg:hover:scale-105 duration-200 lg:hover:shadow-none"
               fill="true"
             />
           </div>
