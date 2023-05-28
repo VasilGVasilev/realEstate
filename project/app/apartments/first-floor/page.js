@@ -44,6 +44,7 @@ export default function firstFloor() {
           <div className="py-4 text-white text-center text-2xl font-extrabold">Първи етаж</div>
         </div>
         <div className="p-5 bg-white">
+
           <div className="pt-5 flex-col text-orange-500">
               {/* default template */}
               {apartment.ap === null ?
@@ -76,7 +77,6 @@ export default function firstFloor() {
               
           </div>
 
-
           <div className="relative inline-block">
 
             <div className={`absolute apartmentFour h-full w-full z-10 ${available}`} onClick={()=>updateInfo(4, 82.96, 22.20, 105.16)}></div>
@@ -86,28 +86,6 @@ export default function firstFloor() {
             
             <img src="/plans/first-floor.webp" alt="Ixora Plan" className="relative" />
 
-          </div>
-
-
-          <div className="py-7">
-              <div className="flex justify-around">
-                
-                <div>
-                  <div className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-red-700 opacity-40"></div>
-                  <div>Продаден</div>
-                </div>
-
-                <div>
-                  <div className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-green-400 opacity-40"></div>
-                  <div>Свободен</div>
-                </div>
-
-                <div>
-                  <div className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-blue-400 opacity-40"></div>
-                  <div>Резервиран</div>
-                </div>
-
-              </div>
           </div>
 
 

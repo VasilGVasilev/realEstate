@@ -41,6 +41,8 @@ export default function firstFloor() {
         </div>
         <div className="p-10 bg-white">
 
+
+
           <div className="pt-5 flex-col text-orange-500">
               {/* default template */}
               {unit.mqsto === null ?
@@ -65,51 +67,31 @@ export default function firstFloor() {
 
           <div className="relative inline-block">
 
-            <div className={`absolute parkOutOne h-full w-full z-10 ${available}`} onClick={() => updateInfo('паркомясто 1', 20.8)}></div>
-            <div className={`absolute parkOutTwo h-full w-full z-10 ${sold}`} onClick={() => updateInfo(null)}></div>
-            <div className={`absolute parkOutThree h-full w-full z-10 ${sold}`} onClick={() => updateInfo(null)}></div>
+            <div className={`absolute parkOutOne h-full w-full z-20 ${available}`} onClick={() => updateInfo('паркомясто 1', 20.8)}></div>
+            <div className={`absolute parkOutTwo h-full w-full z-20 ${sold}`} onClick={() => updateInfo(null)}></div>
+            <div className={`absolute parkOutThree h-full w-full z-20 ${sold}`} onClick={() => updateInfo(null)}></div>
 
-            <div className={`absolute parkingOne h-full w-full z-10 ${available}`} onClick={() => updateInfo('гараж 1', 20.0)}></div>
-            <div className={`absolute parkingTwo h-full w-full z-10 ${available}`} onClick={() => updateInfo('гараж 2', 18.8)}></div>
-            <div className={`absolute parkingThree h-full w-full z-10 ${available}`} onClick={() => updateInfo('гараж 3', 19.6)}></div>
-            <div className={`absolute parkingFour h-full w-full z-10 ${available}`} onClick={() => updateInfo('гараж 4', 19.2)}></div>
-            <div className={`absolute parkingFive h-full w-full z-10 ${available}`} onClick={() => updateInfo('гараж 5', 16.6)}></div>
-            <div className={`absolute parkingSix h-full w-full z-10 ${available}`} onClick={() => updateInfo('гараж 6', 16.6)}></div>
-            <div className={`absolute parkingSeven h-full w-full z-10 ${available}`} onClick={() => updateInfo('гараж 7', 19.2)}></div>
-            <div className={`absolute parkingEight h-full w-full z-10 ${available}`} onClick={() => updateInfo('гараж 8', 19.2)}></div>
-            <div className={`absolute parkingNine h-full w-full z-10 ${available}`} onClick={() => updateInfo('гараж 9', 19.2)}></div>
-            <div className={`absolute parkingTen h-full w-full z-10 ${available}`} onClick={() => updateInfo('гараж 10', 22.2)}></div>
-            <div className={`absolute parkingEleven h-full w-full z-10 ${available}`} onClick={() => updateInfo('гараж 11', 43.0)}></div>
-            <div className={`absolute parkingTwelve h-full w-full z-10 ${available}`} onClick={() => updateInfo('гараж 12', 19.2)}></div>
-            <div className={`absolute parkingThirteen h-full w-full z-10 ${available}`} onClick={() => updateInfo('гараж 13', 19.2)}></div>
-            <div className={`absolute parkingFourteen h-full w-full z-10 ${available}`} onClick={() => updateInfo('гараж 14', 33.7)}></div>
-            <div className={`absolute parkingFifteen h-full w-full z-10 ${available}`} onClick={() => updateInfo('гараж 15', 30.6)}></div>
-            <div className={`absolute parkingSixteen h-full w-full z-10 ${available}`} onClick={() => updateInfo('гараж 16', 18.8)}></div>
-            <div className={`absolute parkingSeventeen h-full w-full z-10 ${available}`} onClick={() => updateInfo('гараж 17', 19.9)}></div>
+            <div className={`absolute parkingOne h-full w-full z-20 ${available}`} onClick={() => updateInfo('гараж 1', 20.0)}></div>
+            <div className={`absolute parkingTwo h-full w-full z-20 ${available}`} onClick={() => updateInfo('гараж 2', 18.8)}></div>
+            <div className={`absolute parkingThree h-full w-full z-20 ${available}`} onClick={() => updateInfo('гараж 3', 19.6)}></div>
+            <div className={`absolute parkingFour h-full w-full z-20 ${available}`} onClick={() => updateInfo('гараж 4', 19.2)}></div>
+            <div className={`absolute parkingFive h-full w-full z-20 ${available}`} onClick={() => updateInfo('гараж 5', 16.6)}></div>
+            <div className={`absolute parkingSix h-full w-full z-20 ${available}`} onClick={() => updateInfo('гараж 6', 16.6)}></div>
+            <div className={`absolute parkingSeven h-full w-full z-20 ${available}`} onClick={() => updateInfo('гараж 7', 19.2)}></div>
+            <div className={`absolute parkingEight h-full w-full z-20 ${available}`} onClick={() => updateInfo('гараж 8', 19.2)}></div>
+            <div className={`absolute parkingNine h-full w-full z-20 ${available}`} onClick={() => updateInfo('гараж 9', 19.2)}></div>
+            <div className={`absolute parkingTen h-full w-full z-20 ${available}`} onClick={() => updateInfo('гараж 10', 22.2)}></div>
+            <div className={`absolute parkingEleven h-full w-full z-20 ${available}`} onClick={() => updateInfo('гараж 11', 43.0)}></div>
+            <div className={`absolute parkingTwelve h-full w-full z-20 ${available}`} onClick={() => updateInfo('гараж 12', 19.2)}></div>
+            <div className={`absolute parkingThirteen h-full w-full z-20 ${available}`} onClick={() => updateInfo('гараж 13', 19.2)}></div>
+            <div className={`absolute parkingFourteen h-full w-full z-20 ${available}`} onClick={() => updateInfo('гараж 14', 33.7)}></div>
+            <div className={`absolute parkingFifteen h-full w-full z-20 ${available}`} onClick={() => updateInfo('гараж 15', 30.6)}></div>
+            <div className={`absolute parkingSixteen h-full w-full z-20 ${available}`} onClick={() => updateInfo('гараж 16', 18.8)}></div>
+            <div className={`absolute parkingSeventeen h-full w-full z-20 ${available}`} onClick={() => updateInfo('гараж 17', 19.9)}></div>
+
 
             <img src="/plans/parking.webp" alt="Ixora Plan" className="relative" />
 
-          </div>
-
-          <div className="py-7">
-              <div className="flex justify-around">
-                
-                <div>
-                  <div className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-red-700 opacity-40"></div>
-                  <div>Продаден</div>
-                </div>
-
-                <div>
-                  <div className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-green-400 opacity-40"></div>
-                  <div>Свободен</div>
-                </div>
-
-                <div>
-                  <div className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-blue-400 opacity-40"></div>
-                  <div>Резервиран</div>
-                </div>
-
-              </div>
           </div>
 
         </div>

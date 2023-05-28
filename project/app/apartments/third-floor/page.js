@@ -84,26 +84,7 @@ export default function thirdFloor() {
 
             </div>
           </div>
-          <div className="py-7">
-              <div className="flex justify-around">
-                
-                <div>
-                  <div className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-red-700 opacity-40"></div>
-                  <div>Продаден</div>
-                </div>
 
-                <div>
-                  <div className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-green-400 opacity-40"></div>
-                  <div>Свободен</div>
-                </div>
-
-                <div>
-                  <div className="w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-blue-400 opacity-40"></div>
-                  <div>Резервиран</div>
-                </div>
-
-              </div>
-          </div>
 
         </div>
       </>
