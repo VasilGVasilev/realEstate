@@ -63,7 +63,7 @@ export default function RootLayout({ children }) {
             <div className=''>
 
               {/* mobile menu */}
-              <div onClick={toggleNavbar} className={ toggleClicked === true ? 'md:hidden flex flex-col bg-gradient-to-b from-[#464646] from-10% via-[#7c7061] via-70% to-[#716657] to-90% w-full text-white' : 'hidden'}>
+              <div onClick={toggleNavbar} className={ toggleClicked === true ? 'md:hidden flex flex-col bg-gradient-to-b from-[#464646] to-[#716657] w-full text-white' : 'hidden'}>
                 <Link className='flex justify-center p-3 text-base active:text-red-500 active:bg-stone-800 hover:text-red-500 hover:bg-stone-800' href={'/'} >Начало</Link>
                 <Link className='flex justify-center p-3 text-base active:text-red-500 active:bg-stone-800 hover:text-red-500 hover:bg-stone-800' href={'/description'}>За сградата</Link>
                 <Link className='flex justify-center p-3 text-base active:text-red-500 active:bg-stone-800 hover:text-red-500 hover:bg-stone-800' href={'/apartments'}>Апартаменти</Link>
