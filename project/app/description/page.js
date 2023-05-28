@@ -55,19 +55,19 @@ export default function Description() {
             <div className="text-white text-center text-2xl font-bold">Етап на проекта - Акт 14</div>
           </div>
           <div className="flex-col p-10 bg-gray-900">
-            <div className="pb-10 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+            <div className="pb-10 flex justify-center transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
               <img 
                 src="/buildProcessOne.webp" 
-                alt="buildProcessOne" 
+                alt="buildProcessOne"
               />
             </div>
-            <div className="pb-10 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" >
+            <div className="pb-10 flex justify-center transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" >
               <img 
                 src="/buildProcessTwo.webp" 
                 alt="buildProcessTwo" 
               />
             </div>
-            <div className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+            <div className="flex justify-center transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
               <img 
                 src="/buildProcessThree.webp" 
                 alt="buildProcessThree" 

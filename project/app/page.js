@@ -9,7 +9,6 @@ export const metadata = {
 
 export default function Home() {
 
-
   return (
     <div>
       <div>
@@ -26,9 +25,13 @@ export default function Home() {
       </div>
 
       {/* Welcome image */}
-      <div className="relative">
-        <div className="absolute bottom-5 left-8 text-white font-black text-2xl  md:bottom-10 md:text-4xl md:left-44 lg:text-6xl lg:left-72">Вашият луксозен нов дом</div>
-        <img src="/ixora-welcome.webp" alt="ixora-welcome"  />
+      <div className="relative inline-block">
+        <img src="/ixora-welcome.webp" alt="Image" />
+        <div className="absolute bottom-[10%] left-0 w-full h-full flex items-end justify-center ">
+          <div className="text-white text-center text-2xl md:text-4xl lg:text-6xl font-bold">
+            Вашият луксозен нов дом
+          </div>
+        </div>
       </div>
 
       {/* Prompt to view plan container */}
