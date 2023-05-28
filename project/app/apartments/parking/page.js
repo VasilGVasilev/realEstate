@@ -14,8 +14,6 @@ const reserved = "hover:bg-blue-400 hover:opacity-40 active:bg-blue-400 active:o
 export default function firstFloor() {
 
 
-
-
     return (
       <>
         <div className='bg-orange-500'>

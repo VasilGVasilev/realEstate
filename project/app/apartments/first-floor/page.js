@@ -14,11 +14,24 @@ const reserved = "hover:bg-blue-400 hover:opacity-40 active:bg-blue-400 active:o
 
 export default function firstFloor() {
 
-    const [apartment, setApartment] = useState(null);
+
+    const [apartment, setApartment] = useState({
+      ap: null,
+      plosht: null,
+      dvor: null,
+      total: null,
+    });
+
+
     const myRef = useRef(null);
 
-    const updateInfo = (currentAp) => {
-      setApartment(s=>currentAp);
+    const updateInfo = (ap, plosht, dvor, total) => {
+      setApartment({
+        ap,
+        plosht,
+        dvor,
+        total,
+      });
       myRef.current.scrollIntoView();
 
     }
@@ -29,131 +42,45 @@ export default function firstFloor() {
           <div className="py-4 text-white text-center text-2xl font-extrabold">Първи етаж</div>
         </div>
         <div className="p-5 bg-white">
-        <div className="pt-5 flex-col text-orange-500">
-            {/* one static template */}
-            {/* default */}
-            {apartment === null ?
-              <div className='mb-8 bg-orange-300'>
-                <div className="py-4 text-white text-center text-2xl font-extrabold">Площообразуване</div>
-              </div> 
-            : null}
-            {/* 1 */}
-            {apartment === 1 ? 
-            <>
-            <div className='pb-10 bg-white'>
-              <div className="text-orange-500 text-center text-2xl font-extrabold underline">Площообразуване - ап. 1</div>
-            </div> 
-            <div className="mb-5 border-r-2 border-l-2 border-orange-500 text-center" >
-              <div className="flex justify-center space-x-3 ">
-                <div>Площ</div>
-                <div className="text-black"></div>
-                <div className="font-bold">182,43 м²</div>
-              </div>
-              <div className="font-bold"> + </div>
-              <div className="flex justify-center space-x-3 ">
-                <div>Двор</div>
-                <div className="text-black"></div>
-                <div className="font-bold">73,90 м²</div>
-              </div>
-              <div className="font-bold"> = </div>
-              <div className="flex justify-center space-x-3 ">
-                <div>Обща площ</div>
-                <div className="text-black"></div>
-                <div className="font-bold">256,33 м²</div>
-              </div>
-            </div> </>: null}
-            
-            {/* 2 */}
-            
-            {apartment === 2 ? 
-            <>
-            <div className='pb-10 bg-white'>
-              <div className="text-orange-500 text-center text-2xl font-extrabold underline">Площообразуване - ап. 2</div>
-            </div> 
-            <div className="mb-5 border-r-2 border-l-2 border-orange-500 text-center" >
-              <div className="flex justify-center space-x-3 ">
-                <div>Площ</div>
-                <div className="text-black"></div>
-                <div className="font-bold">93,02 м²</div>
-              </div>
-              <div className="font-bold"> + </div>
-              <div className="flex justify-center space-x-3 ">
-                <div>Двор</div>
-                <div className="text-black"></div>
-                <div className="font-bold">69,00 м²</div>
-              </div>
-              <div className="font-bold"> = </div>
-              <div className="flex justify-center space-x-3 ">
-                <div>Обща площ</div>
-                <div className="text-black"></div>
-                <div className="font-bold">162,02 м²</div>
-              </div>
-            </div> </>: null}
-
-            {/* 3 */}
-            
-            {apartment === 3 ? 
-            <>
-            <div className='pb-10 bg-white'>
-              <div className="text-orange-500 text-center text-2xl font-extrabold underline">Площообразуване - ап. 3</div>
-            </div> 
-            <div className="mb-5 border-r-2 border-l-2 border-orange-500 text-center" >
-              <div className="flex justify-center space-x-3 ">
-                <div>Площ</div>
-                <div className="text-black"></div>
-                <div className="font-bold">146,04 м²</div>
-              </div>
-              <div className="font-bold"> + </div>
-              <div className="flex justify-center space-x-3 ">
-                <div>Двор</div>
-                <div className="text-black"></div>
-                <div className="font-bold">45,70 м²</div>
-              </div>
-              <div className="font-bold"> = </div>
-              <div className="flex justify-center space-x-3 ">
-                <div>Обща площ</div>
-                <div className="text-black"></div>
-                <div className="font-bold">191,74 м²</div>
-              </div>
-            </div> </>: null}
-
-            {/* 4 */}
-            
-            {apartment === 4 ? 
-            <>
-            <div className='pb-10 bg-white'>
-              <div className="text-orange-500 text-center text-2xl font-extrabold underline">Площообразуване - ап. 4</div>
-            </div> 
-            <div className="mb-5 border-r-2 border-l-2 border-orange-500 text-center" >
-              <div className="flex justify-center space-x-3 ">
-                <div>Площ</div>
-                <div className="text-black"></div>
-                <div className="font-bold">82,96 м²</div>
-              </div>
-              <div className="font-bold"> + </div>
-              <div className="flex justify-center space-x-3 ">
-                <div>Двор</div>
-                <div className="text-black"></div>
-                <div className="font-bold">22,20 м²</div>
-              </div>
-              <div className="font-bold"> = </div>
-              <div className="flex justify-center space-x-3 ">
-                <div>Обща площ</div>
-                <div className="text-black"></div>
-                <div className="font-bold">105,16 м²</div>
-              </div>
-            </div> </>: null}
-            
-
+          <div className="pt-5 flex-col text-orange-500">
+              {/* default template */}
+              {apartment.ap === null ?
+                <div className='mb-8 bg-orange-300'>
+                  <div className="py-4 text-white text-center text-2xl font-extrabold">Площообразуване</div>
+                </div> 
+              : 
+              <>
+                <div className='pb-10 bg-white'>
+                  <div className="text-orange-500 text-center text-2xl font-extrabold underline">Площообразуване - ап. {apartment.ap}</div>
+                </div> 
+                <div className="mb-5 border-r-2 border-l-2 border-orange-500 text-center" >
+                  <div className="flex justify-center space-x-3 ">
+                    <div>Площ</div>
+                    <div className="font-bold">{apartment.plosht} м²</div>
+                  </div>
+                  <div className="font-bold"> + </div>
+                  <div className="flex justify-center space-x-3 ">
+                    <div>Двор</div>
+                    <div className="font-bold">{apartment.dvor} м²</div>
+                  </div>
+                  <div className="font-bold"> = </div>
+                  <div className="flex justify-center space-x-3 ">
+                    <div>Обща площ</div>
+                    <div className="font-bold">{apartment.total} м²</div>
+                  </div>
+                </div> 
+              </>
+              }
+              
           </div>
 
 
           <div className="relative inline-block">
 
-            <div className={`absolute apartmentFour h-full w-full z-10 ${available}`} onClick={()=>updateInfo(4)}></div>
-            <div className={`absolute apartmentThree h-full w-full z-10 ${available}`} onClick={()=>updateInfo(3)}></div>
-            <div className={`absolute apartmentTwo h-full w-full z-10 ${available} `} onClick={()=>updateInfo(2)}></div>
-            <div className={`absolute apartmentOne h-full w-full z-10 ${available} `} onClick={()=>updateInfo(1)}></div>
+            <div className={`absolute apartmentFour h-full w-full z-10 ${available}`} onClick={()=>updateInfo(4, 82.96, 22.20, 105.16)}></div>
+            <div className={`absolute apartmentThree h-full w-full z-10 ${available}`} onClick={()=>updateInfo(3, 146.04, 45.70, 191.74)}></div>
+            <div className={`absolute apartmentTwo h-full w-full z-10 ${available} `} onClick={()=>updateInfo(2, 93.02, 69.00, 162.02)}></div>
+            <div className={`absolute apartmentOne h-full w-full z-10 ${available} `} onClick={()=>updateInfo(1, 182.43, 73.90, 256.33)}></div>
             
             <img src="/plans/first-floor.webp" alt="Ixora Plan" className="relative" />
 
