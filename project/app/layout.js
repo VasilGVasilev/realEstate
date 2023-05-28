@@ -80,18 +80,16 @@ export default function RootLayout({ children }) {
 
         </header>
         <main className='app'>
-{/* fixed navbar requires relative pt-16 here */}
+{/* fixed navbar requires relative pt here */}
           <div className='grid place-items-center pt-14 md:pt-16 lg:pt-24'>
-            {/* <div>
-              <img src="/ixora-welcome.webp" alt="" />
-            </div> */}
+
           </div>
           {children}
         </main>
         <footer>
           <div className="h-fit w-full flex-col p-10 bg-gradient-to-t from-[#464646] from-10% via-[#716657] via-70% to-[#716657] to-90% lg:px-40">
-            <div className='flex justify-center relative -top-9'>
-              <img src="/up-to-top.svg" className="w-10 h-10 cursor-pointer animate-bounce" onClick={toTopHandle} alt="" />
+            <div className='flex justify-center relative bottom-9'>
+              <img src="/up-to-top.svg" className="w-10 h-10 cursor-pointer animate-bounce" onClick={toTopHandle} alt="up-to-top-btn" />
             </div>
             <div className='flex justify-center items-center'>
               <div className='md:flex md:justify-center'>

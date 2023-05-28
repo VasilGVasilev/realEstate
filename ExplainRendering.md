@@ -17,3 +17,11 @@ With Next.js the default approach is dependant on the the final result, we want 
     The page is pre-rendered at build-time when using SSG with Next.js. That is, the user will not have to wait for the page to load in the browser; instead, the page will be rendered immediately. When the browser receives the page, it’s usually a simple HTML without a lot of content.
 
     This then loads the scripts to pull the content into the page, a process also known as hydration. Allowing us to serve the entire content on the first load. The scripts can still hydrate the page during this process, but ideally with fewer changes or no changes at all.
+
+# Differences between SSR and ISR (for caching) 
+
+    The main difference between SSR and ISR is when the page is rendered. SSR renders the page on the server and sends a fully rendered page to the client, while ISR pre-renders the page and updates it in the background as new data becomes available.
+
+    Another difference is that SSR requires a server to render the page, while ISR can be pre-rendered at build time or runtime. This means that SSR can be slower to load than ISR, as it requires a round trip to the server, while ISR can be served from a CDN, resulting in faster load times.
+
+    SSR is better suited for pages that require dynamic data, such as a product page or a search results page, while ISR is better suited for pages that require periodic updates, such as a news or weather page.
