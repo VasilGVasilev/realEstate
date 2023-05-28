@@ -7,6 +7,9 @@ export const metadata = {
   title: 'Втори етаж - Ixora Residence',
 };
 
+export const revalidate = 120; // revalidate this page every 60 seconds
+
+
 const sold = "hover:bg-red-700 hover:opacity-40 active:bg-red-700 active:opacity-40";
 const available = "hover:bg-green-400 hover:opacity-40 active:bg-green-400 active:opacity-40 cursor-pointer";
 const reserved = "hover:bg-blue-400 hover:opacity-40 active:bg-blue-400 active:opacity-40 cursor-pointer";
