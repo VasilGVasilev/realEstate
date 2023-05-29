@@ -25,3 +25,6 @@ With Next.js the default approach is dependant on the the final result, we want 
     Another difference is that SSR requires a server to render the page, while ISR can be pre-rendered at build time or runtime. This means that SSR can be slower to load than ISR, as it requires a round trip to the server, while ISR can be served from a CDN, resulting in faster load times.
 
     SSR is better suited for pages that require dynamic data, such as a product page or a search results page, while ISR is better suited for pages that require periodic updates, such as a news or weather page.
+
+    Image Component vs img tag
+    img tag is better for really static images, since there is no build in optimisation to download latest view, so an icon will flicker on reload, while Image Component is good for SSR that is a bit more dynamic (ISR) so the flickering of the image is not annoying due to pending state that comes with it - status of apartment.

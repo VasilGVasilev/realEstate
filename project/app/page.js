@@ -18,9 +18,13 @@ export default function Home() {
       </div>
 
       {/* Description container */}
-      <div className="p-10 bg-white md:px-32 lg:px-40">
-        <div className="py-5 bg-white text-orange-500 text-left text-2xl italic font-mono">Ixora Luxury Residence: </div>
-        <div>Изпълнението и всички довършителни работи са заложени в изключително висок, бутиков класИзпълнението и всички довършителни работи са заложени в изключително висок, бутиков класИзпълнението и всички довършителни работи са заложени в изключително висок, бутиков класИзпълнението и всички довършителни работи са заложени в изключително висок, бутиков клас</div>
+      <div className="">
+        <div className="p-10 bg-gradient-to-l from-orange-100 from-0% via-orange-50 via-20% to-orange-100 to-90% md:px-32 lg:px-40">
+          <div className="py-5 border-orange-500 border-t-2 border-b-2">
+            <div className="py-5 text-orange-600 text-left text-2xl italic font-semibold">Ixora Luxury Residence: </div>
+            <div className="text-left font-semibold text-gray-700">Изпълнението и всички довършителни работи са заложени в изключително висок - бутиков клас. Ixora Residence се състои от 13 просторни апартамента и 17 гаража. Апартаментите разкриват чудесна панорамна гледка към София и Витоша, а сградата разполага с напълно оборудвани спа център и фитнес зала за ексклузивно ползване от бъдещите обитатели. Вертикалната планировка по специален ландшафтен проект оформя зелен пояс около сградата, който създава усещане за живот в паркова среда.</div>
+          </div>
+        </div>
       </div>
 
       {/* Welcome image */}
