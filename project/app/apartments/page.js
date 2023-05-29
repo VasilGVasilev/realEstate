@@ -1,10 +1,13 @@
 'use client'
 
 import Link from 'next/link';
+import Image from 'next/image';
+import { imageLoader } from '../imgLoader'
 
 export const metadata = {
   title: 'Свободни Апартаменти - Ixora Residence',
 };
+
 
 export default function Apartments() {
 
@@ -32,7 +35,18 @@ export default function Apartments() {
             <Link href={'/apartments/first-floor'}><div className="absolute firstFloor cursor-pointer h-full w-full z-10 hover:bg-black hover:opacity-40 active:bg-black active:opacity-40" ></div></Link>
             <Link href={'/apartments/parking'}><div className="absolute parking cursor-pointer h-full w-full z-10 hover:bg-black hover:opacity-40 active:bg-black active:opacity-40" ></div></Link>
 
-            <img src="/ixora-apartments-plan.webp" alt="Ixora Plan" className="relative" />
+            {/* <img src="/ixora-apartments-plan.webp" alt="Ixora Plan" className="relative" /> */}
+                
+            <div className='relative '>
+              <Image 
+                loader={imageLoader}
+                src='/ixora-apartments-plan.webp'
+                alt="Ixora Plan"
+                width={5000}
+                height={2813}   
+              ></Image>
+            </div>
+          
 
           </div>
 

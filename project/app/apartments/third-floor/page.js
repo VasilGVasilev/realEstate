@@ -1,7 +1,8 @@
 'use client'
 
 import { useRef, useState } from "react";
-
+import { imageLoader } from "@/app/imgLoader";
+import Image from "next/image";
 
 export const metadata = {
   title: 'Трети етаж - Ixora Residence',
@@ -80,7 +81,17 @@ export default function thirdFloor() {
               <div className={`absolute apartmentNine h-full w-full z-10 ${available} `} onClick={()=>updateInfo(9, 100.76, 78.10)}></div>
               
 
-              <img src="/plans/third-floor.webp" alt="Ixora Plan" className="relative" />
+              {/* <img src="/plans/third-floor.webp" alt="Ixora Plan" className="relative" /> */}
+
+              <div className='relative '>
+                <Image 
+                  loader={imageLoader}
+                  src='/plans/third-floor.webp'
+                  alt="Ixora Plan"
+                  width={3509}
+                  height={4967}   
+                ></Image>
+              </div>
 
             </div>
           </div>

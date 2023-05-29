@@ -1,6 +1,8 @@
 'use client'
 
 import { useRef, useState } from "react";
+import { imageLoader } from "@/app/imgLoader";
+import Image from "next/image";
 
 
 export const metadata = {
@@ -82,8 +84,16 @@ export default function penthouseFloor() {
 
             <div className={`absolute apartmentThirteen h-full w-full z-10 ${available}`} onClick={()=>updateInfo(13, 368.85, 193.90, 562.75)}></div>
 
-            <img src="/plans/penthouse.webp" alt="Ixora Plan" className="relative" />
-
+            {/* <img src="/plans/penthouse.webp" alt="Ixora Plan" className="relative" /> */}
+            <div className='relative '>
+              <Image 
+                loader={imageLoader}
+                src='/plans/penthouse.webp'
+                alt="Ixora Plan"
+                width={3509}
+                height={4967}   
+              ></Image>
+            </div>
           </div>
 
         </div>

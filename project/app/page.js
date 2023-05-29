@@ -1,6 +1,5 @@
 'use client'
 import Link from "next/link"
-import { useEffect } from "react";
 
 export const metadata = {
   title: 'Ixora Residence by Creative Studio',
@@ -26,7 +25,9 @@ export default function Home() {
 
       {/* Welcome image */}
       <div className="relative inline-block">
+        
         <img src="/ixora-welcome.webp" alt="Image" />
+
         <div className="absolute bottom-[10%] left-0 w-full h-full flex items-end justify-center ">
           <div className="text-white text-center text-2xl md:text-4xl lg:text-6xl font-bold">
             Вашият луксозен нов дом

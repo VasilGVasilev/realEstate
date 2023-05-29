@@ -19,7 +19,6 @@ export default function RootLayout({ children }) {
   const toTopHandle = () => {
     window.scrollTo(0, 0);
   }
-
 // #837667
 // #716657
 // #464646

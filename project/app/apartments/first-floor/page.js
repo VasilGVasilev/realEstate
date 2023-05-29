@@ -1,11 +1,15 @@
 'use client'
 
 import { useRef, useState } from "react";
+import Image from 'next/image';
+import { imageLoader } from "../../imgLoader";
+
 
 
 export const metadata = {
   title: 'Първи етаж - Ixora Residence',
 };
+
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 
@@ -84,7 +88,17 @@ export default function firstFloor() {
             <div className={`absolute apartmentTwo h-full w-full z-10 ${available} `} onClick={()=>updateInfo(2, 93.02, 69.00, 162.02)}></div>
             <div className={`absolute apartmentOne h-full w-full z-10 ${available} `} onClick={()=>updateInfo(1, 182.43, 73.90, 256.33)}></div>
             
-            <img src="/plans/first-floor.webp" alt="Ixora Plan" className="relative" />
+            {/* <img src="/plans/first-floor.webp" alt="Ixora Plan" className="relative" /> */}
+            
+            <div className="relative">
+              <Image 
+                loader={imageLoader}
+                src='/plans/first-floor.webp'
+                alt="Ixora Plan"
+                width={3509}
+                height={4967}  
+              ></Image>
+            </div>
 
           </div>
 
