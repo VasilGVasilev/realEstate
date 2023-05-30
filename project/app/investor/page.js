@@ -1,6 +1,8 @@
 'use client'
 
 import Link from "next/link";
+import Image from "next/image"
+import { imageLoader } from "../imgLoader";
 
 export const metadata = {
   title: 'Инвеститор - Ixora Residence',
@@ -52,9 +54,30 @@ export default function Investor() {
               </div>
 
               <div className="bg-white px-10 w-full h-full flex-col justify-center space-y-5">
-                  <img src={`/dalia/dalia-two.webp`} className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none" alt="image" />
-                  <img src={`/dalia/dalia-three.webp`} className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none" alt="image" />
-                  <img src={`/dalia/dalia-four.webp`} className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none" alt="image" />
+                  <Image 
+                    loader={imageLoader}
+                    src="/dalia/dalia-one.webp"
+                    alt="Dalia"
+                    className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none"
+                    width={4242}
+                    height={2828} 
+                  />
+                  <Image 
+                    loader={imageLoader}
+                    src="/dalia/dalia-two.webp"
+                    alt="Dalia"
+                    className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none"
+                    width={2313}
+                    height={1542} 
+                  />
+                  <Image 
+                    loader={imageLoader}
+                    src="/dalia/dalia-three.webp"
+                    alt="Dalia"
+                    className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none"
+                    width={4242}
+                    height={2828} 
+                  />
 
               </div>
 
@@ -71,9 +94,30 @@ export default function Investor() {
               </div>
 
               <div className="bg-white px-10 w-full h-full flex-col justify-center space-y-5">
-                  <img src={`/west-end/west-end-one.webp`} className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" alt="image" />
-                  <img src={`/west-end/west-end-two.webp`} className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" alt="image" />
-                  <img src={`/west-end/west-end-three.webp`} className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" alt="image" />
+                  <Image 
+                    loader={imageLoader}
+                    src="/west-end/west-end-one.webp"
+                    alt="West-end"
+                    className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none"
+                    width={2400}
+                    height={2400} 
+                  />
+                  <Image 
+                    loader={imageLoader}
+                    src="/west-end/west-end-two.webp"
+                    alt="West-end"
+                    className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none"
+                    width={2400}
+                    height={1700} 
+                  />
+                  <Image 
+                    loader={imageLoader}
+                    src="/west-end/west-end-three.webp"
+                    alt="West-end"
+                    className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none"
+                    width={4000}
+                    height={2000} 
+                  />
 
               </div>
 
@@ -90,9 +134,30 @@ export default function Investor() {
               </div>
 
               <div className="bg-white px-10 w-full h-full flex-col justify-center space-y-5">
-                  <img src={`/tilia/tilia-one.webp`} className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" alt="image" />
-                  <img src={`/tilia/tilia-two.webp`} className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" alt="image" />
-                  <img src={`/tilia/tilia-three.webp`} className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" alt="image" />
+                  <Image 
+                    loader={imageLoader}
+                    src="/tilia/tilia-one.webp"
+                    alt="Tilia"
+                    className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+                    width={4946}
+                    height={3216} 
+                  />
+                  <Image 
+                    loader={imageLoader}
+                    src="/tilia/tilia-two.webp"
+                    alt="Tilia"
+                    className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+                    width={4946}
+                    height={3342} 
+                  />
+                  <Image 
+                    loader={imageLoader}
+                    src="/tilia/tilia-three.webp"
+                    alt="Tilia"
+                    className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+                    width={4946}
+                    height={3341} 
+                  />
 
               </div>
 

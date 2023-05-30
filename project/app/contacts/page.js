@@ -1,6 +1,7 @@
 'use client'
 
-import Image from "next/image";
+import Image from "next/image"
+import { imageLoader } from "../imgLoader";
 
 export const metadata = {
   title: 'Контакти - Ixora Residence',
@@ -87,12 +88,15 @@ export default function Contacts() {
         {/* div for Picture */}
           <div className="flex-col justify-center py-10 lg:p-10 bg-white lg:bg-[#716657] lg:w-1/2">
             <div className="text-center font-bold text-xl text-orange-400  lg:text-white lg:py-4 mb-10 lg:text-3xl lg:font-bold hover:scale-105 duration-200">Вашият бъдещ дом</div>
-            <img
+
+            <Image 
+              loader={imageLoader}
               src="/ixora-apartments.webp"
-              alt="description"
               className="shadow-3xl lg:hover:scale-105 duration-200 lg:hover:shadow-none"
-              fill="true"
-            />
+              width={5000}
+              height={2813} 
+              alt="Description">
+            </Image>
           </div>
       </div>
       </>

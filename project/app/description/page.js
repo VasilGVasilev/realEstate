@@ -1,5 +1,8 @@
 'use client'
 
+import Image from "next/image"
+import { imageLoader } from "../imgLoader";
+
 
 export const metadata = {
   title: 'За сградата - Ixora Residence',
@@ -60,22 +63,34 @@ export default function Description() {
           </div>
           <div className="flex-col p-10 bg-gray-900">
             <div className="pb-10 flex justify-center transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
-              <img 
-                src="/buildProcessOne.webp" 
-                alt="buildProcessOne"
-              />
+              <Image 
+                loader={imageLoader}
+                src="/buildProcessOne.webp"
+                alt="Build Process"
+                width={1310}
+                height={887} 
+              >
+              </Image>
             </div>
             <div className="pb-10 flex justify-center transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" >
-              <img 
-                src="/buildProcessTwo.webp" 
-                alt="buildProcessTwo" 
-              />
+              <Image 
+                loader={imageLoader}
+                src="/buildProcessTwo.webp"
+                alt="Build Process"
+                width={1600}
+                height={1200} 
+              >
+              </Image>
             </div>
             <div className="flex justify-center transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
-              <img 
-                src="/buildProcessThree.webp" 
-                alt="buildProcessThree" 
-              />
+              <Image 
+                loader={imageLoader}
+                src="/buildProcessThree.webp"
+                alt="Build Process"
+                width={1600}
+                height={1200} 
+              >
+              </Image>
             </div>
           </div>
         </div>

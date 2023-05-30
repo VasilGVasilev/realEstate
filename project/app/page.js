@@ -1,5 +1,7 @@
 'use client'
 import Link from "next/link"
+import Image from "next/image"
+import { imageLoader } from "./imgLoader"
 
 export const metadata = {
   title: 'Ixora Residence by Creative Studio',
@@ -30,7 +32,13 @@ export default function Home() {
       {/* Welcome image */}
       <div className="relative inline-block">
         
-        <img src="/ixora-welcome.webp" alt="Image" />
+        <Image 
+          loader={imageLoader}
+          src="/ixora-welcome.webp" 
+          width={5000}
+          height={2813} 
+          alt="Image">
+        </Image>
 
         <div className="absolute bottom-[10%] left-0 w-full h-full flex items-end justify-center ">
           <div className="text-white text-center text-2xl md:text-4xl lg:text-6xl font-bold">
@@ -45,7 +53,17 @@ export default function Home() {
             <Link href={'/apartments'} className=""><div className="hover:scale-110 duration-200 py-4 text-white text-center text-3xl font-bold">План</div></Link>
           </div>
           <div className="inline-block ">
-            <Link href={'/apartments'} className=""><img src="/ixora-apartments.webp" alt="Ixora Plan" className="opacity-50 hover:opacity-100 active:opacity-100" /></Link>
+            <Link href={'/apartments'} className="">
+              <Image 
+                loader={imageLoader}
+                src="/ixora-apartments.webp"
+                alt="Ixora Plan"
+                className="opacity-50 hover:opacity-100 active:opacity-100" 
+                width={5000}
+                height={2813} 
+              >
+              </Image>
+            </Link>
           </div>
       </div>
 
