@@ -80,7 +80,7 @@ export default function RootLayout({ children }) {
         </header>
         <main className='app'>
 {/* fixed navbar requires relative pt here */}
-          <div className='grid place-items-center pt-14 md:pt-16 lg:pt-24'>
+          <div className='grid place-items-center pt-14 md:pt-16 lg:pt-20'>
 
           </div>
           {children}
