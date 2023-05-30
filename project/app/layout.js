@@ -10,6 +10,7 @@ export const metadata = {
   description: 'Ixora Residence',
 }
 
+
 export default function RootLayout({ children }) {
   const [toggleClicked, setToggleClick] = useState(false);
 
@@ -31,7 +32,7 @@ export default function RootLayout({ children }) {
             <div className='px-10 py-3 flex justify-between'>
               <div>
 
-                <a className='hover:scale-110 duration-200 relative h-8 w-20 flex justify-center md:h-12 md:w-24 lg:h-16 lg:w-44 border-2 border-white md:border-none md:hover:border-2 md:hover:border-white ' href={`/`}>
+                <a className='hover:scale-110 duration-200 relative h-8 w-20 flex justify-center md:h-10 md:w-24 lg:h-16 lg:w-44 border-2 border-white md:border-none md:hover:border-2 md:hover:border-white ' href={`/`}>
                   <img src="/ixora.webp" alt="Ixora Logo" />
                 </a>
               </div>
@@ -40,11 +41,11 @@ export default function RootLayout({ children }) {
 
                 {/* desktop menu */}
                 <div className='flex items-center text-white' >
-                  <Link className='hidden p-3 hover:scale-125 hover:font-bold duration-200 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500  rounded-sm' href={'/'} >Начало</Link>
-                  <Link className='hidden p-3 hover:scale-125 hover:font-bold duration-200 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500  rounded-sm text-center' href={'/description'}>За сградата</Link>
-                  <Link className='hidden p-3 hover:scale-125 hover:font-bold duration-200 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500  rounded-sm' href={'/apartments'}>Апартаменти</Link>
-                  <Link className='hidden p-3 hover:scale-125 hover:font-bold duration-200 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500  rounded-sm' href={'/investor'}>Инвеститор</Link>
-                  <Link className='hidden p-3 hover:scale-125 hover:font-bold duration-200 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-sm hover:text-red-500  rounded-sm' href={'/contacts'}>Контакти</Link>
+                  <Link className='hidden p-3 hover:scale-125 hover:font-bold duration-200 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-base hover:text-red-500  rounded-sm' href={'/'} >Начало</Link>
+                  <Link className='hidden p-3 hover:scale-125 hover:font-bold duration-200 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-base hover:text-red-500  rounded-sm text-center' href={'/description'}>За сградата</Link>
+                  <Link className='hidden p-3 hover:scale-125 hover:font-bold duration-200 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-base hover:text-red-500  rounded-sm' href={'/apartments'}>Апартаменти</Link>
+                  <Link className='hidden p-3 hover:scale-125 hover:font-bold duration-200 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-base hover:text-red-500  rounded-sm' href={'/investor'}>Инвеститор</Link>
+                  <Link className='hidden p-3 hover:scale-125 hover:font-bold duration-200 lg:flex lg:p-5 lg:text-xl md:flex md:p-3 md:text-base hover:text-red-500  rounded-sm' href={'/contacts'}>Контакти</Link>
                 </div>
 
                 {/* mobile button */}
@@ -80,7 +81,7 @@ export default function RootLayout({ children }) {
         </header>
         <main className='app'>
 {/* fixed navbar requires relative pt here */}
-          <div className='grid place-items-center pt-14 md:pt-16 lg:pt-20'>
+          <div className='grid place-items-center pt-14 md:pt-16 lg:pt-[92px]'>
 
           </div>
           {children}

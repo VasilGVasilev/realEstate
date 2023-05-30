@@ -8,6 +8,7 @@ export const metadata = {
   description: 'Ixora Residence',
 }
 
+
 export default function Home() {
 
   return (
