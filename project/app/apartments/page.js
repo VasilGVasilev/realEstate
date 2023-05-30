@@ -22,7 +22,6 @@ export default function Apartments() {
           <div className="py-4 text-white text-center text-3xl font-bold">Разпределение</div>
         </div>
 
-
         {/* Container for buttons */}
 
         <div className='p-5 flex justify-around bg-orange-50 '>
