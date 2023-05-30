@@ -48,30 +48,76 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Container for timeline */}
+      <div className="bg-orange-300 py-4">
+        <Link href={'/description'} className=""><div className="hover:scale-110 duration-200 py-4 text-white text-center text-3xl font-bold">Етапи</div></Link>
+      </div>
+
+      <div className="flex flex-col justify-around lg:flex-row items-center bg-orange-100">
+        <div className="group m-10 h-48 w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500">
+            <div className="text-center">
+              <div className="text-2xl">
+                Юни 2021
+              </div>
+              <div className="group-hover:opacity-100 group-active:opacity-100 opacity-0 duration-300">
+                Проектиране и регулация
+              </div>
+            </div>
+          </div>
+        <div className="group m-10 h-48 w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 active:scale-125 duration-500">
+            <div className="text-center">
+              <div className="text-2xl">
+                Юни 2022
+              </div>
+              <div className="group-hover:opacity-100 group-active:opacity-100 opacity-0 duration-300">
+                РС, строителна площадка и <br />  първа копка
+              </div>
+            </div>
+          </div>
+        <div className="group m-10 h-48 w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500">
+            <div className="text-center">
+              <div className="text-2xl">
+                Март 2023
+              </div>
+              <div className="group-hover:opacity-100 group-active:opacity-100 opacity-0 duration-300">
+              Груб строеж <br /> завършен <br /> Акт 14 
+              </div>
+            </div>
+          </div>
+        <div className="group m-10 h-48 w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500">
+            <div className="text-center">
+              <div className="text-2xl">
+                Април 2024
+              </div>
+              <div className="group-hover:opacity-100 group-active:opacity-100 opacity-0 duration-300 text-orange-100 ">
+                Очакван <br /> Акт <br /> 16
+              </div>
+            </div>
+          </div>
+      </div>
+
       {/* Prompt to view plan container */}
-      <div className="p-4 bg-white">
-          <div className='bg-orange-500'>
-            <Link href={'/apartments'} className=""><div className="hover:scale-110 duration-200 py-4 text-white text-center text-3xl font-bold">План</div></Link>
-          </div>
-          <div className="inline-block ">
-            <Link href={'/apartments'} className="">
-              <Image 
-                loader={imageLoader}
-                src="/ixora-apartments.webp"
-                alt="Ixora Plan"
-                className="opacity-50 hover:opacity-100 active:opacity-100" 
-                width={5000}
-                height={2813} 
-              >
-              </Image>
-            </Link>
-          </div>
+      <div className='bg-orange-300'>
+        <Link href={'/apartments'} className=""><div className="hover:scale-110 duration-200 py-4 text-white text-center text-3xl font-bold">План</div></Link>
+      </div>
+      <div className="bg-orange-100">
+        <Link href={'/apartments'} className="">
+          <Image 
+            loader={imageLoader}
+            src="/ixora-apartments.webp"
+            alt="Ixora Plan"
+            className="opacity-50 hover:opacity-100 active:opacity-100" 
+            width={5000}
+            height={2813} 
+          >
+          </Image>
+        </Link>
       </div>
 
       {/* Location */}
       <div>
-        <div className="bg-orange-500">
-          <div className="text-center py-4 text-3xl text-white font-bold">Местоположение</div>
+        <div className="bg-orange-300">
+          <Link href={'/contacts'} className=""><div className="hover:scale-110 duration-200 py-4 text-white text-center text-3xl font-bold">Местоположение</div></Link>
         </div>
         <div>
           <iframe 

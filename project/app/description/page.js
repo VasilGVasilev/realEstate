@@ -10,18 +10,17 @@ export const metadata = {
 
 export default function Description() {
 
-
-
     return (
       <div>
-        {/* Container for List */}
         <div>
 
-          <div className="bg-orange-500 py-4">
-            <div className="text-white text-center text-3xl font-bold">За сградата</div>
-          </div>
+        <div className="bg-orange-500 py-4">
+          <div className="text-white text-center text-3xl font-bold">За сградата</div>
+        </div>
 
-          <div className="p-10 bg-white md:px-32 lg:px-40">
+        {/* Container for List */}
+
+        <div className="p-10 bg-white md:px-32 lg:px-40">
             <div className="bg-white w-full h-fit ">
             
               <ul className="p-5 border-r-2 border-l-2 border-orange-500">
@@ -52,10 +51,55 @@ export default function Description() {
             </div>
           </div>
         </div>
+        
         {/* Container for timeline */}
-        <div>
-          
+        <div className="bg-orange-300 py-4">
+          <div className="text-white text-center text-3xl font-bold">Етапи</div>
         </div>
+
+        <div className="flex flex-col justify-around lg:flex-row items-center bg-orange-100">
+          <div className="group m-10 h-48 w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500">
+              <div className="text-center">
+                <div className="text-2xl">
+                  Юни 2021
+                </div>
+                <div className="group-hover:opacity-100 group-active:opacity-100 opacity-0 duration-300">
+                  Проектиране и регулация
+                </div>
+              </div>
+            </div>
+          <div className="group m-10 h-48 w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 active:scale-125 duration-500">
+              <div className="text-center">
+                <div className="text-2xl">
+                  Юни 2022
+                </div>
+                <div className="group-hover:opacity-100 group-active:opacity-100 opacity-0 duration-300">
+                  РС, строителна площадка и <br />  първа копка
+                </div>
+              </div>
+            </div>
+          <div className="group m-10 h-48 w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500">
+              <div className="text-center">
+                <div className="text-2xl">
+                  Март 2023
+                </div>
+                <div className="group-hover:opacity-100 group-active:opacity-100 opacity-0 duration-300">
+                Груб строеж <br /> завършен <br /> Акт 14 
+                </div>
+              </div>
+            </div>
+          <div className="group m-10 h-48 w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500">
+              <div className="text-center">
+                <div className="text-2xl">
+                  Април 2024
+                </div>
+                <div className="group-hover:opacity-100 group-active:opacity-100 opacity-0 duration-300 text-orange-100 ">
+                  Очакван <br /> Акт <br /> 16
+                </div>
+              </div>
+            </div>
+        </div>
+
         {/* Container for actual building footage */}
         <div>
           <div className="bg-orange-300 py-4">
