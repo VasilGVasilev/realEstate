@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
       <body className='bg-[#464646]'>
         <header>
 
-          <nav className={`fixed z-20 flex-col w-full text-base bg-gradient-to-b from-[#464646] from-10% via-[#716657] via-70% to-[#716657] to-90%`}>
+          <nav className={`fixed z-20 flex-col w-full h-16 md:h-16 lg:h-[92px] text-base bg-gradient-to-b from-[#464646] from-10% via-[#716657] via-70% to-[#716657] to-90%`}>
             <div className='px-10 py-3 flex justify-between'>
               <div>
 
@@ -80,8 +80,8 @@ export default function RootLayout({ children }) {
 
         </header>
         <main className='app'>
-{/* fixed navbar requires relative pt here */}
-          <div className='grid place-items-center pt-14 md:pt-16 lg:pt-[92px]'>
+{/* fixed navbar requires height to be same for background of that navbar to align other divs below accordingly */}
+          <div className='grid place-items-center h-16 md:h-16 lg:h-[92px]'>
 
           </div>
           {children}
