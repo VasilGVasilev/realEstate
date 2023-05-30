@@ -44,7 +44,7 @@ export default function secondFloor() {
         <div ref={myRef} className='bg-orange-500'>
           <div className="py-4 text-white text-center text-2xl font-extrabold">Втори етаж</div>
         </div>
-        <div className="p-5 bg-white">
+        <div className="p-5 xl:px-40 bg-white">
 
           <div className="pt-5 flex-col text-orange-500">
               {/* default template */}

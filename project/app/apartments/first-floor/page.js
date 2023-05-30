@@ -47,7 +47,7 @@ export default function firstFloor() {
         <div ref={myRef} className='bg-orange-500'>
           <div className="py-4 text-white text-center text-2xl font-extrabold">Първи етаж</div>
         </div>
-        <div className="p-5 bg-white">
+        <div className="p-5 xl:px-40 bg-white">
 
           <div className="pt-5 flex-col text-orange-500">
               {/* default template */}
@@ -81,7 +81,7 @@ export default function firstFloor() {
               
           </div>
 
-          <div className="relative inline-block">
+          <div className="relative">
 
             <div className={`absolute apartmentFour h-full w-full z-10 ${available}`} onClick={()=>updateInfo(4, 82.96, 22.20, 105.16)}></div>
             <div className={`absolute apartmentThree h-full w-full z-10 ${available}`} onClick={()=>updateInfo(3, 146.04, 45.70, 191.74)}></div>
