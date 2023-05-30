@@ -12,7 +12,6 @@ module.exports = {
       },
       boxShadow: {
         '3xl': '0 20px 120px -15px rgba(0, 0, 0, 0.3)',
-        'blur-edges': '0 0 8px 8px white inset',
       },
       width: {
         '128': '32rem',

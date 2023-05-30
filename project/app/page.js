@@ -30,15 +30,15 @@ export default function Home() {
       </div>
 
       {/* Welcome image */}
-      <div className="relative inline-block">
+      <div className="relative">
         
         <Image 
           loader={imageLoader}
           src="/ixora-welcome.webp" 
           width={5000}
           height={2813} 
-          alt="Image">
-        </Image>
+          alt="Image"
+        />
 
         <div className="absolute bottom-[10%] left-0 w-full h-full flex items-end justify-center ">
           <div className="text-white text-center text-2xl md:text-4xl lg:text-6xl font-bold">
