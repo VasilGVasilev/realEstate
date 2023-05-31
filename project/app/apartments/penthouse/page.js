@@ -82,7 +82,7 @@ export default function penthouseFloor() {
 
           <div className="relative inline-block">
 
-            <div className={`absolute apartmentThirteen h-full w-full z-10 ${available}`} onClick={()=>updateInfo(13, 368.85, 193.90, 562.75)}></div>
+            <div className={`absolute apartmentThirteen h-full w-full z-10 ${available}`} onClick={()=>updateInfo(14, 368.85, 193.90, 562.75)}></div>
 
             {/* <img src="/plans/penthouse.webp" alt="Ixora Plan" className="relative" /> */}
             <div className='relative '>

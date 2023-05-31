@@ -8,6 +8,8 @@ export const metadata = {
   title: 'Инвеститор - Ixora Residence',
 };
 
+export const revalidate = 0; // revalidate this page every 60 seconds
+
 
 export default function Investor() {
 

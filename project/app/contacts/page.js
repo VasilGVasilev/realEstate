@@ -7,6 +7,9 @@ export const metadata = {
   title: 'Контакти - Ixora Residence',
 };
 
+export const revalidate = 0; // revalidate this page every 60 seconds
+
+
 export default function Contacts() {
   
 
@@ -48,7 +51,7 @@ export default function Contacts() {
                         width={24}
                         height={10}
                       />
-                      <div className="text-sm sm:text-base font-bold text-gray-500 ">ул. „Пирински еделвайс“ 3, 1415 в.з. Симеоново - Драгалевци, Симеоново-Драгалевци</div>
+                      <div className="text-sm sm:text-base font-bold text-gray-500 ">ул. „Пирински еделвайс“ 3, 1415 в.з. Симеоново - Драгалевци</div>
 
                     </div>
 
@@ -61,7 +64,7 @@ export default function Contacts() {
                         width={27}
                         height={14}
                       />
-                      <div className="text-sm sm:text-base font-bold text-gray-500"><a href={`tel:00359886849995`}>00359886849995</a></div>
+                      <div className="text-sm sm:text-base font-bold text-gray-500"><a href={`tel:00359886879993`}>00359886879993</a></div>
 
                     </div>
 

@@ -8,6 +8,9 @@ export const metadata = {
   description: 'Ixora Residence',
 }
 
+export const revalidate = 0; // revalidate this page every 60 seconds
+
+
 
 export default function Home() {
 
@@ -90,7 +93,7 @@ export default function Home() {
                 Април 2024
               </div>
               <div className="group-hover:opacity-100 group-active:opacity-100 opacity-0 duration-300 text-orange-100 ">
-                Очакван <br /> Акт <br /> 16
+                Въвеждане в експлоатация <br /> Акт 16
               </div>
             </div>
           </div>
@@ -106,7 +109,7 @@ export default function Home() {
             loader={imageLoader}
             src="/ixora-apartments.webp"
             alt="Ixora Plan"
-            className="opacity-50 hover:opacity-100 active:opacity-100" 
+            className="opacity-75 hover:opacity-100 active:opacity-100" 
             width={5000}
             height={2813} 
           >

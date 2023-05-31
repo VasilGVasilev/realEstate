@@ -109,7 +109,7 @@ export default function RootLayout({ children }) {
                         width={20}
                         height={8}
                       />
-                      <div className="text-sm text-white"><a href={`tel:00359886849995`}>00359886849995</a></div>
+                      <div className="text-sm text-white"><a href={`tel:00359886879993`}>00359886879993</a></div>
                     </div>
                     <div className="py-2 flex space-x-2 items-center">
                       <Image
