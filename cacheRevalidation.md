@@ -16,4 +16,3 @@ This cache revalidation process ensures that visitors receive up-to-date content
 Cache revalidation is especially beneficial in scenarios where the data changes infrequently or where real-time data is not crucial. It strikes a balance between performance and freshness of the content in Next.js applications.
 
 # For this app we will use Background Revalidation since there is no CMS and data fetching to implement on-demand Revalidation
-- only for apartments' status since it will be changing when released

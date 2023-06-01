@@ -52,7 +52,7 @@ export default function Home() {
       </div>
 
       {/* Container for timeline */}
-      <div className="bg-orange-300 py-4">
+      <div className="bg-orange-300">
         <Link href={'/description'} className=""><div className="hover:scale-110 duration-200 py-4 text-white text-center text-3xl font-bold">Етапи</div></Link>
       </div>
 
