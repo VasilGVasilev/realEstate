@@ -70,52 +70,54 @@ export default function Description() {
         </div>
         
         {/* Container for timeline */}
-        <div className="bg-orange-300 py-4">
-          <div className="text-white text-center text-3xl font-bold">Етапи</div>
-        </div>
+        <>
+          <div className="bg-orange-300 py-4">
+            <div className="text-white text-center text-3xl font-bold">Етапи</div>
+          </div>
 
-        <div className="flex flex-col justify-around lg:flex-row items-center bg-orange-100">
-          <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500">
-            <div className="text-center">
-              <div className="text-xl lg:text-2xl">
-                Юни 2021
+          <div className="flex flex-col justify-around lg:flex-row items-center bg-orange-100">
+            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500">
+              <div className="text-center">
+                <div className="text-xl lg:text-2xl">
+                  Юни 2021
+                </div>
+                <div className="text-sm lg:text-base group-hover:opacity-100 group-active:opacity-100 opacity-0 duration-300">
+                  Проектиране и регулация
+                </div>
               </div>
-              <div className="text-sm lg:text-base group-hover:opacity-100 group-active:opacity-100 opacity-0 duration-300">
-                Проектиране и регулация
+            </div>
+            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 active:scale-125 duration-500">
+              <div className="text-center">
+                <div className="text-xl lg:text-2xl">
+                  Юни 2022
+                </div>
+                <div className="text-sm lg:text-base group-hover:opacity-100 group-active:opacity-100 opacity-0 duration-300">
+                  РС, строителна площадка и <br />  първа копка
+                </div>
+              </div>
+            </div>
+            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500">
+              <div className="text-center">
+                <div className="text-xl lg:text-2xl">
+                  Март 2023
+                </div>
+                <div className="text-sm lg:text-base group-hover:opacity-100 group-active:opacity-100 opacity-0 duration-300">
+                Груб строеж <br /> завършен <br /> Акт 14 
+                </div>
+              </div>
+            </div>
+            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500">
+              <div className="text-center">
+                <div className="text-xl lg:text-2xl">
+                  Април 2024
+                </div>
+                <div className="text-sm lg:text-base group-hover:opacity-100 group-active:opacity-100 opacity-0 duration-300 text-orange-100 ">
+                  Въвеждане в експлоатация <br /> Акт 16
+                </div>
               </div>
             </div>
           </div>
-          <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 active:scale-125 duration-500">
-            <div className="text-center">
-              <div className="text-xl lg:text-2xl">
-                Юни 2022
-              </div>
-              <div className="text-sm lg:text-base group-hover:opacity-100 group-active:opacity-100 opacity-0 duration-300">
-                РС, строителна площадка и <br />  първа копка
-              </div>
-            </div>
-          </div>
-          <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500">
-            <div className="text-center">
-              <div className="text-xl lg:text-2xl">
-                Март 2023
-              </div>
-              <div className="text-sm lg:text-base group-hover:opacity-100 group-active:opacity-100 opacity-0 duration-300">
-              Груб строеж <br /> завършен <br /> Акт 14 
-              </div>
-            </div>
-          </div>
-          <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500">
-            <div className="text-center">
-              <div className="text-xl lg:text-2xl">
-                Април 2024
-              </div>
-              <div className="text-sm lg:text-base group-hover:opacity-100 group-active:opacity-100 opacity-0 duration-300 text-orange-100 ">
-                Въвеждане в експлоатация <br /> Акт 16
-              </div>
-            </div>
-          </div>
-        </div>
+        </>
 
         {/* Container for actual building footage */}
         <div>
@@ -164,6 +166,7 @@ export default function Description() {
           <div className="bg-[url('../public/ixora-description.webp')] h-60 bg-center bg-cover bg-no-repeat bg-white md:min-h-[32rem] md:grid md:place-items-center md:bg-fixed md:bg-no-repeat md:bg-cover md:bg-center md:opacity-75">
           </div>
         </>
+        
         {/* Container for Location*/}
         <div>
           <div className="bg-orange-300 py-4">

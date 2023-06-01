@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import { imageLoader } from "@/app/imgLoader";
 import Image from "next/image";
-
+import Link from "next/link";
 
 export const metadata = {
   title: 'Пентхаус - Ixora Residence',
@@ -46,6 +46,17 @@ export default function penthouseFloor() {
         <div ref={myRef} className='bg-orange-500'>
           <div className="py-4 text-white text-center text-2xl font-extrabold">Пентхаус</div>
         </div>
+
+        {/* Container for buttons */}
+        <div className='p-5 flex justify-around bg-orange-50 '>
+          <Link href={'/apartments/parking'}><div className="text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100" >Паркинг</div></Link>
+          <Link href={'/apartments/first-floor'}><div className="text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100" >Етаж  1</div></Link>
+          <Link href={'/apartments/second-floor'}><div className="text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100">Етаж  2</div></Link>
+          <Link href={'/apartments/third-floor'}><div className="text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100" >Етаж  3</div></Link>
+          <Link href={'/apartments/penthouse'}><div className="text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-700 scale-110 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100" >Етаж 4</div></Link>
+        </div>
+
+        {/* Container for floor plan */}
         <div className="p-5 xl:px-40 bg-white">
 
           <div className="pt-5 flex-col text-orange-500">
