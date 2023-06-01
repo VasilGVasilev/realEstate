@@ -11,9 +11,10 @@ export const metadata = {
 export const revalidate = 0; // revalidate this page every 60 seconds
 
 
+
 export default function Investor() {
 
-
+  
 
     return (
       <div>
@@ -47,6 +48,7 @@ export default function Investor() {
 
             {/* Container for Dalia*/}
             <div className="py-10">
+
               {/* Conatiner for name and description */}
               <div className="px-10 lg:pb-10">
                 <Link href={'http://creativestudiobg.com/dahlia-house'}><div className="py-5 bg-white underline text-orange-500 text-center text-xl italic font-mono hover:scale-105 duration-200">
@@ -54,32 +56,41 @@ export default function Investor() {
                 </div></Link>
                 <div className="pb-5 bg-white text-gray-500 text-center text-sm font-medium font-mono lg:px-80">Едно бижу в полите на Витоша с уникални гледки към София. Луксозен имот с над 700 кв.м. РЗП и двор от 750 кв.м. в престижния кв. Драгалевци. </div>
               </div>
-
+              
+              {/* Container for images */}
               <div className="bg-white px-10 w-full h-full flex-col justify-center space-y-5">
+              {/* Container for image with overflow effect, this template to be used for subsequent pictures */}
+                <div className="w-[100%] h-[100%] lg:w-5/6 lg:h-5/6 overflow-hidden mx-auto ">
+                  {/* The CSS OVERFLOW property controls what happens to content that is too big to fit into an area. */}
                   <Image 
                     loader={imageLoader}
                     src="/dalia/dalia-one.webp"
                     alt="Dalia"
-                    className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none"
+                    className=" transition-transform duration-500 ease-in-out hover:scale-125 active:scale-125"
                     width={4242}
                     height={2828} 
                   />
+                </div>
+                <div className="w-[100%] h-[100%] lg:w-5/6 lg:h-5/6 overflow-hidden mx-auto ">
                   <Image 
                     loader={imageLoader}
                     src="/dalia/dalia-two.webp"
                     alt="Dalia"
-                    className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none"
+                    className=" transition-transform duration-500 ease-in-out hover:scale-125 active:scale-125"
                     width={2313}
                     height={1542} 
                   />
+                </div>
+                <div className="w-[100%] h-[100%] lg:w-5/6 lg:h-5/6 overflow-hidden mx-auto ">
                   <Image 
                     loader={imageLoader}
                     src="/dalia/dalia-three.webp"
                     alt="Dalia"
-                    className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none"
+                    className=" transition-transform duration-500 ease-in-out hover:scale-125 active:scale-125"
                     width={4242}
                     height={2828} 
                   />
+                </div>
 
               </div>
 
@@ -96,30 +107,36 @@ export default function Investor() {
               </div>
 
               <div className="bg-white px-10 w-full h-full flex-col justify-center space-y-5">
+                <div className="w-[100%] h-[100%] lg:w-5/6 lg:h-5/6 overflow-hidden mx-auto ">
                   <Image 
                     loader={imageLoader}
                     src="/west-end/west-end-one.webp"
                     alt="West-end"
-                    className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none"
+                    className=" transition-transform duration-500 ease-in-out hover:scale-125 active:scale-125"
                     width={2400}
                     height={2400} 
                   />
+                </div>
+                <div className="w-[100%] h-[100%] lg:w-5/6 lg:h-5/6 overflow-hidden mx-auto ">
                   <Image 
                     loader={imageLoader}
                     src="/west-end/west-end-two.webp"
                     alt="West-end"
-                    className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none"
+                    className=" transition-transform duration-500 ease-in-out hover:scale-125 active:scale-125"
                     width={2400}
                     height={1700} 
                   />
+                </div>
+                <div className="w-[100%] h-[100%] lg:w-5/6 lg:h-5/6 overflow-hidden mx-auto ">
                   <Image 
                     loader={imageLoader}
                     src="/west-end/west-end-three.webp"
                     alt="West-end"
-                    className="transition transform hover:-translate-y-1 active:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:active:transform-none"
+                    className=" transition-transform duration-500 ease-in-out hover:scale-125 active:scale-125"
                     width={4000}
                     height={2000} 
                   />
+                </div>
 
               </div>
 
@@ -136,30 +153,36 @@ export default function Investor() {
               </div>
 
               <div className="bg-white px-10 w-full h-full flex-col justify-center space-y-5">
+                <div className="w-[100%] h-[100%] lg:w-5/6 lg:h-5/6 overflow-hidden mx-auto ">
                   <Image 
                     loader={imageLoader}
                     src="/tilia/tilia-one.webp"
                     alt="Tilia"
-                    className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+                    className=" transition-transform duration-500 ease-in-out hover:scale-125 active:scale-125"
                     width={4946}
                     height={3216} 
                   />
+                </div>
+                <div className="w-[100%] h-[100%] lg:w-5/6 lg:h-5/6 overflow-hidden mx-auto ">
                   <Image 
                     loader={imageLoader}
                     src="/tilia/tilia-two.webp"
                     alt="Tilia"
-                    className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+                    className=" transition-transform duration-500 ease-in-out hover:scale-125 active:scale-125"
                     width={4946}
                     height={3342} 
                   />
+                </div>
+                <div className="w-[100%] h-[100%] lg:w-5/6 lg:h-5/6 overflow-hidden mx-auto ">
                   <Image 
                     loader={imageLoader}
                     src="/tilia/tilia-three.webp"
                     alt="Tilia"
-                    className="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+                    className=" transition-transform duration-500 ease-in-out hover:scale-125 active:scale-125"
                     width={4946}
                     height={3341} 
                   />
+                </div>
 
               </div>
 
