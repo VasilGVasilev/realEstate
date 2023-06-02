@@ -58,7 +58,7 @@ export default function Description() {
                 <li className="text-xs sm:text-sm text-gray-500 text-justify">Самостоятелен фитнес с уреди TECHNOGYM. Спа център с джакузи, парна баня и сауна, оборудвани с топли лежанки. </li>
                 <br />
                 <p className="sm:text-lg text-orange-500 font-semibold">Комуникативна локация</p>
-                <li className="text-xs sm:text-sm text-gray-500 text-justify">🚗 С кола: <br />  &nbsp; ↪ 1 минута ресторант Проя и супермаркет Макс <br /> &nbsp; ↪ 3 минути BRITANICA Park School и няколко детски градини <br /> &nbsp; ↪ 4 минути супермаркет ФАНТАСТИКО <br /> &nbsp; ↪ 7 минути Paradise Center <br /> &nbsp; ↪ 9 минути Sofia Ring Mall </li>
+                <li className="text-xs sm:text-sm text-gray-500 text-justify">🚗 С кола: <br /> ↪ 1 минута ресторант Проя и супермаркет Макс <br /> ↪ 3 минути BRITANICA Park School и няколко детски градини <br /> ↪ 4 минути супермаркет ФАНТАСТИКО <br /> ↪ 7 минути Paradise Center <br /> ↪ 9 минути Sofia Ring Mall </li>
                 <br />
                 <li className="text-xs sm:text-sm text-gray-500 text-justify">🚌 Публичен транспорт: <br /> Автобуси 68 и 98</li>
                 <br />
