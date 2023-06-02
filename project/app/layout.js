@@ -29,10 +29,10 @@ export default function RootLayout({ children }) {
         <header>
 
           <nav className={`fixed z-20 flex-col w-full h-16 md:h-16 lg:h-[92px] text-base bg-gradient-to-b from-[#464646] from-10% via-[#716657] via-70% to-[#716657] to-90%`}>
-            <div className='px-10 py-3 flex justify-between'>
-              <div>
+            <div className='px-10 py-4 md:py-2 flex justify-between'>
+              <div className='flex items-center justify-center'>
 
-                <a className='hover:scale-110 duration-200 relative h-8 w-20 flex justify-center md:h-10 md:w-24 lg:h-16 lg:w-44 border-2 border-white md:border-none md:hover:border-2 md:hover:border-white ' href={`/`}>
+                <a className='hover:scale-110 duration-200 relative h-8 w-20 flex justify-center items-center md:h-10 md:w-24 lg:h-16 lg:w-44 border-2 border-white md:border-none md:hover:border-2 md:hover:border-white ' href={`/`}>
                   <img src="/ixora.webp" alt="Ixora Logo" />
                 </a>
               </div>

@@ -23,7 +23,7 @@ export default function Description() {
 
         {/* Container for List */}
 
-        <div className="p-10 bg-white md:px-32 lg:px-40">
+        <div className="p-10 bg-white md:px-32 xl:px-72">
             <div className="bg-white w-full h-fit ">
             
               <ul className="p-5 border-r-2 border-l-2 border-orange-500">
@@ -58,7 +58,7 @@ export default function Description() {
                 <li className="text-xs sm:text-sm text-gray-500 text-justify">Самостоятелен фитнес с уреди TECHNOGYM. Спа център с джакузи, парна баня и сауна, оборудвани с топли лежанки. </li>
                 <br />
                 <p className="sm:text-lg text-orange-500 font-semibold">Комуникативна локация</p>
-                <li className="text-xs sm:text-sm text-gray-500 text-justify">↪ 1 минута ресторант Проя и супермаркет Макси <br /> ↪ 3 минути BRITANICA Park School и няколко детски градини <br /> ↪ 4 минути супермаркет ФАНТАСТИКО <br /> ↪ 7 минути Paradise Center <br /> ↪ 9 минути Sofia Ring Mall </li>
+                <li className="text-xs sm:text-sm text-gray-500 text-justify">🚗 С кола: <br />  &nbsp; ↪ 1 минута ресторант Проя и супермаркет Макс <br /> &nbsp; ↪ 3 минути BRITANICA Park School и няколко детски градини <br /> &nbsp; ↪ 4 минути супермаркет ФАНТАСТИКО <br /> &nbsp; ↪ 7 минути Paradise Center <br /> &nbsp; ↪ 9 минути Sofia Ring Mall </li>
                 <br />
                 <li className="text-xs sm:text-sm text-gray-500 text-justify">🚌 Публичен транспорт: <br /> Автобуси 68 и 98</li>
                 <br />
@@ -76,7 +76,7 @@ export default function Description() {
           </div>
 
           <div className="flex flex-col justify-around lg:flex-row items-center bg-orange-100">
-            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500">
+            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
               <div className="text-center">
                 <div className="text-xl lg:text-2xl">
                   Юни 2021
@@ -86,7 +86,7 @@ export default function Description() {
                 </div>
               </div>
             </div>
-            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 active:scale-125 duration-500">
+            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 active:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
               <div className="text-center">
                 <div className="text-xl lg:text-2xl">
                   Юни 2022
@@ -96,7 +96,7 @@ export default function Description() {
                 </div>
               </div>
             </div>
-            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500">
+            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
               <div className="text-center">
                 <div className="text-xl lg:text-2xl">
                   Март 2023
@@ -106,7 +106,7 @@ export default function Description() {
                 </div>
               </div>
             </div>
-            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500">
+            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
               <div className="text-center">
                 <div className="text-xl lg:text-2xl">
                   Април 2024
@@ -125,7 +125,7 @@ export default function Description() {
             <div className="text-white text-center text-2xl font-bold">Етап на проекта - Акт 14</div>
           </div>
           <div className="flex-col p-10 bg-gray-900">
-            <div className="pb-10 flex justify-center transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+            <div className="pb-10 flex justify-center transition transform hover:-translate-y-3 motion-reduce:transition-none motion-reduce:hover:transform-none">
               <Image 
                 loader={imageLoader}
                 src="/buildProcessOne.webp"
@@ -135,7 +135,8 @@ export default function Description() {
               >
               </Image>
             </div>
-            <div className="pb-10 flex justify-center transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none" >
+            
+            <div className="pb-10 flex justify-center transition transform hover:-translate-y-3 motion-reduce:transition-none motion-reduce:hover:transform-none" >
               <Image 
                 loader={imageLoader}
                 src="/buildProcessTwo.webp"
@@ -145,7 +146,7 @@ export default function Description() {
               >
               </Image>
             </div>
-            <div className="flex justify-center transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+            <div className="flex justify-center transition transform hover:-translate-y-3 motion-reduce:transition-none motion-reduce:hover:transform-none">
               <Image 
                 loader={imageLoader}
                 src="/buildProcessThree.webp"
