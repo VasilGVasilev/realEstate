@@ -33,7 +33,13 @@ export default function RootLayout({ children }) {
               <div className='flex items-center justify-center'>
 
                 <a className='hover:scale-110 duration-200 relative h-8 w-20 flex justify-center items-center md:h-10 md:w-24 lg:h-16 lg:w-44 border-2 border-white md:border-none md:hover:border-2 md:hover:border-white ' href={`/`}>
-                  <img src="/ixora.webp" alt="Ixora Logo" />
+                  <Image
+                    loader={imageLoader}
+                    src="/ixora.webp"
+                    alt="Ixora Logo"
+                    width={986}
+                    height={355}
+                  />
                 </a>
               </div>
 
