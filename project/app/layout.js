@@ -4,12 +4,7 @@ import './globals.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
-
-export const metadata = {
-  title: 'Ixora Residence by Creative Studio',
-  description: 'Ixora Residence',
-}
-
+import { imageLoader } from './imgLoader'
 
 export default function RootLayout({ children }) {
   const [toggleClicked, setToggleClick] = useState(false);
@@ -24,6 +19,7 @@ export default function RootLayout({ children }) {
 // #716657
 // #464646
   return (
+    
     <html lang="bg-[#464646]" className='scroll-smooth'>
       <body className='bg-[#464646]'>
         <header>
