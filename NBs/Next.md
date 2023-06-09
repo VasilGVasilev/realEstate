@@ -142,6 +142,8 @@ Good for predicatable amount of routes, not like 1 mln of them -> .map() will be
 
 ### Data Fetching
 
+Mind that with Server Components, next.js deduples requests (GET) by storing them in local cache.
+
 use in development for Client Components
 async await in development for Server Components
 
