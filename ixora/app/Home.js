@@ -2,7 +2,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { imageLoader } from "./imgLoader"
-
+import LineGradient from "./LineGradient"
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 
@@ -22,10 +22,11 @@ export default function Home() {
       {/* Description container */}
       <div className="">
         <div className="p-10 bg-gradient-to-l from-orange-100 from-0% via-orange-50 via-20% to-orange-100 to-90% md:px-32 lg:px-40">
-          <div className="py-5 border-orange-500 border-t-2 border-b-2">
-            <div className="py-5 text-ixora-orange text-left text-2xl font-extrabold">Ixora Luxury Residence: </div>
-            <div className="text-justify text-gray-700">Изпълнението и всички довършителни работи са заложени в изключително висок - бутиков клас. Ixora Residence се състои от 13 просторни апартамента и 17 гаража. Апартаментите разкриват чудесна панорамна гледка към София и Витоша, а сградата разполага с напълно оборудвани спа център и фитнес зала за ексклузивно ползване от бъдещите обитатели. Вертикалната планировка по специален ландшафтен проект оформя зелен пояс около сградата, който създава усещане за живот в паркова среда.</div>
-          </div>
+          <LineGradient></LineGradient>
+          <div className="py-5 text-ixora-orange text-left text-2xl font-extrabold">Ixora Luxury Residence: </div>
+          <div className="text-justify text-gray-700">Изпълнението и всички довършителни работи са заложени в изключително висок - бутиков клас. Ixora Residence се състои от 13 просторни апартамента и 17 гаража. Апартаментите разкриват чудесна панорамна гледка към София и Витоша, а сградата разполага с напълно оборудвани спа център и фитнес зала за ексклузивно ползване от бъдещите обитатели. Вертикалната планировка по специален ландшафтен проект оформя зелен пояс около сградата, който създава усещане за живот в паркова среда.</div>
+          <LineGradient></LineGradient>
+
         </div>
       </div>
 
