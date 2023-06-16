@@ -14,7 +14,7 @@ export default function Contacts() {
     return (
       <>
       {/* div for maps */}
-      <div className="bg-orange-500">
+      <div className="bg-ixora-orange">
         <div className="text-center py-4 text-3xl text-white font-bold">Местоположение</div>
       </div>
       <div>
@@ -34,7 +34,7 @@ export default function Contacts() {
             <div className="flex-col w-full h-fit lg:w-full">
 
               <div className="bg-white">
-                <div className="flex justify-center text-orange-500 py-4 pt-10 text-center text-3xl font-bold hover:scale-105 duration-200">Sales офис</div>
+                <div className="flex justify-center text-ixora-orange py-4 pt-10 text-center text-3xl font-bold hover:scale-105 duration-200">Sales офис</div>
               </div>
 
               <div className="flex justify-center p-8 lg:p-20">              
@@ -87,7 +87,7 @@ export default function Contacts() {
             </div>
           </div>
         {/* div for Picture */}
-          <div className="flex-col justify-center py-10 lg:p-10 bg-white lg:bg-[#716657] lg:w-1/2">
+          <div className="flex-col justify-center py-10 lg:p-10 bg-white lg:bg-[#2e281f] lg:w-1/2">
             <div className="text-center font-bold text-xl text-orange-400  lg:text-white lg:py-4 mb-10 lg:text-3xl lg:font-bold hover:scale-105 duration-200">Вашият бъдещ дом</div>
 
             <Image 

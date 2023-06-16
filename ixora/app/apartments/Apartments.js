@@ -14,8 +14,9 @@ export default function Apartments() {
 
     return (
       <>
-      
-        <div className='bg-orange-500'>
+
+        
+        <div className='bg-ixora-orange'>
           <div className="py-4 text-white text-center text-3xl font-bold">Разпределение</div>
         </div>
 
@@ -38,11 +39,11 @@ export default function Apartments() {
 
           <div className="relative inline-block ">
 
-            <Link href={'/apartments/penthouse'}><div className="absolute penthouse cursor-pointer h-full w-full z-10 hover:bg-orange-500 hover:opacity-40 active:bg-orange-500 active:opacity-40" ></div></Link>
-            <Link href={'/apartments/third-floor'}><div className="absolute thirdFloor cursor-pointer h-full w-full z-10 hover:bg-orange-500 hover:opacity-40 active:bg-orange-500 active:opacity-40" ></div></Link>
-            <Link href={'/apartments/second-floor'}><div className="absolute secondFloor cursor-pointer  h-full w-full z-10 hover:bg-orange-500 hover:opacity-40 active:bg-orange-500 active:opacity-40"></div></Link>
-            <Link href={'/apartments/first-floor'}><div className="absolute firstFloor cursor-pointer h-full w-full z-10 hover:bg-orange-500 hover:opacity-40 active:bg-orange-500 active:opacity-40" ></div></Link>
-            <Link href={'/apartments/parking'}><div className="absolute parking cursor-pointer h-full w-full z-10 hover:bg-orange-500 hover:opacity-40 active:bg-orange-500 active:opacity-40" ></div></Link>
+            <Link href={'/apartments/penthouse'}><div className="absolute penthouse cursor-pointer h-full w-full z-10 hover:bg-ixora-orange hover:opacity-40 active:bg-ixora-orange active:opacity-40" ></div></Link>
+            <Link href={'/apartments/third-floor'}><div className="absolute thirdFloor cursor-pointer h-full w-full z-10 hover:bg-ixora-orange hover:opacity-40 active:bg-ixora-orange active:opacity-40" ></div></Link>
+            <Link href={'/apartments/second-floor'}><div className="absolute secondFloor cursor-pointer  h-full w-full z-10 hover:bg-ixora-orange hover:opacity-40 active:bg-ixora-orange active:opacity-40"></div></Link>
+            <Link href={'/apartments/first-floor'}><div className="absolute firstFloor cursor-pointer h-full w-full z-10 hover:bg-ixora-orange hover:opacity-40 active:bg-ixora-orange active:opacity-40" ></div></Link>
+            <Link href={'/apartments/parking'}><div className="absolute parking cursor-pointer h-full w-full z-10 hover:bg-ixora-orange hover:opacity-40 active:bg-ixora-orange active:opacity-40" ></div></Link>
             {/* <div className='absolute outside cursor-pointer h-full w-full bg-white opacity-50 z-10'  ></div> */}
             {/* <img src="/ixora-apartments-plan.webp" alt="Ixora Plan" className="relative" /> */}
                 

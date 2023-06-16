@@ -23,8 +23,8 @@ export default function Home() {
       <div className="">
         <div className="p-10 bg-gradient-to-l from-orange-100 from-0% via-orange-50 via-20% to-orange-100 to-90% md:px-32 lg:px-40">
           <div className="py-5 border-orange-500 border-t-2 border-b-2">
-            <div className="py-5 text-orange-600 text-left text-2xl italic font-semibold">Ixora Luxury Residence: </div>
-            <div className="text-left font-semibold text-gray-700">Изпълнението и всички довършителни работи са заложени в изключително висок - бутиков клас. Ixora Residence се състои от 13 просторни апартамента и 17 гаража. Апартаментите разкриват чудесна панорамна гледка към София и Витоша, а сградата разполага с напълно оборудвани спа център и фитнес зала за ексклузивно ползване от бъдещите обитатели. Вертикалната планировка по специален ландшафтен проект оформя зелен пояс около сградата, който създава усещане за живот в паркова среда.</div>
+            <div className="py-5 text-ixora-orange text-left text-2xl font-extrabold">Ixora Luxury Residence: </div>
+            <div className="text-justify text-gray-700">Изпълнението и всички довършителни работи са заложени в изключително висок - бутиков клас. Ixora Residence се състои от 13 просторни апартамента и 17 гаража. Апартаментите разкриват чудесна панорамна гледка към София и Витоша, а сградата разполага с напълно оборудвани спа център и фитнес зала за ексклузивно ползване от бъдещите обитатели. Вертикалната планировка по специален ландшафтен проект оформя зелен пояс около сградата, който създава усещане за живот в паркова среда.</div>
           </div>
         </div>
       </div>
@@ -49,12 +49,12 @@ export default function Home() {
 
       {/* Container for timeline */}
       <>
-        <div className="bg-orange-300 py-4">
+        <div className="bg-ixora-orange py-4">
           <div className="text-white text-center text-3xl font-bold">Етапи</div>
         </div>
 
-        <div className="flex flex-col justify-around lg:flex-row items-center bg-orange-100">
-          <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
+        <div className="flex flex-col justify-around lg:flex-row items-center bg-ixora-yellow">
+          <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-ixora-orange from-10% via-orange-500 via-80% to-orange-500 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
             <div className="text-center">
               <div className="text-xl lg:text-2xl">
                 Юни 2021
@@ -64,7 +64,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 active:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
+          <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-ixora-orange from-10% via-orange-500 via-80% to-orange-500 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
             <div className="text-center">
               <div className="text-xl lg:text-2xl">
                 Юни 2022
@@ -74,7 +74,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
+          <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-ixora-orange from-10% via-orange-500 via-80% to-orange-500 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
             <div className="text-center">
               <div className="text-xl lg:text-2xl">
                 Март 2023
@@ -84,7 +84,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
+          <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-ixora-orange from-10% via-orange-500 via-80% to-orange-500 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
             <div className="text-center">
               <div className="text-xl lg:text-2xl">
                 Април 2024
@@ -98,7 +98,7 @@ export default function Home() {
       </>
 
       {/* Prompt to view plan container */}
-      <div className='bg-orange-300'>
+      <div className='bg-ixora-orange'>
         <Link href={'/apartments'} className=""><div className="hover:scale-110 duration-200 py-4 text-white text-center text-3xl font-bold">План</div></Link>
       </div>
       <div className="bg-orange-100">
@@ -117,7 +117,7 @@ export default function Home() {
 
       {/* Location */}
       <div>
-        <div className="bg-orange-300">
+        <div className="bg-ixora-orange">
           <Link href={'/contacts'} className=""><div className="hover:scale-110 duration-200 py-4 text-white text-center text-3xl font-bold">Местоположение</div></Link>
         </div>
         <div>

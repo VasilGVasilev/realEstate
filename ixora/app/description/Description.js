@@ -11,10 +11,11 @@ export const revalidate = 0; // revalidate this page every 60 seconds
 export default function Description() {
 
     return (
+      <>
       <div>
         <div>
 
-        <div className="bg-orange-500 py-4">
+        <div className="bg-ixora-orange py-4">
           <div className="text-white text-center text-3xl font-bold">За сградата</div>
         </div>
 
@@ -23,44 +24,44 @@ export default function Description() {
         <div className="p-10 bg-white md:px-32 xl:px-72">
             <div className="bg-white w-full h-fit ">
             
-              <ul className="p-5 border-r-2 border-l-2 border-orange-500">
-                <p className="sm:text-lg text-orange-500 font-semibold">Фасада</p>
-                <li className="text-xs sm:text-sm text-gray-500 text-justify">Окачена, вентилируема, с каменна облицовка от варовик и декоративни елементи от композитен панел - еталбонд. Топлоизолация от каменна вата. </li>
+              <ul className="p-5 border-r-2 border-l-2 border-ixora-orange">
+                <p className="sm:text-lg text-ixora-orange font-semibold">Фасада</p>
+                <li className="text-xs sm:text-sm text-gray-700 text-justify">Окачена, вентилируема, с каменна облицовка от варовик и декоративни елементи от композитен панел - еталбонд. Топлоизолация от каменна вата. </li>
                 <br />
-                <p className="sm:text-lg text-orange-500 font-semibold">Фоайе и общи части</p>
-                <li className="text-xs sm:text-sm text-gray-500 text-justify">По специален интериорен проект с каменно оформление от мрамор и оникс.</li>
+                <p className="sm:text-lg text-ixora-orange font-semibold">Фоайе и общи части</p>
+                <li className="text-xs sm:text-sm text-gray-700 text-justify">По специален интериорен проект с каменно оформление от мрамор и оникс.</li>
                 <br />
-                <p className="sm:text-lg text-orange-500 font-semibold">Дограма</p>
-                <li className="text-xs sm:text-sm text-gray-500 text-justify">Алуминиева дограма от най-висок клас "WEISS PROFIL" THERMO PRO 85 с цвят антрацит. </li>
+                <p className="sm:text-lg text-ixora-orange font-semibold">Дограма</p>
+                <li className="text-xs sm:text-sm text-gray-700 text-justify">Алуминиева дограма от най-висок клас "WEISS PROFIL" THERMO PRO 85 с цвят антрацит. </li>
                 <br />
-                <p className="sm:text-lg text-orange-500 font-semibold">Асансьор</p>
-                <li className="text-xs sm:text-sm text-gray-500 text-justify">Висок клас асансьор - КОНЕ. </li>
+                <p className="sm:text-lg text-ixora-orange font-semibold">Асансьор</p>
+                <li className="text-xs sm:text-sm text-gray-700 text-justify">Висок клас асансьор - КОНЕ. </li>
                 <br />
-                <p className="sm:text-lg text-orange-500 font-semibold">Врати</p>
-                <li className="text-xs sm:text-sm text-gray-500 text-justify">Блиндирани входни врати SOLID с цвят дъб - модел "iDoor 20-22" Серия 50.</li>
+                <p className="sm:text-lg text-ixora-orange font-semibold">Врати</p>
+                <li className="text-xs sm:text-sm text-gray-700 text-justify">Блиндирани входни врати SOLID с цвят дъб - модел "iDoor 20-22" Серия 50.</li>
                 <br />
-                <p className="sm:text-lg text-orange-500 font-semibold">ВиК</p>
-                <li className="text-xs sm:text-sm text-gray-500 text-justify">Обезшумяваща канализационна система - Пайплайф MASTER 3</li>
+                <p className="sm:text-lg text-ixora-orange font-semibold">ВиК</p>
+                <li className="text-xs sm:text-sm text-gray-700 text-justify">Обезшумяваща канализационна система - Пайплайф MASTER 3</li>
                 <br />
-                <p className="sm:text-lg text-orange-500 font-semibold">Отопление</p>
-                <li className="text-xs sm:text-sm text-gray-500 text-justify">Централно газоснабдена сграда. Етаж 1 и 2 са заложени с висок клас енергоефективни радиатори тип Jaga. Етаж 3 и 4 са изпълнени с подово отопление със самостоятелен термостат за всяко помещение.  </li>
+                <p className="sm:text-lg text-ixora-orange font-semibold">Отопление</p>
+                <li className="text-xs sm:text-sm text-gray-700 text-justify">Централно газоснабдена сграда. Етаж 1 и 2 са заложени с висок клас енергоефективни радиатори тип Jaga. Етаж 3 и 4 са изпълнени с подово отопление със самостоятелен термостат за всяко помещение.  </li>
                 <br />
-                <p className="sm:text-lg text-orange-500 font-semibold">Гаражи</p>
-                <li className="text-xs sm:text-sm text-gray-500 text-justify">Голям брой гаражи в сутерена и допълнителни паркоместа извън сградата. </li>
+                <p className="sm:text-lg text-ixora-orange font-semibold">Гаражи</p>
+                <li className="text-xs sm:text-sm text-gray-700 text-justify">Голям брой гаражи в сутерена и допълнителни паркоместа извън сградата. </li>
                 <br />
-                <p className="sm:text-lg text-orange-500 font-semibold">Сигурност</p>
-                <li className="text-xs sm:text-sm text-gray-500 text-justify">Ограда. Контролиран достъп с чип и разпознаване на автомобилен номер. 24/7 жива охрана. </li>
+                <p className="sm:text-lg text-ixora-orange font-semibold">Сигурност</p>
+                <li className="text-xs sm:text-sm text-gray-700 text-justify">Ограда. Контролиран достъп с чип и разпознаване на автомобилен номер. 24/7 жива охрана. </li>
                 <br />
-                <p className="sm:text-lg text-orange-500 font-semibold">Удобства</p>
-                <li className="text-xs sm:text-sm text-gray-500 text-justify">Самостоятелен фитнес с уреди TECHNOGYM. Спа център с джакузи, парна баня и сауна, оборудвани с топли лежанки. </li>
+                <p className="sm:text-lg text-ixora-orange font-semibold">Удобства</p>
+                <li className="text-xs sm:text-sm text-gray-700 text-justify">Самостоятелен фитнес с уреди TECHNOGYM. Спа център с джакузи, парна баня и сауна, оборудвани с топли лежанки. </li>
                 <br />
-                <p className="sm:text-lg text-orange-500 font-semibold">Комуникативна локация</p>
-                <li className="text-xs sm:text-sm text-gray-500 text-justify">🚗 С кола: <br /> ↪ 1 минута ресторант Проя и супермаркет Макс <br /> ↪ 3 минути BRITANICA Park School и няколко детски градини <br /> ↪ 4 минути супермаркет ФАНТАСТИКО <br /> ↪ 7 минути Paradise Center <br /> ↪ 9 минути Sofia Ring Mall </li>
+                <p className="sm:text-lg text-ixora-orange font-semibold">Комуникативна локация</p>
+                <li className="text-xs sm:text-sm text-gray-700 text-justify">🚗 С кола: <br /> ↪ 1 минута ресторант Проя и супермаркет Макс <br /> ↪ 3 минути BRITANICA Park School и няколко детски градини <br /> ↪ 4 минути супермаркет ФАНТАСТИКО <br /> ↪ 7 минути Paradise Center <br /> ↪ 9 минути Sofia Ring Mall </li>
                 <br />
-                <li className="text-xs sm:text-sm text-gray-500 text-justify">🚌 Публичен транспорт: <br /> Автобуси 68 и 98</li>
+                <li className="text-xs sm:text-sm text-gray-700 text-justify">🚌 Публичен транспорт: <br /> Автобуси 68 и 98</li>
                 <br />
-                <p className="sm:text-lg text-orange-500 font-semibold">Озеленяване</p>
-                <li className="text-xs sm:text-sm text-gray-500 text-justify">Вертикалната планировка по специален ландшафтен проект оформя зелен пояс около сградата, който създава усещане за живот в паркова среда. </li>
+                <p className="sm:text-lg text-ixora-orange font-semibold">Озеленяване</p>
+                <li className="text-xs sm:text-sm text-gray-700 text-justify">Вертикалната планировка по специален ландшафтен проект оформя зелен пояс около сградата, който създава усещане за живот в паркова среда. </li>
               </ul>
             </div>
           </div>
@@ -68,12 +69,12 @@ export default function Description() {
         
         {/* Container for timeline */}
         <>
-          <div className="bg-orange-300 py-4">
+          <div className="bg-ixora-orange py-4">
             <div className="text-white text-center text-3xl font-bold">Етапи</div>
           </div>
 
-          <div className="flex flex-col justify-around lg:flex-row items-center bg-orange-100">
-            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
+          <div className="flex flex-col justify-around lg:flex-row items-center bg-ixora-deep-blue">
+            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-ixora-orange from-10% via-ixora-orange via-80% to-ixora-orange to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
               <div className="text-center">
                 <div className="text-xl lg:text-2xl">
                   Юни 2021
@@ -83,7 +84,7 @@ export default function Description() {
                 </div>
               </div>
             </div>
-            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 active:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
+            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-ixora-orange from-10% via-ixora-orange via-80% to-ixora-orange to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 active:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
               <div className="text-center">
                 <div className="text-xl lg:text-2xl">
                   Юни 2022
@@ -93,7 +94,7 @@ export default function Description() {
                 </div>
               </div>
             </div>
-            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
+            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-ixora-orange from-10% via-ixora-orange via-80% to-ixora-orange to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
               <div className="text-center">
                 <div className="text-xl lg:text-2xl">
                   Март 2023
@@ -103,12 +104,12 @@ export default function Description() {
                 </div>
               </div>
             </div>
-            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-orange-500 from-10% via-orange-300 via-80% to-orange-300 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
+            <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-ixora-orange from-10% via-ixora-orange via-80% to-ixora-orange to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">
               <div className="text-center">
                 <div className="text-xl lg:text-2xl">
                   Април 2024
                 </div>
-                <div className="text-sm lg:text-base group-hover:opacity-100 group-active:opacity-100 opacity-0 duration-300 text-orange-100 ">
+                <div className="text-sm lg:text-base group-hover:opacity-100 group-active:opacity-100 opacity-0 duration-300 text-ixora-orange ">
                   Въвеждане в експлоатация <br /> Акт 16
                 </div>
               </div>
@@ -118,7 +119,7 @@ export default function Description() {
 
         {/* Container for actual building footage */}
         <div>
-          <div className="bg-orange-300 py-4">
+          <div className="bg-ixora-orange py-4">
             <div className="text-white text-center text-2xl font-bold">Етап на проекта - Акт 14</div>
           </div>
           <div className="flex-col p-10 bg-gray-900">
@@ -158,7 +159,7 @@ export default function Description() {
 
         {/* Container for Parallax Image */}
         <>
-          <div className="bg-orange-300 py-4">
+          <div className="bg-ixora-orange py-4">
             <div className="text-white text-center text-2xl font-bold">Ixora Luxury Residence</div>
           </div>
           <div className="bg-[url('../public/ixora-description.webp')] h-60 bg-center bg-cover bg-no-repeat bg-white md:min-h-[32rem] md:grid md:place-items-center md:bg-fixed md:bg-no-repeat md:bg-cover md:bg-center md:opacity-75">
@@ -167,7 +168,7 @@ export default function Description() {
         
         {/* Container for Location*/}
         <div>
-          <div className="bg-orange-300 py-4">
+          <div className="bg-ixora-orange py-4">
             <div className="text-white text-center text-2xl font-bold">Местоположение</div>
           </div>
           <iframe 
@@ -177,6 +178,7 @@ export default function Description() {
           ></iframe>
         </div>
       </div>
+      </>
     )
 }
   

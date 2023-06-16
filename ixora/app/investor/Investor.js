@@ -17,8 +17,10 @@ export default function Investor() {
   
 
     return (
+      <>
+
       <div>
-        <div className="bg-orange-500 py-4">
+        <div className="bg-ixora-orange py-4">
           <div className="text-white text-center pl-4 text-3xl font-bold">За инвеститора</div>
         </div>
         {/* Container for Investor Intro */}
@@ -51,7 +53,7 @@ export default function Investor() {
 
               {/* Conatiner for name and description */}
               <div className="px-10 lg:pb-10">
-                <Link href={'http://creativestudiobg.com/dahlia-house'}><div className="py-5 bg-white underline text-orange-500 text-center text-xl italic font-mono hover:scale-105 duration-200">
+                <Link href={'http://creativestudiobg.com/dahlia-house'}><div className="py-5 bg-white underline text-ixora-orange text-center text-xl italic font-mono hover:scale-105 duration-200">
                   Еднофамилна къща Далия
                 </div></Link>
                 <div className="pb-5 bg-white text-gray-500 text-center text-sm font-medium font-mono lg:px-80">Едно бижу в полите на Витоша с уникални гледки към София. Луксозен имот с над 700 кв.м. РЗП и двор от 750 кв.м. в престижния кв. Драгалевци. </div>
@@ -100,7 +102,7 @@ export default function Investor() {
             <div className="py-10">
               {/* Conatiner for name and description */}
               <div className="px-10  lg:pb-10">
-                <div className="py-5 bg-white underline text-orange-500 text-center text-xl italic font-mono">
+                <div className="py-5 bg-white underline text-ixora-orange text-center text-xl italic font-mono">
                   Комплекс от къщи West End Luxury Houses
                 </div>
                 <div className="pb-5 bg-white text-gray-500 text-center text-sm font-medium font-mono lg:px-80">В процес на изграждане е луксозен комплекс от 18 самостоятелни еднофамилни къщи със собствени басейни в непосредствена близост до София -  само на 20 минути от центъра. Напълно автономно вилно селище със собствен водоизточник и допълнително соларно захранване.</div>
@@ -146,7 +148,7 @@ export default function Investor() {
             <div className="py-10">
               {/* Conatiner for name and description */}
               <div className="px-10 lg:pb-10">                
-                <div className="py-5 bg-white underline text-orange-500 text-center text-xl italic font-mono">
+                <div className="py-5 bg-white underline text-ixora-orange text-center text-xl italic font-mono">
                   Жилищна сграда Tilia Residence
                 </div>
                 <div className="pb-5 bg-white text-gray-500 text-center text-sm font-medium font-mono lg:px-80">Модерна жилищна сграда в квартал Връбница с южно изложение в непосредствена близост до метростанция.</div>
@@ -191,6 +193,7 @@ export default function Investor() {
           </div>
         </div>
       </div>
+      </>
     )
 }
   

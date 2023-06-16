@@ -38,8 +38,10 @@ export default function ThirdFloor() {
 
 
     return (
-      <>      
-        <div ref={myRef} className='bg-orange-500'>
+      <>
+
+
+        <div ref={myRef} className='bg-ixora-orange'>
           <div className="py-4 text-white text-center text-2xl font-extrabold">Трети етаж</div>
         </div>
 
@@ -55,7 +57,7 @@ export default function ThirdFloor() {
         {/* Container for floor plan */}
         <div className="p-5 xl:px-40 bg-white">
 
-          <div className="pt-5 flex-col text-orange-500">
+          <div className="pt-5 flex-col text-ixora-orange">
                 {/* default template */}
                 {apartment.ap === null ?
                   <div className='mb-8 bg-orange-300'>
@@ -64,9 +66,9 @@ export default function ThirdFloor() {
                 : 
                 <>
                   <div className='pb-10 bg-white'>
-                    <div className="text-orange-500 text-center text-2xl font-extrabold underline">Площообразуване - ап. {apartment.ap}</div>
+                    <div className="text-ixora-orange text-center text-2xl font-extrabold underline">Площообразуване - ап. {apartment.ap}</div>
                   </div> 
-                  <div className="mb-5 border-r-2 border-l-2 border-orange-500 text-center" >
+                  <div className="mb-5 border-r-2 border-l-2 border-ixora-orange text-center" >
                     <div className="flex justify-center space-x-3 ">
                       <div>Площ</div>
                       <div className="font-bold">{apartment.plosht} м²</div>
