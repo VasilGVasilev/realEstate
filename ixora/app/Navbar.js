@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 import { imageLoader } from './imgLoader'
 import Image from 'next/image'
+import { usePathname } from "next/navigation";
 
 
 // props: 
@@ -16,15 +17,15 @@ import Image from 'next/image'
 // mobile menu comes as an animation with framer motion
 // may be reverse link to anchor link if not smooth
 // refactor img to Image
-const LinkMobileTemplate = ({ urlLink, page, selectedPage, setSelectedPage, setIsMenuToggled }) => {
+const LinkMobileTemplate = ({ urlLink, page, setIsMenuToggled }) => {
+    const pathName = usePathname()
 
     return (
         <Link
-            className={`${selectedPage === urlLink ? "text-yellow-500" : ""
+            className={`${pathName === urlLink ? "text-yellow-500" : ""
                 }  hover:scale-125 transition duration-300`}
             href={urlLink}
             onClick={() => {
-                setSelectedPage(urlLink);
                 setIsMenuToggled(false);
             }
             }
@@ -34,29 +35,26 @@ const LinkMobileTemplate = ({ urlLink, page, selectedPage, setSelectedPage, setI
     );
 };
 
-const LinkTemplate = ({ urlLink, page, selectedPage, setSelectedPage }) => {
+const LinkTemplate = ({ urlLink, page }) => {
+    const pathName = usePathname()
 
     return (
         <Link
-            className={`${selectedPage === urlLink ? "text-yellow-500" : ""
+            className={`${pathName == urlLink ? "text-yellow-400" : ""
                 }  hover:scale-125 transition duration-300`}
             href={urlLink}
-            onClick={() => {
-                setSelectedPage(urlLink);
-            }
-            }
         >
             {page}
         </Link>
     );
 };
-const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
+const Navbar = ({ isTopOfPage }) => {
     const [isMenuToggled, setIsMenuToggled] = useState(false);
     const isDesktop = useMediaQuery("(min-width: 1120px)");
     const navbarBackground = isTopOfPage ? "" : "bg-ixora-dark";
 
     return (
-        <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
+        <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-[1%]`}>
             <div className="flex items-center justify-between mx-auto w-5/6">
 
                 <Link className='saturate-200 duration-200 flex justify-center items-center h-[15%] w-[15%] xl:h-[10%] xl:w-[10%]' href={`/`}>
@@ -74,32 +72,22 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                         <LinkTemplate
                             urlLink='/'
                             page="Начало"
-                            selectedPage={selectedPage}
-                            setSelectedPage={setSelectedPage}
                         />
                         <LinkTemplate
-                            urlLink='/description'
+                            urlLink='/description/'
                             page="Описание"
-                            selectedPage={selectedPage}
-                            setSelectedPage={setSelectedPage}
                         />
                         <LinkTemplate
-                            urlLink='/apartments'
+                            urlLink='/apartments/'
                             page="Апартаменти"
-                            selectedPage={selectedPage}
-                            setSelectedPage={setSelectedPage}
                         />
                         <LinkTemplate
-                            urlLink='/investor'
+                            urlLink='/investor/'
                             page="Инвеститор"
-                            selectedPage={selectedPage}
-                            setSelectedPage={setSelectedPage}
                         />
                         <LinkTemplate
-                            urlLink='/contacts'
+                            urlLink='/contacts/'
                             page="Контакти"
-                            selectedPage={selectedPage}
-                            setSelectedPage={setSelectedPage}
                         />
                     </div>
                 ) : (
@@ -126,36 +114,26 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                             <LinkMobileTemplate
                                 urlLink='/'
                                 page="Начало"
-                                selectedPage={selectedPage}
-                                setSelectedPage={setSelectedPage}
                                 setIsMenuToggled={setIsMenuToggled}
                             />
                             <LinkMobileTemplate
                                 urlLink='/description'
                                 page="За сградата"
-                                selectedPage={selectedPage}
-                                setSelectedPage={setSelectedPage}
                                 setIsMenuToggled={setIsMenuToggled}
                             />
                             <LinkMobileTemplate
                                 urlLink='/apartments'
                                 page="Апартаменти"
-                                selectedPage={selectedPage}
-                                setSelectedPage={setSelectedPage}
                                 setIsMenuToggled={setIsMenuToggled}
                             />
                             <LinkMobileTemplate
                                 urlLink='/investor'
                                 page="Инвеститор"
-                                selectedPage={selectedPage}
-                                setSelectedPage={setSelectedPage}
                                 setIsMenuToggled={setIsMenuToggled}
                             />
                             <LinkMobileTemplate
                                 urlLink='/contacts'
                                 page="Контакти"
-                                selectedPage={selectedPage}
-                                setSelectedPage={setSelectedPage}
                                 setIsMenuToggled={setIsMenuToggled}
                             />
                         </div>
