@@ -16,15 +16,16 @@ import Image from 'next/image'
 // mobile menu comes as an animation with framer motion
 // may be reverse link to anchor link if not smooth
 // refactor img to Image
-const LinkTemplate = ({ urlLink, page, selectedPage, setSelectedPage, setIsMenuToggled }) => {
+const LinkMobileTemplate = ({ urlLink, page, selectedPage, setSelectedPage, setIsMenuToggled }) => {
+
     return (
         <Link
             className={`${selectedPage === urlLink ? "text-yellow-500" : ""
                 }  hover:scale-125 transition duration-300`}
             href={urlLink}
             onClick={() => {
-                setSelectedPage(urlLink)
-                setIsMenuToggled(false)
+                setSelectedPage(urlLink);
+                setIsMenuToggled(false);
             }
             }
         >
@@ -33,6 +34,22 @@ const LinkTemplate = ({ urlLink, page, selectedPage, setSelectedPage, setIsMenuT
     );
 };
 
+const LinkTemplate = ({ urlLink, page, selectedPage, setSelectedPage }) => {
+
+    return (
+        <Link
+            className={`${selectedPage === urlLink ? "text-yellow-500" : ""
+                }  hover:scale-125 transition duration-300`}
+            href={urlLink}
+            onClick={() => {
+                setSelectedPage(urlLink);
+            }
+            }
+        >
+            {page}
+        </Link>
+    );
+};
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
     const [isMenuToggled, setIsMenuToggled] = useState(false);
     const isDesktop = useMediaQuery("(min-width: 1120px)");
@@ -106,35 +123,35 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
                         {/* MENU ITEMS */}
                         <div className="flex flex-col gap-10 ml-[33%] text-2xl text-white">
-                            <LinkTemplate
+                            <LinkMobileTemplate
                                 urlLink='/'
                                 page="Начало"
                                 selectedPage={selectedPage}
                                 setSelectedPage={setSelectedPage}
                                 setIsMenuToggled={setIsMenuToggled}
                             />
-                            <LinkTemplate
+                            <LinkMobileTemplate
                                 urlLink='/description'
                                 page="За сградата"
                                 selectedPage={selectedPage}
                                 setSelectedPage={setSelectedPage}
                                 setIsMenuToggled={setIsMenuToggled}
                             />
-                            <LinkTemplate
+                            <LinkMobileTemplate
                                 urlLink='/apartments'
                                 page="Апартаменти"
                                 selectedPage={selectedPage}
                                 setSelectedPage={setSelectedPage}
                                 setIsMenuToggled={setIsMenuToggled}
                             />
-                            <LinkTemplate
+                            <LinkMobileTemplate
                                 urlLink='/investor'
                                 page="Инвеститор"
                                 selectedPage={selectedPage}
                                 setSelectedPage={setSelectedPage}
                                 setIsMenuToggled={setIsMenuToggled}
                             />
-                            <LinkTemplate
+                            <LinkMobileTemplate
                                 urlLink='/contacts'
                                 page="Контакти"
                                 selectedPage={selectedPage}
