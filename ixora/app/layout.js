@@ -10,22 +10,10 @@ import Navbar from './Navbar'
 import { usePathname } from 'next/navigation'
 import Footer from './Footer'
 
-// TODO: use framer motion scroll to remove whole navbar on init and intial scroll makes the navbar appear 
-
 
 export default function RootLayout({ children }) {
   const pathName = usePathname();
-  const [isTopOfPage, setIsTopOfPage] = useState(true);
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY === 0 && pathName === '/') {
-        setIsTopOfPage(true);
-      }
-      if (window.scrollY !== 0) setIsTopOfPage(false);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+
 
   const toTopHandle = () => {
     window.scrollTo(0, 0);
@@ -40,7 +28,6 @@ export default function RootLayout({ children }) {
       <body className='bg-ixora-dark'>
 
         <Navbar
-          isTopOfPage={isTopOfPage}
         />
  
         {/* fixed navbar requires py same for all non home pages */}
