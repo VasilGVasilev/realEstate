@@ -1,6 +1,5 @@
-import Link from "next/link"
 
-
+// TODO: motion.div animation apply
 const ForBuilding = () => {
     return (
         <>

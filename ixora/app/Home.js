@@ -9,19 +9,12 @@ import Timeline from "@/components/Timeline"
 import ForBuilding from "@/components/ForBuidling"
 import { motion } from "framer-motion"
 import { playfair } from "@/utils/fonts"
+import PlanButtons from "@/components/PlanButtons"
+import useMediaQuery from "@/hooks/useMediaQuery"
 export const revalidate = 0; // revalidate this page every 60 seconds
 
-// const container = {
-//     hidden: {},
-//     visible: {
-//       transition: {
-//         staggerChildren: 0.2,
-//       },
-//     },
-//   };
-
 export default function Home() {
-
+    const isDesktop = useMediaQuery("(min-width: 1000px)");
     return (
         <div>
             {/* WELCOME VIDEO */}
@@ -90,12 +83,13 @@ export default function Home() {
             <Timeline></Timeline>
             <LineGradient></LineGradient>
 
+            
             {/* DESCRIPTION */}
             <ForBuilding></ForBuilding>
             <LineGradient></LineGradient>
 
             {/* PLAN */}
-            <>
+            <div className="flex justify-center items-center">
                 <Plan
                     penthouse={'/'}
                     thirdF={'/'}
@@ -104,7 +98,7 @@ export default function Home() {
                     parking={'/'}
                 >
                 </Plan>
-            </>
+            </div>
             <LineGradient></LineGradient>
 
             {/* LOCATION */}
