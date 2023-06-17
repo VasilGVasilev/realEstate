@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useMediaQuery from "../app/hooks/useMediaQuery";
+import useMediaQuery from "../hooks/useMediaQuery";
 import { roboto } from '../utils/fonts'
 import Link from 'next/link'
 
