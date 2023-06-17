@@ -4,7 +4,7 @@ import { imageLoader } from "@/utils/imgLoader";
 
 const Plan = ({penthouse, thirdF, secondF, firstF, parking}) => {
     return(
-        <div className="relative inline-block ">
+        <div className="relative">
 
             <Link href={`/apartments${penthouse}`}><div className="absolute penthouse cursor-pointer h-full w-full z-10 hover:bg-ixora-orange" ></div></Link>
             <Link href={`/apartments${thirdF}`}><div className="absolute thirdFloor cursor-pointer h-full w-full z-10 hover:bg-ixora-orange" ></div></Link>

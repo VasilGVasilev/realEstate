@@ -2,9 +2,6 @@
 const Timeline = () => {
     return (
         <>
-            <div className="bg-gradient-ixora py-4">
-                <div className="text-white text-center text-3xl font-bold">Етапи</div>
-            </div>
 
             <div className="flex flex-col justify-around lg:flex-row items-center bg-ixora-yellow">
                 <div className="group m-7 h-36 w-36 lg:m-10 lg:h-48 lg:w-48 bg-gradient-to-r from-ixora-orange from-10% via-orange-500 via-80% to-orange-500 to-100% text-white font-semibold rounded-full flex justify-center items-center hover:scale-125 duration-500 hover:opacity-100 active:opacity-100 opacity-75">

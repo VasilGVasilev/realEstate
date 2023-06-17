@@ -1,13 +1,13 @@
 import { useState } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
-import { roboto } from '../utils/fonts'
+import { playfair } from '../utils/fonts'
 import Link from 'next/link'
 
 import { imageLoader } from '../utils/imgLoader'
 import Image from 'next/image'
 import { usePathname } from "next/navigation";
 
-import { motion, useScroll } from "framer-motion"
+import { motion } from "framer-motion"
 
 
 // props: 
@@ -84,7 +84,7 @@ const Navbar = () => {
                     </Link>
                     {/* DESKTOP NAV */}
                     {isDesktop ? (
-                        <div className={`${roboto.className} text-xl 2xl:text-2xl flex justify-between gap-10 2xl:gap-16 text-white font-semibold`}>
+                        <div className={`${playfair.className} text-xl 2xl:text-2xl flex justify-between gap-10 2xl:gap-16 text-white font-semibold`}>
                             <LinkTemplate
                                 urlLink='/'
                                 page="Начало"

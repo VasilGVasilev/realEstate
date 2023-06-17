@@ -4,11 +4,6 @@ import Link from "next/link"
 const ForBuilding = () => {
     return (
         <>
-        <Link href={'/description'}>
-            <div className="bg-gradient-ixora py-4">
-            <div className="text-white text-center text-3xl font-bold">Описание</div>
-            </div>
-        </Link>
         <div className="p-10 md:px-32 xl:px-72">
             <div className=" w-full h-fit ">
 
