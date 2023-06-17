@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { imageLoader } from './imgLoader'
+import { imageLoader } from '../utils/imgLoader'
 
 const Footer = ({toTopHandle}) => {
     return (

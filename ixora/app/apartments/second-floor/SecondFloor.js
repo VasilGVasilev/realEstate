@@ -2,7 +2,7 @@
 'use client'
 
 import { useRef, useState } from "react";
-import { imageLoader } from "@/app/imgLoader";
+import { imageLoader } from "@/utils/imgLoader";
 import Image from "next/image";
 import Link from "next/link";
 

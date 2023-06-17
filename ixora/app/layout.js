@@ -3,12 +3,12 @@
 import './globals.css'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import { imageLoader } from './imgLoader'
-import { lato, playfair } from './fonts'
+import { imageLoader } from '../utils/imgLoader'
+import { lato, playfair } from '../utils/fonts'
 import useMediaQuery from './hooks/useMediaQuery'
-import Navbar from './Navbar'
+import Navbar from '../components/Navbar'
 import { usePathname } from 'next/navigation'
-import Footer from './Footer'
+import Footer from '../components/Footer'
 
 
 export default function RootLayout({ children }) {

@@ -1,9 +1,9 @@
 import { useState } from "react";
-import useMediaQuery from "./hooks/useMediaQuery";
-import { roboto } from './fonts'
+import useMediaQuery from "../app/hooks/useMediaQuery";
+import { roboto } from '../utils/fonts'
 import Link from 'next/link'
 
-import { imageLoader } from './imgLoader'
+import { imageLoader } from '../utils/imgLoader'
 import Image from 'next/image'
 import { usePathname } from "next/navigation";
 
@@ -55,7 +55,6 @@ const Navbar = () => {
     const [isMenuToggled, setIsMenuToggled] = useState(false);
     const isDesktop = useMediaQuery("(min-width: 1120px)");
     const pathName = usePathname();
-    console.log(pathName);
 
 
     return (
@@ -74,7 +73,7 @@ const Navbar = () => {
             <nav className={`bg-ixora-dark z-40 w-full fixed top-0 py-[1%]`}>
                 <div className="flex items-center justify-between mx-auto w-5/6">
 
-                    <Link className='saturate-200 duration-200 flex justify-center items-center h-[15%] w-[15%] xl:h-[10%] xl:w-[10%]' href={`/`}>
+                    <Link className='saturate-200 duration-200 flex justify-center items-center h-[15%] w-[15%]' href={`/`}>
                         <Image
                             loader={imageLoader}
                             src="/ixora.webp"

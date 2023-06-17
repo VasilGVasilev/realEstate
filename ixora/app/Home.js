@@ -1,8 +1,8 @@
 'use client'
 import Link from "next/link"
 import Image from "next/image"
-import { imageLoader } from "./imgLoader"
-import LineGradient from "./LineGradient"
+import { imageLoader } from "../utils/imgLoader"
+import LineGradient from "../components/LineGradient"
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 

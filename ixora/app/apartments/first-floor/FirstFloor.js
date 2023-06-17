@@ -3,7 +3,7 @@
 
 import { useRef, useState } from "react";
 import Image from 'next/image';
-import { imageLoader } from "../../imgLoader";
+import { imageLoader } from "../../../utils/imgLoader";
 import Link from "next/link";
 
 

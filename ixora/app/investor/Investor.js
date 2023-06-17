@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image"
-import { imageLoader } from "../imgLoader";
+import { imageLoader } from "../../utils/imgLoader";
 
 // export const metadata = {
 //   title: 'Инвеститор - Ixora Residence',

@@ -2,7 +2,7 @@
 'use client'
 
 import Image from "next/image"
-import { imageLoader } from "../imgLoader";
+import { imageLoader } from "../../utils/imgLoader";
 
 
 export const revalidate = 0; // revalidate this page every 60 seconds
