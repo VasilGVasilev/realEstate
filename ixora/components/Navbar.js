@@ -51,11 +51,14 @@ const LinkTemplate = ({ urlLink, page }) => {
     );
 };
 
+
+
 const Navbar = () => {
     const [isMenuToggled, setIsMenuToggled] = useState(false);
     const isDesktop = useMediaQuery("(min-width: 1120px)");
     const pathName = usePathname();
 
+    
 
     return (
         // animation works only on Home page:
@@ -67,10 +70,11 @@ const Navbar = () => {
             transition={{ duration: 0.2 }}
             variants = {{
                 hidden: pathName === '/' ? { opacity: 1 } : { },
-                visible: pathName === '/' ? { opacity: 0 } : { },
+                visible: pathName === '/' ? { opacity: 0} : { },
             }}
+
         >
-            <nav className={`bg-ixora-dark z-40 w-full fixed top-0 py-[1%]`}>
+            <nav className={`bg-ixora-dark z-40 w-full fixed top-0 py-[1%]`} >
                 <div className="flex items-center justify-between mx-auto w-5/6">
 
                     <Link className='saturate-200 duration-200 flex justify-center items-center h-[15%] w-[15%]' href={`/`}>
