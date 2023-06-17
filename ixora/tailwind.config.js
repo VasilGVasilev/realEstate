@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         "gradient-ixora":
-          "linear-gradient(81.66deg, #00B5EE 7.21%, #FFBA00 78.07%)",
+          "linear-gradient(81.66deg, #f83600 7.21%, #fe8c00 78.07%)",
       }),
       colors: {
         'ixora-deep-blue': '#111827',
@@ -28,7 +28,7 @@ module.exports = {
       },
       height: {
         '128': '32rem',
-      },   
+      }, 
     },
   },
   plugins: [],

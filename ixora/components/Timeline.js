@@ -2,7 +2,7 @@
 const Timeline = () => {
     return (
         <>
-            <div className="bg-ixora-orange py-4">
+            <div className="bg-gradient-ixora py-4">
                 <div className="text-white text-center text-3xl font-bold">Етапи</div>
             </div>
 

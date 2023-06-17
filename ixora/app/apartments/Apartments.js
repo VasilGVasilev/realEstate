@@ -17,7 +17,7 @@ export default function Apartments() {
       <>
 
         
-        <div className='bg-ixora-orange'>
+        <div className='bg-gradient-ixora'>
           <div className="py-4 text-white text-center text-3xl font-bold">Разпределение</div>
         </div>
 

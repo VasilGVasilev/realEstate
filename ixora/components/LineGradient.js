@@ -2,7 +2,7 @@
 
 const LineGradient = ({ width = "w-full" }) => {
     return (
-        <div className={`h-0.5 ${width} bg-gradient-ixora`} />
+        <div className={`h-1 ${width} bg-gradient-ixora`} />
     )
   };
   

@@ -20,8 +20,8 @@ export default function Investor() {
       <>
 
       <div>
-        <div className="bg-ixora-orange py-4">
-          <div className="text-white text-center pl-4 text-3xl font-bold">За инвеститора</div>
+        <div className="bg-gradient-ixora py-4">
+          <div className="text-white text-center pl-4 text-3xl font-bold">Инвеститор</div>
         </div>
         {/* Container for Investor Intro */}
         <div className="p-10 lg:px-64 space-y-10 bg-gray-900">

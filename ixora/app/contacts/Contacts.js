@@ -14,7 +14,7 @@ export default function Contacts() {
     return (
       <>
       {/* div for maps */}
-      <div className="bg-ixora-orange">
+      <div className="bg-gradient-ixora">
         <div className="text-center py-4 text-3xl text-white font-bold">Местоположение</div>
       </div>
       <Maps></Maps>

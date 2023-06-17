@@ -134,7 +134,7 @@ const Navbar = () => {
                                 />
                                 <LinkMobileTemplate
                                     urlLink='/description'
-                                    page="За сградата"
+                                    page="Описание"
                                     setIsMenuToggled={setIsMenuToggled}
                                 />
                                 <LinkMobileTemplate

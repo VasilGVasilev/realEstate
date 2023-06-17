@@ -42,7 +42,7 @@ export default function Penthouse() {
       <>
 
         
-        <div ref={myRef} className='bg-ixora-orange'>
+        <div ref={myRef} className='bg-gradient-ixora'>
           <div className="py-4 text-white text-center text-2xl font-extrabold">Пентхаус</div>
         </div>
 
@@ -58,31 +58,31 @@ export default function Penthouse() {
         {/* Container for floor plan */}
         <div className="p-5 xl:px-40 bg-white">
 
-          <div className="pt-5 flex-col text-ixora-orange">
+          <div className="pt-5 flex-col">
                 {/* default template */}
                 {apartment.ap === null ?
-                  <div className='mb-8 bg-orange-300'>
+                  <div className='mb-8 bg-ixora-orange'>
                     <div className="py-4 text-white text-center text-2xl font-extrabold">Площообразуване</div>
                   </div> 
                 : 
                 <>
-                  <div className='pb-10 bg-white'>
-                    <div className="text-ixora-orange text-center text-2xl font-extrabold underline">Площообразуване - ап. {apartment.ap}</div>
-                  </div> 
+                  <div className='mb-8 bg-ixora-orange'>
+                    <div className="py-4 text-white text-center text-2xl font-extrabold">Площообразуване - ап. {apartment.ap}</div>
+                  </div>
                   <div className="mb-5 border-r-2 border-l-2 border-ixora-orange text-center" >
                     <div className="flex justify-center space-x-3 ">
                       <div>Площ</div>
-                      <div className="font-bold">{apartment.plosht} м²</div>
+                      <div className="font-bold text-ixora-orange">{apartment.plosht} м²</div>
                     </div>
                     <div className="font-bold"> + </div>
                     <div className="flex justify-center space-x-3 ">
                       <div>Двор</div>
-                      <div className="font-bold">{apartment.dvor} м²</div>
+                      <div className="font-bold text-ixora-orange">{apartment.dvor} м²</div>
                     </div>
                     <div className="font-bold"> = </div>
                     <div className="flex justify-center space-x-3 ">
                       <div>Обща площ</div>
-                      <div className="font-bold">{apartment.total} м²</div>
+                      <div className="font-bold text-ixora-orange">{apartment.total} м²</div>
                     </div>
                   </div> 
                 </>

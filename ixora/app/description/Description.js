@@ -14,10 +14,6 @@ export default function Description() {
     return (
         <>
 
-            <div className="bg-ixora-orange py-4">
-                <div className="text-white text-center text-3xl font-bold">За сградата</div>
-            </div>
-
             {/* DESCRIPTION */}
 
             <ForBuilding></ForBuilding>
@@ -27,7 +23,7 @@ export default function Description() {
 
             {/* Container for actual building footage */}
             <div>
-                <div className="bg-ixora-orange py-4">
+                <div className="bg-gradient-ixora py-4">
                     <div className="text-white text-center text-2xl font-bold">Етап на проекта - Акт 14</div>
                 </div>
                 <div className="flex-col p-10 bg-gray-900">
@@ -67,7 +63,7 @@ export default function Description() {
 
             {/* Container for Parallax Image */}
             <>
-                <div className="bg-ixora-orange py-4">
+                <div className="bg-gradient-ixora py-4">
                     <div className="text-white text-center text-2xl font-bold">Ixora Luxury Residence</div>
                 </div>
                 <div className="bg-[url('../public/ixora-description.webp')] h-60 bg-center bg-cover bg-no-repeat bg-white md:min-h-[32rem] md:grid md:place-items-center md:bg-fixed md:bg-no-repeat md:bg-cover md:bg-center md:opacity-75">
@@ -76,7 +72,7 @@ export default function Description() {
 
             {/* Container for Location*/}
             <div>
-                <div className="bg-ixora-orange py-4">
+                <div className="bg-gradient-ixora py-4">
                     <div className="text-white text-center text-2xl font-bold">Местоположение</div>
                 </div>
                 <iframe

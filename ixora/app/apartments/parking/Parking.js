@@ -56,21 +56,22 @@ export default function Parking() {
         {/* Container for floor plan */}
         <div className="p-5 xl:px-40 bg-white">
 
-          <div className="pt-5 flex-col text-ixora-orange">
+          <div className="pt-5 flex-col ">
               {/* default template */}
+              
               {unit.mqsto === null ?
-                <div className='mb-8 bg-orange-300'>
+                <div className='mb-8 bg-ixora-orange'>
                   <div className="py-4 text-white text-center text-2xl font-extrabold">Площообразуване</div>
                 </div> 
               : 
               <>
-                <div className='pb-10 bg-white'>
-                  <div className="text-ixora-orange text-center text-2xl font-extrabold underline">Площообразуване - {unit.mqsto}</div>
+                <div className='mb-8 bg-ixora-orange'>
+                  <div className="py-4 text-white text-center text-2xl font-extrabold">Площообразуване - {unit.mqsto}</div>
                 </div> 
                 <div className="mb-5 border-r-2 border-l-2 border-ixora-orange text-center" >
                   <div className="flex justify-center space-x-3 ">
                     <div>Площ</div>
-                    <div className="font-bold">{unit.plosht} м²</div>
+                    <div className="font-bold text-ixora-orange">{unit.plosht} м²</div>
                   </div>
                 </div> 
               </>
