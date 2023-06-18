@@ -9,8 +9,8 @@ import Timeline from "@/components/Timeline"
 import ForBuilding from "@/components/ForBuidling"
 import { motion } from "framer-motion"
 import { playfair } from "@/utils/fonts"
-import PlanButtons from "@/components/PlanButtons"
 import useMediaQuery from "@/hooks/useMediaQuery"
+
 export const revalidate = 0; // revalidate this page every 60 seconds
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
             <LineGradient></LineGradient>
 
             {/* WELCOME TEXT AND IMG */}
-            <div className="lg:flex lg:justify-between lg:items-center">
+            <div className="lg:flex lg:justify-between lg:items-center lg:p-10">
                 {/* WELCOME TEXT */}
                 <motion.div 
                     className="lg:basis-[30%]"
@@ -48,28 +48,30 @@ export default function Home() {
 
                 {/* WELCOME IMAGE */}
                 <motion.div 
-                    className="lg:basis-[70%]"
+                    className="lg:basis-[70%] "
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
-                    transition={{ duration: 0.5 }}
+                    transition={{ delay:0.4 ,duration: 0.5 }}
                     variants={{
                       hidden: { opacity: 0, x: 50 },
                       visible: { opacity: 1, x: 0 },
                     }}
                 >
-                    <div className="p-5 md:p-10 ">
+                    <div className="p-5 md:p-10 relative before:absolute before:top-[3%] before:left-[1%]
+                    before:w-full before:h-full before:border-r-2 before:border-b-2 before:border-ixora-orange before:z-[-1]">
                         {/* Parallax effect on hover */}
                         <div className="w-full h-fit overflow-hidden mx-auto">
-
-                            <Image
-                                className="transition-transform duration-700 ease-in-out hover:scale-150"
-                                loader={imageLoader}
-                                src="/ixora-welcome.webp"
-                                width={5000}
-                                height={2813}
-                                alt="Image"
-                            />
+                            <Link href={'/apartments'}>
+                                <Image
+                                    className="transition-transform duration-700 ease-in-out hover:scale-125"
+                                    loader={imageLoader}
+                                    src="/ixora-welcome.webp"
+                                    width={5000}
+                                    height={2813}
+                                    alt="Image"
+                                />
+                            </Link>
                         </div>
 
 
@@ -90,14 +92,21 @@ export default function Home() {
 
             {/* PLAN */}
             <div className="flex justify-center items-center">
-                <Plan
-                    penthouse={'/'}
-                    thirdF={'/'}
-                    secondF={'/'}
-                    firstF={'/'}
-                    parking={'/'}
-                >
-                </Plan>
+                {/* Parallax effect on hover */}
+                <div className="w-full h-fit overflow-hidden mx-auto">
+
+                    <Image 
+                        className="transition-transform duration-700 ease-in-out hover:scale-125"
+                        loader={imageLoader}
+                        src='/ixora-apartments.webp'
+                        alt="Ixora Plan"
+                        width={5000}
+                        height={2813} 
+                    ></Image>
+                    </div>
+                <div className='relative'>
+
+                </div>
             </div>
             <LineGradient></LineGradient>
 

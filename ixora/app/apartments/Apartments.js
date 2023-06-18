@@ -22,27 +22,16 @@ export default function Apartments() {
           <div className="py-4 text-white text-center text-3xl font-bold">Разпределение</div>
         </div>
 
-        {/* Container for buttons */}
+        {/* FLOOR BTNS */}
 
 
         <PlanButtons classNameProps={'p-5 flex justify-around bg-orange-50'}></PlanButtons>
 
 
-        {/* Container for clickable floor plan */}
+        {/* FLOOR PLAN */}
         
         <div className="p-4 pt-0 bg-orange-50 flex">
-
-
-          {/* Container for plan */}
-
-          <Plan 
-            penthouse={'/penthouse/'} 
-            thirdF={'/third-floor/'}
-            secondF={'/second-floor/'}
-            firstF={'/first-floor/'}
-            parking={'/parking/'}
-            ></Plan>
-
+          <Plan></Plan>
         </div>
       </>
     )
