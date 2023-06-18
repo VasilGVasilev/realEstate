@@ -157,7 +157,7 @@ export default function Investor() {
                                     initial="hidden"
                                     whileInView="visible"
                                     viewport={{ once: true, amount: 0.1 }}
-                                    transition={{ delay: 0.5, duration: 0.5 }}
+                                    transition={{ delay: 1.2, duration: 0.5 }}
                                     variants={{
                                         hidden: { opacity: 0, x: -50 },
                                         visible: { opacity: 1, x: 0 },
@@ -247,7 +247,7 @@ export default function Investor() {
                                     initial="hidden"
                                     whileInView="visible"
                                     viewport={{ once: true, amount: 0.1 }}
-                                    transition={{ delay: 0.5, duration: 0.5 }}
+                                    transition={{ delay: 1.2, duration: 0.5 }}
                                     variants={{
                                         hidden: { opacity: 0, x: -50 },
                                         visible: { opacity: 1, x: 0 },
@@ -337,7 +337,7 @@ export default function Investor() {
                                     initial="hidden"
                                     whileInView="visible"
                                     viewport={{ once: true, amount: 0.1 }}
-                                    transition={{ delay: 0.5, duration: 0.5 }}
+                                    transition={{ delay: 1.2, duration: 0.5 }}
                                     variants={{
                                         hidden: { opacity: 0, x: -50 },
                                         visible: { opacity: 1, x: 0 },
