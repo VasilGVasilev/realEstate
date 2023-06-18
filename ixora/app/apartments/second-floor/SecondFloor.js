@@ -46,7 +46,7 @@ export default function SecondFloor() {
         </div>
 
         {/* Container for buttons */}
-        <div className='p-5 flex justify-around bg-orange-50 '>
+        <div className='p-5 flex justify-around bg-ixora-dark '>
           <Link href={'/apartments/parking'}><div className="text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100" >Паркинг</div></Link>
           <Link href={'/apartments/first-floor'}><div className="text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100" >Етаж  1</div></Link>
           <Link href={'/apartments/second-floor'}><div className="text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-700 scale-110 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100">Етаж  2</div></Link>
@@ -55,9 +55,9 @@ export default function SecondFloor() {
         </div>
 
         {/* Container for floor plan */}
-        <div className="p-5 xl:px-40 bg-white">
+        <div className="p-5 xl:px-40 bg-gradient-to-b from-ixora-dark from-10% via-ixorafrom-ixora-dark via-70% to-[#2e281f] to-90% ">
 
-          <div className="pt-5 flex-col">
+          <div className="pt-5 flex-col text-white">
               {/* default template */}
               {apartment.ap === null ?
                   <div className='mb-8 bg-ixora-orange'>

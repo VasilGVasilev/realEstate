@@ -10,6 +10,7 @@ import ForBuilding from "@/components/ForBuidling"
 import { motion } from "framer-motion"
 import { playfair } from "@/utils/fonts"
 import useMediaQuery from "@/hooks/useMediaQuery"
+import PromptToPlan from "@/components/PromptToPlan"
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 
@@ -90,24 +91,9 @@ export default function Home() {
             <ForBuilding></ForBuilding>
             <LineGradient></LineGradient>
 
-            {/* PLAN */}
-            <div className="flex justify-center items-center">
-                {/* Parallax effect on hover */}
-                <div className="w-full h-fit overflow-hidden mx-auto">
-
-                    <Image 
-                        className="transition-transform duration-700 ease-in-out hover:scale-125"
-                        loader={imageLoader}
-                        src='/ixora-apartments.webp'
-                        alt="Ixora Plan"
-                        width={5000}
-                        height={2813} 
-                    ></Image>
-                    </div>
-                <div className='relative'>
-
-                </div>
-            </div>
+            {/* PROMPT IMG TO PLAN */}
+            <Link href={'/apartments'} className={`${playfair.className} flex justify-center items-center text-center py-5 lg:py-0 lg:pt-10 text-white text-lg sm:text-3xl hover:scale-110`}>Купете Вашия луксозен нов дом сега.</Link>
+            <PromptToPlan></PromptToPlan>
             <LineGradient></LineGradient>
 
             {/* LOCATION */}

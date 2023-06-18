@@ -25,12 +25,12 @@ export default function Apartments() {
         {/* FLOOR BTNS */}
 
 
-        <PlanButtons classNameProps={'p-5 flex justify-around bg-orange-50'}></PlanButtons>
+        <PlanButtons classNameProps={'p-5 flex justify-around bg-ixora-dark'}></PlanButtons>
 
 
         {/* FLOOR PLAN */}
         
-        <div className="p-4 pt-0 bg-orange-50 flex">
+        <div className="p-4 pt-0 bg-gradient-to-b from-ixora-dark from-10% via-ixorafrom-ixora-dark via-70% to-[#2e281f] to-90% flex">
           <Plan></Plan>
         </div>
       </>
