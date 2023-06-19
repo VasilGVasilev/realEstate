@@ -43,3 +43,8 @@ Responsive design is just the first set of features are the mobile ones and for 
 <div className="flex justify-center">This is text is justified center relative to encapsulating div</div>
 same goes for 
 <div><div>This inner div is justified center realtive to outer div</div></div>
+
+
+### Other:
+
+The inset CSS property is a shorthand that corresponds to the top, right, bottom, and/or left properties.

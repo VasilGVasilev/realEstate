@@ -5,9 +5,14 @@ const LineGradient = () => {
     return (
         <motion.div 
           className={`h-2 bg-gradient-ixora`} 
-          initial={{ width: 0 }}
-          animate={{ width: '100%' }}
           transition={{ duration: 1 }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={{
+            hidden: { width: 0 },
+            visible: { width: '100%' },
+          }}
         />
     )
   };
