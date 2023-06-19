@@ -9,21 +9,66 @@ import Timeline from "@/components/Timeline"
 import ForBuilding from "@/components/ForBuidling"
 import { motion } from "framer-motion"
 import { playfair } from "@/utils/fonts"
-import useMediaQuery from "@/hooks/useMediaQuery"
 import PromptToPlan from "@/components/PromptToPlan"
 
 export const revalidate = 0; // revalidate this page every 60 seconds
-
+const container = {
+    hidden: {},
+    visible: {
+        transition: {
+            staggerChildren: 0.1,
+        },
+    },
+  };
+  
+  const letterVariant = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1 },
+  };
 export default function Home() {
-    const isDesktop = useMediaQuery("(min-width: 1000px)");
     return (
         <div>
             {/* WELCOME VIDEO */}
-            <div>
+
+            <div className="relative">
                 <video className="w-full h-full" autoPlay={true} muted={true} loop={true} playsInline={true} >
                     <source src="/video.MP4" type="video/MP4" />
                     Your browser does not support the video tag.
                 </video>
+
+                <div className="absolute bottom-[10%] left-0 w-full h-full flex items-end justify-center ">
+                    <motion.div 
+                        className="text-white text-center text-2xl md:text-4xl lg:text-6xl font-bold"
+                        variants={container}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.2 }}
+                    >
+                        <motion.span variants={letterVariant}>В</motion.span>
+                        <motion.span variants={letterVariant}>а</motion.span>
+                        <motion.span variants={letterVariant}>ш</motion.span>
+                        <motion.span variants={letterVariant}>и</motion.span>
+                        <motion.span variants={letterVariant}>я</motion.span>
+                        <motion.span variants={letterVariant}>т</motion.span>
+                        <motion.span variants={letterVariant}> </motion.span>
+                        <motion.span variants={letterVariant}>л</motion.span>
+                        <motion.span variants={letterVariant}>у</motion.span>
+                        <motion.span variants={letterVariant}>к</motion.span>
+                        <motion.span variants={letterVariant}>с</motion.span>
+                        <motion.span variants={letterVariant}>о</motion.span>
+                        <motion.span variants={letterVariant}>з</motion.span>
+                        <motion.span variants={letterVariant}>е</motion.span>
+                        <motion.span variants={letterVariant}>н</motion.span>
+                        <motion.span variants={letterVariant}> </motion.span>
+                        <motion.span variants={letterVariant}>н</motion.span>
+                        <motion.span variants={letterVariant}>о</motion.span>
+                        <motion.span variants={letterVariant}>в</motion.span>
+                        <motion.span variants={letterVariant}> </motion.span>
+                        <motion.span variants={letterVariant}>д</motion.span>
+                        <motion.span variants={letterVariant}>о</motion.span>
+                        <motion.span variants={letterVariant}>м</motion.span>
+                    </motion.div>
+                </div>
             </div>
             <LineGradient></LineGradient>
 
