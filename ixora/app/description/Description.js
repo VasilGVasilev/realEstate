@@ -16,22 +16,39 @@ export default function Description() {
         <>
 
             {/* DESCRIPTION */}
-            <div className="bg-gradient-ixora py-4">
-                <div className="text-white text-center text-3xl font-bold">Преимущества</div>
-            </div>
+            <motion.div
+                className="bg-gradient-ixora py-4"
+                initial={{ opacity: 0, width: 0 }}
+                animate={{ opacity: 1, width: '100%' }}
+                transition={{ delay: 0.3, duration: 1 }}
+                >
+                    <div className="text-white text-center text-3xl font-bold">Преимущества</div>
+            </motion.div>
+
             <ForBuilding></ForBuilding>
 
             {/* TIMELINE */}
-            <div className="bg-gradient-ixora py-4">
-                <div className="text-white text-center text-3xl font-bold">Етапи</div>
-            </div>
+            <motion.div
+                className="bg-gradient-ixora py-4"
+                initial={{ opacity: 0, width: 0 }}
+                animate={{ opacity: 1, width: '100%' }}
+                transition={{ delay: 0.3, duration: 1 }}
+                >
+                    <div className="text-white text-center text-3xl font-bold">Етапи</div>
+            </motion.div>
+
             <Timeline></Timeline>
 
             {/* BUILDING PROGRESS */}
             <div>
-                <div className="bg-gradient-ixora py-4 ">
-                    <div className="text-white text-center text-2xl font-bold">Етап на проекта - Акт 14</div>
-                </div>
+                <motion.div
+                    className="bg-gradient-ixora py-4"
+                    initial={{ opacity: 0, width: 0 }}
+                    animate={{ opacity: 1, width: '100%' }}
+                    transition={{ delay: 0.6, duration: 1 }}
+                    >
+                        <div className="text-white text-center text-2xl font-bold">Етап на проекта - Акт 14</div>
+                </motion.div>
                 <div className="p-10 bg-ixora-dark flex flex-col lg:flex-row">
                     <motion.div
                         className={buildingProcessLayout}
@@ -98,18 +115,29 @@ export default function Description() {
 
             {/* AKT 16 */}
             <>
-                <div className="bg-gradient-ixora py-4">
+                <motion.div
+                    className="bg-gradient-ixora py-4"
+                    initial={{ opacity: 0, width: 0 }}
+                    animate={{ opacity: 1, width: '100%' }}
+                    transition={{ delay: 0.9, duration: 1 }}
+                    >
                     <div className="text-white text-center text-2xl font-bold">Изберете Вашия бъдещ дом</div>
-                </div>
+                </motion.div>
                 <div className="bg-[url('../public/ixora-description.webp')] h-60 bg-center bg-cover bg-no-repeat bg-white md:min-h-[32rem] md:grid md:place-items-center md:bg-fixed md:bg-no-repeat md:bg-cover md:bg-center md:opacity-75">
                 </div>
             </>
 
             {/* LOCATION*/}
             <div>
-                <div className="bg-gradient-ixora py-4">
+
+                <motion.div
+                    className="bg-gradient-ixora py-4"
+                    initial={{ opacity: 0, width: 0 }}
+                    animate={{ opacity: 1, width: '100%' }}
+                    transition={{ delay: 0.3, duration: 1 }}
+                    >
                     <div className="text-white text-center text-2xl font-bold">Местоположение</div>
-                </div>
+                </motion.div>
                 <Maps></Maps>
             </div>
 
