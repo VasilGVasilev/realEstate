@@ -8,7 +8,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import PlanButtons from "@/components/PlanButtons";
 
-
+import Modal from "@/components/Modal";
 
 
 export const revalidate = 0; // revalidate this page every 60 seconds
@@ -17,10 +17,19 @@ const sold = "hover:bg-red-700 hover:opacity-40 active:bg-red-700 active:opacity
 const available = "hover:bg-green-400 hover:opacity-40 active:bg-green-400 active:opacity-40 cursor-pointer";
 const reserved = "hover:bg-blue-400 hover:opacity-40 active:bg-blue-400 active:opacity-40 cursor-pointer";
 
+// TODO: add modals for ploshtoobrazuvane
 
 export default function FirstFloor() {
 
+    const [modalOpen, setModalOpen] = useState(false);
 
+    const openModal = () => {
+      setModalOpen(true);
+    };
+
+    const closeModal = () => {
+      setModalOpen(false);
+    };
     const [apartment, setApartment] = useState({
       ap: null,
       plosht: null,
@@ -44,6 +53,16 @@ export default function FirstFloor() {
 
     return (
       <>
+        <div>
+          <button
+            className="px-4 py-2 bg-blue-500 text-white rounded"
+            onClick={openModal}
+          >
+            Open Modal
+          </button>
+
+          <Modal isOpen={modalOpen} onClose={closeModal} />
+        </div>
         <motion.div
           ref={myRef} 
           className='bg-gradient-ixora'
