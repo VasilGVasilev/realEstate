@@ -20,8 +20,8 @@ export default function Apartments() {
 
         <motion.div 
           className='bg-gradient-ixora'
-          initial={{ width: 0 }}
-          animate={{ width: '100%' }}
+          initial={{ opacity: 0, width: 0 }}
+          animate={{ opacity: 1, width: '100%' }}
           transition={{ duration: 1 }}
           >
           <div className="py-4 text-white text-center text-3xl font-bold">Разпределение</div>

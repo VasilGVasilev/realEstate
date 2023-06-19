@@ -4,6 +4,8 @@ import { useRef, useState } from "react";
 import { imageLoader } from "@/utils/imgLoader";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import PlanButtons from "@/components/PlanButtons";
 
 
 
@@ -38,20 +40,19 @@ export default function Parking() {
     return (
       <>
 
-        
-        <div ref={myRef} className='bg-ixora-orange'>
-          <div className=" py-4 text-white text-center text-2xl font-extrabold">Гаражи</div>
-        </div>
+        <motion.div
+          ref={myRef} 
+          className='bg-gradient-ixora'
+          initial={{ opacity: 0, width: 0 }}
+          animate={{ opacity: 1, width: '100%' }}
+          transition={{ duration: 1 }}
+          >
+          <div className="py-4 text-white text-center text-2xl font-extrabold">Гаражи</div>
+        </motion.div>
 
         {/* Container for buttons */}
 
-        <div className='p-5 flex justify-around bg-ixora-dark '>
-          <Link href={'/apartments/parking'}><div className="text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-700 scale-110 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100" >Паркинг</div></Link>
-          <Link href={'/apartments/first-floor'}><div className="text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100" >Етаж  1</div></Link>
-          <Link href={'/apartments/second-floor'}><div className="text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100">Етаж  2</div></Link>
-          <Link href={'/apartments/third-floor'}><div className="text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100" >Етаж  3</div></Link>
-          <Link href={'/apartments/penthouse'}><div className="text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100" >Етаж 4</div></Link>
-        </div>
+        <PlanButtons></PlanButtons>
 
         {/* Container for floor plan */}
         <div className="p-5 xl:px-40 bg-gradient-to-b from-ixora-dark from-10% via-ixorafrom-ixora-dark via-70% to-[#2e281f] to-90% ">

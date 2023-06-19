@@ -4,6 +4,8 @@
 import Image from "next/image"
 import { imageLoader } from "../../utils/imgLoader";
 import Maps from "@/components/Location";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 
@@ -14,9 +16,15 @@ export default function Contacts() {
     return (
       <>
       {/* div for maps */}
-      <div className="bg-gradient-ixora">
+      <motion.div
+          className='bg-gradient-ixora'
+          initial={{ opacity: 0, width: 0 }}
+          animate={{ opacity: 1, width: '100%' }}
+          transition={{ duration: 1 }}
+          >
         <div className="text-center py-4 text-3xl text-white font-bold">Местоположение</div>
-      </div>
+      </motion.div>
+
       <Maps></Maps>
       {/* Desktop res makes Contact Card and Form flex */}
       <div className="lg:flex">
@@ -98,4 +106,5 @@ export default function Contacts() {
       </>
     )
 }
+
   

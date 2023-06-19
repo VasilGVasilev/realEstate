@@ -56,7 +56,7 @@ export default function FirstFloor() {
 
         {/* Container for buttons */}
 
-        <PlanButtons classNameProps={'p-5 flex justify-around bg-ixora-dark'}></PlanButtons>
+        <PlanButtons></PlanButtons>
 
         {/* Container for floor plan */}
         <div className="p-5 xl:px-40 bg-gradient-to-b from-ixora-dark from-10% via-ixorafrom-ixora-dark via-70% to-[#2e281f] to-90% ">

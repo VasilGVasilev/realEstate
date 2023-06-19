@@ -15,7 +15,7 @@ const btnVariant = {
   hidden: { opacity: 0, scale: 0.8 },
   visible: { opacity: 1, scale: 1 },
 };
-const PlanButtons = ({classNameProps}) => {
+const PlanButtons = () => {
   const pathname = usePathname();
   let parking = '';
   let firstF = '';
@@ -42,7 +42,7 @@ const PlanButtons = ({classNameProps}) => {
 
   return (
     <motion.div 
-      className={`${classNameProps}`}
+      className={'p-5 flex justify-around bg-ixora-dark'}
       variants={container}
       initial="hidden"
       whileInView="visible"
