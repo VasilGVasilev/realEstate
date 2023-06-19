@@ -17,7 +17,7 @@ export default function Description() {
 
             {/* DESCRIPTION */}
             <div className="bg-gradient-ixora py-4">
-                <div className="text-white text-center text-3xl font-bold">Описание</div>
+                <div className="text-white text-center text-3xl font-bold">Преимущества</div>
             </div>
             <ForBuilding></ForBuilding>
 

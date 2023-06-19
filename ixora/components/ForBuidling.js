@@ -18,10 +18,10 @@ const ForBuilding = () => {
     return (
         <>
         <div className={`${lato.className} p-10 md:px-32 xl:px-72`}>
-            <div className=" bg-ixora-deep-blue w-full h-fit ">
+            <div className=" w-full h-fit ">
 
                 <motion.ul 
-                    className="p-5 border-r-2 border-l-2 border-ixora-orange"
+                    className="p-5 border-r-2 border-t-2 border-ixora-orange"
                     variants={container}
                     initial="hidden"
                     whileInView="visible"

@@ -1,8 +1,14 @@
+import { motion } from "framer-motion";
 
 
-const LineGradient = ({ width = "w-full" }) => {
+const LineGradient = () => {
     return (
-        <div className={`h-2 ${width} bg-gradient-ixora`} />
+        <motion.div 
+          className={`h-2 bg-gradient-ixora`} 
+          initial={{ width: 0 }}
+          animate={{ width: '100%' }}
+          transition={{ duration: 1 }}
+        />
     )
   };
   

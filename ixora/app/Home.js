@@ -92,7 +92,7 @@ export default function Home() {
             <LineGradient></LineGradient>
 
             {/* PROMPT IMG TO PLAN */}
-            <Link href={'/apartments'} className={`${playfair.className} flex justify-center items-center text-center py-5 lg:py-0 lg:pt-10 text-white text-lg sm:text-3xl hover:scale-110`}>Купете Вашия луксозен нов дом сега.</Link>
+            <Link href={'/apartments'} className={`${playfair.className} flex justify-center items-center text-center py-5 lg:py-0 lg:pt-10 text-white text-lg sm:text-3xl hover:scale-110`}>Изберете Вашия луксозен нов дом сега.</Link>
             <PromptToPlan></PromptToPlan>
             <LineGradient></LineGradient>
 

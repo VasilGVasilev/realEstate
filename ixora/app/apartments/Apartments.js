@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { imageLoader } from '../../utils/imgLoader';
 import Plan from '@/components/Plan';
 import PlanButtons from '@/components/PlanButtons';
-
+import { motion } from 'framer-motion';
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 
@@ -17,10 +17,15 @@ export default function Apartments() {
     return (
       <>
 
-        
-        <div className='bg-gradient-ixora'>
+
+        <motion.div 
+          className='bg-gradient-ixora'
+          initial={{ width: 0 }}
+          animate={{ width: '100%' }}
+          transition={{ duration: 1 }}
+          >
           <div className="py-4 text-white text-center text-3xl font-bold">Разпределение</div>
-        </div>
+        </motion.div>
 
         {/* FLOOR BTNS */}
 
