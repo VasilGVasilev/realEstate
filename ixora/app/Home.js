@@ -16,14 +16,14 @@ const container = {
     hidden: {},
     visible: {
         transition: {
-            staggerChildren: 0.1,
+            staggerChildren: 0.05,
         },
     },
   };
   
   const letterVariant = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1 },
+    hidden: { opacity: 0},
+    visible: { opacity: 1},
   };
 export default function Home() {
     return (
