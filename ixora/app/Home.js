@@ -37,7 +37,7 @@ export default function Home() {
 
                 <div className="absolute bottom-[10%] left-0 w-full h-full flex items-end justify-center ">
                     <motion.div 
-                        className="text-white text-center text-2xl md:text-4xl lg:text-6xl font-bold"
+                        className="welcomeTextOnImg text-white text-center text-2xl md:text-4xl lg:text-6xl font-bold"
                         variants={container}
                         initial="hidden"
                         whileInView="visible"
@@ -74,22 +74,32 @@ export default function Home() {
             {/* WELCOME TEXT AND IMG */}
             <div className="lg:flex lg:justify-between lg:items-center lg:p-10">
                 {/* WELCOME TEXT */}
-                <motion.div 
-                    className="lg:basis-[30%]"
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                    transition={{ delay: 0.5 ,duration: 0.5 }}
-                    variants={{
-                      hidden: { opacity: 0, x: -50 },
-                      visible: { opacity: 1, x: 0 },
-                    }}
-                >
+                <div className="lg:basis-[30%]">
                     <div className={`${playfair.className} p-10`}>
-                        <div className="py-5 text-ixora-orange text-left text-2xl font-extrabold">Ixora Luxury Residence: </div>
-                        <div className="text-justify text-white">Изпълнението и всички довършителни работи са заложени в изключително висок - бутиков клас. Ixora Residence се състои от 13 просторни апартамента и 17 гаража. Апартаментите разкриват чудесна панорамна гледка към София и Витоша, а сградата разполага с напълно оборудвани спа център и фитнес зала за ексклузивно ползване от бъдещите обитатели. Вертикалната планировка по специален ландшафтен проект оформя зелен пояс около сградата, който създава усещане за живот в паркова среда.</div>
+                        <motion.div
+                            className="py-5 text-ixora-orange text-left text-2xl font-extrabold"
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.5 }}
+                            transition={{ delay: 0.3 ,duration: 0.5 }}
+                            variants={{
+                                hidden: { opacity: 0, x: -50 },
+                                visible: { opacity: 1, x: 0 },
+                            }} 
+                            >Ixora Luxury Residence: </motion.div>
+                        <motion.div
+                            className="text-justify text-white"
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.5 }}
+                            transition={{ delay: 0.7 ,duration: 0.5 }}
+                            variants={{
+                                hidden: { opacity: 0, x: -50 },
+                                visible: { opacity: 1, x: 0 },
+                            }} 
+                            >Изпълнението и всички довършителни работи са заложени в изключително висок - бутиков клас. Ixora Residence се състои от 13 просторни апартамента и 17 гаража. Апартаментите разкриват чудесна панорамна гледка към София и Витоша, а сградата разполага с напълно оборудвани спа център и фитнес зала за ексклузивно ползване от бъдещите обитатели. Вертикалната планировка по специален ландшафтен проект оформя зелен пояс около сградата, който създава усещане за живот в паркова среда.</motion.div>
                     </div>
-                </motion.div>
+                </div>
 
                 {/* WELCOME IMAGE */}
                 <motion.div 
