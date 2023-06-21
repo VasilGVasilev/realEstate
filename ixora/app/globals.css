@@ -144,7 +144,7 @@
 }
 
 .welcomeTextOnImg{
-  text-shadow: 1px 1px 3px white;
+  text-shadow: 0.5px 0.5px 2px white;
 }
 .timelineBubble{
   text-shadow: 1px 1px 3px gray;
