@@ -39,12 +39,12 @@ const LinkMobileTemplate = ({ urlLink, page, setIsMenuToggled }) => {
 
     return (
         <Link
+            href={urlLink}
             className={`${pathName === urlLink ? "text-yellow-500" : ""
                 }  hover:scale-125 transition duration-300`}
-            href={urlLink}
             onClick={() => {
-                setIsMenuToggled(false);
-            }
+                    setIsMenuToggled(false);
+                }
             }
         >
             {page}
@@ -54,12 +54,11 @@ const LinkMobileTemplate = ({ urlLink, page, setIsMenuToggled }) => {
 
 const LinkTemplate = ({ urlLink, page }) => {
     const pathName = usePathname();
-
     return (
         <Link
+            href={urlLink}
             className={`${pathName == urlLink ? "text-yellow-500" : ""
                 }  hover:scale-125 transition duration-300`}
-            href={urlLink}
         >
             {page}
         </Link>
@@ -92,7 +91,7 @@ const Navbar = () => {
             <nav className={`bg-ixora-dark z-40 w-full fixed top-0 py-[2%] sm:py-[1%]`} >
                 <div className="flex items-center justify-between mx-auto w-5/6">
 
-                    <Link className='saturate-200 duration-200 flex justify-center items-center h-[30%] w-[30%] sm:h-[15%] sm:w-[15%]' href={`/`}>
+                    <Link className='saturate-200 duration-200 flex justify-center items-center h-[30%] w-[30%] sm:h-[15%] sm:w-[15%]' href={'/'}>
                         <Image
                             loader={imageLoader}
                             src="/ixora.webp"
