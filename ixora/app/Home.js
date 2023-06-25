@@ -37,7 +37,7 @@ export default function Home() {
 
                 <div className="absolute bottom-[15%] left-0 w-full h-full flex items-end justify-center ">
                     <motion.div 
-                        className="welcomeTextOnImg text-white text-center text-2xl md:text-4xl lg:text-6xl font-bold"
+                        className="welcomeTextOnImg text-white text-center text-2xl md:text-4xl lg:text-6xl xl:text-[80px] font-bold"
                         variants={container}
                         initial="hidden"
                         whileInView="visible"
@@ -72,12 +72,12 @@ export default function Home() {
             <LineGradient></LineGradient>
 
             {/* WELCOME TEXT AND IMG */}
-            <div className="lg:flex lg:justify-between lg:items-center lg:p-10">
+            <div className="lg:flex lg:justify-between lg:items-center lg:p-10 bg-orange-50">
                 {/* WELCOME TEXT */}
                 <div className="lg:basis-[30%]">
                     <div className={`${playfair.className} p-10`}>
                         <motion.div
-                            className="py-5 text-ixora-orange text-left text-2xl font-extrabold"
+                            className="py-5 text-ixora-orange text-left text-3xl font-extrabold"
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.5 }}
@@ -88,7 +88,7 @@ export default function Home() {
                             }} 
                             >Ixora Luxury Residence: </motion.div>
                         <motion.div
-                            className="text-justify text-white"
+                            className="text-justify font-semibold text-gray-700"
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.5 }}
@@ -114,12 +114,12 @@ export default function Home() {
                     }}
                 >
                     <div className="p-5 md:p-10 relative before:absolute before:top-[3%] before:left-[1%]
-                    before:w-full before:h-full before:border-l-2 before:border-t-2 before:border-ixora-orange before:z-[-1]">
+                    before:w-full before:h-full before:border-l-4 before:border-t-4 before:border-ixora-orange before:z-10">
                         {/* Parallax effect on hover */}
-                        <div className="w-full h-fit overflow-hidden mx-auto">
+                        <div className="relative w-full h-fit overflow-hidden mx-auto z-20">
                             <Link href={'/apartments'}>
                                 <Image
-                                    className="transition-transform duration-700 ease-in-out hover:scale-125"
+                                    className="transition-transform duration-700 ease-in-out hover:scale-125 "
                                     loader={imageLoader}
                                     src="/ixora-welcome.webp"
                                     width={5000}

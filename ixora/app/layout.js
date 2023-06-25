@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
 // #464646
   return (
     
-    <html lang="bg-ixora-dark" className={`scroll-smooth ${playfair.className} overflow-x-hidden`}>
+    <html lang="bg-ixora-dark" className={`scroll-smooth ${lato.className} overflow-x-hidden`}>
       <body className='bg-ixora-dark overflow-x-hidden'>
 
         <Navbar

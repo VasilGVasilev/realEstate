@@ -109,7 +109,7 @@ const Navbar = () => {
                             />
                             <LinkTemplate
                                 urlLink='/description/'
-                                page="Преимущества"
+                                page="За сградата"
                             />
                             <LinkTemplate
                                 urlLink='/apartments/'
@@ -175,7 +175,7 @@ const Navbar = () => {
                                 >
                                     <LinkMobileTemplate
                                         urlLink='/description'
-                                        page="Преимущества"
+                                        page="За сградата"
                                         setIsMenuToggled={setIsMenuToggled}
                                     />
                                 </motion.div>
