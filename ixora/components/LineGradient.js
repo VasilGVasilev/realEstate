@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const LineGradient = () => {
     return (
         <motion.div 
-          className={`h-2 bg-gradient-ixora`} 
+          className={`h-2 bg-gradient-ixora z-20`} 
           transition={{ duration: 1 }}
           initial="hidden"
           whileInView="visible"

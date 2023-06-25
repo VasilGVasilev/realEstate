@@ -114,7 +114,7 @@ export default function Home() {
                     }}
                 >
                     <div className="p-5 md:p-10 relative before:absolute before:top-[3%] before:left-[1%]
-                    before:w-full before:h-full before:border-l-4 before:border-t-4 before:border-ixora-orange before:z-10">
+                    before:w-full before:h-full before:border-l-2 before:border-t-2 before:border-[#f83600] before:z-10">
                         {/* Parallax effect on hover */}
                         <div className="relative w-full h-fit overflow-hidden mx-auto z-20">
                             <Link href={'/apartments'}>
