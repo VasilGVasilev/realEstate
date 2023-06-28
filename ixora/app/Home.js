@@ -9,6 +9,7 @@ import ForBuilding from "@/components/ForBuidling"
 import { motion } from "framer-motion"
 import PromptToPlan from "@/components/PromptToPlan"
 import WelcomeText from "@/components/WelcomeText"
+import { playfair } from "@/utils/fonts"
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 const container = {
@@ -18,12 +19,13 @@ const container = {
             staggerChildren: 0.05,
         },
     },
-  };
+};
   
-  const letterVariant = {
+const letterVariant = {
     hidden: { opacity: 0},
     visible: { opacity: 1},
-  };
+};
+
 export default function Home() {
     return (
         <div>
@@ -37,7 +39,7 @@ export default function Home() {
 
                 <div className="absolute bottom-[15%] left-0 w-full h-full flex items-end justify-center ">
                     <motion.div 
-                        className={` welcomeTextOnImg text-white text-center text-2xl md:text-4xl lg:text-6xl xl:text-[80px] font-bold`}
+                        className={`${playfair.className} welcomeTextOnImg text-white text-center text-2xl md:text-4xl lg:text-6xl xl:text-[80px]`}
                         variants={container}
                         initial="hidden"
                         whileInView="visible"
@@ -88,18 +90,6 @@ export default function Home() {
                             }} 
                             >Ixora Luxury Residence: </motion.div>
                         <WelcomeText></WelcomeText>
-                        {/* <motion.div
-                            className="text-justify font-semibold text-gray-700"
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true, amount: 0.5 }}
-                            transition={{ delay: 0.7 ,duration: 0.5 }}
-                            variants={{
-                                hidden: { opacity: 0, x: -50 },
-                                visible: { opacity: 1, x: 0 },
-                            }} 
-                            >Изпълнението и всички довършителни работи са заложени в изключително висок - бутиков клас. Ixora Residence се състои от 13 просторни апартамента и 17 гаража. Апартаментите разкриват чудесна панорамна гледка към София и Витоша, а сградата разполага с напълно оборудвани спа център и фитнес зала за ексклузивно ползване от бъдещите обитатели. Вертикалната планировка по специален ландшафтен проект оформя зелен пояс около сградата, който създава усещане за живот в паркова среда.
-                        </motion.div> */}
                     </div>
                 </div>
 

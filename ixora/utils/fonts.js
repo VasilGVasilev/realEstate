@@ -1,4 +1,10 @@
-import { Open_Sans, Roboto, Lato } from 'next/font/google';
+import { Open_Sans, Roboto, Lato, Playfair_Display } from 'next/font/google';
+
+export const playfair = Playfair_Display({
+    weight: '400',
+    subsets: ['latin'],
+    display: 'swap',
+})
 
 export const roboto = Roboto({
     weight: '400',
