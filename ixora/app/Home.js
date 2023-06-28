@@ -37,7 +37,7 @@ export default function Home() {
 
                 <div className="absolute bottom-[15%] left-0 w-full h-full flex items-end justify-center ">
                     <motion.div 
-                        className="welcomeTextOnImg text-white text-center text-2xl md:text-4xl lg:text-6xl xl:text-[80px] font-bold"
+                        className={`${playfair.className} welcomeTextOnImg text-white text-center text-2xl md:text-4xl lg:text-6xl xl:text-[80px] font-bold`}
                         variants={container}
                         initial="hidden"
                         whileInView="visible"
