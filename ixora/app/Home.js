@@ -7,7 +7,6 @@ import Maps from "@/components/Location"
 import Timeline from "@/components/Timeline"
 import ForBuilding from "@/components/ForBuidling"
 import { motion } from "framer-motion"
-import { playfair } from "@/utils/fonts"
 import PromptToPlan from "@/components/PromptToPlan"
 import WelcomeText from "@/components/WelcomeText"
 
@@ -38,7 +37,7 @@ export default function Home() {
 
                 <div className="absolute bottom-[15%] left-0 w-full h-full flex items-end justify-center ">
                     <motion.div 
-                        className={`${playfair.className} welcomeTextOnImg text-white text-center text-2xl md:text-4xl lg:text-6xl xl:text-[80px] font-bold`}
+                        className={` welcomeTextOnImg text-white text-center text-2xl md:text-4xl lg:text-6xl xl:text-[80px] font-bold`}
                         variants={container}
                         initial="hidden"
                         whileInView="visible"
@@ -76,7 +75,7 @@ export default function Home() {
             <div className="lg:flex lg:justify-between lg:items-center lg:p-10 bg-orange-50">
                 {/* WELCOME TEXT */}
                 <div className="lg:basis-[30%]">
-                    <div className={`${playfair.className} p-10`}>
+                    <div className={` p-10`}>
                         <motion.div
                             className="py-5 text-ixora-orange text-left text-3xl font-extrabold"
                             initial="hidden"
@@ -149,7 +148,7 @@ export default function Home() {
             <LineGradient></LineGradient>
 
             {/* PROMPT IMG TO PLAN */}
-            <Link href={'/apartments'} className={`${playfair.className} flex justify-center items-center text-center py-5 lg:py-0 lg:pt-10 text-white text-lg sm:text-3xl hover:scale-110`}>Изберете Вашия луксозен нов дом сега.</Link>
+            <Link href={'/apartments'} className={`flex justify-center items-center text-center py-5 lg:py-0 lg:pt-10 text-white text-lg sm:text-3xl hover:scale-110`}>Изберете Вашия луксозен нов дом сега.</Link>
             <PromptToPlan></PromptToPlan>
             <LineGradient></LineGradient>
 

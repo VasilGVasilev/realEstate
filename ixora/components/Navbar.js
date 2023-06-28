@@ -1,6 +1,5 @@
 import { useState } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
-import { playfair } from '../utils/fonts'
 import Link from 'next/link'
 
 import { imageLoader } from '../utils/imgLoader'
@@ -102,7 +101,7 @@ const Navbar = () => {
                     </Link>
                     {/* DESKTOP NAV */}
                     {isDesktop ? (
-                        <div className={`${playfair.className} text-xl 2xl:text-2xl flex justify-between gap-10 2xl:gap-16 text-white font-semibold`}>
+                        <div className={`text-xl 2xl:text-2xl flex justify-between gap-10 2xl:gap-16 text-white font-bold`}>
                             <LinkTemplate
                                 urlLink='/'
                                 page="Начало"

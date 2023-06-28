@@ -60,7 +60,7 @@ export default function Investor() {
                                     visible: { opacity: 1, scale: 1 },
                                 }}
                         >
-                            <div className="text-gray-300 text-justify">
+                            <div className="text-gray-200 text-justify font-bold">
                                 Creative Studio е строително-инвестиционно холдингово дружество, което финансира, проектира и изгражда луксозни многофамилни и еднофамилни жилищни сгради и ги реализира на пазара.
                             </div>
                         </motion.div>
