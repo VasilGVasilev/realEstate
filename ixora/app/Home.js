@@ -9,6 +9,7 @@ import ForBuilding from "@/components/ForBuidling"
 import { motion } from "framer-motion"
 import { playfair } from "@/utils/fonts"
 import PromptToPlan from "@/components/PromptToPlan"
+import WelcomeText from "@/components/WelcomeText"
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 const container = {
@@ -87,7 +88,8 @@ export default function Home() {
                                 visible: { opacity: 1, x: 0 },
                             }} 
                             >Ixora Luxury Residence: </motion.div>
-                        <motion.div
+                        <WelcomeText></WelcomeText>
+                        {/* <motion.div
                             className="text-justify font-semibold text-gray-700"
                             initial="hidden"
                             whileInView="visible"
@@ -97,7 +99,8 @@ export default function Home() {
                                 hidden: { opacity: 0, x: -50 },
                                 visible: { opacity: 1, x: 0 },
                             }} 
-                            >Изпълнението и всички довършителни работи са заложени в изключително висок - бутиков клас. Ixora Residence се състои от 13 просторни апартамента и 17 гаража. Апартаментите разкриват чудесна панорамна гледка към София и Витоша, а сградата разполага с напълно оборудвани спа център и фитнес зала за ексклузивно ползване от бъдещите обитатели. Вертикалната планировка по специален ландшафтен проект оформя зелен пояс около сградата, който създава усещане за живот в паркова среда.</motion.div>
+                            >Изпълнението и всички довършителни работи са заложени в изключително висок - бутиков клас. Ixora Residence се състои от 13 просторни апартамента и 17 гаража. Апартаментите разкриват чудесна панорамна гледка към София и Витоша, а сградата разполага с напълно оборудвани спа център и фитнес зала за ексклузивно ползване от бъдещите обитатели. Вертикалната планировка по специален ландшафтен проект оформя зелен пояс около сградата, който създава усещане за живот в паркова среда.
+                        </motion.div> */}
                     </div>
                 </div>
 
