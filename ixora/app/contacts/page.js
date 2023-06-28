@@ -1,10 +1,8 @@
 import Contacts from "./Contacts";
 
-export const metadata = {
-  title: 'Контакти - Ixora Residence',
-  description: 'Ixora Residence'
+import { metaData } from "@/utils/metadata";
 
-};
+export const metadata = metaData('Контакти')
 
 export default function Page () {
   return(

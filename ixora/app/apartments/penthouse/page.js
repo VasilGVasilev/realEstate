@@ -1,9 +1,8 @@
 import Penthouse from "./Penthouse";
 
-export const metadata = {
-  title: 'Пентхаус - Ixora Residence',
-  description: 'Ixora Residence'
-};
+import { metaData } from "@/utils/metadata";
+
+export const metadata = metaData('Пентхаус')
 
 export default function Page () {
   return (

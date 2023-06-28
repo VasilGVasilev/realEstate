@@ -1,11 +1,8 @@
 import Investor from "./Investor";
 
-export const metadata = {
-  title: 'Инвеститор - Ixora Residence',
-  description: 'Ixora Residence'
+import { metaData } from "@/utils/metadata";
 
-};
-
+export const metadata = metaData('Инвеститор')
 
 
 export default function Page() {

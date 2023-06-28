@@ -1,10 +1,8 @@
 import Apartments from "./Apartments";
 
-export const metadata = {
-  title: 'Свободни Апартаменти - Ixora Residence',
-  description: 'Ixora Residence'
+import { metaData } from "@/utils/metadata";
 
-};
+export const metadata = metaData('Свободни Апартаменти')
 
 export default function Page () {
   return(

@@ -1,10 +1,8 @@
 import ThirdFloor from "./ThirdFloor";
 
-export const metadata = {
-  title: 'Трети етаж - Ixora Residence',
-  description: 'Ixora Residence'
-};
+import { metaData } from "@/utils/metadata";
 
+export const metadata = metaData('Трети етаж')
 
 export default function Page () {
   return (

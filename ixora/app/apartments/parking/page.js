@@ -1,10 +1,8 @@
 import Parking from "./Parking";
 
-export const metadata = {
-  title: 'Паркинг - Ixora Residence',
-  description: 'Ixora Residence'
+import { metaData } from "@/utils/metadata";
 
-};
+export const metadata = metaData('Паркинг')
 
 export default function Page () {
   return (

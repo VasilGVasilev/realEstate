@@ -1,10 +1,8 @@
 import Description from "./Description";
 
-export const metadata = {
-  title: 'За сградата - Ixora Residence',
-  description: 'Ixora Residence'
+import { metaData } from "@/utils/metadata";
 
-};
+export const metadata = metaData('За сградата')
 
 export default function Page() {
   return (
