@@ -17,7 +17,7 @@ export default function Description() {
 
             {/* DESCRIPTION */}
             <motion.div
-                className="bg-gradient-ixora py-4"
+                className="bg-gradient-ixora"
                 initial={{ opacity: 0, width: 0 }}
                 animate={{ opacity: 1, width: '100%' }}
                 transition={{ delay: 0.3, duration: 1 }}
