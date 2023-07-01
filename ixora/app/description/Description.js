@@ -22,7 +22,7 @@ export default function Description() {
                 animate={{ opacity: 1, width: '100%' }}
                 transition={{ delay: 0.3, duration: 1 }}
                 >
-                    <div className="text-white text-center text-3xl font-bold">За сградата</div>
+                    <div className="text-white py-4 text-center text-3xl font-bold truncate">За сградата</div>
             </motion.div>
 
             <ForBuilding></ForBuilding>
