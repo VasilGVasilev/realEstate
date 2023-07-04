@@ -1,5 +1,5 @@
 import Home from "./Home"
-import { metaData } from '../../utils/metadata'
+import { metaData } from '@/utils/metadata'
  
 
 export const metadata = metaData('Начало')

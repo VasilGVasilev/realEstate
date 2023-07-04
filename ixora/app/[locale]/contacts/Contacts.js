@@ -2,7 +2,7 @@
 'use client'
 
 import Image from "next/image"
-import { imageLoader } from "../../utils/imgLoader";
+import { imageLoader } from "@/utils/imgLoader";
 import Maps from "@/components/Location";
 import Link from "next/link";
 import { motion } from "framer-motion";

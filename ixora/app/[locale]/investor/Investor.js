@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image"
-import { imageLoader } from "../../utils/imgLoader";
+import { imageLoader } from "@/utils/imgLoader";
 import { lato } from "@/utils/fonts";
 import { motion } from "framer-motion";
 

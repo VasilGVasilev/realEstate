@@ -3,11 +3,13 @@ import { usePathname } from "next/navigation";
 
 
 const Modal = ({ isOpen, onClose, apartment, unit }) => {
+
     if (!isOpen) return null;
     const pathname = usePathname();
-    console.log(apartment);
-    const firstOrLastFloor = pathname === '/apartments/first-floor/' || pathname === '/apartments/penthouse/'
-    const secondOrThirdFloor = pathname === '/apartments/second-floor/' || pathname === '/apartments/third-floor/'
+
+    const parking = pathname === '/en/apartments/parking/' || pathname === '/bg/apartments/parking/'
+    const firstOrLastFloor = pathname === '/en/apartments/first-floor/' || pathname === '/en/apartments/penthouse/' || pathname === '/bg/apartments/first-floor/' || pathname === '/bg/apartments/penthouse/'
+    const secondOrThirdFloor = pathname === '/en/apartments/second-floor/' || pathname === '/en/apartments/third-floor/' || pathname === '/bg/apartments/second-floor/' || pathname === '/bg/apartments/third-floor/'
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
@@ -19,6 +21,19 @@ const Modal = ({ isOpen, onClose, apartment, unit }) => {
             >
                 {/* Add your modal content here */}
                 <>
+                    {parking &&
+                        <>
+                            <div className='mb-8 bg-ixora-orange'>
+                                <div className="p-4 text-white text-center text-2xl font-extrabold">Площообразуване <br /> {unit?.mqsto}</div>
+                            </div>
+                            <div className="mb-5 border-r-2 border-l-2 border-ixora-orange text-center" >
+                                <div className="flex justify-center space-x-3 ">
+                                    <div>Площ</div>
+                                    <div className="font-bold text-ixora-orange">{unit?.plosht} м²</div>
+                                </div>
+                            </div>
+                        </>
+                    }
 
                     {firstOrLastFloor &&
                     <>
@@ -44,19 +59,7 @@ const Modal = ({ isOpen, onClose, apartment, unit }) => {
                         </div>
                     </>
                     }
-                    {pathname === '/apartments/parking/' &&
-                        <>
-                            <div className='mb-8 bg-ixora-orange'>
-                                <div className="p-4 text-white text-center text-2xl font-extrabold">Площообразуване <br /> {unit?.mqsto}</div>
-                            </div>
-                            <div className="mb-5 border-r-2 border-l-2 border-ixora-orange text-center" >
-                                <div className="flex justify-center space-x-3 ">
-                                    <div>Площ</div>
-                                    <div className="font-bold text-ixora-orange">{unit?.plosht} м²</div>
-                                </div>
-                            </div>
-                        </>
-                    }
+                    
                     {secondOrThirdFloor &&
                         <>
                             <div className='mb-8 bg-ixora-orange'>

@@ -1,9 +1,9 @@
 'use client'
 import Link from "next/link"
 import Image from "next/image"
-import { imageLoader } from "../../utils/imgLoader"
-import LineGradient from "../../components/LineGradient"
 import Maps from "@/components/Location"
+import LineGradient from "@/components/LineGradient"
+import { imageLoader } from "@/utils/imgLoader"
 import Timeline from "@/components/Timeline"
 import ForBuilding from "@/components/ForBuidling"
 import { motion } from "framer-motion"
