@@ -1,8 +1,8 @@
 'use client'
 import Link from "next/link"
 import Image from "next/image"
-import { imageLoader } from "../utils/imgLoader"
-import LineGradient from "../components/LineGradient"
+import { imageLoader } from "../../utils/imgLoader"
+import LineGradient from "../../components/LineGradient"
 import Maps from "@/components/Location"
 import Timeline from "@/components/Timeline"
 import ForBuilding from "@/components/ForBuidling"
@@ -10,6 +10,8 @@ import { motion } from "framer-motion"
 import PromptToPlan from "@/components/PromptToPlan"
 import WelcomeText from "@/components/WelcomeText"
 import { playfair } from "@/utils/fonts"
+import {useTranslations} from 'next-intl';
+ 
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 const container = {
@@ -27,10 +29,12 @@ const letterVariant = {
 };
 
 export default function Home() {
+  const t = useTranslations('Index');
+
     return (
         <div>
             {/* WELCOME VIDEO */}
-
+            <h1>{t('title')}</h1>
             <div className="relative">
                 <video className="w-full h-full" autoPlay={true} muted={true} loop={true} playsInline={true} >
                     <source src="/video.MP4" type="video/MP4" />

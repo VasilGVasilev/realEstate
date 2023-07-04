@@ -123,7 +123,7 @@ export default function Description() {
                     >
                     <div className="text-white text-center text-2xl font-bold">Изберете Вашия бъдещ дом</div>
                 </motion.div>
-                <div className="bg-[url('../public/ixora-description.webp')] h-60 bg-center bg-cover bg-no-repeat bg-white md:min-h-[32rem] md:grid md:place-items-center md:bg-fixed md:bg-no-repeat md:bg-cover md:bg-center md:opacity-75">
+                <div className="bg-[url('../../public/ixora-description.webp')] h-60 bg-center bg-cover bg-no-repeat bg-white md:min-h-[32rem] md:grid md:place-items-center md:bg-fixed md:bg-no-repeat md:bg-cover md:bg-center md:opacity-75">
                 </div>
             </>
 
