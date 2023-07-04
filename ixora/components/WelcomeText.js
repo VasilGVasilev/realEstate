@@ -17,7 +17,6 @@ const letterVariant = {
 const WelcomeText = () => {
     const t = useTranslations('Home');
     const animatedDescriptionText = t('WelcomeTextDescription').split(' ');
-    console.log(animatedDescriptionText);
     return (
         <motion.div
             className="text-justify font-semibold text-gray-700"

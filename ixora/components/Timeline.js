@@ -1,5 +1,6 @@
 import { lato } from "@/utils/fonts";
 import { motion } from "framer-motion"
+import { useTranslations } from "next-intl";
 
 const container = {
     hidden: {},
@@ -34,6 +35,8 @@ const Bubble = ({ title, subtitle }) => {
   };
 
 const Timeline = () => {
+    const t = useTranslations('Timeline');
+
     return (
         <motion.div
             className="flex flex-col items-center md:flex-row md:justify-around bg-ixora-yellow p-10"
@@ -43,10 +46,10 @@ const Timeline = () => {
             viewport={{ once: true, amount: 0.2 }}
         >
 
-            <Bubble title={'Юни 2021'} subtitle={'Проектиране и регулация'} ></Bubble>
-            <Bubble title={'Юни 2022'} subtitle={'РС, строителна площадка и първа копка'} ></Bubble>
-            <Bubble title={'Март 2023'} subtitle={'Груб строеж завършен Акт 14'} ></Bubble>
-            <Bubble title={'Април 2024'} subtitle={'Въвеждане в експлоатация Акт 16'} ></Bubble>
+            <Bubble title={t('firstDate')} subtitle={t('firstDesc')} ></Bubble>
+            <Bubble title={t('secondDate')} subtitle={t('secondDesc')} ></Bubble>
+            <Bubble title={t('thirdDate')} subtitle={t('thirdDesc')} ></Bubble>
+            <Bubble title={t('fourthDate')} subtitle={t('fourthDesc')} ></Bubble>
 
         </motion.div>
 

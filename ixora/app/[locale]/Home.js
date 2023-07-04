@@ -31,8 +31,9 @@ const letterVariant = {
 
 export default function Home() {
     const t = useTranslations('Home');
+    const p = useTranslations('Home');
+
     const animatedWelcomeText = t('WelcomeTextAnimation').split('');
-    const animatedDescriptionText = t('WelcomeTextDescription').split(' ');
     
     return (
         <div>
@@ -126,7 +127,7 @@ export default function Home() {
             <LineGradient></LineGradient>
 
             {/* PROMPT IMG TO PLAN */}
-            <Link href={'/apartments'} className={`flex justify-center items-center text-center py-5 lg:py-0 lg:pt-10 text-white text-lg sm:text-3xl hover:scale-110`}>Изберете Вашия луксозен нов дом сега.</Link>
+            <Link href={'/apartments'} className={`flex justify-center items-center text-center py-5 lg:py-0 lg:pt-10 text-white text-lg sm:text-3xl hover:scale-110 duration-300`}>{p('promptToPlan')}</Link>
             <PromptToPlan></PromptToPlan>
             <LineGradient></LineGradient>
 

@@ -8,6 +8,55 @@
     },
     "Home": {
       "WelcomeTextAnimation": "Your luxury new home",
-      "WelcomeTextDescription": "The execution and all finishing works are set in an extremely high - boutique class. Ixora Residence consists of 13 spacious apartments and 17 garages. The apartments reveal a wonderful panoramic view of city of Sofia and Vitosha mountain. The building has a fully equipped spa center and a gym for the exclusive use of the future residents. The vertical layout according to a special landscape project forms a green belt around the building, which creates a feeling of living in a park environment."
+      "WelcomeTextDescription": "The execution and all finishing works are set in an extremely high - boutique class. Ixora Residence consists of 13 spacious apartments and 17 garages. The apartments reveal a wonderful panoramic view of city of Sofia and Vitosha mountain. The building has a fully equipped spa center and a gym for the exclusive use of the future residents. The vertical layout according to a special landscape project forms a green belt around the building, which creates a feeling of living in a park environment.",
+      "promptToPlan": "Choose your luxury new home now."
+    },
+    "Footer": {
+      "desc": "Ixora Luxury Residence is a boutique building equipped with a spa center and a gym, situated in the foothills of Vitosha mountain. ",
+      "contacts": "Contacts"
+    },
+    "Timeline": {
+      "firstDate": "June 2021",
+      "firstDesc": "Design and regulation",
+      "secondDate": "June 2022",
+      "secondDesc": "PC, construction site and first sod",
+      "thirdDate": "March 2023",
+      "thirdDesc": "Rough construction, completed Act 14",
+      "fourthDate": "April 2024",
+      "fourthDesc": "Commissioning Act 16"
+    },
+    "forBuilding": {
+      "fasade": "Fasade",
+      "fasadeDesc": "Suspended, ventilated, with limestone stone lining and decorative elements of composite panel - etalbond. Rock wool thermal insulation.",
+      "lobby": "Lobby and common areas",
+      "lobbyDesc": "Executed according to a special interior project with a stone layout of marble and onyx.",
+      "joinery": "Joinery",
+      "joineryDesc": "Aluminum joinery of the highest class \"WEISS PROFIL\" THERMO PRO 85 in anthracite color.",
+      "elevator": "Elevator",
+      "elevatorDesc": "High class elevator - KONE.",
+      "doors": "Doors",
+      "doorsDesc": "Armored entrance doors SOLID in oak color - model \"iDoor 20-22\" Series 50.",
+      "plumbing": "Plumbing",
+      "plumbingDesc": "Silenced sewage system - Pipelife MASTER 3",
+      "heating": "Heating",
+      "heatingDesc": "Centrally gas-supplied building. Floors 1 and 2 are fitted with high-end energy-efficient Jaga type radiators. Floors 3 and 4 have underfloor heating with individual thermostats for each room.",
+      "garages": "Garages",
+      "garagesDesc": "A large number of garages in the basement and additional parking spaces outside the building.",
+      "security": "Security",
+      "securityDesc": "A Fence. Controlled access with chip and license plate recognition. 24/7 live security.",
+      "amenities": "Amenities",
+      "amenitiesDesc": "Private gym with \"TECHNOGYM\" equipment. Spa center with jacuzzi, steam bath and sauna, equipped with heated beds.",
+      "location": "Communicative location",
+      "withCar": "With car",
+      "proia": "1 minute Proya restaurant and Max supermarket",
+      "britanica": "3 minutes BRITANICA Park School and several kindergartens", 
+      "supermarket": "4 minutes FANTASTICO supermarket",
+      "mall1": "7 minutes Paradise Center",
+      "mall2": "9 minutes Sofia Ring Mall",
+      "public": "Public transit",
+      "buses": "Buses 68 and 98",
+      "landscaping": "Landscaping",
+      "landscapingDesc": "The vertical layout according to a special landscape project forms a green belt around the building, which creates a feeling of living in a park environment."
     }
+
 }
