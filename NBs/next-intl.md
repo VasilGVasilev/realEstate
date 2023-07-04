@@ -12,6 +12,7 @@ this locale will be the language version
 2) middleware.js
 
 we set the locales and the default one and configurate the middleware to crawl over folders that are routes only (since next.js utilizes folder structure as route structure)
+NB. Next.js will automatically detect which locale the user prefers based on the **Accept-Language** header sent in the page request. *In an example case, although the default locale is sq, the en locale is detected in the **Accept-Language** header so you get redirected to the locale-prefixed path.*
 
 3) messages/en.json
 
