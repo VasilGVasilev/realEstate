@@ -1,5 +1,9 @@
 {
-    "Index": {
-      "title": "Hello world!"
+    "Navbar": {
+      "welcomeNav": "Home",
+      "descNav": "Description",
+      "apartNAv": "Apartments",
+      "investNav": "Investor",
+      "contactNav": "About us"
     }
 }

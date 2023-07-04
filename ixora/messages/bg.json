@@ -1,5 +1,9 @@
 {
-    "Index": {
-      "title": "Здравей свят!"
+    "Navbar": {
+      "welcomeNav": "Начало",
+      "descNav": "За сградата",
+      "apartNAv": "Апартаменти",
+      "investNav": "Инвеститор",
+      "contactNav": "Контакти"
     }
 }

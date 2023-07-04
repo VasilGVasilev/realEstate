@@ -11,7 +11,7 @@ import {NextIntlClientProvider} from 'next-intl';
 import {notFound} from 'next/navigation';
  
 export function generateStaticParams() {
-  return [{locale: 'bg'}, {locale: 'en'}];
+  return [{locale: 'en'}, {locale: 'bg'}];
 }
 
 // you must async await, otherwise you get the json as a json, not an object
@@ -40,7 +40,7 @@ export default async function RootLayout({children, params: {locale}}) {
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar/>
           {/* fixed navbar requires py same for all non home pages */}
-          {pathName === '/' ?  
+          {pathName === '/' || pathName === '/en/' ?  
             (<></>) 
             : 
             (
