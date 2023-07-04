@@ -31,7 +31,9 @@ const letterVariant = {
 
 export default function Home() {
     const t = useTranslations('Home');
-    const animatedText = t('WelcomeTextAnimation').split('');
+    const animatedWelcomeText = t('WelcomeTextAnimation').split('');
+    const animatedDescriptionText = t('WelcomeTextDescription').split(' ');
+    
     return (
         <div>
             {/* WELCOME VIDEO */}
@@ -51,8 +53,7 @@ export default function Home() {
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
                     >
-                        <motion.span variants={letterVariant}></motion.span>
-                        {animatedText.map((element, index)=>(
+                        {animatedWelcomeText.map((element, index)=>(
                             <motion.span key={index} variants={letterVariant}>{element}</motion.span>
 
                         ))}
