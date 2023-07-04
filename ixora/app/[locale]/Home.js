@@ -28,8 +28,10 @@ const letterVariant = {
     visible: { opacity: 1},
 };
 
-export default function Home() {
 
+export default function Home() {
+    const t = useTranslations('Home');
+    const animatedText = t('WelcomeTextAnimation').split('');
     return (
         <div>
             {/* WELCOME VIDEO */}
@@ -41,6 +43,7 @@ export default function Home() {
                 </video>
 
                 <div className="absolute bottom-[15%] left-0 w-full h-full flex items-end justify-center ">
+                    {/* WelcomeTextAnimation */}
                     <motion.div 
                         className={`${playfair.className} welcomeTextOnImg text-white text-center text-2xl md:text-4xl lg:text-6xl xl:text-[80px]`}
                         variants={container}
@@ -48,29 +51,11 @@ export default function Home() {
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
                     >
-                        <motion.span variants={letterVariant}>В</motion.span>
-                        <motion.span variants={letterVariant}>а</motion.span>
-                        <motion.span variants={letterVariant}>ш</motion.span>
-                        <motion.span variants={letterVariant}>и</motion.span>
-                        <motion.span variants={letterVariant}>я</motion.span>
-                        <motion.span variants={letterVariant}>т</motion.span>
-                        <motion.span variants={letterVariant}> </motion.span>
-                        <motion.span variants={letterVariant}>л</motion.span>
-                        <motion.span variants={letterVariant}>у</motion.span>
-                        <motion.span variants={letterVariant}>к</motion.span>
-                        <motion.span variants={letterVariant}>с</motion.span>
-                        <motion.span variants={letterVariant}>о</motion.span>
-                        <motion.span variants={letterVariant}>з</motion.span>
-                        <motion.span variants={letterVariant}>е</motion.span>
-                        <motion.span variants={letterVariant}>н</motion.span>
-                        <motion.span variants={letterVariant}> </motion.span>
-                        <motion.span variants={letterVariant}>н</motion.span>
-                        <motion.span variants={letterVariant}>о</motion.span>
-                        <motion.span variants={letterVariant}>в</motion.span>
-                        <motion.span variants={letterVariant}> </motion.span>
-                        <motion.span variants={letterVariant}>д</motion.span>
-                        <motion.span variants={letterVariant}>о</motion.span>
-                        <motion.span variants={letterVariant}>м</motion.span>
+                        <motion.span variants={letterVariant}></motion.span>
+                        {animatedText.map((element, index)=>(
+                            <motion.span key={index} variants={letterVariant}>{element}</motion.span>
+
+                        ))}
                     </motion.div>
                 </div>
             </div>

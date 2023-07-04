@@ -5,5 +5,8 @@
       "apartNAv": "Apartments",
       "investNav": "Investor",
       "contactNav": "About us"
+    },
+    "Home": {
+      "WelcomeTextAnimation": "Your luxury new home"
     }
 }

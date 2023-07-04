@@ -5,5 +5,8 @@
       "apartNAv": "Апартаменти",
       "investNav": "Инвеститор",
       "contactNav": "Контакти"
+    },
+    "Home": {
+      "WelcomeTextAnimation": "Вашият луксозен нов дом"
     }
 }

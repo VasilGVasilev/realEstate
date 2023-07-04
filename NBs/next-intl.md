@@ -1,4 +1,4 @@
-![next-intl](https://next-intl-docs.vercel.app/docs/getting-started/app-router-client-components)
+[next-intl](https://next-intl-docs.vercel.app/docs/getting-started/app-router-client-components)
 
 1) locale
 the internationalization takes advantage of next.js' dynamic folder setting as a route:
