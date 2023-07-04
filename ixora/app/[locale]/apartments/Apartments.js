@@ -1,8 +1,8 @@
 'use client'
 
-import Link from 'next/link';
-import Image from 'next/image';
-import { imageLoader } from '../../utils/imgLoader';
+// import Link from 'next/link';
+// import Image from 'next/image';
+// import { imageLoader } from '../../utils/imgLoader';
 import Plan from '@/components/Plan';
 import PlanButtons from '@/components/PlanButtons';
 import { motion } from 'framer-motion';

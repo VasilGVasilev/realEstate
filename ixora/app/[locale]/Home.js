@@ -34,7 +34,7 @@ export default function Home() {
     return (
         <div>
             {/* WELCOME VIDEO */}
-            <h1>{t('title')}</h1>
+            
             <div className="relative">
                 <video className="w-full h-full" autoPlay={true} muted={true} loop={true} playsInline={true} >
                     <source src="/video.MP4" type="video/MP4" />
@@ -76,7 +76,7 @@ export default function Home() {
                 </div>
             </div>
             <LineGradient></LineGradient>
-
+            <h1 className="text-white text-2xl">{t('title')}</h1>
             {/* WELCOME TEXT AND IMG */}
             <div className="lg:flex lg:justify-between lg:items-center lg:p-10 bg-orange-50">
                 {/* WELCOME TEXT */}
