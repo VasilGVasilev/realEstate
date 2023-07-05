@@ -8,7 +8,8 @@
       "forBuilding": "Description",
       "stages": "Stages",
       "currentState": "Project Stage - Act 14",
-      "prompt": "Choose your luxury new home"
+      "prompt": "Choose your luxury new home",
+      "location": "Location"
     },
     "Investor": {
       "investor": "Investor",
@@ -25,7 +26,7 @@
     "Contacts": {
       "location": "Location",
       "salesOffice": "Sales Office",
-      "prompt": "Your new home",
+      "prompt": "Your luxury new home",
       "exactLoc": "ul. „Pirinski edelvaĭs“ 3, 1415 v.z. Simeonovo - Dragalevtsi"
     },
     "Apartments": {

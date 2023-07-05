@@ -19,7 +19,7 @@ const bubbleVariant = {
 const Bubble = ({ title, subtitle }) => {
     return (
       <motion.div 
-        className=" p-5 m-7 h-36 w-36 lg:m-5 lg:h-52 lg:w-52 bg-gradient-to-r from-ixora-orange from-10% via-orange-500 via-60% to-orange-400 to-100% text-white font-semibold flex justify-center items-center"  
+        className=" p-5 m-7 h-40 w-40 lg:m-5 lg:h-52 lg:w-52 bg-gradient-to-r from-ixora-orange from-10% via-orange-500 via-60% to-orange-400 to-100% text-white font-semibold flex justify-center items-center"  
         variants={bubbleVariant}
         >
             <div className={`${lato.className} timelineBubble text-center hover:scale-125 duration-200`} >

@@ -140,7 +140,7 @@ export default function Description() {
                     animate={{ opacity: 1, width: '100%' }}
                     transition={{ delay: 0.3, duration: 1 }}
                     >
-                    <div className="text-white text-center text-2xl font-bold">Местоположение</div>
+                    <div className="text-white text-center text-2xl font-bold">{t('location')}</div>
                 </motion.div>
                 <Maps></Maps>
             </div>

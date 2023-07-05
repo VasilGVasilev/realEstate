@@ -82,13 +82,13 @@ const Navbar = () => {
             whileInView="visible"
             transition={{ duration: 0.2 }}
             variants = {{
-                hidden: pathName === '/' || pathName === '/en/' ? { opacity: 1 } : { },
-                visible: pathName === '/' || pathName === '/en/' ? { opacity: 0} : { },
+                hidden: pathName === '/bg/' || pathName === '/en/' ? { opacity: 1 } : { },
+                visible: pathName === '/bg/' || pathName === '/en/' ? { opacity: 0} : { },
             }}
 
         >
             <nav className={`bg-ixora-dark z-40 w-full fixed top-0 py-[2%] sm:py-[1%]`} >
-                <div className="absolute top-0 right-0 p-1 hidden lg:flex">
+                <div className="absolute top-0 right-3 p-1 hidden lg:flex">
                     <Link locale="bg" href="/">
                         <Image
                             className="m-2"

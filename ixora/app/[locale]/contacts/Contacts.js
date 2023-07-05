@@ -6,11 +6,13 @@ import { imageLoader } from "@/utils/imgLoader";
 import Maps from "@/components/Location";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 
 export default function Contacts() {
+  const locale = useLocale();
+
   
   const t = useTranslations('Contacts')
     return (
@@ -90,8 +92,8 @@ export default function Contacts() {
           </div>
         {/* div for Picture */}
           <div className="flex-col justify-center py-10 lg:p-10 bg-white lg:bg-[#2e281f] lg:w-1/2">
-          <Link href={'/apartments'}><div className="text-center font-bold text-xl text-orange-400  lg:text-white lg:py-4 mb-10 lg:text-3xl lg:font-bold hover:scale-105 duration-200">{t('prompt')}</div></Link>
-            <Link href={'/apartments'}>
+          <Link href={`/${locale}/apartments`}><div className="text-center font-bold text-xl text-orange-400  lg:text-white lg:py-4 mb-10 lg:text-3xl lg:font-bold hover:scale-105 duration-200">{t('prompt')}</div></Link>
+            <Link href={`/${locale}/apartments`}>
               <Image 
                 loader={imageLoader}
                 src="/ixora-apartments.webp"

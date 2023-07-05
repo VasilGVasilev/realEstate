@@ -38,7 +38,7 @@ export default async function LocaleLayout({children, params: {locale}}) {
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar/>
           {/* fixed navbar requires py same for all non home pages */}
-          {pathName === '/' || pathName === '/en/' ?  
+          {pathName === '/bg/' || pathName === '/en/' ?  
             (<></>) 
             : 
             (
