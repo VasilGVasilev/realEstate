@@ -1,6 +1,7 @@
 'use client'
 
-// import Link from 'next/link';
+// import Link from 'next-intl/link'
+
 // import Image from 'next/image';
 // import { imageLoader } from '../../utils/imgLoader';
 import Plan from '@/components/Plan';
