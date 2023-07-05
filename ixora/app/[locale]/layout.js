@@ -10,12 +10,10 @@ import { usePathname } from 'next/navigation'
 import {NextIntlClientProvider} from 'next-intl';
 import {notFound} from 'next/navigation';
  
-export function generateStaticParams() {
-  return [{locale: 'en'}, {locale: 'bg'}];
-}
+
 
 // you must async await, otherwise you get the json as a json, not an object
-export default async function RootLayout({children, params: {locale}}) {
+export default async function LocaleLayout({children, params: {locale}}) {
   const pathName = usePathname();
 
   const toTopHandle = () => {

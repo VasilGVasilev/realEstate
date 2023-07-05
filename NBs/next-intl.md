@@ -26,3 +26,22 @@ NB -> dictionaries stored as .json files must be implemented via the async/await
 5) Page
 
 inject the specific page you want utilizing the useTranslations hook
+
+
+BUT!!! SSG
+
+[If you're using the static export feature from Next.js (opens in a new tab) (output: 'export'), the middleware will not run. You can use prefix-based routing nontheless to internationalize your app, but a few tradeoffs apply.](https://next-intl-docs.vercel.app/docs/routing/middleware)
+
+you have to set each page with the dynamic params you want, however, nested they are, it must be for each one '/', '/aparments/', '/apartments/penthouse/ -> to turn into /en/ or /bg/:
+
+```sh
+export function generateStaticParams() {
+  const paths = [ 'bg', 'en']
+
+  return paths.map((path) => {
+    return {
+      locale: path
+    }
+  })
+}
+```
