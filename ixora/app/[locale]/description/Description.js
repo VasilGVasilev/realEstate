@@ -6,11 +6,15 @@ import ForBuilding from "@/components/ForBuidling";
 import Maps from "@/components/Location";
 import { motion } from "framer-motion";
 import { imageLoader } from "@/utils/imgLoader";
+import { useTranslations } from "next-intl";
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 
 const buildingProcessLayout ="pb-10 px-5 h-full w-full lg:h-96 flex justify-center"
+
 export default function Description() {
+
+    const t = useTranslations('Description');
 
     return (
         <>
@@ -22,7 +26,7 @@ export default function Description() {
                 animate={{ opacity: 1, width: '100%' }}
                 transition={{ delay: 0.3, duration: 1 }}
                 >
-                    <div className="text-white py-4 text-center text-3xl font-bold truncate">За сградата</div>
+                    <div className="text-white py-4 text-center text-3xl font-bold truncate">{t('forBuilding')}</div>
             </motion.div>
 
             <ForBuilding></ForBuilding>
@@ -34,7 +38,7 @@ export default function Description() {
                 animate={{ opacity: 1, width: '100%' }}
                 transition={{ delay: 0.3, duration: 1 }}
                 >
-                    <div className="text-white text-center text-3xl font-bold">Етапи</div>
+                    <div className="text-white text-center text-3xl font-bold">{t('stages')}</div>
             </motion.div>
 
             <Timeline></Timeline>
@@ -47,7 +51,7 @@ export default function Description() {
                     animate={{ opacity: 1, width: '100%' }}
                     transition={{ delay: 0.6, duration: 1 }}
                     >
-                        <div className="text-white text-center text-2xl font-bold">Етап на проекта - Акт 14</div>
+                        <div className="text-white text-center text-2xl font-bold">{t('currentState')}</div>
                 </motion.div>
                 <div className="p-10 bg-ixora-dark flex flex-col lg:flex-row">
                     <motion.div
@@ -121,7 +125,7 @@ export default function Description() {
                     animate={{ opacity: 1, width: '100%' }}
                     transition={{ delay: 0.9, duration: 1 }}
                     >
-                    <div className="text-white text-center text-2xl font-bold">Изберете Вашия бъдещ дом</div>
+                    <div className="text-white text-center text-2xl font-bold">{t('prompt')}</div>
                 </motion.div>
                 <div className="bg-[url('../../public/ixora-description.webp')] h-60 bg-center bg-cover bg-no-repeat bg-white md:min-h-[32rem] md:grid md:place-items-center md:bg-fixed md:bg-no-repeat md:bg-cover md:bg-center md:opacity-75">
                 </div>

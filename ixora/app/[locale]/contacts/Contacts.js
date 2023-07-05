@@ -6,13 +6,13 @@ import { imageLoader } from "@/utils/imgLoader";
 import Maps from "@/components/Location";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 
-
 export default function Contacts() {
   
-
+  const t = useTranslations('Contacts')
     return (
       <>
       {/* div for maps */}
@@ -22,7 +22,7 @@ export default function Contacts() {
           animate={{ opacity: 1, width: '100%' }}
           transition={{ duration: 1 }}
           >
-        <div className="text-center py-4 text-3xl text-white font-bold">Местоположение</div>
+        <div className="text-center py-4 text-3xl text-white font-bold">{t('location')}</div>
       </motion.div>
 
       <Maps></Maps>
@@ -36,7 +36,7 @@ export default function Contacts() {
             <div className="flex-col w-full h-fit lg:w-full">
 
               <div className="bg-white">
-                <div className="flex justify-center text-ixora-orange py-4 pt-10 text-center text-3xl font-bold hover:scale-105 duration-200">Sales офис</div>
+                <div className="flex justify-center text-ixora-orange py-4 pt-10 text-center text-3xl font-bold hover:scale-105 duration-200">{t('salesOffice')}</div>
               </div>
 
               <div className="flex justify-center p-8 lg:p-20">              
@@ -51,7 +51,7 @@ export default function Contacts() {
                         width={24}
                         height={10}
                       />
-                      <div className="text-sm sm:text-base font-bold text-gray-500 ">ул. „Пирински еделвайс“ 3, 1415 в.з. Симеоново - Драгалевци</div>
+                      <div className="text-sm sm:text-base font-bold text-gray-500 ">{t('exactLoc')}</div>
 
                     </div>
 
@@ -90,7 +90,7 @@ export default function Contacts() {
           </div>
         {/* div for Picture */}
           <div className="flex-col justify-center py-10 lg:p-10 bg-white lg:bg-[#2e281f] lg:w-1/2">
-          <Link href={'/apartments'}><div className="text-center font-bold text-xl text-orange-400  lg:text-white lg:py-4 mb-10 lg:text-3xl lg:font-bold hover:scale-105 duration-200">Вашият бъдещ дом</div></Link>
+          <Link href={'/apartments'}><div className="text-center font-bold text-xl text-orange-400  lg:text-white lg:py-4 mb-10 lg:text-3xl lg:font-bold hover:scale-105 duration-200">{t('prompt')}</div></Link>
             <Link href={'/apartments'}>
               <Image 
                 loader={imageLoader}

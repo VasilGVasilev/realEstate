@@ -6,13 +6,13 @@
 import Plan from '@/components/Plan';
 import PlanButtons from '@/components/PlanButtons';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 
-
 export default function Apartments() {
 
-
+  const t = useTranslations('Apartments')
 
     return (
       <>
@@ -24,7 +24,7 @@ export default function Apartments() {
           animate={{ opacity: 1, width: '100%' }}
           transition={{ duration: 1 }}
           >
-          <div className="py-4 text-white text-center text-3xl font-bold">Разпределение</div>
+          <div className="py-4 text-white text-center text-3xl font-bold">{t('plan')}</div>
         </motion.div>
 
         {/* FLOOR BTNS */}

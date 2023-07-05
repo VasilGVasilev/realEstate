@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import PlanButtons from "@/components/PlanButtons";
 
 import Modal from "@/components/Modal";
+import { useTranslations } from "next-intl";
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 
@@ -47,6 +48,8 @@ export default function Penthouse() {
 
     }
 
+    const t = useTranslations('FloorFour');
+
     return (
         <>
 
@@ -58,7 +61,7 @@ export default function Penthouse() {
                 animate={{ opacity: 1, width: '100%' }}
                 transition={{ duration: 1 }}
             >
-                <div className="py-4 text-white text-center text-2xl font-extrabold">Пентхаус</div>
+                <div className="py-4 text-white text-center text-2xl font-extrabold">{t('name')}</div>
             </motion.div>
 
             {/* Container for buttons */}

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import { useTranslations } from "next-intl";
 import Link from "next/link"
 import { usePathname } from "next/navigation";
 
@@ -40,6 +41,8 @@ const PlanButtons = () => {
     penthouseF = 'bg-orange-700 scale-110';
   }
 
+  const t = useTranslations('PlanButtons')
+
   return (
     <motion.div 
       className={'p-5 flex justify-around bg-ixora-dark'}
@@ -51,27 +54,27 @@ const PlanButtons = () => {
         <motion.div
             variants={btnVariant}
         >
-          <Link href={'/apartments/parking'}><div className={`${parking} text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100`}  >Паркинг</div></Link>
+          <Link href={'/apartments/parking'}><div className={`${parking} text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100`} >{t('parking')}</div></Link>
         </motion.div>
         <motion.div
             variants={btnVariant}
         >
-          <Link href={'/apartments/first-floor'}><div className={`${firstF} text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100`} >Етаж  1</div></Link>
+          <Link href={'/apartments/first-floor'}><div className={`${firstF} text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100`} >{t('floorOne')}</div></Link>
         </motion.div>
         <motion.div
             variants={btnVariant}
         >
-          <Link href={'/apartments/second-floor'}><div className={`${secondF} text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100`}>Етаж  2</div></Link>
+          <Link href={'/apartments/second-floor'}><div className={`${secondF} text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100`}>{t('floorTwo')}</div></Link>
         </motion.div>
         <motion.div
             variants={btnVariant}
         >
-          <Link href={'/apartments/third-floor'}><div className={`${thirdF} text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100`} >Етаж  3</div></Link>
+          <Link href={'/apartments/third-floor'}><div className={`${thirdF} text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100`} >{t('floorThree')}</div></Link>
         </motion.div>
         <motion.div
             variants={btnVariant}
         >
-          <Link href={'/apartments/penthouse'}><div className={`${penthouseF} text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100`} >Етаж 4</div></Link>
+          <Link href={'/apartments/penthouse'}><div className={`${penthouseF} text-white text-xs p-7 md:text-base md:p-10 text-center font-bold flex justify-center items-center bg-orange-400 cursor-pointer h-10 w-10 hover:scale-125 hover:opacity-100 active:scale-125 duration-100 active:opacity-100`} >{t('floorFour')}</div></Link>
         </motion.div>
     </motion.div>
   )

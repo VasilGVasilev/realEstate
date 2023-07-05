@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import PlanButtons from "@/components/PlanButtons";
 
 import Modal from "@/components/Modal";
+import { useTranslations } from "next-intl";
 
 
 export const revalidate = 0; // revalidate this page every 60 seconds
@@ -19,6 +20,7 @@ const reserved = "hover:bg-blue-400 hover:opacity-40 active:bg-blue-400 active:o
 // TODO: add modals for ploshtoobrazuvane
 
 export default function FirstFloor() {
+    const t = useTranslations('FloorOne')
 
     const [modalOpen, setModalOpen] = useState(false);
 
@@ -58,7 +60,7 @@ export default function FirstFloor() {
                 animate={{ opacity: 1, width: '100%' }}
                 transition={{ duration: 1 }}
             >
-                <div className="py-4 text-white text-center text-2xl font-extrabold">Първи етаж</div>
+                <div className="py-4 text-white text-center text-2xl font-extrabold">{t('name')}</div>
             </motion.div>
 
             {/* Container for buttons */}
