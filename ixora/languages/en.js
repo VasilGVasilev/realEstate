@@ -1,4 +1,4 @@
-{
+export const enLang = {
     "Home": {
       "WelcomeTextAnimation": "Your luxury new home",
       "WelcomeTextDescription": "The execution and all finishing works are set in an extremely high - boutique class. Ixora Residence consists of 13 spacious apartments and 17 garages. The apartments reveal a wonderful panoramic view of city of Sofia and Vitosha mountain. The building has a fully equipped spa center and a gym for the exclusive use of the future residents. The vertical layout according to a special landscape project forms a green belt around the building, which creates a feeling of living in a park environment.",
