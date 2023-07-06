@@ -33,7 +33,7 @@ const ForBuilding = () => {
                         variants={rowVariant}
                     >
                         <p className="sm:text-xl text-ixora-orange font-semibold">{t('fasade')}</p>
-                        <li className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('fasadeDesc')}</li>
+                        <p className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('fasadeDesc')}</p>
                         <br />
                     </motion.div>
                     <motion.div
@@ -41,7 +41,7 @@ const ForBuilding = () => {
                     >
                     
                     <p className="sm:text-xl text-ixora-orange font-semibold">{t('lobby')}</p>
-                    <li className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('lobbyDesc')}</li>
+                    <p className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('lobbyDesc')}</p>
                     <br />
                     
                     </motion.div>
@@ -49,7 +49,7 @@ const ForBuilding = () => {
                         variants={rowVariant}
                     >
                     <p className="sm:text-xl text-ixora-orange font-semibold">{t('joinery')}</p>
-                    <li className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('joineryDesc')}</li>
+                    <p className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('joineryDesc')}</p>
                     <br />
                     
                     </motion.div>
@@ -57,7 +57,7 @@ const ForBuilding = () => {
                         variants={rowVariant}
                     >
                     <p className="sm:text-xl text-ixora-orange font-semibold">{t('elevator')}</p>
-                    <li className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('elevatorDesc')} </li>
+                    <p className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('elevatorDesc')} </p>
                     <br />
                     
                     </motion.div>
@@ -66,7 +66,7 @@ const ForBuilding = () => {
                     >
                     
                     <p className="sm:text-xl text-ixora-orange font-semibold">{t('doors')}</p>
-                    <li className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('doorsDesc')}</li>
+                    <p className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('doorsDesc')}</p>
                     <br />
                     
                     </motion.div>
@@ -75,7 +75,7 @@ const ForBuilding = () => {
                     >
                     
                     <p className="sm:text-xl text-ixora-orange font-semibold">{t('plumbing')}</p>
-                    <li className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('plumbingDesc')}</li>
+                    <p className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('plumbingDesc')}</p>
                     <br />
                     
                     </motion.div>
@@ -84,7 +84,7 @@ const ForBuilding = () => {
                     >
                     
                     <p className="sm:text-xl text-ixora-orange font-semibold">{t('heating')}</p>
-                    <li className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('heatingDesc')}</li>
+                    <p className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('heatingDesc')}</p>
                     <br />
                     
                     </motion.div>
@@ -93,7 +93,7 @@ const ForBuilding = () => {
                     >
                     
                     <p className="sm:text-xl text-ixora-orange font-semibold">{t('garages')}</p>
-                    <li className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('garagesDesc')}</li>
+                    <p className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('garagesDesc')}</p>
                     <br />
                     
                     </motion.div>
@@ -102,7 +102,7 @@ const ForBuilding = () => {
                     >
                     
                     <p className="sm:text-xl text-ixora-orange font-semibold">{t('security')}</p>
-                    <li className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('securityDesc')} </li>
+                    <p className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('securityDesc')} </p>
                     <br />
                     
                     </motion.div>
@@ -111,7 +111,7 @@ const ForBuilding = () => {
                     >
                     
                     <p className="sm:text-xl text-ixora-orange font-semibold">{t('amenities')}</p>
-                    <li className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('amenitiesDesc')}</li>
+                    <p className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('amenitiesDesc')}</p>
                     <br />
                     
                     </motion.div>
@@ -120,7 +120,7 @@ const ForBuilding = () => {
                     >
                     
                     <p className="sm:text-xl text-ixora-orange font-semibold">{t('location')}</p>
-                    <li className="text-sm sm:text-lg text-gray-700 font-bold text-justify">🚗 {t('withCar')}: <br /> ↪ {t('proia')} <br /> ↪ {t('britanica')} <br /> ↪ {t('supermarket')} <br /> ↪ {t('mall1')} <br /> ↪ {t('mall2')} </li>
+                    <p className="text-sm sm:text-lg text-gray-700 font-bold text-justify">🚗 {t('withCar')}: <br /> ↪ {t('proia')} <br /> ↪ {t('britanica')} <br /> ↪ {t('supermarket')} <br /> ↪ {t('mall1')} <br /> ↪ {t('mall2')} </p>
                     <br />
                     
                     
@@ -128,7 +128,7 @@ const ForBuilding = () => {
                                         <motion.div
                         variants={rowVariant}
                     >
-                    <li className="text-sm sm:text-lg text-gray-700 font-bold text-justify">🚌 {t('public')}: <br /> {t('buses')}</li>
+                    <p className="text-sm sm:text-lg text-gray-700 font-bold text-justify">🚌 {t('pubpc')}: <br /> {t('buses')}</p>
                     <br />
                     
                     </motion.div>
@@ -136,7 +136,7 @@ const ForBuilding = () => {
                         variants={rowVariant}
                     >
                     <p className="sm:text-xl text-ixora-orange font-semibold">{t('landscaping')}</p>
-                    <li className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('landscapingDesc')}</li>
+                    <p className="text-sm sm:text-lg text-gray-700 font-bold text-justify">{t('landscapingDesc')}</p>
                     </motion.div>
                 </motion.ul>
             </div>
