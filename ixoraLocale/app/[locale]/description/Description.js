@@ -26,7 +26,7 @@ export default function Description() {
                 animate={{ opacity: 1, width: '100%' }}
                 transition={{ delay: 0.3, duration: 1 }}
                 >
-                    <div className="text-white py-4 text-center text-3xl font-bold truncate">{t('forBuilding')}</div>
+                    <div className="text-white py-4 text-center text-3xl font-bold truncate">{t.forBuilding}</div>
             </motion.div>
 
             <ForBuilding></ForBuilding>
@@ -38,7 +38,7 @@ export default function Description() {
                 animate={{ opacity: 1, width: '100%' }}
                 transition={{ delay: 0.3, duration: 1 }}
                 >
-                    <div className="text-white text-center text-3xl font-bold">{t('stages')}</div>
+                    <div className="text-white text-center text-3xl font-bold">{t.stages}</div>
             </motion.div>
 
             <Timeline></Timeline>
@@ -51,7 +51,7 @@ export default function Description() {
                     animate={{ opacity: 1, width: '100%' }}
                     transition={{ delay: 0.6, duration: 1 }}
                     >
-                        <div className="text-white text-center text-2xl font-bold">{t('currentState')}</div>
+                        <div className="text-white text-center text-2xl font-bold">{t.currentState}</div>
                 </motion.div>
                 <div className="p-10 bg-ixora-dark flex flex-col lg:flex-row">
                     <motion.div
@@ -125,7 +125,7 @@ export default function Description() {
                     animate={{ opacity: 1, width: '100%' }}
                     transition={{ delay: 0.9, duration: 1 }}
                     >
-                    <div className="text-white text-center text-2xl font-bold">{t('prompt')}</div>
+                    <div className="text-white text-center text-2xl font-bold">{t.prompt}</div>
                 </motion.div>
                 <div className="bg-[url('../../public/ixora-description.webp')] h-60 bg-center bg-cover bg-no-repeat bg-white md:min-h-[32rem] md:grid md:place-items-center md:bg-fixed md:bg-no-repeat md:bg-cover md:bg-center md:opacity-75">
                 </div>
@@ -140,7 +140,7 @@ export default function Description() {
                     animate={{ opacity: 1, width: '100%' }}
                     transition={{ delay: 0.3, duration: 1 }}
                     >
-                    <div className="text-white text-center text-2xl font-bold">{t('location')}</div>
+                    <div className="text-white text-center text-2xl font-bold">{t.location}</div>
                 </motion.div>
                 <Maps></Maps>
             </div>

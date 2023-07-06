@@ -32,7 +32,7 @@ const letterVariant = {
 export default function Home() {
     const t = useTranslations('Home');
     const p = useTranslations('Home');
-    const animatedWelcomeText = t('WelcomeTextAnimation').split('');
+    const animatedWelcomeText = t.WelcomeTextAnimation.split('');
     return (
         <div>
             {/* WELCOME VIDEO */}
@@ -126,7 +126,7 @@ export default function Home() {
 
             {/* PROMPT IMG TO PLAN */}
             {/* no need for locale since Home page is /bg/ or /en/ */}
-            <Link href={`/apartments/`} className={`flex justify-center items-center text-center py-5 lg:py-0 lg:pt-10 text-white text-lg sm:text-3xl hover:scale-110 duration-300`}>{p('promptToPlan')}</Link>
+            <Link href={`/apartments/`} className={`flex justify-center items-center text-center py-5 lg:py-0 lg:pt-10 text-white text-lg sm:text-3xl hover:scale-110 duration-300`}>{p.promptToPlan}</Link>
             <PromptToPlan></PromptToPlan>
             <LineGradient></LineGradient>
 

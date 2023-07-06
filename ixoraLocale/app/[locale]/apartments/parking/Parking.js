@@ -56,7 +56,7 @@ export default function Parking() {
                 animate={{ opacity: 1, width: '100%' }}
                 transition={{ duration: 1 }}
             >
-                <div className="py-4 text-white text-center text-2xl font-extrabold">{t('name')}</div>
+                <div className="py-4 text-white text-center text-2xl font-extrabold">{t.name}</div>
             </motion.div>
 
             {/* Container for buttons */}

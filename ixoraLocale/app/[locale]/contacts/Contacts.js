@@ -24,7 +24,7 @@ export default function Contacts() {
           animate={{ opacity: 1, width: '100%' }}
           transition={{ duration: 1 }}
           >
-        <div className="text-center py-4 text-3xl text-white font-bold">{t('location')}</div>
+        <div className="text-center py-4 text-3xl text-white font-bold">{t.location}</div>
       </motion.div>
 
       <Maps></Maps>
@@ -38,7 +38,7 @@ export default function Contacts() {
             <div className="flex-col w-full h-fit lg:w-full">
 
               <div className="bg-white">
-                <div className="flex justify-center text-ixora-orange py-4 pt-10 text-center text-3xl font-bold hover:scale-105 duration-200">{t('salesOffice')}</div>
+                <div className="flex justify-center text-ixora-orange py-4 pt-10 text-center text-3xl font-bold hover:scale-105 duration-200">{t.salesOffice}</div>
               </div>
 
               <div className="flex justify-center p-8 lg:p-20">              
@@ -53,7 +53,7 @@ export default function Contacts() {
                         width={24}
                         height={10}
                       />
-                      <div className="text-sm sm:text-base font-bold text-gray-500 ">{t('exactLoc')}</div>
+                      <div className="text-sm sm:text-base font-bold text-gray-500 ">{t.exactLoc}</div>
 
                     </div>
 
@@ -92,7 +92,7 @@ export default function Contacts() {
           </div>
         {/* div for Picture */}
           <div className="flex-col justify-center py-10 lg:p-10 bg-white lg:bg-[#2e281f] lg:w-1/2">
-          <Link href={`/${locale}/apartments`}><div className="text-center font-bold text-xl text-orange-400  lg:text-white lg:py-4 mb-10 lg:text-3xl lg:font-bold hover:scale-105 duration-200">{t('prompt')}</div></Link>
+          <Link href={`/${locale}/apartments`}><div className="text-center font-bold text-xl text-orange-400  lg:text-white lg:py-4 mb-10 lg:text-3xl lg:font-bold hover:scale-105 duration-200">{t.prompt}</div></Link>
             <Link href={`/${locale}/apartments`}>
               <Image 
                 loader={imageLoader}

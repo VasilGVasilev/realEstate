@@ -1,7 +1,8 @@
+import { useTranslations } from 'next-intl';
 import Image from 'next/image'
-import { imageLoader } from '../utils/imgLoader'
 
 const Footer = ({toTopHandle}) => {
+  const t = useTranslations('Footer');
     return (
         <div className="h-fit w-full flex-col p-10 bg-gradient-to-t from-ixora-dark from-10% via-ixorafrom-ixora-dark via-70% to-[#2e281f] to-90% lg:px-40">
         <div className='flex justify-center relative bottom-12'>
@@ -12,10 +13,10 @@ const Footer = ({toTopHandle}) => {
 
             <div className='md:text-center'>
               <div className='text-orange-500 font-mono text-xl'>Ixora Luxury Residence</div>
-              <div className='p-3 text-white font-mono text-sm'> Ixora Luxury Residence е бутикова сграда със спа център и финтес, ситуирана в подножието на Витоша</div>
+              <div className='p-3 text-white font-mono text-sm'>{t.desc}</div>
             </div>
             <div className='md:text-center'>
-              <div className='text-orange-500 font-mono text-xl'>Контакти</div>
+              <div className='text-orange-500 font-mono text-xl'>{t.contacts}</div>
               <div className='p-3'>
                 <div className="py-2 flex space-x-3 items-center">
                   <Image

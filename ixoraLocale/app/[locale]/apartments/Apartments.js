@@ -24,7 +24,7 @@ export default function Apartments() {
                 animate={{ opacity: 1, width: '100%' }}
                 transition={{ duration: 1 }}
             >
-                <div className="py-4 text-white text-center text-3xl font-bold">{t('plan')}</div>
+                <div className="py-4 text-white text-center text-3xl font-bold">{t.plan}</div>
             </motion.div>
 
             {/* FLOOR BTNS */}
