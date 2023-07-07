@@ -1,6 +1,38 @@
+'use client'
 
-// Since we have a `not-found.tsx` page on the root, a layout file
-// is required, even if it's just passing children through.
-export default function RootLayout({children}) {
-  return children;
+import './globals.css'
+import Navbar from '../components/Navbar'
+import { usePathname } from 'next/navigation'
+import Footer from '../components/Footer'
+
+
+export default function RootLayout({ children }) {
+  const pathName = usePathname();
+
+  const toTopHandle = () => {
+    window.scrollTo(0, 0);
+  }
+  
+// #837667
+// #716657
+// #464646
+  return (
+    
+    <html lang="bg-ixora-dark" className={`scroll-smooth overflow-x-hidden`}>
+      <body className='bg-ixora-dark overflow-x-hidden'>
+
+        <Navbar
+        />
+ 
+        {/* fixed navbar requires py same for all non home pages */}
+        {pathName === '/' ? (<></>) : (
+        <div className='py-[6%] sm:py-[4%] md:py-[3.2%] bg-ixora-dark'></div>
+        )}
+        <main className='app'>
+          {children}
+        </main>
+        <Footer toTopHandle={toTopHandle}/>
+      </body>
+  </html>
+  )
 }

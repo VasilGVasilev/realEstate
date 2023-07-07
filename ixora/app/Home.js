@@ -1,17 +1,15 @@
 'use client'
-import Link from 'next-intl/link'
+import Link from "next/link"
 import Image from "next/image"
+import { imageLoader } from "../utils/imgLoader"
+import LineGradient from "../components/LineGradient"
 import Maps from "@/components/Location"
-import LineGradient from "@/components/LineGradient"
-import { imageLoader } from "@/utils/imgLoader"
 import Timeline from "@/components/Timeline"
 import ForBuilding from "@/components/ForBuidling"
 import { motion } from "framer-motion"
 import PromptToPlan from "@/components/PromptToPlan"
 import WelcomeText from "@/components/WelcomeText"
 import { playfair } from "@/utils/fonts"
-import { useTranslations} from 'next-intl';
- 
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 const container = {
@@ -28,15 +26,11 @@ const letterVariant = {
     visible: { opacity: 1},
 };
 
-
 export default function Home() {
-    const t = useTranslations('Home');
-    const p = useTranslations('Home');
-    const animatedWelcomeText = t('WelcomeTextAnimation').split('');
     return (
         <div>
             {/* WELCOME VIDEO */}
-            
+
             <div className="relative">
                 <video className="w-full h-full" autoPlay={true} muted={true} loop={true} playsInline={true} >
                     <source src="/video.MP4" type="video/MP4" />
@@ -44,7 +38,6 @@ export default function Home() {
                 </video>
 
                 <div className="absolute bottom-[15%] left-0 w-full h-full flex items-end justify-center ">
-                    {/* WelcomeTextAnimation */}
                     <motion.div 
                         className={`${playfair.className} welcomeTextOnImg text-white text-center text-2xl md:text-4xl lg:text-6xl xl:text-[80px]`}
                         variants={container}
@@ -52,14 +45,34 @@ export default function Home() {
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
                     >
-                        {animatedWelcomeText.map((element, index)=>(
-                            <motion.span key={index} variants={letterVariant}>{element}</motion.span>
-
-                        ))}
+                        <motion.span variants={letterVariant}>В</motion.span>
+                        <motion.span variants={letterVariant}>а</motion.span>
+                        <motion.span variants={letterVariant}>ш</motion.span>
+                        <motion.span variants={letterVariant}>и</motion.span>
+                        <motion.span variants={letterVariant}>я</motion.span>
+                        <motion.span variants={letterVariant}>т</motion.span>
+                        <motion.span variants={letterVariant}> </motion.span>
+                        <motion.span variants={letterVariant}>л</motion.span>
+                        <motion.span variants={letterVariant}>у</motion.span>
+                        <motion.span variants={letterVariant}>к</motion.span>
+                        <motion.span variants={letterVariant}>с</motion.span>
+                        <motion.span variants={letterVariant}>о</motion.span>
+                        <motion.span variants={letterVariant}>з</motion.span>
+                        <motion.span variants={letterVariant}>е</motion.span>
+                        <motion.span variants={letterVariant}>н</motion.span>
+                        <motion.span variants={letterVariant}> </motion.span>
+                        <motion.span variants={letterVariant}>н</motion.span>
+                        <motion.span variants={letterVariant}>о</motion.span>
+                        <motion.span variants={letterVariant}>в</motion.span>
+                        <motion.span variants={letterVariant}> </motion.span>
+                        <motion.span variants={letterVariant}>д</motion.span>
+                        <motion.span variants={letterVariant}>о</motion.span>
+                        <motion.span variants={letterVariant}>м</motion.span>
                     </motion.div>
                 </div>
             </div>
             <LineGradient></LineGradient>
+
             {/* WELCOME TEXT AND IMG */}
             <div className="lg:flex lg:justify-between lg:items-center lg:p-10 bg-orange-50">
                 {/* WELCOME TEXT */}
@@ -125,8 +138,7 @@ export default function Home() {
             <LineGradient></LineGradient>
 
             {/* PROMPT IMG TO PLAN */}
-            {/* no need for locale since Home page is /bg/ or /en/ */}
-            <Link href={`/apartments/`} className={`flex justify-center items-center text-center py-5 lg:py-0 lg:pt-10 text-white text-lg sm:text-3xl hover:scale-110 duration-300`}>{p('promptToPlan')}</Link>
+            <Link href={'/apartments'} className={`flex justify-center items-center text-center py-5 lg:py-0 lg:pt-10 text-white text-lg sm:text-3xl hover:scale-110`}>Изберете Вашия луксозен нов дом сега.</Link>
             <PromptToPlan></PromptToPlan>
             <LineGradient></LineGradient>
 

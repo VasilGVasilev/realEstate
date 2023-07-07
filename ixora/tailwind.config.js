@@ -10,6 +10,7 @@ module.exports = {
       backgroundImage: (theme) => ({
         "gradient-ixora":
           "linear-gradient(81.66deg, #f83600 7.21%, #fe8c00 78.07%)",
+          "ixora-img-description": "url('/ixora-description.webp')",
       }),
       colors: {
         'ixora-deep-blue': '#111827',

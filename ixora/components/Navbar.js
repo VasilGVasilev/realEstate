@@ -1,13 +1,12 @@
 import { useState } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
-import Link from 'next-intl/link'
+import Link from 'next/link'
 
 import { imageLoader } from '../utils/imgLoader'
 import Image from 'next/image'
 import { usePathname } from "next/navigation";
 
 import { motion } from "framer-motion"
-import { useTranslations } from "next-intl";
 
 
 // props: 
@@ -69,9 +68,10 @@ const LinkTemplate = ({ urlLink, page }) => {
 
 const Navbar = () => {
     const [isMenuToggled, setIsMenuToggled] = useState(false);
-    const isDesktop = useMediaQuery("(min-width: 1024px)");
+    const isDesktop = useMediaQuery("(min-width: 1120px)");
     const pathName = usePathname();
-    const t = useTranslations('Navbar');
+
+    
 
     return (
         // animation works only on Home page:
@@ -82,38 +82,15 @@ const Navbar = () => {
             whileInView="visible"
             transition={{ duration: 0.2 }}
             variants = {{
-                hidden: pathName === '/bg/' || pathName === '/en/' ? { opacity: 1 } : { },
-                visible: pathName === '/bg/' || pathName === '/en/' ? { opacity: 0} : { },
+                hidden: pathName === '/' ? { opacity: 1 } : { },
+                visible: pathName === '/' ? { opacity: 0} : { },
             }}
 
         >
             <nav className={`bg-ixora-dark z-40 w-full fixed top-0 py-[2%] sm:py-[1%]`} >
-                <div className="absolute top-0 right-3 p-1 hidden lg:flex">
-                    <Link locale="bg" href="/">
-                        <Image
-                            className="m-2"
-                            src="/bg.svg"
-                            alt="Bulgarian"
-                            width={20}
-                            height={8}
-                        />
-                    </Link>
-                    <Link locale="en" href="/">
-                        <Image
-                            className="m-2"
-                            src="/uk.svg"
-                            alt="English"
-                            width={20}
-                            height={8}
-                        />
-                    </Link>
-
-
-                </div>
                 <div className="flex items-center justify-between mx-auto w-5/6">
-                    {/* LANGUAGES AND LOGO */}
 
-                    <Link className='flex justify-center items-center h-[30%] w-[30%] sm:h-[15%] sm:w-[15%]' href={'/'}>
+                    <Link className='saturate-200 duration-200 flex justify-center items-center h-[30%] w-[30%] sm:h-[15%] sm:w-[15%]' href={'/'}>
                         <Image
                             loader={imageLoader}
                             src="/ixora.webp"
@@ -122,30 +99,28 @@ const Navbar = () => {
                             height={350}
                         />
                     </Link>
-
-
                     {/* DESKTOP NAV */}
                     {isDesktop ? (
                         <div className={`text-xl 2xl:text-2xl flex justify-between gap-10 2xl:gap-16 text-white font-bold`}>
                             <LinkTemplate
                                 urlLink='/'
-                                page={t('welcomeNav')}
+                                page="Начало"
                             />
                             <LinkTemplate
                                 urlLink='/description/'
-                                page={t('descNav')}
+                                page="За сградата"
                             />
                             <LinkTemplate
                                 urlLink='/apartments/'
-                                page={t('apartNAv')}
+                                page="Апартаменти"
                             />
                             <LinkTemplate
                                 urlLink='/investor/'
-                                page={t('investNav')}
+                                page="Инвеститор"
                             />
                             <LinkTemplate
                                 urlLink='/contacts/'
-                                page={t('contactNav')}
+                                page="Контакти"
                             />
                         </div>
                     ) : (
@@ -170,27 +145,6 @@ const Navbar = () => {
                                 visible: { opacity: 1, x: 0 },
                             }}
                         >
-                            {/* LANG BUTTONS */}
-                            <div className="absolute top-0 left-0 p-10">
-                            <Link locale="bg" href="/">
-                                <Image
-                                    className="m-2"
-                                    src="/bg.svg"
-                                    alt="Bulgarian"
-                                    width={20}
-                                    height={8}
-                                />
-                            </Link>
-                            <Link locale="en" href="/">
-                                <Image
-                                    className="m-2"
-                                    src="/uk.svg"
-                                    alt="English"
-                                    width={20}
-                                    height={8}
-                                />
-                            </Link>
-                            </div>
                             {/* CLOSE ICON */}
                             <div className="flex justify-end p-12">
                                 <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -211,7 +165,7 @@ const Navbar = () => {
                                 >
                                     <LinkMobileTemplate
                                         urlLink='/'
-                                        page={t('welcomeNav')}
+                                        page="Начало"
                                         setIsMenuToggled={setIsMenuToggled}
                                     />
                                 </motion.div>
@@ -220,7 +174,7 @@ const Navbar = () => {
                                 >
                                     <LinkMobileTemplate
                                         urlLink='/description'
-                                        page={t('descNav')}
+                                        page="За сградата"
                                         setIsMenuToggled={setIsMenuToggled}
                                     />
                                 </motion.div>
@@ -229,7 +183,7 @@ const Navbar = () => {
                                 >
                                     <LinkMobileTemplate
                                         urlLink='/apartments'
-                                        page={t('apartNAv')}
+                                        page="Апартаменти"
                                         setIsMenuToggled={setIsMenuToggled}
                                     />
                                 </motion.div>
@@ -239,7 +193,7 @@ const Navbar = () => {
 
                                     <LinkMobileTemplate
                                         urlLink='/investor'
-                                        page={t('investNav')}
+                                        page="Инвеститор"
                                         setIsMenuToggled={setIsMenuToggled}
                                     />
                                 </motion.div>
@@ -249,7 +203,7 @@ const Navbar = () => {
 
                                     <LinkMobileTemplate
                                         urlLink='/contacts'
-                                        page={t('contactNav')}
+                                        page="Контакти"
                                         setIsMenuToggled={setIsMenuToggled}
                                     />
                                 </motion.div>

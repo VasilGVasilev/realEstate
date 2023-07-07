@@ -1,6 +1,10 @@
-import {redirect} from 'next/navigation';
 
-// This page only renders when the app is built statically (output: 'export')
-export default function RootPage() {
-  redirect('/bg');
+import Home from "./Home"
+import { metaData } from '../utils/metadata'
+
+export const metadata = metaData('Начало')
+
+export default function Page() {
+  return (<Home></Home>)
 }
+

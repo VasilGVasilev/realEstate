@@ -2,10 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image"
-import { imageLoader } from "@/utils/imgLoader";
+import { imageLoader } from "../../utils/imgLoader";
 import { lato } from "@/utils/fonts";
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
 
 // export const metadata = {
 //   title: 'Инвеститор - Ixora Residence',
@@ -17,7 +16,7 @@ export const revalidate = 0; // revalidate this page every 60 seconds
 
 export default function Investor() {
 
-    const t = useTranslations('Investor')
+
 
     return (
         <>
@@ -29,7 +28,7 @@ export default function Investor() {
                     animate={{ opacity: 1, width: '100%' }}
                     transition={{ delay: 0.3, duration: 1 }}
                     >
-                      <div className="text-white text-center pl-4 text-3xl font-bold">{t('investor')}</div>
+                      <div className="text-white text-center pl-4 text-3xl font-bold">Инвеститор</div>
                 </motion.div>
                 {/* Container for Investor Intro */}
                 <div className="p-10 lg:px-64 space-y-10 bg-ixora-deep-blue">
@@ -62,7 +61,7 @@ export default function Investor() {
                                 }}
                         >
                             <div className="text-gray-200 text-justify font-bold">
-                                {t('investorDesc1')}
+                                Creative Studio е строително-инвестиционно холдингово дружество, което финансира, проектира и изгражда луксозни многофамилни и еднофамилни жилищни сгради и ги реализира на пазара.
                             </div>
                         </motion.div>
                         <br />
@@ -77,7 +76,7 @@ export default function Investor() {
                                 }}
                         >
                         <div className="text-gray-300 text-justify">
-                            {t('investorDesc2')}
+                            Мотото на компанията при изпълнение на инвестиционните проекти гласи - "Creating Excellence" или "Създаване на съвършенство".
                         </div>
                         </motion.div>
                     </div>
@@ -92,11 +91,11 @@ export default function Investor() {
                         animate={{ opacity: 1, width: '100%' }}
                         transition={{ duration: 1 }}
                         >
-                        <div className=" text-white text-center pl-4 text-2xl font-bold">{t('currentState')}</div>
+                        <div className=" text-white text-center pl-4 text-2xl font-bold">Текущи проекти</div>
                     </motion.div>
 
                     {/* Container for projects */}
-                    <>
+                    <div className="">
 
                         {/* Container for Dalia*/}
                         <div className="p-5">
@@ -126,9 +125,9 @@ export default function Investor() {
                                     {/* Conatiner for name and description */}
                                     <div className="px-10 lg:pb-10">
                                         <Link href={'http://creativestudiobg.com/dahlia-house'}><div className="py-5 bg-ixora-dark text-ixora-orange text-center text-2xl font-mono hover:scale-105 duration-200">
-                                            {t('daliaName')}
+                                            Еднофамилна къща Далия
                                         </div></Link>
-                                        <div className="pb-5 bg-ixora-dark text-gray-300 text-justify font-medium font-mono lg:px-80 ">{t('daliaDesc')}</div>
+                                        <div className="pb-5 bg-ixora-dark text-gray-300 text-justify font-medium font-mono lg:px-80 ">Едно бижу в полите на Витоша с уникални гледки към София. Луксозен имот с над 700 кв.м. РЗП и двор от 750 кв.м. в престижния кв. Драгалевци. </div>
                                     </div>
                                 </motion.div>
 
@@ -231,9 +230,9 @@ export default function Investor() {
                                     {/* Conatiner for name and description */}
                                     <div className="px-10  lg:pb-10">
                                         <div className="py-5 bg-ixora-dark text-ixora-orange text-center text-xl font-mono">
-                                            {t('westEndName')}
+                                            Комплекс от къщи West End Luxury Houses
                                         </div>
-                                        <div className="pb-5 bg-ixora-dark text-gray-300 text-justify font-medium font-mono lg:px-80">{t('westEndDesc')}</div>
+                                        <div className="pb-5 bg-ixora-dark text-gray-300 text-justify font-medium font-mono lg:px-80">В процес на изграждане е луксозен комплекс от 18 самостоятелни еднофамилни къщи със собствени басейни в непосредствена близост до София -  само на 20 минути от центъра. Напълно автономно вилно селище със собствен водоизточник и допълнително соларно захранване.</div>
                                     </div>
                                 </motion.div>
 
@@ -333,9 +332,9 @@ export default function Investor() {
                                     {/* Conatiner for name and description */}
                                         <div className="px-10 lg:pb-10">
                                             <div className="py-5 bg-ixora-dark text-ixora-orange text-center text-xl font-mono">
-                                                {t('tiliaName')}
+                                                Жилищна сграда Tilia Residence
                                             </div>
-                                            <div className="pb-5 bg-ixora-dark text-gray-300 text-justify font-medium font-mono lg:px-80">{t('tiliaDesc')}</div>
+                                            <div className="pb-5 bg-ixora-dark text-gray-300 text-justify font-medium font-mono lg:px-80">Модерна жилищна сграда в квартал Връбница с южно изложение в непосредствена близост до метростанция.</div>
                                         </div>
                                     </motion.div>
 
@@ -407,7 +406,7 @@ export default function Investor() {
                             </motion.div>
                         </div>
 
-                    </>
+                    </div>
                 </div>
             </div>
         </>

@@ -1,13 +1,14 @@
+
 'use client'
 
 import { useState } from "react";
 import { imageLoader } from "@/utils/imgLoader";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import PlanButtons from "@/components/PlanButtons";
-
 import Modal from "@/components/Modal";
-import { useTranslations } from "next-intl";
+
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 
@@ -18,7 +19,7 @@ const reserved = "hover:bg-blue-400 hover:opacity-40 active:bg-blue-400 active:o
 
 
 
-export default function Penthouse() {
+export default function ThirdFloor() {
     const [modalOpen, setModalOpen] = useState(false);
 
     const openModal = () => {
@@ -28,31 +29,25 @@ export default function Penthouse() {
     const closeModal = () => {
         setModalOpen(false);
     };
-
     const [apartment, setApartment] = useState({
         ap: null,
         plosht: null,
-        dvor: null,
-        total: null,
+        zp: null,
     });
 
 
-    const updateInfo = (ap, plosht, dvor, total) => {
+    const updateInfo = (ap, plosht, zp) => {
         setApartment({
             ap,
             plosht,
-            dvor,
-            total,
+            zp,
         });
         openModal()
-
     }
 
-    const t = useTranslations('FloorFour');
 
     return (
         <>
-
             <Modal isOpen={modalOpen} onClose={closeModal} apartment={apartment} />
 
             <motion.div
@@ -61,7 +56,7 @@ export default function Penthouse() {
                 animate={{ opacity: 1, width: '100%' }}
                 transition={{ duration: 1 }}
             >
-                <div className="py-4 text-white text-center text-2xl font-extrabold">{t('name')}</div>
+                <div className="py-4 text-white text-center text-2xl font-extrabold">Трети етаж</div>
             </motion.div>
 
             {/* Container for buttons */}
@@ -72,22 +67,30 @@ export default function Penthouse() {
             {/* Container for floor plan */}
             <div className="p-5 xl:px-40 bg-gradient-to-b from-ixora-dark from-10% via-ixorafrom-ixora-dark via-70% to-[#2e281f] to-90% ">
 
+                <div>
+                    <div className="relative inline-block">
 
-                <div className="relative inline-block">
+                        <div className={`absolute apartmentTwelve h-full w-full z-10 ${available}`} onClick={() => updateInfo(12, 200.10, 155.10)}></div>
+                        <div className={`absolute apartmentEleven h-full w-full z-10 ${sold}`}></div>
+                        <div className={`absolute apartmentTen h-full w-full z-10 ${available} `} onClick={() => updateInfo(10, 154.43, 119.70)}></div>
+                        <div className={`absolute apartmentNine h-full w-full z-10 ${available} `} onClick={() => updateInfo(9, 100.76, 78.10)}></div>
 
-                    <div className={`absolute apartmentThirteen h-full w-full z-10 ${available}`} onClick={() => updateInfo(14, 368.85, 193.90, 562.75)}></div>
 
-                    {/* <img src="/plans/penthouse.webp" alt="Ixora Plan" className="relative" /> */}
-                    <div className='relative '>
-                        <Image
-                            loader={imageLoader}
-                            src='/plans/penthouse.webp'
-                            alt="Ixora Plan"
-                            width={3509}
-                            height={4967}
-                        ></Image>
+                        {/* <img src="/plans/third-floor.webp" alt="Ixora Plan" className="relative" /> */}
+
+                        <div className='relative '>
+                            <Image
+                                loader={imageLoader}
+                                src='/plans/third-floor.webp'
+                                alt="Ixora Plan"
+                                width={3509}
+                                height={4967}
+                            ></Image>
+                        </div>
+
                     </div>
                 </div>
+
 
             </div>
         </>
