@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 const Modal = ({ isOpen, onClose, apartment, unit }) => {
     if (!isOpen) return null;
     const pathname = usePathname();
-    console.log(apartment);
     const firstOrLastFloor = pathname === '/apartments/first-floor/' || pathname === '/apartments/penthouse/'
     const secondOrThirdFloor = pathname === '/apartments/second-floor/' || pathname === '/apartments/third-floor/'
 
