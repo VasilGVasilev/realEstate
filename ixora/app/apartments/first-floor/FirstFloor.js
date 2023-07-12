@@ -4,7 +4,6 @@
 import { useState } from "react";
 import Image from 'next/image';
 import { imageLoader } from "../../../utils/imgLoader";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import PlanButtons from "@/components/PlanButtons";
 
