@@ -15,12 +15,11 @@ pnpm dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
-
 # Next.js SSG website
 
 ## [Go to Website](https://ixorabg.com/)
 
-[[alt text](https://github.com/VasilGVasilev/nextJS/blob/main/project/welcomePic.png?raw=true)](https://ixorabg.com/)
+[[alt text](https://github.com/VasilGVasilev/nextJS/blob/ixoraInter/ixora/welcome-img-ixora.png)](https://ixorabg.com/)
 
 ## What's in the stack
 
