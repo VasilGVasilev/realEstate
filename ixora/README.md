@@ -20,7 +20,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## [Go to Website](https://ixorabg.com/)
 
-[![alt text](https://github.com/VasilGVasilev/nextJS/blob/main/project/welcomePic.png?raw=true)](https://ixorabg.com/)
+[[alt text](https://github.com/VasilGVasilev/nextJS/blob/main/project/welcomePic.png?raw=true)](https://ixorabg.com/)
 
 ## What's in the stack
 
