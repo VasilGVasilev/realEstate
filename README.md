@@ -1,24 +1,7 @@
 This is a Next.js Static Site Generation freelance project developed via Tailwind, React and Framer Motion. It promotes the sales of aparments. The website has mobile responsiveness, animations for a more seamless UX and its main feature is the utilization of polygon shapes to mark the status of the apartments - available, reserved, sold.
 
-## Getting Started
 
-First, install the dependencies:
-```bash
-npm i
-# or
-yarn i
-# or
-pnpm i
-```
 
-Then, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -38,7 +21,16 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Development
 
-First, run the development server:
+First, install the dependencies:
+```bash
+npm i
+# or
+yarn i
+# or
+pnpm i
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -46,7 +38,6 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
