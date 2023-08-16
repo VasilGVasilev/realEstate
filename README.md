@@ -1,6 +1,6 @@
 # Next.js SSG website
 
-This is a Next.js Static Site Generation freelance project developed via Tailwind, React and Framer Motion. It promotes the sales of aparments. The website has mobile responsiveness, animations for a more seamless UX and its main feature is the utilization of polygon shapes to mark the status of the apartments - available, reserved, sold.
+This is a Next.js Static Site Generation freelance project developed via Tailwind, React and Framer Motion. It promotes the sales of apartments. The website has mobile responsiveness, animations for a more seamless UX and its main feature is the utilization of polygon shapes to mark the status of the apartments - available, reserved, sold.
 
 ## [Go to Website](https://ixorabg.com/)
 
