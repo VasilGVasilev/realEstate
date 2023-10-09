@@ -12,11 +12,11 @@ With Next.js the default approach is dependant on the the final result, we want 
 
 # Static Site Generation
 
-    Static site generation can be very useful if a website does not rely on any external data and only serves static pages that rarely change. SSG describes the process of building websites that render at build time. The output is an HTML file, assets such as JavaScript and CSS, and a few other static files.
+Static site generation can be very useful if a website does not rely on any external data and only serves static pages that rarely change. SSG describes the process of building websites that render at build time. The output is an HTML file, assets such as JavaScript and CSS, and a few other static files.
 
-    The page is pre-rendered at build-time when using SSG with Next.js. That is, the user will not have to wait for the page to load in the browser; instead, the page will be rendered immediately. When the browser receives the page, it’s usually a simple HTML without a lot of content.
+The page is pre-rendered at build-time when using SSG with Next.js. That is, the user will not have to wait for the page to load in the browser; instead, the page will be rendered immediately. **When the browser receives the page, it’s usually a simple HTML without a lot of content.**
 
-    This then loads the scripts to pull the content into the page, a process also known as hydration. Allowing us to serve the entire content on the first load. The scripts can still hydrate the page during this process, but ideally with fewer changes or no changes at all.
+**This then loads the scripts to pull the content into the page, a process also known as hydration.** Allowing us to serve the entire content on the first load. The scripts can still hydrate the page during this process, but ideally with fewer changes or no changes at all.
 
 # Differences between SSR and ISR (for caching) 
 
