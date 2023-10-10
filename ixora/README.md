@@ -1,14 +1,14 @@
-# Static Site Tilia with Next.js 13: React, Tailwind, Framer Motion
+# Static Site Ixora with Next.js 13: React, Tailwind, Framer Motion
 
 This is a Next.js Static Site Generation freelance project developed via Tailwind, React and Framer Motion. It promotes the sales of aparments.
 
 ## [Go to Website](https://ixorabg.com/)
 
-[![alt text](https://github.com/VasilGVasilev/tilia/blob/main/NB/welcome-img-tilia.png)](https://ixorabg.com/)
+![alt text](https://github.com/VasilGVasilev/nextJS/blob/ixoraInter/NBs/ixora-welcome.png) 
 
 ---
 
-[![alt text](https://github.com/VasilGVasilev/tilia/blob/main/NB/second-img.png)](https://ixorabg.com/)
+![alt text](https://github.com/VasilGVasilev/nextJS/blob/ixoraInter/NBs/ixora-second.png) 
 
 
 ## What's in the stack
