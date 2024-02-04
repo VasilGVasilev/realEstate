@@ -1,5 +1,4 @@
-import { useState } from "react";
-import useMediaQuery from "../hooks/useMediaQuery";
+import { useRef, useState } from "react";
 import Link from 'next/link'
 
 import { imageLoader } from '../utils/imgLoader'
@@ -42,8 +41,8 @@ const LinkMobileTemplate = ({ urlLink, page, setIsMenuToggled }) => {
             className={`${pathName === urlLink ? "text-yellow-500" : ""
                 }  hover:scale-125 transition duration-300`}
             onClick={() => {
-                    setIsMenuToggled(false);
-                }
+                setIsMenuToggled(false);
+            }
             }
         >
             {page}
@@ -68,10 +67,18 @@ const LinkTemplate = ({ urlLink, page }) => {
 
 const Navbar = () => {
     const [isMenuToggled, setIsMenuToggled] = useState(false);
-    const isDesktop = useMediaQuery("(min-width: 1120px)");
+    const isMobileMenuVisible = isMenuToggled ? 'block' : 'hidden'
     const pathName = usePathname();
 
-    
+    const modalRef = useRef(null);
+
+    const closeModal = (e) => {
+        e.stopPropagation();
+        if (e.target == modalRef.current) {
+            setIsMenuToggled(!isMenuToggled)
+        }
+    }
+
 
     return (
         // animation works only on Home page:
@@ -81,9 +88,9 @@ const Navbar = () => {
             initial="hidden"
             whileInView="visible"
             transition={{ duration: 0.2 }}
-            variants = {{
-                hidden: pathName === '/' ? { opacity: 1 } : { },
-                visible: pathName === '/' ? { opacity: 0} : { },
+            variants={{
+                hidden: pathName === '/' ? { opacity: 1 } : {},
+                visible: pathName === '/' ? { opacity: 0 } : {},
             }}
 
         >
@@ -100,45 +107,45 @@ const Navbar = () => {
                         />
                     </Link>
                     {/* DESKTOP NAV */}
-                    {isDesktop ? (
-                        <div className={`text-xl 2xl:text-2xl flex justify-between gap-10 2xl:gap-16 text-white font-bold`}>
-                            <LinkTemplate
-                                urlLink='/'
-                                page="Начало"
-                            />
-                            <LinkTemplate
-                                urlLink='/description/'
-                                page="За сградата"
-                            />
-                            <LinkTemplate
-                                urlLink='/apartments/'
-                                page="Апартаменти"
-                            />
-                            <LinkTemplate
-                                urlLink='/investor/'
-                                page="Инвеститор"
-                            />
-                            <LinkTemplate
-                                urlLink='/contacts/'
-                                page="Контакти"
-                            />
-                        </div>
-                    ) : (
-                        <button
-                            className="rounded-full bg-red p-2"
-                            onClick={() => setIsMenuToggled(!isMenuToggled)}
-                        >
-                            <img alt="menu-icon" src="/assets/menu-icon.svg" />
-                        </button>
-                    )}
+                    <div className={`text-xl 2xl:text-2xl hidden xl:flex justify-between gap-10 2xl:gap-16 text-white font-bold`}>
+                        <LinkTemplate
+                            urlLink='/'
+                            page="Начало"
+                        />
+                        <LinkTemplate
+                            urlLink='/description/'
+                            page="За сградата"
+                        />
+                        <LinkTemplate
+                            urlLink='/apartments/'
+                            page="Апартаменти"
+                        />
+                        <LinkTemplate
+                            urlLink='/investor/'
+                            page="Инвеститор"
+                        />
+                        <LinkTemplate
+                            urlLink='/contacts/'
+                            page="Контакти"
+                        />
+                    </div>
+                    <button
+                        className="block xl:hidden rounded-full bg-red p-2"
+                        onClick={() => setIsMenuToggled(!isMenuToggled)}
+                    >
+                        <img alt="menu-icon" src="/assets/menu-icon.svg" />
+                    </button>
 
                     {/* MOBILE MENU POPUP */}
-                    {!isDesktop && isMenuToggled && (
-                        <motion.div 
-                            className="fixed right-0 bottom-0 h-full bg-ixora-deep-blue w-[300px]"
+                    <div
+                        className={`${isMobileMenuVisible} fixed inset-0 z-40 flex items-center justify-center bg-black bg-opacity-80`}
+                        onClick={closeModal}
+                        ref={modalRef}
+                    >
+                        <motion.div
+                            className={`fixed right-0 bottom-0 h-full bg-ixora-deep-blue w-[300px]`}
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ once: true, amount: 0.1 }}
                             transition={{ duration: 0.3 }}
                             variants={{
                                 hidden: { opacity: 0, x: 50 },
@@ -153,7 +160,7 @@ const Navbar = () => {
                             </div>
 
                             {/* MENU ITEMS */}
-                            <motion.div 
+                            <motion.div
                                 className="flex flex-col gap-10 ml-[33%] text-2xl text-white"
                                 variants={container}
                                 initial="hidden"
@@ -209,7 +216,7 @@ const Navbar = () => {
                                 </motion.div>
                             </motion.div>
                         </motion.div>
-                    )}
+                    </div>
                 </div>
             </nav>
         </motion.div>
