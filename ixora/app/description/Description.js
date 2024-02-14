@@ -10,6 +10,32 @@ import { motion } from "framer-motion";
 export const revalidate = 0; // revalidate this page every 60 seconds
 
 const buildingProcessLayout = "pb-10 px-5 h-full w-full lg:h-96 flex justify-center"
+
+export const BuildPic = ({url}) => {
+    return (
+        <motion.div
+            className={buildingProcessLayout}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            variants={{
+                hidden: { opacity: 0, scale: 0.1 },
+                visible: { opacity: 1, scale: 1 },
+            }}
+        >
+            <Image
+                loader={imageLoader}
+                src={url}
+                alt="Build Process"
+                width={1600}
+                height={1200}
+            >
+            </Image>
+        </motion.div>
+    )
+}
+
 export default function Description() {
 
     return (
@@ -49,87 +75,13 @@ export default function Description() {
                 >
                     <div className="text-white text-center text-2xl font-bold">Етап на проекта - Акт 14</div>
                 </motion.div>
-                <div className="p-10 bg-ixora-dark grid sm:grid-cols-2">
-                    <motion.div
-                        className={buildingProcessLayout}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.5 }}
-                        transition={{ delay: 0.1, duration: 0.5 }}
-                        variants={{
-                            hidden: { opacity: 0, x: 50 },
-                            visible: { opacity: 1, x: 0 },
-                        }}
-                    >
-                        <Image
-                            loader={imageLoader}
-                            src="/buildProcess/buildProcessOne.webp"
-                            alt="Build Process"
-                            width={1600}
-                            height={1200}
-                        >
-                        </Image>
-                    </motion.div>
-                    <motion.div
-                        className={buildingProcessLayout}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.5 }}
-                        transition={{ delay: 0.3, duration: 0.5 }}
-                        variants={{
-                            hidden: { opacity: 0, x: 50 },
-                            visible: { opacity: 1, x: 0 },
-                        }}
-                    >
-                        <Image
-                            loader={imageLoader}
-                            src="/buildProcess/buildProcessTwo.webp"
-                            alt="Build Process"
-                            width={1600}
-                            height={1125}
-                        >
-                        </Image>
-                    </motion.div>
-                    <motion.div
-                        className={buildingProcessLayout}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.5 }}
-                        transition={{ delay: 0.5, duration: 0.5 }}
-                        variants={{
-                            hidden: { opacity: 0, x: 50 },
-                            visible: { opacity: 1, x: 0 },
-                        }}
-                    >
-                        <Image
-                            loader={imageLoader}
-                            src="/buildProcess/buildProcessThree.webp"
-                            alt="Build Process"
-                            width={1600}
-                            height={1200}
-                        >
-                        </Image>
-                    </motion.div>
-                    <motion.div
-                        className={buildingProcessLayout}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.5 }}
-                        transition={{ delay: 0.5, duration: 0.5 }}
-                        variants={{
-                            hidden: { opacity: 0, x: 50 },
-                            visible: { opacity: 1, x: 0 },
-                        }}
-                    >
-                        <Image
-                            loader={imageLoader}
-                            src="/buildProcess/buildProcessFour.webp"
-                            alt="Build Process"
-                            width={1600}
-                            height={1200}
-                        >
-                        </Image>
-                    </motion.div>
+                <div className="p-10 bg-ixora-dark grid sm:grid-cols-2 2xl:grid-cols-3">
+                    <BuildPic url="/buildProcess/buildProcessOne.webp" />
+                    <BuildPic url="/buildProcess/buildProcessTwo.webp" />
+                    <BuildPic url="/buildProcess/buildProcessThree.webp" />
+                    <BuildPic url="/buildProcess/buildProcessFour.webp" />
+                    <BuildPic url="/buildProcess/buildProcessFive.webp" />
+                    <BuildPic url="/buildProcess/buildProcessSix.webp" />
                 </div>
             </div>
 
