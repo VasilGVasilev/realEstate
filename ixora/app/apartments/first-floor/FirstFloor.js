@@ -70,10 +70,9 @@ export default function FirstFloor() {
 
                 <div className="relative">
 
-                    <div
-                        className={`absolute apartmentFour h-full w-full z-10 ${available}`} onClick={() => updateInfo(4, 82.96, 22.20, 105.16)}></div>
-                    <div className={`absolute apartmentThree h-full w-full z-10 ${available}`} onClick={() => updateInfo(3, 146.04, 45.70, 191.74)}></div>
-                    <div className={`absolute apartmentTwo h-full w-full z-10 ${available} `} onClick={() => updateInfo(2, 93.02, 69.00, 162.02)}></div>
+                    <div className={`absolute apartmentFour h-full w-full z-10 ${available}`} onClick={() => updateInfo(4, 82.96, 22.20, 105.16)}></div>
+                    <div className={`absolute apartmentThree h-full w-full z-10 ${sold}`} ></div>
+                    <div className={`absolute apartmentTwo h-full w-full z-10 ${sold} `} ></div>
                     <div className={`absolute apartmentOne h-full w-full z-10 ${available} `} onClick={() => updateInfo(1, 182.43, 73.90, 256.33)}></div>
 
                     {/* <img src="/plans/first-floor.webp" alt="Ixora Plan" className="relative" /> */}
