@@ -14,7 +14,7 @@ export const revalidate = 0; // revalidate this page every 60 seconds
 
 const sold = "hover:bg-red-700 hover:opacity-40 active:bg-red-700 active:opacity-40";
 const available = "hover:bg-green-400 hover:opacity-40 active:bg-green-400 active:opacity-40 cursor-pointer";
-const reserved = "hover:bg-blue-400 hover:opacity-40 active:bg-blue-400 active:opacity-40 cursor-pointer";
+const reserved = "hover:bg-blue-400 hover:opacity-40 active:bg-blue-400 active:opacity-40";
 
 
 
@@ -71,7 +71,7 @@ export default function ThirdFloor() {
 
                         <div className={`absolute apartmentTwelve h-full w-full z-10 ${available}`} onClick={() => updateInfo(12, 200.10, 155.10)}></div>
                         <div className={`absolute apartmentEleven h-full w-full z-10 ${sold}`}></div>
-                        <div className={`absolute apartmentTen h-full w-full z-10 ${available} `} onClick={() => updateInfo(10, 154.43, 119.70)}></div>
+                        <div className={`absolute apartmentTen h-full w-full z-10 ${reserved} `} ></div>
                         <div className={`absolute apartmentNine h-full w-full z-10 ${available} `} onClick={() => updateInfo(9, 100.76, 78.10)}></div>
 
 
