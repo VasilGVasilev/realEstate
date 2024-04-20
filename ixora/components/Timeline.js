@@ -11,17 +11,19 @@ const container = {
 };
 
 const bubbleVariant = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1 },
+    hidden: { scale: 0 },
+    visible: { scale: 1 },
 };
 
-const Bubble = ({ title, subtitle }) => {
+const Bubble = ({ title, subtitle, opacity, gradientDone }) => {
+    const gradientDoneClass = gradientDone ? 'bg-gradient-to-r from-green-400 to-green-600' : 'bg-gradient-to-r from-ixora-orange from-10% via-orange-500 via-60% to-orange-400 to-100%';
     return (
       <motion.div 
-        className=" p-5 m-7 h-36 w-36 lg:m-5 lg:h-52 lg:w-52 bg-gradient-to-r from-ixora-orange from-10% via-orange-500 via-60% to-orange-400 to-100% text-white font-semibold flex justify-center items-center"  
+        className={` p-5 m-7 h-36 w-36 lg:m-5 lg:h-52 lg:w-52 ${gradientDoneClass} text-white font-semibold flex justify-center items-center`}  
         variants={bubbleVariant}
+        style={{ opacity: opacity }}
         >
-            <div className={`${lato.className} timelineBubble text-center hover:scale-125 duration-200`} >
+            <div className={`${lato.className} timelineBubble text-center`} >
                 <div className="text-xl lg:text-2xl">
                     {title}
                 </div>
@@ -43,10 +45,10 @@ const Timeline = () => {
             viewport={{ once: true, amount: 0.2 }}
         >
 
-            <Bubble title={'Юни 2021'} subtitle={'Проектиране и регулация'} ></Bubble>
-            <Bubble title={'Юни 2022'} subtitle={'РС, строителна площадка и първа копка'} ></Bubble>
-            <Bubble title={'Март 2023'} subtitle={'Груб строеж завършен Акт 14'} ></Bubble>
-            <Bubble title={'Април 2024'} subtitle={'Въвеждане в експлоатация Акт 16'} ></Bubble>
+            <Bubble title={'Юни 2021'} subtitle={'Проектиране и регулация'} opacity={0.5} gradientDone={true}></Bubble>
+            <Bubble title={'Юни 2022'} subtitle={'РС, строителна площадка и първа копка'} opacity={0.5} gradientDone={true}></Bubble>
+            <Bubble title={'Март 2023'} subtitle={'Груб строеж завършен Акт 14'} opacity={0.5} gradientDone={true}></Bubble>
+            <Bubble title={'Юни 2024'} subtitle={'Въвеждане в експлоатация Акт 16'} opacity={1} gradientDone={false}></Bubble>
 
         </motion.div>
 

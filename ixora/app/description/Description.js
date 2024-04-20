@@ -6,10 +6,65 @@ import Timeline from "@/components/Timeline";
 import ForBuilding from "@/components/ForBuidling";
 import Maps from "@/components/Location";
 import { motion } from "framer-motion";
+import BuildingProcess from "@/components/BuildingProcess";
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 
 const buildingProcessLayout = "pb-10 px-5 h-full w-full lg:h-96 flex justify-center"
+
+const imagesAct14 = [
+    {
+        original: "/buildProcess/act14/buildProcessOne.webp",
+        thumbnail: "/buildProcess/act14/buildProcessOne.webp",
+    },
+    {
+        original: "/buildProcess/act14/buildProcessTwo.webp",
+        thumbnail: "/buildProcess/act14/buildProcessTwo.webp",
+    },
+    {
+        original: "/buildProcess/act14/buildProcessThree.webp",
+        thumbnail: "/buildProcess/act14/buildProcessThree.webp",
+    },
+    {
+        original: "/buildProcess/act14/buildProcessFour.webp",
+        thumbnail: "/buildProcess/act14/buildProcessFour.webp",
+    },
+    {
+        original: "/buildProcess/act14/buildProcessFive.webp",
+        thumbnail: "/buildProcess/act14/buildProcessFive.webp",
+    },
+    {
+        original: "/buildProcess/act14/buildProcessSix.webp",
+        thumbnail: "/buildProcess/act14/buildProcessSix.webp",
+    },
+];
+
+const imagesAct15 = [
+    {
+        original: "/buildProcess/pre-act15/Image-1.jpg",
+        thumbnail: "/buildProcess/pre-act15/Image-1.jpg",
+    },
+    {
+        original: "/buildProcess/pre-act15/Image-2.jpg",
+        thumbnail: "/buildProcess/pre-act15/Image-2.jpg",
+    },
+    {
+        original: "/buildProcess/pre-act15/Image-3.jpg",
+        thumbnail: "/buildProcess/pre-act15/Image-3.jpg",
+    },
+    {
+        original: "/buildProcess/pre-act15/Image-4.jpg",
+        thumbnail: "/buildProcess/pre-act15/Image-4.jpg",
+    },
+    {
+        original: "/buildProcess/pre-act15/Image-5.jpg",
+        thumbnail: "/buildProcess/pre-act15/Image-5.jpg",
+    },
+    {
+        original: "/buildProcess/pre-act15/Image-6.jpg",
+        thumbnail: "/buildProcess/pre-act15/Image-6.jpg",
+    },
+];
 
 export const BuildPic = ({url}) => {
     return (
@@ -66,26 +121,30 @@ export default function Description() {
             <Timeline></Timeline>
 
             {/* BUILDING PROGRESS */}
-            <div>
-                <motion.div
-                    className="bg-gradient-ixora py-4"
-                    initial={{ opacity: 0, width: 0 }}
-                    animate={{ opacity: 1, width: '100%' }}
-                    transition={{ delay: 0.6, duration: 1 }}
-                >
-                    <div className="text-white text-center text-2xl font-bold">Етап на проекта - Акт 14</div>
-                </motion.div>
-                <div className="p-10 bg-ixora-dark grid sm:grid-cols-2 2xl:grid-cols-3">
-                    <BuildPic url="/buildProcess/buildProcessOne.webp" />
-                    <BuildPic url="/buildProcess/buildProcessTwo.webp" />
-                    <BuildPic url="/buildProcess/buildProcessThree.webp" />
-                    <BuildPic url="/buildProcess/buildProcessFour.webp" />
-                    <BuildPic url="/buildProcess/buildProcessFive.webp" />
-                    <BuildPic url="/buildProcess/buildProcessSix.webp" />
-                </div>
-            </div>
 
-            {/* AKT 16 */}
+            <motion.div
+                className="bg-gradient-ixora py-4"
+                initial={{ opacity: 0, width: 0 }}
+                animate={{ opacity: 1, width: '100%' }}
+                transition={{ delay: 0.3, duration: 1 }}
+            >
+                <div className="text-white text-center text-3xl font-bold">Акт 14</div>
+            </motion.div>
+
+            <BuildingProcess images={imagesAct14}></BuildingProcess>
+
+            <motion.div
+                className="bg-gradient-ixora py-4"
+                initial={{ opacity: 0, width: 0 }}
+                animate={{ opacity: 1, width: '100%' }}
+                transition={{ delay: 0.3, duration: 1 }}
+            >
+                <div className="text-white text-center text-3xl font-bold">Пред Акт 15</div>
+            </motion.div>
+
+            <BuildingProcess images={imagesAct15}></BuildingProcess>
+
+            {/* AKT 16 - future vision */}
             <>
                 <motion.div
                     className="bg-gradient-ixora py-4"

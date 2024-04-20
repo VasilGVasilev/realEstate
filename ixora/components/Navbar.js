@@ -87,14 +87,14 @@ const Navbar = () => {
         <motion.div
             initial="hidden"
             whileInView="visible"
-            transition={{ duration: 0.2 }}
+            transition={{ duration: 0.3 }}
             variants={{
                 hidden: pathName === '/' ? { opacity: 1 } : {},
                 visible: pathName === '/' ? { opacity: 0 } : {},
             }}
 
         >
-            <nav className={`bg-ixora-dark z-40 w-full fixed top-0 py-[2%] sm:py-[1%]`} >
+            <nav className={`bg-ixora-dark z-40 w-full fixed top-0 py-[2%] sm:py-[1%] border-black border-b-2 shadow-xl`} >
                 <div className="flex items-center justify-between mx-auto w-5/6">
 
                     <Link className='saturate-200 duration-200 flex justify-center items-center h-[30%] w-[30%] sm:h-[15%] sm:w-[15%]' href={'/'}>
