@@ -121,6 +121,18 @@ export default function Description() {
             <Timeline></Timeline>
 
             {/* BUILDING PROGRESS */}
+            
+            <motion.div
+                className="bg-gradient-ixora py-4"
+                initial={{ opacity: 0, width: 0 }}
+                animate={{ opacity: 1, width: '100%' }}
+                transition={{ delay: 0.3, duration: 1 }}
+            >
+                <div className="text-white text-center text-3xl font-bold">Пред Акт 15</div>
+            </motion.div>
+
+            <BuildingProcess images={imagesAct15}></BuildingProcess>
+
 
             <motion.div
                 className="bg-gradient-ixora py-4"
@@ -133,16 +145,6 @@ export default function Description() {
 
             <BuildingProcess images={imagesAct14}></BuildingProcess>
 
-            <motion.div
-                className="bg-gradient-ixora py-4"
-                initial={{ opacity: 0, width: 0 }}
-                animate={{ opacity: 1, width: '100%' }}
-                transition={{ delay: 0.3, duration: 1 }}
-            >
-                <div className="text-white text-center text-3xl font-bold">Пред Акт 15</div>
-            </motion.div>
-
-            <BuildingProcess images={imagesAct15}></BuildingProcess>
 
             {/* AKT 16 - future vision */}
             <>
