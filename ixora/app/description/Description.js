@@ -41,28 +41,16 @@ const imagesAct14 = [
 
 const imagesAct15 = [
     {
-        original: "/buildProcess/pre-act15/Image-1.jpg",
-        thumbnail: "/buildProcess/pre-act15/Image-1.jpg",
+        original: "/buildProcess/pre-act15/Image-1.webp",
+        thumbnail: "/buildProcess/pre-act15/Image-1.webp",
     },
     {
-        original: "/buildProcess/pre-act15/Image-2.jpg",
-        thumbnail: "/buildProcess/pre-act15/Image-2.jpg",
+        original: "/buildProcess/pre-act15/Image-2.webp",
+        thumbnail: "/buildProcess/pre-act15/Image-2.webp",
     },
     {
-        original: "/buildProcess/pre-act15/Image-3.jpg",
-        thumbnail: "/buildProcess/pre-act15/Image-3.jpg",
-    },
-    {
-        original: "/buildProcess/pre-act15/Image-4.jpg",
-        thumbnail: "/buildProcess/pre-act15/Image-4.jpg",
-    },
-    {
-        original: "/buildProcess/pre-act15/Image-5.jpg",
-        thumbnail: "/buildProcess/pre-act15/Image-5.jpg",
-    },
-    {
-        original: "/buildProcess/pre-act15/Image-6.jpg",
-        thumbnail: "/buildProcess/pre-act15/Image-6.jpg",
+        original: "/buildProcess/pre-act15/Image-3.webp",
+        thumbnail: "/buildProcess/pre-act15/Image-3.webp",
     },
 ];
 
