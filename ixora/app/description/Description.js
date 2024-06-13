@@ -41,16 +41,16 @@ const imagesAct14 = [
 
 const imagesAct15 = [
     {
-        original: "/buildProcess/pre-act15/Image-1.webp",
-        thumbnail: "/buildProcess/pre-act15/Image-1.webp",
+        original: "/buildProcess/pre-act15/Image1.webp",
+        thumbnail: "/buildProcess/pre-act15/Image1.webp",
     },
     {
-        original: "/buildProcess/pre-act15/Image-2.webp",
-        thumbnail: "/buildProcess/pre-act15/Image-2.webp",
+        original: "/buildProcess/pre-act15/Image2.webp",
+        thumbnail: "/buildProcess/pre-act15/Image2.webp",
     },
     {
-        original: "/buildProcess/pre-act15/Image-3.webp",
-        thumbnail: "/buildProcess/pre-act15/Image-3.webp",
+        original: "/buildProcess/pre-act15/Image3.webp",
+        thumbnail: "/buildProcess/pre-act15/Image3.webp",
     },
 ];
 
