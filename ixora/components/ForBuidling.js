@@ -82,7 +82,7 @@ const ForBuilding = () => {
                     >
                     
                     <p className="sm:text-xl text-ixora-orange font-semibold">Отопление</p>
-                    <li className="text-sm sm:text-lg text-gray-700 font-bold text-justify">Централно газоснабдена сграда. Етаж 1 и 2 са заложени с висок клас енергоефективни радиатори тип Jaga. Етаж 3 и 4 са изпълнени с подово отопление със самостоятелен термостат за всяко помещение.  </li>
+                    <li className="text-sm sm:text-lg text-gray-700 font-bold text-justify">Централно газоснабдена сграда. Всички етажи са изпълнени с подово отопление със самостоятелен термостат за всяко помещение.  </li>
                     <br />
                     
                     </motion.div>
