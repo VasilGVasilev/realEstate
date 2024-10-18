@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
 import Link from "next/link";
-import Image from "next/image"
+import Image from "next/image";
 import { imageLoader } from "../../utils/imgLoader";
 import { lato } from "@/utils/fonts";
 import { motion } from "framer-motion";
@@ -13,23 +13,19 @@ import { HiExternalLink } from "react-icons/hi";
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 
-
-
 export default function Investor() {
-
-
-
     return (
         <>
-
             <div>
                 <motion.div
                     className="bg-gradient-ixora py-4"
                     initial={{ opacity: 0, width: 0 }}
-                    animate={{ opacity: 1, width: '100%' }}
+                    animate={{ opacity: 1, width: "100%" }}
                     transition={{ delay: 0.3, duration: 1 }}
                 >
-                    <div className="text-white text-center pl-4 text-3xl font-bold">Инвеститор</div>
+                    <div className="text-white text-center pl-4 text-3xl font-bold">
+                        Инвеститор
+                    </div>
                 </motion.div>
                 {/* Container for Investor Intro */}
                 <div className="p-10 lg:px-64 space-y-10 bg-ixora-deep-blue">
@@ -42,11 +38,15 @@ export default function Investor() {
                             duration: 1,
                             ease: "easeInOut",
                             times: [0, 0.4, 0.8],
-                            repeatDelay: 1
+                            repeatDelay: 1,
                         }}
                     >
                         <div className="flex">
-                            <img src="/investor-logo.webp" alt="" className="h-20 w-50 rounded-lg" />
+                            <img
+                                src="/investor-logo.webp"
+                                alt=""
+                                className="h-20 w-50 rounded-lg"
+                            />
                         </div>
                     </motion.div>
                     {/* Container for Description of Investor */}
@@ -62,7 +62,10 @@ export default function Investor() {
                             }}
                         >
                             <div className="text-gray-200 text-justify font-bold">
-                                Creative Studio е строително-инвестиционно холдингово дружество, което финансира, проектира и изгражда луксозни многофамилни и еднофамилни жилищни сгради и ги реализира на пазара.
+                                Creative Studio е строително-инвестиционно
+                                холдингово дружество, което финансира, проектира
+                                и изгражда луксозни многофамилни и еднофамилни
+                                жилищни сгради и ги реализира на пазара.
                             </div>
                         </motion.div>
                         <br />
@@ -77,11 +80,12 @@ export default function Investor() {
                             }}
                         >
                             <div className="text-gray-300 text-justify">
-                                Мотото на компанията при изпълнение на инвестиционните проекти гласи - "Creating Excellence" или "Създаване на съвършенство".
+                                Мотото на компанията при изпълнение на
+                                инвестиционните проекти гласи - "Creating
+                                Excellence" или "Създаване на съвършенство".
                             </div>
                         </motion.div>
                     </div>
-
                 </div>
 
                 {/* Container for Recent Projects */}
@@ -89,18 +93,18 @@ export default function Investor() {
                     <motion.div
                         className="bg-gradient-ixora py-4"
                         initial={{ opacity: 0, width: 0 }}
-                        animate={{ opacity: 1, width: '100%' }}
+                        animate={{ opacity: 1, width: "100%" }}
                         transition={{ duration: 1 }}
                     >
-                        <div className=" text-white text-center pl-4 text-2xl font-bold">Текущи проекти</div>
+                        <div className=" text-white text-center pl-4 text-2xl font-bold">
+                            Текущи проекти
+                        </div>
                     </motion.div>
 
                     {/* Container for projects */}
                     <div className="">
-
                         {/* Container for Dalia*/}
                         <div className="p-5">
-
                             <motion.div
                                 className="py-5"
                                 initial="hidden"
@@ -108,18 +112,15 @@ export default function Investor() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 variants={{
-                                    hidden: { opacity: 0, scale: 0.5, },
-                                    visible: { opacity: 1, scale: 1, borderTop: '2px solid #ea580c', borderRight: '2px solid #ea580c', },
+                                    hidden: { opacity: 0, scale: 0.5 },
+                                    visible: {
+                                        opacity: 1,
+                                        scale: 1,
+                                        borderTop: "2px solid #ea580c",
+                                        borderRight: "2px solid #ea580c",
+                                    },
                                 }}
-
                             >
-
-
-
-
-
-
-
                                 <motion.div
                                     initial="hidden"
                                     whileInView="visible"
@@ -131,13 +132,26 @@ export default function Investor() {
                                     }}
                                 >
                                     {/* Conatiner for name and description */}
-                                    <Link href={`https://tiliabg.com/`} className="px-10 lg:pb-10">
+                                    <Link
+                                        href={`https://tiliabg.com/`}
+                                        className="px-10 lg:pb-10"
+                                    >
                                         <div className="flex flex-row items-center justify-center py-5 bg-ixora-dark text-ixora-orange text-center text-xl font-mono ">
-                                            <span>Жилищна сграда Tilia Residence</span>
-                                            <HiExternalLink size={24} className="" />
+                                            <span>
+                                                Жилищна сграда Tilia Residence
+                                            </span>
+                                            <HiExternalLink
+                                                size={24}
+                                                className=""
+                                            />
                                         </div>
 
-                                        <div className="pb-5 bg-ixora-dark text-gray-300 text-justify font-medium font-mono lg:px-80">Модерна жилищна сграда в квартал Връбница с южно изложение в непосредствена близост до метростанция.</div>
+                                        <div className="pb-5 bg-ixora-dark text-gray-300 text-justify font-medium font-mono lg:px-80">
+                                            Модерна жилищна сграда в квартал
+                                            Връбница с южно изложение в
+                                            непосредствена близост до
+                                            метростанция.
+                                        </div>
                                     </Link>
                                 </motion.div>
 
@@ -146,7 +160,10 @@ export default function Investor() {
                                         initial="hidden"
                                         whileInView="visible"
                                         viewport={{ once: true }}
-                                        transition={{ delay: 0.4, duration: 0.6 }}
+                                        transition={{
+                                            delay: 0.4,
+                                            duration: 0.6,
+                                        }}
                                         variants={{
                                             hidden: { opacity: 0, x: -200 },
                                             visible: { opacity: 1, x: 0 },
@@ -167,7 +184,10 @@ export default function Investor() {
                                         initial="hidden"
                                         whileInView="visible"
                                         viewport={{ once: true }}
-                                        transition={{ delay: 0.4, duration: 0.6 }}
+                                        transition={{
+                                            delay: 0.4,
+                                            duration: 0.6,
+                                        }}
                                         variants={{
                                             hidden: { opacity: 0, x: 200 },
                                             visible: { opacity: 1, x: 0 },
@@ -188,7 +208,10 @@ export default function Investor() {
                                         initial="hidden"
                                         whileInView="visible"
                                         viewport={{ once: true }}
-                                        transition={{ delay: 0.4, duration: 0.6 }}
+                                        transition={{
+                                            delay: 0.4,
+                                            duration: 0.6,
+                                        }}
                                         variants={{
                                             hidden: { opacity: 0, x: -200 },
                                             visible: { opacity: 1, x: 0 },
@@ -218,10 +241,14 @@ export default function Investor() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 variants={{
-                                    hidden: { opacity: 0, scale: 0.5, },
-                                    visible: { opacity: 1, scale: 1, borderTop: '2px solid #ea580c', borderLeft: '2px solid #ea580c', },
+                                    hidden: { opacity: 0, scale: 0.5 },
+                                    visible: {
+                                        opacity: 1,
+                                        scale: 1,
+                                        borderTop: "2px solid #ea580c",
+                                        borderLeft: "2px solid #ea580c",
+                                    },
                                 }}
-
                             >
                                 <motion.div
                                     initial="hidden"
@@ -236,9 +263,21 @@ export default function Investor() {
                                     {/* Conatiner for name and description */}
                                     <div className="px-10  lg:pb-10">
                                         <div className="py-5 bg-ixora-dark text-ixora-orange text-center text-xl font-mono">
-                                            Комплекс от къщи West End Luxury Houses
+                                            <span>
+                                                Комплекс от къщи West End Luxury
+                                                Houses
+                                            </span>
                                         </div>
-                                        <div className="pb-5 bg-ixora-dark text-gray-300 text-justify font-medium font-mono lg:px-80">В процес на изграждане е луксозен комплекс от 18 самостоятелни еднофамилни къщи със собствени басейни в непосредствена близост до София -  само на 20 минути от центъра. Напълно автономно вилно селище със собствен водоизточник и допълнително соларно захранване.</div>
+                                        <div className="pb-5 bg-ixora-dark text-gray-300 text-justify font-medium font-mono lg:px-80">
+                                            В процес на проектиране е луксозен
+                                            комплекс от 18 самостоятелни
+                                            еднофамилни къщи със собствени
+                                            басейни в непосредствена близост до
+                                            София - само на 20 минути от
+                                            центъра. Напълно автономно вилно
+                                            селище със собствен водоизточник и
+                                            допълнително соларно захранване.
+                                        </div>
                                     </div>
                                 </motion.div>
 
@@ -247,7 +286,10 @@ export default function Investor() {
                                         initial="hidden"
                                         whileInView="visible"
                                         viewport={{ once: true }}
-                                        transition={{ delay: 0.4, duration: 0.6 }}
+                                        transition={{
+                                            delay: 0.4,
+                                            duration: 0.6,
+                                        }}
                                         variants={{
                                             hidden: { opacity: 0, x: -200 },
                                             visible: { opacity: 1, x: 0 },
@@ -268,7 +310,10 @@ export default function Investor() {
                                         initial="hidden"
                                         whileInView="visible"
                                         viewport={{ once: true }}
-                                        transition={{ delay: 0.4, duration: 0.6 }}
+                                        transition={{
+                                            delay: 0.4,
+                                            duration: 0.6,
+                                        }}
                                         variants={{
                                             hidden: { opacity: 0, x: 200 },
                                             visible: { opacity: 1, x: 0 },
@@ -289,7 +334,10 @@ export default function Investor() {
                                         initial="hidden"
                                         whileInView="visible"
                                         viewport={{ once: true }}
-                                        transition={{ delay: 0.4, duration: 0.6 }}
+                                        transition={{
+                                            delay: 0.4,
+                                            duration: 0.6,
+                                        }}
                                         variants={{
                                             hidden: { opacity: 0, x: -200 },
                                             visible: { opacity: 1, x: 0 },
@@ -306,7 +354,6 @@ export default function Investor() {
                                             />
                                         </div>
                                     </motion.div>
-
                                 </div>
                             </motion.div>
                         </div>
@@ -320,10 +367,14 @@ export default function Investor() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 variants={{
-                                    hidden: { opacity: 0, scale: 0.5, },
-                                    visible: { opacity: 1, scale: 1, borderTop: '2px solid #ea580c', borderRight: '2px solid #ea580c', },
+                                    hidden: { opacity: 0, scale: 0.5 },
+                                    visible: {
+                                        opacity: 1,
+                                        scale: 1,
+                                        borderTop: "2px solid #ea580c",
+                                        borderRight: "2px solid #ea580c",
+                                    },
                                 }}
-
                             >
                                 <motion.div
                                     initial="hidden"
@@ -331,16 +382,32 @@ export default function Investor() {
                                     viewport={{ once: true }}
                                     transition={{ delay: 0.4, duration: 0.6 }}
                                     variants={{
-                                        hidden: { opacity: 0, scale: 0.5, },
-                                        visible: { opacity: 1, scale: 1, },
+                                        hidden: { opacity: 0, scale: 0.5 },
+                                        visible: { opacity: 1, scale: 1 },
                                     }}
                                 >
                                     {/* Conatiner for name and description */}
                                     <div className="px-10 lg:pb-10">
-                                        <Link href={'http://creativestudiobg.com/dahlia-house'}><div className="py-5 bg-ixora-dark text-ixora-orange text-center text-2xl font-mono hover:scale-105 duration-200">
-                                            Еднофамилна къща Далия
-                                        </div></Link>
-                                        <div className="pb-5 bg-ixora-dark text-gray-300 text-justify font-medium font-mono lg:px-80 ">Едно бижу в полите на Витоша с уникални гледки към София. Луксозен имот с над 700 кв.м. РЗП и двор от 750 кв.м. в престижния кв. Драгалевци. </div>
+                                        <Link
+                                            href={
+                                                "http://creativestudiobg.com/dahlia-house"
+                                            }
+                                        >
+                                            <div className="flex flex-row justify-center py-5 bg-ixora-dark text-ixora-orange text-2xl font-mono hover:scale-105 duration-200">
+                                                Еднофамилна къща Далия
+                                                <HiExternalLink
+                                                    size={24}
+                                                    className=""
+                                                />
+                                            </div>
+                                        </Link>
+                                        <div className="pb-5 bg-ixora-dark text-gray-300 text-justify font-medium font-mono lg:px-80 ">
+                                            Едно бижу в полите на Витоша с
+                                            уникални гледки към София. Луксозен
+                                            имот с над 700 кв.м. РЗП и двор от
+                                            750 кв.м. в престижния кв.
+                                            Драгалевци.{" "}
+                                        </div>
                                     </div>
                                 </motion.div>
 
@@ -351,7 +418,10 @@ export default function Investor() {
                                         initial="hidden"
                                         whileInView="visible"
                                         viewport={{ once: true }}
-                                        transition={{ delay: 0.4, duration: 0.6 }}
+                                        transition={{
+                                            delay: 0.4,
+                                            duration: 0.6,
+                                        }}
                                         variants={{
                                             hidden: { opacity: 0, x: -200 },
                                             visible: { opacity: 1, x: 0 },
@@ -373,7 +443,10 @@ export default function Investor() {
                                         initial="hidden"
                                         whileInView="visible"
                                         viewport={{ once: true }}
-                                        transition={{ delay: 0.4, duration: 0.6 }}
+                                        transition={{
+                                            delay: 0.4,
+                                            duration: 0.6,
+                                        }}
                                         variants={{
                                             hidden: { opacity: 0, x: 200 },
                                             visible: { opacity: 1, x: 0 },
@@ -394,7 +467,10 @@ export default function Investor() {
                                         initial="hidden"
                                         whileInView="visible"
                                         viewport={{ once: true }}
-                                        transition={{ delay: 0.4, duration: 0.6 }}
+                                        transition={{
+                                            delay: 0.4,
+                                            duration: 0.6,
+                                        }}
                                         variants={{
                                             hidden: { opacity: 0, x: -200 },
                                             visible: { opacity: 1, x: 0 },
@@ -411,14 +487,12 @@ export default function Investor() {
                                             />
                                         </div>
                                     </motion.div>
-
                                 </div>
                             </motion.div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </>
-    )
+    );
 }
