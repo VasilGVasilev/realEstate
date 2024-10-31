@@ -39,7 +39,7 @@ const imagesAct14 = [
     },
 ];
 
-const imagesAct15 = [
+const imagesBeforeAct15 = [
     {
         original: "/buildProcess/pre-act15/Image1.JPG",
         thumbnail: "/buildProcess/pre-act15/Image1.JPG",
@@ -67,6 +67,49 @@ const imagesAct15 = [
     {
         original: "/buildProcess/pre-act15/Image7.JPG",
         thumbnail: "/buildProcess/pre-act15/Image7.JPG",
+    },
+];
+
+const imagesAct15 = [
+    {
+        original: "/buildProcess/act15/image0.jpeg",
+        thumbnail: "/buildProcess/act15/image0.jpeg",
+    },
+    {
+        original: "/buildProcess/act15/image1.jpeg",
+        thumbnail: "/buildProcess/act15/image1.jpeg",
+    },
+    {
+        original: "/buildProcess/act15/image2.jpeg",
+        thumbnail: "/buildProcess/act15/image2.jpeg",
+    },
+    {
+        original: "/buildProcess/act15/image3.jpeg",
+        thumbnail: "/buildProcess/act15/image3.jpeg",
+    },
+    {
+        original: "/buildProcess/act15/image4.jpeg",
+        thumbnail: "/buildProcess/act15/image4.jpeg",
+    },
+    {
+        original: "/buildProcess/act15/image5.jpeg",
+        thumbnail: "/buildProcess/act15/image5.jpeg",
+    },
+    {
+        original: "/buildProcess/act15/image6.jpeg",
+        thumbnail: "/buildProcess/act15/image6.jpeg",
+    },
+    {
+        original: "/buildProcess/act15/image7.jpeg",
+        thumbnail: "/buildProcess/act15/image7.jpeg",
+    },
+    {
+        original: "/buildProcess/act15/image8.jpeg",
+        thumbnail: "/buildProcess/act15/image8.jpeg",
+    },
+    {
+        original: "/buildProcess/act15/image9.jpeg",
+        thumbnail: "/buildProcess/act15/image9.jpeg",
     },
 ];
 
@@ -125,6 +168,17 @@ export default function Description() {
             <Timeline></Timeline>
 
             {/* BUILDING PROGRESS */}
+
+            <motion.div
+                className="bg-gradient-ixora py-4"
+                initial={{ opacity: 0, width: 0 }}
+                animate={{ opacity: 1, width: '100%' }}
+                transition={{ delay: 0.3, duration: 1 }}
+            >
+                <div className="text-white text-center text-3xl font-bold">Акт 15</div>
+            </motion.div>
+
+            <BuildingProcess images={imagesAct15}></BuildingProcess>
             
             <motion.div
                 className="bg-gradient-ixora py-4"
@@ -135,7 +189,7 @@ export default function Description() {
                 <div className="text-white text-center text-3xl font-bold">Пред Акт 15</div>
             </motion.div>
 
-            <BuildingProcess images={imagesAct15}></BuildingProcess>
+            <BuildingProcess images={imagesBeforeAct15}></BuildingProcess>
 
 
             <motion.div
