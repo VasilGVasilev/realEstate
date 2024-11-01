@@ -1,23 +1,21 @@
 import { useRef, useState } from "react";
-import Link from 'next/link'
+import Link from "next/link";
 
-import { imageLoader } from '../utils/imgLoader'
-import Image from 'next/image'
+import { imageLoader } from "../utils/imgLoader";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
-
-// props: 
+// props:
 // - name of link, must be constant
 // - selected or to be selected animation
 // - change state in parent of Navbar component -> Home component
 
-// TODO: 
+// TODO:
 // mobile menu comes as an animation with framer motion
 // may be reverse link to anchor link if not smooth
 // refactor img to Image
-
 
 const container = {
     hidden: {},
@@ -33,17 +31,17 @@ const navbarVariant = {
     visible: { opacity: 1, scale: 1 },
 };
 const LinkMobileTemplate = ({ urlLink, page, setIsMenuToggled }) => {
-    const pathName = usePathname()
+    const pathName = usePathname();
 
     return (
         <Link
             href={urlLink}
-            className={`${pathName === urlLink ? "text-yellow-500" : ""
-                }  hover:scale-125 transition duration-300`}
+            className={`${
+                pathName === urlLink ? "text-yellow-500" : ""
+            }  hover:scale-125 transition duration-300`}
             onClick={() => {
                 setIsMenuToggled(false);
-            }
-            }
+            }}
         >
             {page}
         </Link>
@@ -55,19 +53,18 @@ const LinkTemplate = ({ urlLink, page }) => {
     return (
         <Link
             href={urlLink}
-            className={`${pathName == urlLink ? "text-yellow-500" : ""
-                }  hover:scale-125 transition duration-300`}
+            className={`${
+                pathName == urlLink ? "text-yellow-500" : ""
+            }  hover:scale-125 transition duration-300`}
         >
             {page}
         </Link>
     );
 };
 
-
-
 const Navbar = () => {
     const [isMenuToggled, setIsMenuToggled] = useState(false);
-    const isMobileMenuVisible = isMenuToggled ? 'block' : 'hidden'
+    const isMobileMenuVisible = isMenuToggled ? "block" : "hidden";
     const pathName = usePathname();
 
     const modalRef = useRef(null);
@@ -75,10 +72,9 @@ const Navbar = () => {
     const closeModal = (e) => {
         e.stopPropagation();
         if (e.target == modalRef.current) {
-            setIsMenuToggled(!isMenuToggled)
+            setIsMenuToggled(!isMenuToggled);
         }
-    }
-
+    };
 
     return (
         // animation works only on Home page:
@@ -89,15 +85,18 @@ const Navbar = () => {
             whileInView="visible"
             transition={{ duration: 0.3 }}
             variants={{
-                hidden: pathName === '/' ? { opacity: 1 } : {},
-                visible: pathName === '/' ? { opacity: 0 } : {},
+                hidden: pathName === "/" ? { opacity: 1 } : {},
+                visible: pathName === "/" ? { opacity: 0 } : {},
             }}
-
         >
-            <nav className={`bg-ixora-dark z-40 w-full fixed top-0 py-[2%] sm:py-[1%] border-black border-b-2 shadow-xl`} >
+            <nav
+                className={`bg-ixora-dark z-40 w-full fixed top-0 py-[2%] sm:py-[1%] border-black border-b-2 shadow-xl`}
+            >
                 <div className="flex items-center justify-between mx-auto w-5/6">
-
-                    <Link className='saturate-200 duration-200 flex justify-center items-center h-[30%] w-[30%] sm:h-[15%] sm:w-[15%]' href={'/'}>
+                    <Link
+                        className="saturate-200 duration-200 flex justify-center items-center h-[30%] w-[30%] sm:h-[15%] sm:w-[15%]"
+                        href={"/"}
+                    >
                         <Image
                             loader={imageLoader}
                             src="/ixora.webp"
@@ -107,27 +106,21 @@ const Navbar = () => {
                         />
                     </Link>
                     {/* DESKTOP NAV */}
-                    <div className={`text-xl 2xl:text-2xl hidden xl:flex justify-between gap-10 2xl:gap-16 text-white font-bold`}>
+                    <div
+                        className={`text-xl 2xl:text-2xl hidden xl:flex justify-between gap-10 2xl:gap-16 text-white font-bold`}
+                    >
+                        <LinkTemplate urlLink="/" page="Начало" />
                         <LinkTemplate
-                            urlLink='/'
-                            page="Начало"
-                        />
-                        <LinkTemplate
-                            urlLink='/description/'
+                            urlLink="/description/"
                             page="За сградата"
                         />
                         <LinkTemplate
-                            urlLink='/apartments/'
+                            urlLink="/apartments/"
                             page="Апартаменти"
                         />
-                        <LinkTemplate
-                            urlLink='/investor/'
-                            page="Инвеститор"
-                        />
-                        <LinkTemplate
-                            urlLink='/contacts/'
-                            page="Контакти"
-                        />
+                        <LinkTemplate urlLink="/investor/" page="Инвеститор" />
+                        <LinkTemplate urlLink="/gallery/" page="Галерия" />
+                        <LinkTemplate urlLink="/contacts/" page="Контакти" />
                     </div>
                     <button
                         className="block xl:hidden rounded-full bg-red p-2"
@@ -154,8 +147,15 @@ const Navbar = () => {
                         >
                             {/* CLOSE ICON */}
                             <div className="flex justify-end p-12">
-                                <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                                    <img alt="close-icon" src="/assets/close-icon.svg" />
+                                <button
+                                    onClick={() =>
+                                        setIsMenuToggled(!isMenuToggled)
+                                    }
+                                >
+                                    <img
+                                        alt="close-icon"
+                                        src="/assets/close-icon.svg"
+                                    />
                                 </button>
                             </div>
 
@@ -167,49 +167,44 @@ const Navbar = () => {
                                 whileInView="visible"
                                 viewport={{ once: true, amount: 0.2 }}
                             >
-                                <motion.div
-                                    variants={navbarVariant}
-                                >
+                                <motion.div variants={navbarVariant}>
                                     <LinkMobileTemplate
-                                        urlLink='/'
+                                        urlLink="/"
                                         page="Начало"
                                         setIsMenuToggled={setIsMenuToggled}
                                     />
                                 </motion.div>
-                                <motion.div
-                                    variants={navbarVariant}
-                                >
+                                <motion.div variants={navbarVariant}>
                                     <LinkMobileTemplate
-                                        urlLink='/description'
+                                        urlLink="/description"
                                         page="За сградата"
                                         setIsMenuToggled={setIsMenuToggled}
                                     />
                                 </motion.div>
-                                <motion.div
-                                    variants={navbarVariant}
-                                >
+                                <motion.div variants={navbarVariant}>
                                     <LinkMobileTemplate
-                                        urlLink='/apartments'
+                                        urlLink="/apartments"
                                         page="Апартаменти"
                                         setIsMenuToggled={setIsMenuToggled}
                                     />
                                 </motion.div>
-                                <motion.div
-                                    variants={navbarVariant}
-                                >
-
+                                <motion.div variants={navbarVariant}>
                                     <LinkMobileTemplate
-                                        urlLink='/investor'
+                                        urlLink="/investor"
                                         page="Инвеститор"
                                         setIsMenuToggled={setIsMenuToggled}
                                     />
                                 </motion.div>
-                                <motion.div
-                                    variants={navbarVariant}
-                                >
-
+                                <motion.div variants={navbarVariant}>
                                     <LinkMobileTemplate
-                                        urlLink='/contacts'
+                                        urlLink="/gallery"
+                                        page="Галерия"
+                                        setIsMenuToggled={setIsMenuToggled}
+                                    />
+                                </motion.div>
+                                <motion.div variants={navbarVariant}>
+                                    <LinkMobileTemplate
+                                        urlLink="/contacts"
                                         page="Контакти"
                                         setIsMenuToggled={setIsMenuToggled}
                                     />
