@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import PromptToPlan from "@/components/PromptToPlan";
 import WelcomeText from "@/components/WelcomeText";
 import { noto, playfair } from "@/utils/fonts";
+import { useInView } from "react-intersection-observer";
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 const container = {
@@ -37,6 +38,11 @@ const letterVariant = {
 };
 
 export default function Home() {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.2,
+    });
+
     return (
         <div>
             {/* WELCOME VIDEO */}
@@ -44,12 +50,13 @@ export default function Home() {
             <div className="relative">
                 <video
                     className="w-full h-full"
-                    autoPlay={true}
-                    muted={true}
-                    loop={true}
-                    playsInline={true}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
                 >
-                    <source src="/video.MP4" type="video/MP4" />
+                    <source src="https://ixorabg.com/sofia-panorama-view.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
 
@@ -142,7 +149,7 @@ export default function Home() {
                                     {/* Overlay text */}
 
                                     <motion.div
-                                        className={`absolute inset-0 flex items-center justify-center ${noto.className} welcomeTextOnImg text-white text-center text-[90px] xl:text-[120px]`}
+                                        className={`absolute inset-0 flex items-center justify-center ${noto.className} welcomeTextOnImg text-white text-center text-[80px] xl:text-[120px]`}
                                         variants={containerGalleryPrompt}
                                         initial="hidden"
                                         whileInView="visible"
@@ -169,7 +176,6 @@ export default function Home() {
                                         <motion.span variants={letterVariant}>
                                             я
                                         </motion.span>
-                                    
                                     </motion.div>
                                 </div>
                             </Link>
@@ -181,6 +187,22 @@ export default function Home() {
 
             {/* TIMELINE */}
             <Timeline></Timeline>
+            <LineGradient></LineGradient>
+            <div ref={ref}>
+                {inView && (
+                    <video
+                        className="w-full h-full"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
+                    >
+                        <source src="https://ixorabg.com/vitosha-view.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                )}
+            </div>
             <LineGradient></LineGradient>
 
             {/* DESCRIPTION */}
