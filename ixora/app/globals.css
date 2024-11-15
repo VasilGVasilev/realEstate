@@ -151,3 +151,10 @@
 .timelineBubble{
   text-shadow: 1px 1px 3px gray;
 }
+
+.spinner-border {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #3498db;
+  border-left-color: #3498db;
+}
