@@ -41,75 +41,75 @@ const imagesAct14 = [
 
 const imagesBeforeAct15 = [
     {
-        original: "/buildProcess/pre-act15/Image1.JPG",
-        thumbnail: "/buildProcess/pre-act15/Image1.JPG",
+        original: "/buildProcess/pre-act15/Image1.webp",
+        thumbnail: "/buildProcess/pre-act15/Image1.webp",
     },
     {
-        original: "/buildProcess/pre-act15/Image2.JPG",
-        thumbnail: "/buildProcess/pre-act15/Image2.JPG",
+        original: "/buildProcess/pre-act15/Image2.webp",
+        thumbnail: "/buildProcess/pre-act15/Image2.webp",
     },
     {
-        original: "/buildProcess/pre-act15/Image3.JPG",
-        thumbnail: "/buildProcess/pre-act15/Image3.JPG",
+        original: "/buildProcess/pre-act15/Image3.webp",
+        thumbnail: "/buildProcess/pre-act15/Image3.webp",
     },
     {
-        original: "/buildProcess/pre-act15/Image4.JPG",
-        thumbnail: "/buildProcess/pre-act15/Image4.JPG",
+        original: "/buildProcess/pre-act15/Image4.webp",
+        thumbnail: "/buildProcess/pre-act15/Image4.webp",
     },
     {
-        original: "/buildProcess/pre-act15/Image5.JPG",
-        thumbnail: "/buildProcess/pre-act15/Image5.JPG",
+        original: "/buildProcess/pre-act15/Image5.webp",
+        thumbnail: "/buildProcess/pre-act15/Image5.webp",
     },
     {
-        original: "/buildProcess/pre-act15/Image6.JPG",
-        thumbnail: "/buildProcess/pre-act15/Image6.JPG",
+        original: "/buildProcess/pre-act15/Image6.webp",
+        thumbnail: "/buildProcess/pre-act15/Image6.webp",
     },
     {
-        original: "/buildProcess/pre-act15/Image7.JPG",
-        thumbnail: "/buildProcess/pre-act15/Image7.JPG",
+        original: "/buildProcess/pre-act15/Image7.webp",
+        thumbnail: "/buildProcess/pre-act15/Image7.webp",
     },
 ];
 
 const imagesAct15 = [
     {
-        original: "/buildProcess/act15/image0.jpeg",
-        thumbnail: "/buildProcess/act15/image0.jpeg",
+        original: "/buildProcess/act15/image0.webp",
+        thumbnail: "/buildProcess/act15/image0.webp",
     },
     {
-        original: "/buildProcess/act15/image1.jpeg",
-        thumbnail: "/buildProcess/act15/image1.jpeg",
+        original: "/buildProcess/act15/image1.webp",
+        thumbnail: "/buildProcess/act15/image1.webp",
     },
     {
-        original: "/buildProcess/act15/image2.jpeg",
-        thumbnail: "/buildProcess/act15/image2.jpeg",
+        original: "/buildProcess/act15/image2.webp",
+        thumbnail: "/buildProcess/act15/image2.webp",
     },
     {
-        original: "/buildProcess/act15/image3.jpeg",
-        thumbnail: "/buildProcess/act15/image3.jpeg",
+        original: "/buildProcess/act15/image3.webp",
+        thumbnail: "/buildProcess/act15/image3.webp",
     },
     {
-        original: "/buildProcess/act15/image4.jpeg",
-        thumbnail: "/buildProcess/act15/image4.jpeg",
+        original: "/buildProcess/act15/image4.webp",
+        thumbnail: "/buildProcess/act15/image4.webp",
     },
     {
-        original: "/buildProcess/act15/image5.jpeg",
-        thumbnail: "/buildProcess/act15/image5.jpeg",
+        original: "/buildProcess/act15/image5.webp",
+        thumbnail: "/buildProcess/act15/image5.webp",
     },
     {
-        original: "/buildProcess/act15/image6.jpeg",
-        thumbnail: "/buildProcess/act15/image6.jpeg",
+        original: "/buildProcess/act15/image6.webp",
+        thumbnail: "/buildProcess/act15/image6.webp",
     },
     {
-        original: "/buildProcess/act15/image7.jpeg",
-        thumbnail: "/buildProcess/act15/image7.jpeg",
+        original: "/buildProcess/act15/image7.webp",
+        thumbnail: "/buildProcess/act15/image7.webp",
     },
     {
-        original: "/buildProcess/act15/image8.jpeg",
-        thumbnail: "/buildProcess/act15/image8.jpeg",
+        original: "/buildProcess/act15/image8.webp",
+        thumbnail: "/buildProcess/act15/image8.webp",
     },
     {
-        original: "/buildProcess/act15/image9.jpeg",
-        thumbnail: "/buildProcess/act15/image9.jpeg",
+        original: "/buildProcess/act15/image9.webp",
+        thumbnail: "/buildProcess/act15/image9.webp",
     },
 ];
 
