@@ -56,7 +56,7 @@ export default function Home() {
                     playsInline
                     preload="metadata"
                 >
-                    <source src="https://ixorabg.com/sofia-panorama-view.mp4" type="video/mp4" />
+                    <source src="/sofia-panorama.webm" type="video/webm" />
                     Your browser does not support the video tag.
                 </video>
 
@@ -198,7 +198,7 @@ export default function Home() {
                         playsInline
                         preload="metadata"
                     >
-                        <source src="https://ixorabg.com/vitosha-view.mp4" type="video/mp4" />
+                        <source src="/vitosha-view.webm" type="video/webm" />
                         Your browser does not support the video tag.
                     </video>
                 )}

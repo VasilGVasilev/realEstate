@@ -2,11 +2,10 @@ import React from "react";
 
 import ImageGallery from "react-image-gallery";
 
-
-const BuildingProcess = ({images}) => {
+const BuildingProcess = ({ images }) => {
     return (
         <div className="w-full h-full p-10 bg-white">
-            <ImageGallery items={images} />
+                <ImageGallery items={images} lazyLoad={true} />
         </div>
     );
 };

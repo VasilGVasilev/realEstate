@@ -7,142 +7,145 @@ import { lato } from "@/utils/fonts";
 import { motion } from "framer-motion";
 import { HiExternalLink } from "react-icons/hi";
 import BuildingProcess from "@/components/BuildingProcess";
+import { useEffect, useState } from "react";
 
 const imagesExterior = [
     {
-        original: "/gallery/exterior/image0.jpeg",
-        thumbnail: "/gallery/exterior/image0.jpeg",
+        original: "/gallery/exterior/image0.webp",
+        thumbnail: "/gallery/exterior/image0.webp",
     },
     {
-        original: "/gallery/exterior/image1.jpeg",
-        thumbnail: "/gallery/exterior/image1.jpeg",
+        original: "/gallery/exterior/image1.webp",
+        thumbnail: "/gallery/exterior/image1.webp",
     },
     {
-        original: "/gallery/exterior/image2.jpeg",
-        thumbnail: "/gallery/exterior/image2.jpeg",
+        original: "/gallery/exterior/image2.webp",
+        thumbnail: "/gallery/exterior/image2.webp",
     },
     {
-        original: "/gallery/exterior/image3.jpeg",
-        thumbnail: "/gallery/exterior/image3.jpeg",
+        original: "/gallery/exterior/image3.webp",
+        thumbnail: "/gallery/exterior/image3.webp",
     },
     {
-        original: "/gallery/exterior/image4.jpeg",
-        thumbnail: "/gallery/exterior/image4.jpeg",
+        original: "/gallery/exterior/image4.webp",
+        thumbnail: "/gallery/exterior/image4.webp",
     },
     {
-        original: "/gallery/exterior/image5.jpeg",
-        thumbnail: "/gallery/exterior/image5.jpeg",
+        original: "/gallery/exterior/image5.webp",
+        thumbnail: "/gallery/exterior/image5.webp",
     },
     {
-        original: "/gallery/exterior/image6.jpeg",
-        thumbnail: "/gallery/exterior/image6.jpeg",
+        original: "/gallery/exterior/image6.webp",
+        thumbnail: "/gallery/exterior/image6.webp",
     },
     {
-        original: "/gallery/exterior/image7.jpeg",
-        thumbnail: "/gallery/exterior/image7.jpeg",
+        original: "/gallery/exterior/image7.webp",
+        thumbnail: "/gallery/exterior/image7.webp",
     },
     {
-        original: "/gallery/exterior/image8.jpeg",
-        thumbnail: "/gallery/exterior/image8.jpeg",
+        original: "/gallery/exterior/image8.webp",
+        thumbnail: "/gallery/exterior/image8.webp",
     },
 ];
 
 const imagesApartments = [
     {
-        original: "/gallery/apartments/image000.jpeg",
-        thumbnail: "/gallery/apartments/image000.jpeg",
+        original: "/gallery/apartments/image000.webp",
+        thumbnail: "/gallery/apartments/image000.webp",
     },
     {
-        original: "/gallery/apartments/image001.jpeg",
-        thumbnail: "/gallery/apartments/image001.jpeg",
+        original: "/gallery/apartments/image001.webp",
+        thumbnail: "/gallery/apartments/image001.webp",
     },
     {
-        original: "/gallery/apartments/image002.jpeg",
-        thumbnail: "/gallery/apartments/image002.jpeg",
+        original: "/gallery/apartments/image002.webp",
+        thumbnail: "/gallery/apartments/image002.webp",
     },
     {
-        original: "/gallery/apartments/image003.jpeg",
-        thumbnail: "/gallery/apartments/image003.jpeg",
+        original: "/gallery/apartments/image003.webp",
+        thumbnail: "/gallery/apartments/image003.webp",
     },
     {
-        original: "/gallery/apartments/image004.jpeg",
-        thumbnail: "/gallery/apartments/image004.jpeg",
+        original: "/gallery/apartments/image004.webp",
+        thumbnail: "/gallery/apartments/image004.webp",
     },
     {
-        original: "/gallery/apartments/image005.jpeg",
-        thumbnail: "/gallery/apartments/image005.jpeg",
+        original: "/gallery/apartments/image005.webp",
+        thumbnail: "/gallery/apartments/image005.webp",
     },
     {
-        original: "/gallery/apartments/image006.jpeg",
-        thumbnail: "/gallery/apartments/image006.jpeg",
+        original: "/gallery/apartments/image006.webp",
+        thumbnail: "/gallery/apartments/image006.webp",
     },
     {
-        original: "/gallery/apartments/image007.jpeg",
-        thumbnail: "/gallery/apartments/image007.jpeg",
+        original: "/gallery/apartments/image007.webp",
+        thumbnail: "/gallery/apartments/image007.webp",
     },
     {
-        original: "/gallery/apartments/image008.jpeg",
-        thumbnail: "/gallery/apartments/image008.jpeg",
+        original: "/gallery/apartments/image008.webp",
+        thumbnail: "/gallery/apartments/image008.webp",
     },
 ];
 
 const imagesInterior = [
     {
-        original: "/gallery/interior/image0.jpeg",
-        thumbnail: "/gallery/interior/image0.jpeg",
+        original: "/gallery/interior/image0.webp",
+        thumbnail: "/gallery/interior/image0.webp",
     },
     {
-        original: "/gallery/interior/image1.jpeg",
-        thumbnail: "/gallery/interior/image1.jpeg",
+        original: "/gallery/interior/image1.webp",
+        thumbnail: "/gallery/interior/image1.webp",
     },
     {
-        original: "/gallery/interior/image2.jpeg",
-        thumbnail: "/gallery/interior/image2.jpeg",
+        original: "/gallery/interior/image2.webp",
+        thumbnail: "/gallery/interior/image2.webp",
     },
     {
-        original: "/gallery/interior/image3.jpeg",
-        thumbnail: "/gallery/interior/image3.jpeg",
+        original: "/gallery/interior/image3.webp",
+        thumbnail: "/gallery/interior/image3.webp",
     },
     {
-        original: "/gallery/interior/image4.jpeg",
-        thumbnail: "/gallery/interior/image4.jpeg",
+        original: "/gallery/interior/image4.webp",
+        thumbnail: "/gallery/interior/image4.webp",
     },
     {
-        original: "/gallery/interior/image5.jpeg",
-        thumbnail: "/gallery/interior/image5.jpeg",
+        original: "/gallery/interior/image5.webp",
+        thumbnail: "/gallery/interior/image5.webp",
     },
 ];
 
 const imagesSpa = [
     {
-        original: "/gallery/spa/image00.jpeg",
-        thumbnail: "/gallery/spa/image00.jpeg",
+        original: "/gallery/spa/image00.webp",
+        thumbnail: "/gallery/spa/image00.webp",
     },
     {
-        original: "/gallery/spa/image1.jpeg",
-        thumbnail: "/gallery/spa/image1.jpeg",
+        original: "/gallery/spa/image1.webp",
+        thumbnail: "/gallery/spa/image1.webp",
     },
     {
-        original: "/gallery/spa/image2.jpeg",
-        thumbnail: "/gallery/spa/image2.jpeg",
+        original: "/gallery/spa/image2.webp",
+        thumbnail: "/gallery/spa/image2.webp",
     },
     {
-        original: "/gallery/spa/image3.jpeg",
-        thumbnail: "/gallery/spa/image3.jpeg",
+        original: "/gallery/spa/image3.webp",
+        thumbnail: "/gallery/spa/image3.webp",
     },
     {
-        original: "/gallery/spa/image4.jpeg",
-        thumbnail: "/gallery/spa/image4.jpeg",
+        original: "/gallery/spa/image4.webp",
+        thumbnail: "/gallery/spa/image4.webp",
     },
     {
-        original: "/gallery/spa/image5.jpeg",
-        thumbnail: "/gallery/spa/image5.jpeg",
+        original: "/gallery/spa/image5.webp",
+        thumbnail: "/gallery/spa/image5.webp",
     },
 ];
 
 export const revalidate = 0; // revalidate this page every 60 seconds
 
 export default function Gallery() {
+
+
     return (
         <>
             <div>
@@ -161,8 +164,8 @@ export default function Gallery() {
 
                     <BuildingProcess
                         images={imagesApartments}
+                    
                     ></BuildingProcess>
-
                     <motion.div
                         className="bg-gradient-ixora py-4"
                         initial={{ opacity: 0, width: 0 }}
