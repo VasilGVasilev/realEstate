@@ -9,6 +9,35 @@ import { HiExternalLink } from "react-icons/hi";
 import BuildingProcess from "@/components/BuildingProcess";
 import { useEffect, useState } from "react";
 
+const imagesExteriorUpdated = [];
+
+const imagesBeforeAct16 = [
+    {
+        original: "/buildProcess/pre-act16/image0.webp",
+        thumbnail: "/buildProcess/pre-act16/image0.webp",
+    },
+    {
+        original: "/buildProcess/pre-act16/image1.webp",
+        thumbnail: "/buildProcess/pre-act16/image1.webp",
+    },
+    {
+        original: "/buildProcess/pre-act16/image2.webp",
+        thumbnail: "/buildProcess/pre-act16/image2.webp",
+    },
+    {
+        original: "/buildProcess/pre-act16/image3.webp",
+        thumbnail: "/buildProcess/pre-act16/image3.webp",
+    },
+    {
+        original: "/buildProcess/pre-act16/image4.webp",
+        thumbnail: "/buildProcess/pre-act16/image4.webp",
+    },
+    {
+        original: "/buildProcess/pre-act16/image5.webp",
+        thumbnail: "/buildProcess/pre-act16/image5.webp",
+    },
+];
+
 const imagesExterior = [
     {
         original: "/gallery/exterior/image0.webp",
@@ -47,6 +76,8 @@ const imagesExterior = [
         thumbnail: "/gallery/exterior/image8.webp",
     },
 ];
+
+imagesExteriorUpdated.push(...imagesBeforeAct16, ...imagesExterior);
 
 const imagesApartments = [
     {
@@ -190,7 +221,7 @@ export default function Gallery() {
                         </div>
                     </motion.div>
 
-                    <BuildingProcess images={imagesExterior}></BuildingProcess>
+                    <BuildingProcess images={imagesExteriorUpdated}></BuildingProcess>
                     <motion.div
                         className="bg-gradient-ixora py-4"
                         initial={{ opacity: 0, width: 0 }}
